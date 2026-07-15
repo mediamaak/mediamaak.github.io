@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MediaMak 정적 리포트</title>
+  <meta name="description" content="MediaMak 공개 성과 기록과 프로젝트 문서를 정적 JSON 기반으로 제공하는 GitHub Pages 초안">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/charts.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span>M</span><strong>MediaMak</strong></a>
+    <nav aria-label="주요 메뉴">
+      <a href="index.html">홈</a>
+      <a href="simulation.html">시뮬레이션</a>
+      <a href="actual.html">실제 기록</a>
+      <a href="strategies.html">전략</a>
+      <a href="wiki.html">위키</a>
+      <a href="portfolio.html">포트폴리오</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">STATIC REPORT SITE</p>
+      <h1>MediaMak 공개 기록을 GitHub Pages 정적 사이트로 제공합니다.</h1>
+      <p class="lead">최종 주소는 <a href="https://mediamaak.github.io">https://mediamaak.github.io</a>입니다. 이 초안은 서버 API 없이 로컬 JSON 파일만 읽어 홈, 성과 요약, 전략 설명, 문서를 표시합니다.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="simulation.html">시뮬레이션 보기</a>
+        <a class="button" href="actual.html">실제 기록 보기</a>
+      </div>
+    </section>
+
+    <section class="notice-band">
+      <strong>정적 전환 안내</strong>
+      <span>로그인, 관리자 콘솔, 게시판 작성, 서버 API 기능은 이 초안에 포함하지 않습니다. 공개 리포트 데이터는 `data/*.json` 파일로 갱신합니다.</span>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">PROJECT</p>
+        <h2>프로젝트 소개</h2>
+      </div>
+      <div id="projectIntro" class="two-column"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">SUMMARY</p>
+        <h2>공개 요약</h2>
+      </div>
+      <div id="homeSummaryCards" class="metric-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">STRATEGIES</p>
+        <h2>전략별 설명</h2>
+      </div>
+      <div id="homeStrategyCards" class="card-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">TRANSITION</p>
+        <h2>동적 기능 종료 및 정적 리포트 전환</h2>
+      </div>
+      <div class="status-list">
+        <article><strong>운영 주소</strong><span>https://mediamaak.github.io</span></article>
+        <article><strong>데이터 방식</strong><span>정적 JSON 파일을 브라우저에서 읽어 렌더링</span></article>
+        <article><strong>제외 기능</strong><span>로그인, 관리자 화면, 글 작성, 서버 API 직접 호출</span></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>MediaMak static draft</span>
+    <span>GitHub Pages: https://mediamaak.github.io</span>
+  </footer>
+</body>
+</html>

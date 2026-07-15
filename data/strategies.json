@@ -1,0 +1,26 @@
+{
+  "updated_at": "2026-07-08 09:00 KST",
+  "strategies": [
+    {
+      "code": "strategy_alpha",
+      "name": "BTC CCI Gap",
+      "market": "KRW-BTC",
+      "status": "public report",
+      "description": "CCI 이격과 변동성 필터를 함께 확인하는 비트코인 백테스트 기반 전략 설명입니다."
+    },
+    {
+      "code": "strategy_beta",
+      "name": "ETH Trend Filter",
+      "market": "KRW-ETH",
+      "status": "public report",
+      "description": "추세 필터와 청산 기록을 기준으로 집계한 이더리움 전략 설명입니다."
+    },
+    {
+      "code": "strategy_gamma",
+      "name": "KOSPI CCI Rebound",
+      "market": "KOSPI200",
+      "status": "simulation only",
+      "description": "KOSPI200 종목의 CCI 반등 조건을 기준으로 만든 시뮬레이션 리포트 항목입니다."
+    }
+  ]
+}

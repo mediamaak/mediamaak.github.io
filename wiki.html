@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>위키와 문서 | MediaMak</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span>M</span><strong>MediaMak</strong></a>
+    <nav aria-label="주요 메뉴">
+      <a href="index.html">홈</a>
+      <a href="simulation.html">시뮬레이션</a>
+      <a href="actual.html">실제 기록</a>
+      <a href="strategies.html">전략</a>
+      <a href="wiki.html">위키</a>
+      <a href="portfolio.html">포트폴리오</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">WIKI</p>
+      <h1>위키와 문서</h1>
+      <p>GitHub Pages 전환 후 공개 사이트에서 유지할 문서 범위를 정리한 정적 페이지입니다.</p>
+    </section>
+    <section class="section doc-grid">
+      <article>
+        <h2>정적 운영 원칙</h2>
+        <p>브라우저는 `data/*.json` 파일만 읽습니다. 서버 route, 세션, 데이터베이스 연결, 인증 callback은 포함하지 않습니다.</p>
+      </article>
+      <article>
+        <h2>공개 데이터 기준</h2>
+        <p>요약 지표와 전략 설명처럼 공개 가능한 집계만 둡니다. 개인 식별 정보, 주문 상세, 계정 정보, API 키, DB 정보는 저장하지 않습니다.</p>
+      </article>
+      <article>
+        <h2>종료된 동적 기능</h2>
+        <p>로그인, 관리자 화면, 콘솔, 게시판 작성, 서버 API 직접 호출은 정적 사이트에서 제공하지 않습니다.</p>
+      </article>
+    </section>
+  </main>
+  <footer class="site-footer"><span>MediaMak static draft</span><span>https://mediamaak.github.io</span></footer>
+</body>
+</html>

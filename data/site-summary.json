@@ -1,0 +1,31 @@
+{
+  "site": {
+    "name": "MediaMak Static Report",
+    "url": "https://mediamaak.github.io",
+    "deployment": "GitHub Pages",
+    "data_mode": "static_json"
+  },
+  "project": {
+    "cards": [
+      {
+        "title": "정적 리포트 전환",
+        "text": "공개 화면은 HTML, CSS, JS, JSON 파일만으로 표시합니다. 서버 route와 세션 처리는 포함하지 않습니다."
+      },
+      {
+        "title": "공개 집계 중심",
+        "text": "백테스트 시뮬레이션과 내부 실제 매매 기록의 요약 지표를 같은 형식으로 비교합니다."
+      },
+      {
+        "title": "데이터 갱신",
+        "text": "배치 export가 data 폴더의 JSON 파일을 갱신하면 GitHub Pages 배포 후 화면에 반영됩니다."
+      }
+    ]
+  },
+  "metrics": {
+    "simulation_total_pnl_krw": 1425000,
+    "simulation_updated": "2026-07-08 09:00 KST",
+    "actual_total_pnl_krw": 318000,
+    "actual_updated": "2026-07-08 09:00 KST",
+    "strategy_count": 3
+  }
+}

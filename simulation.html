@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>백테스트 시뮬레이션 요약 | MediaMak</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/charts.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body data-page="performance" data-kind="simulation" data-source="data/simulation-performance.json">
+  <header class="site-header">
+    <a class="brand" href="index.html"><span>M</span><strong>MediaMak</strong></a>
+    <nav aria-label="주요 메뉴">
+      <a href="index.html">홈</a>
+      <a href="simulation.html">시뮬레이션</a>
+      <a href="actual.html">실제 기록</a>
+      <a href="strategies.html">전략</a>
+      <a href="wiki.html">위키</a>
+      <a href="portfolio.html">포트폴리오</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">BACKTEST SUMMARY</p>
+      <h1>백테스트 시뮬레이션 요약</h1>
+      <p>정적 JSON 파일 `data/simulation-performance.json`을 읽어 요약 카드, 일별 손익 그래프, 전략별 표를 표시합니다.</p>
+    </section>
+    <section class="section">
+      <div id="performanceSummary" class="metric-grid"></div>
+    </section>
+    <section class="section">
+      <div class="section-heading">
+        <h2>일별 손익 그래프</h2>
+        <span id="performanceUpdated">-</span>
+      </div>
+      <div class="chart-shell">
+        <canvas id="performanceChart" width="960" height="360" aria-label="일별 손익과 누적 손익 그래프"></canvas>
+      </div>
+      <div id="gapMarkers" class="gap-list"></div>
+    </section>
+    <section class="section">
+      <div class="section-heading"><h2>전략별 표</h2></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>전략</th><th>마켓</th><th>누적 손익</th><th>승률</th><th>거래 수</th><th>최근 갱신</th></tr></thead>
+          <tbody id="performanceStrategyBody"><tr><td colspan="6">데이터를 불러오는 중입니다.</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>MediaMak static draft</span><span>https://mediamaak.github.io</span></footer>
+</body>
+</html>
