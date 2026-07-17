@@ -468,7 +468,7 @@ function renderSelectedPerformance() {
   const intro = document.getElementById("performanceIntro");
   if (title) title.textContent = strategy.name || "자동매매 백테스트";
   if (intro) {
-    intro.textContent = strategy.description || `${asset.label || asset.market || "선택 재화"} 백테스트의 일별 실현손익을 표시합니다.`;
+    intro.textContent = strategy.description || `${asset.label || asset.market || "선택 투자 소재"} 백테스트의 일별 실현손익을 표시합니다.`;
   }
 
   const target = document.getElementById("performanceSummary");
@@ -478,7 +478,7 @@ function renderSelectedPerformance() {
       metricCard("일평균 손익", krw(summary.daily_avg_pnl_krw)),
       metricCard("승률", pct(summary.win_rate_pct)),
       metricCard("거래 수", `${fmt.format(Number(summary.trade_count) || 0)}건`),
-      metricCard("선택 재화 전략 수", `${fmt.format(Number(asset.strategies?.length) || 0)}개`, `전체 ${fmt.format(strategies.length)}개`),
+      metricCard("선택 투자 소재 전략 수", `${fmt.format(Number(asset.strategies?.length) || 0)}개`, `전체 ${fmt.format(strategies.length)}개`),
       metricCard("최근 갱신", summary.updated_at || "-"),
     ].join("");
   }
