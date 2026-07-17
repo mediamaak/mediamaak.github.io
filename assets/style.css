@@ -369,10 +369,20 @@ main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 6
   display: grid;
   gap: 10px;
 }
-.toc-list article,
-.post-item {
+.toc-list article {
   display: grid;
   grid-template-columns: 54px minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: start;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.post-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 16px;
   align-items: start;
   padding: 18px;
