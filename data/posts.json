@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "category": "Architecture",
+      "title": "자동매매 시스템의 전체 흐름",
+      "summary": "거래소 API에서 수집한 데이터가 MySQL과 전략 러너를 거쳐 정적 증거 사이트로 이어지는 구조를 설명합니다.",
+      "status": "draft"
+    },
+    {
+      "category": "Data Collection",
+      "title": "BTC 가격과 KOSPI200 데이터를 같은 저장소에 쌓는 방법",
+      "summary": "코인과 국내주식 데이터 수집기를 분리하면서도 공통 로그와 DB 계층을 공유하는 리팩토링 기록입니다.",
+      "status": "planned"
+    },
+    {
+      "category": "Backtest",
+      "title": "백테스트 결과를 출판 가능한 증거로 바꾸는 기준",
+      "summary": "전략 홍보가 아니라 재현 가능한 검증 기록으로 백테스트 결과를 다루는 원칙을 정리합니다.",
+      "status": "planned"
+    },
+    {
+      "category": "Operations",
+      "title": "실거래 운영 기록에서 공개하지 말아야 할 것들",
+      "summary": "계정, 주문 상세, API 키, 관리자 로그를 제외하고도 증거로 남길 수 있는 집계 범위를 정합니다.",
+      "status": "draft"
+    }
+  ]
+}

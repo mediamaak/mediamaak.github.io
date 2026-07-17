@@ -39,6 +39,50 @@ function statusText(value, fallback = "export 대기") {
   return text || fallback;
 }
 
+function linkButton(link, isPrimary = false) {
+  return `<a class="button${isPrimary ? " primary" : ""}" href="${escapeHtml(link.href)}">${escapeHtml(link.label)}</a>`;
+}
+
+function statusBadge(status) {
+  const normalized = String(status || "planned").toLowerCase();
+  const labelMap = {
+    draft: "작성 중",
+    planned: "예정",
+    evidence: "증거",
+    published: "공개",
+    operating: "운영",
+  };
+  return `<span class="status-badge status-${escapeHtml(normalized)}">${escapeHtml(labelMap[normalized] || statusText(status, "예정"))}</span>`;
+}
+
+function evidenceCard(item) {
+  return `
+    <article class="card evidence-card">
+      <div class="card-kicker">${escapeHtml(item.type || "evidence")}</div>
+      <h2>${escapeHtml(item.title)}</h2>
+      <p>${escapeHtml(item.summary)}</p>
+      <dl>
+        <dt>상태</dt><dd>${statusBadge(item.status)}</dd>
+        <dt>범위</dt><dd>${escapeHtml(item.scope || "-")}</dd>
+      </dl>
+      <a href="${escapeHtml(item.href || "#")}">${escapeHtml(item.link_label || "자료 보기")}</a>
+    </article>
+  `;
+}
+
+function postItem(post) {
+  return `
+    <article class="post-item">
+      <div>
+        <span>${escapeHtml(post.category || "Log")}</span>
+        <h3>${escapeHtml(post.title)}</h3>
+        <p>${escapeHtml(post.summary)}</p>
+      </div>
+      ${statusBadge(post.status)}
+    </article>
+  `;
+}
+
 function strategyCard(strategy) {
   const href = strategy.href || "strategies.html";
   const totalPnl = Number(strategy.total_pnl_krw);
@@ -59,22 +103,58 @@ function strategyCard(strategy) {
   `;
 }
 
-function renderProfitSummary(summary) {
-  const target = document.getElementById("homeProfitSummary");
-  if (!target) return;
-  const metrics = summary.metrics || {};
-  const simulation = metrics.simulation || {};
-  const actual = metrics.actual || {};
-  target.innerHTML = [
-    `<a class="profit-card" href="simulation.html"><span>백테스트 시뮬레이션 종합 손익</span><strong>${escapeHtml(krw(simulation.total_profit_krw))}</strong><small>${escapeHtml(statusText(simulation.meta, "공개 export 대기"))}</small></a>`,
-    `<a class="profit-card" href="actual.html"><span>실제 매매 손익</span><strong>${escapeHtml(krw(actual.total_profit_krw))}</strong><small>${escapeHtml(statusText(actual.meta, "공개 export 대기"))}</small></a>`,
-  ].join("");
+function renderHomeIntro(home) {
+  const title = document.getElementById("homeTitle");
+  const description = document.getElementById("homeDescription");
+  const links = document.getElementById("homePrimaryLinks");
+  const stats = document.getElementById("homeStats");
+
+  if (title) title.textContent = home.site_title || "MediaMak";
+  if (description) description.textContent = home.description || "";
+  if (links) {
+    const primaryLinks = Array.isArray(home.primary_links) ? home.primary_links : [];
+    links.innerHTML = primaryLinks.map((link, index) => linkButton(link, index === 0)).join("");
+  }
+  if (stats) {
+    const metrics = Array.isArray(home.metrics) ? home.metrics : [];
+    stats.innerHTML = metrics.map((metric) => metricCard(metric.label, metric.value, metric.hint)).join("");
+  }
 }
 
-function renderSteps(summary) {
-  const target = document.getElementById("rankingSteps");
+function renderBookToc(toc) {
+  const target = document.getElementById("bookToc");
   if (!target) return;
-  const steps = Array.isArray(summary.ranking_steps) ? summary.ranking_steps : [];
+  const chapters = Array.isArray(toc.chapters) ? toc.chapters : [];
+  target.innerHTML = chapters.map((chapter) => `
+    <article>
+      <b>${escapeHtml(String(chapter.number).padStart(2, "0"))}</b>
+      <div>
+        <h3>${escapeHtml(chapter.title)}</h3>
+        <p>${escapeHtml(chapter.summary)}</p>
+      </div>
+      ${statusBadge(chapter.status)}
+    </article>
+  `).join("");
+}
+
+function renderEvidence(evidence) {
+  const target = document.getElementById("evidenceGrid");
+  if (!target) return;
+  const items = Array.isArray(evidence.items) ? evidence.items : [];
+  target.innerHTML = items.map(evidenceCard).join("");
+}
+
+function renderPosts(posts) {
+  const target = document.getElementById("postList");
+  if (!target) return;
+  const items = Array.isArray(posts.posts) ? posts.posts : [];
+  target.innerHTML = items.map(postItem).join("");
+}
+
+function renderSystemFlow(home) {
+  const target = document.getElementById("systemFlow");
+  if (!target) return;
+  const steps = Array.isArray(home.system_flow) ? home.system_flow : [];
   target.innerHTML = steps.map((step, index) => `
     <article>
       <b>${escapeHtml(String(index + 1).padStart(2, "0"))}</b>
@@ -84,58 +164,26 @@ function renderSteps(summary) {
   `).join("");
 }
 
-function renderAssetGroups(summary) {
-  const target = document.getElementById("assetGroups");
+function renderDisclosure(home) {
+  const target = document.getElementById("disclosureNotes");
   if (!target) return;
-  const groups = Array.isArray(summary.asset_groups) ? summary.asset_groups : [];
-  target.innerHTML = [
-    `<div class="asset-head"><span>자산군</span><span>마켓</span><span>종목 예시</span><span>제공 데이터</span></div>`,
-    ...groups.map((group) => `
-      <div>
-        <span>${escapeHtml(group.asset)}</span>
-        <span>${escapeHtml(group.market)}</span>
-        <span>${escapeHtml(group.examples)}</span>
-        <span>${escapeHtml(group.data)}</span>
-      </div>
-    `),
-  ].join("");
-}
-
-function renderRiskNotes(summary) {
-  const target = document.getElementById("riskNotes");
-  if (!target) return;
-  const notes = Array.isArray(summary.risk_notes) ? summary.risk_notes : [];
+  const notes = Array.isArray(home.disclosure) ? home.disclosure : [];
   target.innerHTML = notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("");
 }
 
 async function initHome() {
-  const [summary, topStrategies] = await Promise.all([
-    readJson("data/site-summary.json"),
-    readJson("data/public/top-strategies.json"),
+  const [home, toc, evidence, posts] = await Promise.all([
+    readJson("data/home.json"),
+    readJson("data/book-toc.json"),
+    readJson("data/evidence-index.json"),
+    readJson("data/posts.json"),
   ]);
-  renderProfitSummary(summary);
-  renderSteps(summary);
-  renderAssetGroups(summary);
-  renderRiskNotes(summary);
-  const cards = document.getElementById("homeSummaryCards");
-  if (cards) {
-    const metrics = summary.metrics || {};
-    const simulation = metrics.simulation || {};
-    const actual = metrics.actual || {};
-    cards.innerHTML = [
-      metricCard("시뮬레이션 누적 손익", krw(simulation.total_profit_krw), statusText(simulation.updated_at, "export 대기")),
-      metricCard("실제 기록 누적 손익", krw(actual.total_profit_krw), statusText(actual.updated_at, "export 대기")),
-      metricCard("공개 전략 수", `${fmt.format(Number(metrics.strategy_count) || 0)}개`, statusText(topStrategies.updated_at)),
-      metricCard("데이터 방식", "정적 JSON", "서버 API 호출 없음"),
-    ].join("");
-  }
-  const strategyTarget = document.getElementById("homeStrategyCards");
-  if (strategyTarget) {
-    const strategies = Array.isArray(topStrategies.strategies) ? topStrategies.strategies : [];
-    strategyTarget.innerHTML = strategies.length
-      ? strategies.slice(0, 3).map(strategyCard).join("")
-      : '<article class="card"><h2>공개 전략 export 대기</h2><p>실제 공개 전략 데이터가 생성되면 이 영역에 전략 카드가 표시됩니다.</p></article>';
-  }
+  renderHomeIntro(home);
+  renderBookToc(toc);
+  renderEvidence(evidence);
+  renderPosts(posts);
+  renderSystemFlow(home);
+  renderDisclosure(home);
 }
 
 function renderGaps(rows, kind) {

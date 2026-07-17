@@ -1,4 +1,4 @@
-# MediaMak GitHub Pages static draft
+# MediaMak GitHub Pages technical blog
 
 배포 주소: https://mediamaak.github.io
 
@@ -8,6 +8,7 @@
 - custom domain은 사용하지 않는다.
 - `CNAME` 파일은 사용하지 않는다.
 - 브라우저는 Flask API를 직접 호출하지 않고 `data/*.json` 파일만 읽는다.
+- 홈은 기술블로그, 출판용 책 목차, 자동매매 증거 아카이브 역할을 한다.
 
 ## 데이터 업데이트 방식
 
@@ -18,10 +19,11 @@
 
 ## 1차 홈 이전 상태
 
-- `index.html`은 기존 Flask 홈의 공개 설명, 백테스트/실제 기록 요약, 선정 기준, 지원 자산, 리스크 안내를 정적 HTML로 옮긴다.
+- `index.html`은 자동매매 시스템 개발 기록을 위한 기술블로그 홈이다.
+- 홈에는 출판용 책 목차, 자동매매 증거 아카이브, 개발 기록, 시스템 흐름, 공개 원칙을 표시한다.
 - 홈 JS는 `/api/*`, `/auth/*`, `/admin`, `/console`을 호출하지 않는다.
-- `data/site-summary.json`과 `data/public/top-strategies.json`을 읽는다.
-- 실제 공개 수익 데이터 export가 연결되기 전까지 손익 수치는 `-`로 표시한다.
+- `data/home.json`, `data/book-toc.json`, `data/evidence-index.json`, `data/posts.json`을 읽는다.
+- 기존 백테스트/실거래 페이지는 홈의 주요 목적이 아니라 증거 아카이브의 하위 자료로 둔다.
 - 로그인, 관리자 콘솔, 게시판 작성, 서버 API 기능은 포함하지 않는다.
 
 ## 로컬 미리보기

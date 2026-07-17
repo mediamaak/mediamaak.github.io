@@ -1,0 +1,46 @@
+{
+  "chapters": [
+    {
+      "number": 1,
+      "title": "왜 자동매매 시스템을 직접 만드는가",
+      "summary": "거래 아이디어가 아니라 재현 가능한 시스템을 만드는 이유와 범위를 정리합니다.",
+      "status": "draft"
+    },
+    {
+      "number": 2,
+      "title": "거래소 API와 데이터 수집 구조",
+      "summary": "Upbit, KIS, 환율, 보조 가격 API를 수집기로 연결하는 구조를 설명합니다.",
+      "status": "draft"
+    },
+    {
+      "number": 3,
+      "title": "MySQL 기반 가격/체결 데이터 저장",
+      "summary": "원천 테이블, 기준 테이블, 전략 결과 테이블의 역할을 분리합니다.",
+      "status": "draft"
+    },
+    {
+      "number": 4,
+      "title": "백테스트와 실거래의 차이",
+      "summary": "시뮬레이션 성과와 실제 운영 기록이 왜 달라지는지 기록 기준을 세웁니다.",
+      "status": "planned"
+    },
+    {
+      "number": 5,
+      "title": "전략 신호, 포지션, 손익 테이블 설계",
+      "summary": "신호 snapshot, position, event, PnL series를 연결해 검증 가능한 기록을 만듭니다.",
+      "status": "planned"
+    },
+    {
+      "number": 6,
+      "title": "Flask 운영 콘솔과 GitHub Pages 증거 사이트",
+      "summary": "동적 운영 화면과 정적 출판 아카이브를 분리하는 과정을 설명합니다.",
+      "status": "planned"
+    },
+    {
+      "number": 7,
+      "title": "장애, 실패, 리팩토링 기록",
+      "summary": "실패 사례를 숨기지 않고 운영 체크리스트와 개선 근거로 남깁니다.",
+      "status": "planned"
+    }
+  ]
+}

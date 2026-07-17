@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MediaMak 백테스트 전략 검증</title>
-  <meta name="description" content="백테스트에서 성과가 좋게 나온 전략을 공개 가능한 정적 JSON 기록으로 확인하는 MediaMak GitHub Pages 홈">
+  <title>MediaMak 자동매매 기술블로그</title>
+  <meta name="description" content="자동매매 시스템 개발, 데이터 수집, 백테스트, 실거래 운영, 장애 대응을 기록하는 기술블로그와 출판용 증거 아카이브">
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/charts.js" defer></script>
   <script src="assets/app.js" defer></script>
@@ -13,75 +13,75 @@
   <header class="site-header">
     <a class="brand" href="index.html"><span>M</span><strong>MediaMak</strong></a>
     <nav aria-label="주요 메뉴">
-      <a href="index.html">홈</a>
-      <a href="simulation.html">시뮬레이션</a>
-      <a href="actual.html">실제 기록</a>
-      <a href="strategies.html">전략</a>
-      <a href="wiki.html">위키</a>
-      <a href="portfolio.html">포트폴리오</a>
+      <a href="#book">책 목차</a>
+      <a href="#evidence">증거 아카이브</a>
+      <a href="#posts">개발 기록</a>
+      <a href="#architecture">시스템 흐름</a>
+      <a href="simulation.html">백테스트</a>
+      <a href="actual.html">실거래 기록</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero exchange-hero">
-      <p class="eyebrow">BACKTEST TO PUBLIC REPORT</p>
-      <h1>백테스트에서 성과가 좋았던 전략을 정적 공개 기록으로 확인합니다.</h1>
-      <p class="lead">MediaMak 공개 화면은 <a href="https://mediamaak.github.io">https://mediamaak.github.io</a>로 이전합니다. 홈은 서버 API, 로그인, 관리자 기능 없이 공개 가능한 JSON 스냅샷만 읽어 렌더링합니다.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="simulation.html">백테스트 보기</a>
-        <a class="button" href="actual.html">실제 기록 보기</a>
-      </div>
-      <div id="homeProfitSummary" class="profit-summary" aria-label="종합 손익 구분"></div>
+    <section class="hero blog-hero">
+      <p class="eyebrow">AUTOMATED TRADING ENGINEERING LOG</p>
+      <h1 id="homeTitle">자동매매 시스템 개발 기록</h1>
+      <p id="homeDescription" class="lead">데이터 수집부터 전략 검증, 실거래 운영, 장애 대응까지 기록하는 기술블로그입니다.</p>
+      <div id="homePrimaryLinks" class="hero-actions"></div>
+      <div id="homeStats" class="metric-grid compact-metrics"></div>
     </section>
 
     <section class="notice-band">
-      <strong>GitHub Pages 이전 안내</strong>
-      <span>로그인, 관리자 콘솔, 게시판 작성, 실시간 서버 API는 1차 이전 범위에서 제외합니다. 공개 데이터는 `data/*.json` 파일로 갱신합니다.</span>
+      <strong>사이트 성격</strong>
+      <span>이 홈은 투자 권유 페이지가 아니라 출판 원고, 개발 기록, 자동매매 검증 증거를 정리하는 기술 아카이브입니다.</span>
     </section>
 
-    <section class="section">
+    <section class="section" id="book">
       <div class="section-heading">
-        <p class="eyebrow">SUMMARY</p>
-        <h2>공개 요약</h2>
+        <p class="eyebrow">BOOK OUTLINE</p>
+        <h2>출판용 책 목차</h2>
+        <span>초안 목차와 원고 진행 상태</span>
       </div>
-      <div id="homeSummaryCards" class="metric-grid"></div>
+      <div id="bookToc" class="toc-list"></div>
     </section>
 
-    <section class="section" id="ranking-method">
+    <section class="section" id="evidence">
       <div class="section-heading">
-        <p class="eyebrow">RANKING METHOD</p>
-        <h2>보유 시간당 손익으로 백테스트 전략 효율을 비교합니다.</h2>
+        <p class="eyebrow">EVIDENCE ARCHIVE</p>
+        <h2>자동매매 증거 아카이브</h2>
+        <span>성과 홍보가 아니라 재현 가능한 개발/운영 기록</span>
       </div>
-      <div id="rankingSteps" class="step-row"></div>
+      <div id="evidenceGrid" class="card-grid"></div>
     </section>
 
-    <section class="section" id="asset-groups">
+    <section class="section" id="posts">
       <div class="section-heading">
-        <p class="eyebrow">ASSET GROUPS</p>
-        <h2>전략과 마켓 단위로 기록을 분리해 집계합니다.</h2>
+        <p class="eyebrow">ENGINEERING POSTS</p>
+        <h2>기술블로그 개발 기록</h2>
+        <span>최신 글과 작성 예정 주제</span>
       </div>
-      <div id="assetGroups" class="asset-table"></div>
+      <div id="postList" class="post-list"></div>
     </section>
 
-    <section class="section" id="strategies">
+    <section class="section" id="architecture">
       <div class="section-heading">
-        <p class="eyebrow">STRATEGIES</p>
-        <h2>공개 전략 스냅샷</h2>
+        <p class="eyebrow">SYSTEM FLOW</p>
+        <h2>자동매매 시스템 흐름</h2>
       </div>
-      <div id="homeStrategyCards" class="card-grid"></div>
+      <div id="systemFlow" class="flow-strip"></div>
     </section>
 
-    <section class="section" id="security">
+    <section class="section" id="disclosure">
       <div class="section-heading">
-        <p class="eyebrow">SECURITY & RISK</p>
-        <h2>성과 순위는 과거 기록 기준이며 이후 결과를 약속하지 않습니다.</h2>
+        <p class="eyebrow">DISCLOSURE</p>
+        <h2>공개 원칙과 리스크 고지</h2>
       </div>
-      <ul id="riskNotes" class="risk-list"></ul>
+      <ul id="disclosureNotes" class="risk-list"></ul>
     </section>
   </main>
 
   <footer class="site-footer">
-    <span>MediaMak GitHub Pages migration</span>
+    <span>MediaMak technical publishing archive</span>
     <span>GitHub Pages: https://mediamaak.github.io</span>
   </footer>
 </body>
