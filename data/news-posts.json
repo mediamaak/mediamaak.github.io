@@ -1,6 +1,30 @@
 {
-  "updated_at": "2026-07-17T17:09:06Z",
+  "updated_at": "2026-07-17T23:53:58Z",
   "posts": [
+    {
+      "id": "2026-07-18-market-economy-roundup",
+      "title": "오늘의 퀀트·경제 데이터 분석 요약 - 2026-07-18",
+      "date": "2026-07-18",
+      "category": "Market Economy",
+      "summary": "이번 자료들은 해외 자산 보유 구조, 주가 예측용 시계열 모델의 평가 방법, 그리고 경기변동과 불확실성의 상호작용을 다룹니다.",
+      "href": "posts/2026-07-18-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "economic-data",
+        "factor",
+        "macro",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "research",
+        "risk"
+      ],
+      "quality_score": 95
+    },
     {
       "id": "2026-07-18-data-analysis-roundup",
       "title": "오늘의 데이터 분석 해외 자료 요약 - 2026-07-18",

@@ -228,6 +228,22 @@ main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 6
   font-weight: 700;
 }
 .section { margin-top: 34px; }
+.article-visual {
+  margin: 0 0 26px;
+}
+.article-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+.article-visual figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
 .section-heading {
   display: flex;
   align-items: end;
