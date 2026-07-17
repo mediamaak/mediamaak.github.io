@@ -197,6 +197,36 @@ main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 6
   background: #eef4ff;
   color: #1e3a8a;
 }
+.filter-panel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.filter-panel label {
+  display: grid;
+  gap: 8px;
+}
+.filter-panel span {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+.filter-panel select {
+  width: 100%;
+  min-height: 44px;
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #ffffff;
+  color: var(--text);
+  font: inherit;
+  font-weight: 700;
+}
 .section { margin-top: 34px; }
 .section-heading {
   display: flex;
@@ -536,6 +566,29 @@ table { width: 100%; border-collapse: collapse; min-width: 720px; }
 th, td { padding: 12px 14px; border-bottom: 1px solid var(--line); text-align: left; }
 th { color: var(--muted); font-size: 13px; background: #f2f5f9; }
 td small { display: block; color: var(--muted); }
+.pagination-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+.pagination-controls button {
+  min-width: 78px;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+.pagination-controls button:disabled {
+  color: var(--muted);
+  cursor: default;
+  opacity: 0.48;
+}
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -569,6 +622,7 @@ td small { display: block; color: var(--muted); }
   }
   .menu-panel { display: none !important; }
   .notice-band, .section-heading { display: block; }
+  .filter-panel { grid-template-columns: 1fr; }
   .profit-summary, .step-row { grid-template-columns: 1fr; }
   .strategy-explain { grid-template-columns: 1fr; }
   .strategy-explain dl,

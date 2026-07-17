@@ -19,8 +19,8 @@
       "code": "strategy_gamma",
       "name": "KOSPI CCI Rebound",
       "market": "KOSPI200",
-      "status": "simulation only",
-      "description": "KOSPI200 종목의 CCI 반등 조건을 기준으로 만든 시뮬레이션 리포트 항목입니다."
+      "status": "backtest only",
+      "description": "KOSPI200 종목의 CCI 반등 조건을 기준으로 만든 백테스트 리포트 항목입니다."
     }
   ]
 }

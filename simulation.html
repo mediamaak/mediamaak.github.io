@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>백테스트 시뮬레이션 요약 | MediaMak</title>
+  <title>백테스트 요약 | MediaMak</title>
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/charts.js" defer></script>
   <script src="assets/app.js" defer></script>
@@ -44,8 +44,20 @@
   <main>
     <section class="page-title">
       <p class="eyebrow">BACKTEST SUMMARY</p>
-      <h1>BTC 10분봉 CCI 반등 시뮬레이션</h1>
-      <p>업비트 웹소켓 체결 데이터를 10분봉으로 재구성해 CCI 반등 진입, 변동성 규칙 기반 목표수익, -10% 손절 조건을 검증한 공개 요약입니다.</p>
+      <h1 id="performanceTitle">자동매매 백테스트</h1>
+      <p id="performanceIntro">재화와 전략을 선택하면 해당 백테스트의 일별 실현손익 그래프와 표를 확인할 수 있습니다.</p>
+    </section>
+    <section class="section">
+      <div class="filter-panel" aria-label="백테스트 선택">
+        <label for="assetSelect">
+          <span>재화</span>
+          <select id="assetSelect"></select>
+        </label>
+        <label for="strategySelect">
+          <span>전략</span>
+          <select id="strategySelect"></select>
+        </label>
+      </div>
     </section>
     <section class="section">
       <div id="performanceSummary" class="metric-grid"></div>
@@ -72,12 +84,19 @@
       <div id="gapMarkers" class="gap-list"></div>
     </section>
     <section class="section">
-      <div class="section-heading"><h2>전략별 표</h2></div>
+      <div class="section-heading">
+        <h2>일별 실현손익 표</h2>
+        <span id="dailyPnlPageInfo">-</span>
+      </div>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>전략</th><th>마켓</th><th>누적 손익</th><th>수익률</th><th>승률</th><th>거래 수</th><th>최근 갱신</th></tr></thead>
-          <tbody id="performanceStrategyBody"><tr><td colspan="7">데이터를 불러오는 중입니다.</td></tr></tbody>
+          <thead><tr><th>일자</th><th>일별 실현손익</th><th>누적 실현손익</th><th>거래 수</th><th>승</th><th>패</th></tr></thead>
+          <tbody id="dailyPnlBody"><tr><td colspan="6">데이터를 불러오는 중입니다.</td></tr></tbody>
         </table>
+      </div>
+      <div class="pagination-controls">
+        <button type="button" id="dailyPnlPrev">이전</button>
+        <button type="button" id="dailyPnlNext">다음</button>
       </div>
     </section>
   </main>

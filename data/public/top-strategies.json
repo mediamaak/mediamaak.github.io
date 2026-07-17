@@ -19,7 +19,7 @@
       "name": "코스피 CCI 반등",
       "market": "KOSPI200",
       "status": "공개 export 대기",
-      "description": "KOSPI200 종목의 CCI 반등과 시장 조건을 함께 확인하는 시뮬레이션 전략 항목입니다.",
+      "description": "KOSPI200 종목의 CCI 반등과 시장 조건을 함께 확인하는 백테스트 전략 항목입니다.",
       "total_pnl_krw": null,
       "profit_krw_per_hour": null,
       "trade_count": null,

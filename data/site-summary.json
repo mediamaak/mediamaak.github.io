@@ -47,7 +47,7 @@
       "asset": "주식",
       "market": "KRX / KOSPI200",
       "examples": "005930 등 KOSPI200 종목",
-      "data": "시뮬레이션 집계와 전략 설명"
+      "data": "백테스트 집계와 전략 설명"
     }
   ],
   "risk_notes": [

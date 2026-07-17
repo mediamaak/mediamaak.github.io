@@ -220,31 +220,165 @@ async function initDisclosurePage() {
 function renderGaps(rows, kind) {
   const target = document.getElementById("gapMarkers");
   if (!target) return;
-  const label = kind === "actual" ? "매매 중단 기간" : "시뮬레이션 중단 기간";
+  const label = kind === "actual" ? "매매 중단 기간" : "백테스트 중단 기간";
   const gaps = rows.filter((row) => row.type === "gap");
   target.innerHTML = gaps.length
     ? gaps.map((row) => `<div>${escapeHtml(row.label || label)} · ${escapeHtml(label)}</div>`).join("")
     : "";
 }
 
-function renderStrategyRows(strategies) {
-  const body = document.getElementById("performanceStrategyBody");
+const DAILY_PNL_PAGE_SIZE = 30;
+const performanceState = {
+  data: null,
+  assetCode: "",
+  strategyCode: "",
+  dailyPage: 1,
+  resizeHandler: null,
+};
+
+function legacyPerformanceStrategy(data) {
+  const summary = data.summary || {};
+  const overview = data.strategy_overview || {};
+  return {
+    code: overview.code || "legacy-backtest",
+    name: overview.name || "백테스트",
+    market: overview.market || "KRW-BTC",
+    bar_interval: overview.bar_interval || "-",
+    description: overview.description || "",
+    data_sources: Array.isArray(overview.data_sources) ? overview.data_sources : [],
+    rules: Array.isArray(overview.rules) ? overview.rules : [],
+    summary,
+    return_metrics: data.return_metrics || {},
+    daily: Array.isArray(data.daily) ? data.daily : [],
+  };
+}
+
+function getPerformanceAssets(data) {
+  if (Array.isArray(data.assets) && data.assets.length) {
+    return data.assets.map((asset) => ({
+      ...asset,
+      strategies: Array.isArray(asset.strategies) ? asset.strategies : [],
+    })).filter((asset) => asset.strategies.length);
+  }
+  const strategy = legacyPerformanceStrategy(data || {});
+  return [{
+    code: "bitcoin_krw",
+    label: "Bitcoin KRW",
+    market: strategy.market,
+    strategies: [strategy],
+  }];
+}
+
+function allPerformanceStrategies(data) {
+  return getPerformanceAssets(data).flatMap((asset) => asset.strategies.map((strategy) => ({ ...strategy, asset })));
+}
+
+function selectedPerformanceAsset() {
+  const assets = getPerformanceAssets(performanceState.data || {});
+  return assets.find((asset) => asset.code === performanceState.assetCode) || assets[0] || { strategies: [] };
+}
+
+function selectedPerformanceStrategy() {
+  const asset = selectedPerformanceAsset();
+  return asset.strategies.find((strategy) => strategy.code === performanceState.strategyCode) || asset.strategies[0] || {};
+}
+
+function updatePerformanceUrl() {
+  const params = new URLSearchParams(window.location.search);
+  if (performanceState.assetCode) params.set("asset", performanceState.assetCode);
+  if (performanceState.strategyCode) params.set("strategy", performanceState.strategyCode);
+  const query = params.toString();
+  window.history.replaceState(null, "", `${window.location.pathname}${query ? `?${query}` : ""}`);
+}
+
+function populatePerformanceSelectors(data) {
+  const assetSelect = document.getElementById("assetSelect");
+  const strategySelect = document.getElementById("strategySelect");
+  if (!assetSelect || !strategySelect) return;
+  const assets = getPerformanceAssets(data);
+  const params = new URLSearchParams(window.location.search);
+  const requestedAsset = params.get("asset");
+  const requestedStrategy = params.get("strategy");
+  const defaultAsset = assets.find((asset) => asset.code === requestedAsset) || assets[0];
+  performanceState.assetCode = performanceState.assetCode || defaultAsset?.code || "";
+  if (!assets.some((asset) => asset.code === performanceState.assetCode)) {
+    performanceState.assetCode = defaultAsset?.code || "";
+  }
+  const asset = selectedPerformanceAsset();
+  const defaultStrategy = asset.strategies.find((strategy) => strategy.code === requestedStrategy) || asset.strategies[0];
+  performanceState.strategyCode = performanceState.strategyCode || defaultStrategy?.code || "";
+  if (!asset.strategies.some((strategy) => strategy.code === performanceState.strategyCode)) {
+    performanceState.strategyCode = defaultStrategy?.code || "";
+  }
+
+  assetSelect.innerHTML = assets.map((asset) => `
+    <option value="${escapeHtml(asset.code)}"${asset.code === performanceState.assetCode ? " selected" : ""}>
+      ${escapeHtml(asset.label || asset.market || asset.code)}
+    </option>
+  `).join("");
+  strategySelect.innerHTML = asset.strategies.map((strategy) => `
+    <option value="${escapeHtml(strategy.code)}"${strategy.code === performanceState.strategyCode ? " selected" : ""}>
+      ${escapeHtml(strategy.name || strategy.code)}
+    </option>
+  `).join("");
+}
+
+function bindPerformanceSelectors() {
+  const assetSelect = document.getElementById("assetSelect");
+  const strategySelect = document.getElementById("strategySelect");
+  if (assetSelect) {
+    assetSelect.addEventListener("change", () => {
+      performanceState.assetCode = assetSelect.value;
+      const asset = selectedPerformanceAsset();
+      performanceState.strategyCode = asset.strategies[0]?.code || "";
+      performanceState.dailyPage = 1;
+      populatePerformanceSelectors(performanceState.data);
+      updatePerformanceUrl();
+      renderSelectedPerformance();
+    });
+  }
+  if (strategySelect) {
+    strategySelect.addEventListener("change", () => {
+      performanceState.strategyCode = strategySelect.value;
+      performanceState.dailyPage = 1;
+      updatePerformanceUrl();
+      renderSelectedPerformance();
+    });
+  }
+}
+
+function renderDailyPnlRows(rows) {
+  const body = document.getElementById("dailyPnlBody");
+  const pageInfo = document.getElementById("dailyPnlPageInfo");
+  const prev = document.getElementById("dailyPnlPrev");
+  const next = document.getElementById("dailyPnlNext");
   if (!body) return;
-  body.innerHTML = strategies.length ? strategies.map((row) => {
-    const pnl = Number(row.total_pnl_krw);
-    const pnlClass = pnl < 0 ? "negative" : "positive";
+  const visibleRows = (Array.isArray(rows) ? rows : []).filter((row) => row.type !== "gap").slice().reverse();
+  const totalPages = Math.max(1, Math.ceil(visibleRows.length / DAILY_PNL_PAGE_SIZE));
+  performanceState.dailyPage = Math.min(Math.max(performanceState.dailyPage, 1), totalPages);
+  const start = (performanceState.dailyPage - 1) * DAILY_PNL_PAGE_SIZE;
+  const pageRows = visibleRows.slice(start, start + DAILY_PNL_PAGE_SIZE);
+  body.innerHTML = pageRows.length ? pageRows.map((row) => {
+    const pnl = Number(row.pnl_krw);
+    const pnlClass = pnl < 0 ? "negative" : pnl > 0 ? "positive" : "neutral";
+    const cumulative = Number(row.cumulative_pnl_krw);
+    const cumulativeClass = cumulative < 0 ? "negative" : cumulative > 0 ? "positive" : "neutral";
     return `
       <tr>
-        <td><strong>${escapeHtml(row.name)}</strong><small>${escapeHtml(row.code)}</small></td>
-        <td>${escapeHtml(row.market)}</td>
-        <td class="${pnlClass}">${krw(row.total_pnl_krw)}</td>
-        <td class="${pnlClass}">${pct(row.return_pct)}</td>
-        <td>${pct(row.win_rate_pct)}</td>
+        <td>${escapeHtml(row.date || row.label || "-")}</td>
+        <td class="${pnlClass}">${krw(row.pnl_krw)}</td>
+        <td class="${cumulativeClass}">${krw(row.cumulative_pnl_krw)}</td>
         <td>${fmt.format(Number(row.trade_count) || 0)}</td>
-        <td>${escapeHtml(row.updated_at || "-")}</td>
+        <td>${fmt.format(Number(row.win_count) || 0)}</td>
+        <td>${fmt.format(Number(row.loss_count) || 0)}</td>
       </tr>
     `;
-  }).join("") : '<tr><td colspan="7">표시할 데이터가 없습니다.</td></tr>';
+  }).join("") : '<tr><td colspan="6">표시할 일별 손익 데이터가 없습니다.</td></tr>';
+  if (pageInfo) {
+    pageInfo.textContent = `${performanceState.dailyPage} / ${totalPages} · 총 ${fmt.format(visibleRows.length)}일 · 페이지당 ${DAILY_PNL_PAGE_SIZE}행`;
+  }
+  if (prev) prev.disabled = performanceState.dailyPage <= 1;
+  if (next) next.disabled = performanceState.dailyPage >= totalPages;
 }
 
 function renderStrategyOverview(strategy, summary) {
@@ -303,15 +437,39 @@ function renderReturnSummary(metrics) {
   ].join("");
 }
 
-async function initPerformance() {
-  const source = document.body.dataset.source;
-  const kind = document.body.dataset.kind || "simulation";
-  const data = await readJson(source);
-  const summary = data.summary || {};
-  const strategyOverview = data.strategy_overview || {};
-  const returnMetrics = data.return_metrics || {};
-  const rows = Array.isArray(data.daily) ? data.daily : [];
-  const strategies = Array.isArray(data.strategies) ? data.strategies : [];
+function bindDailyPagination() {
+  const prev = document.getElementById("dailyPnlPrev");
+  const next = document.getElementById("dailyPnlNext");
+  if (prev) {
+    prev.addEventListener("click", () => {
+      performanceState.dailyPage -= 1;
+      renderDailyPnlRows(selectedPerformanceStrategy().daily);
+    });
+  }
+  if (next) {
+    next.addEventListener("click", () => {
+      performanceState.dailyPage += 1;
+      renderDailyPnlRows(selectedPerformanceStrategy().daily);
+    });
+  }
+}
+
+function renderSelectedPerformance() {
+  const kind = document.body.dataset.kind || "backtest";
+  const data = performanceState.data || {};
+  const asset = selectedPerformanceAsset();
+  const strategy = selectedPerformanceStrategy();
+  const summary = strategy.summary || {};
+  const returnMetrics = strategy.return_metrics || {};
+  const rows = Array.isArray(strategy.daily) ? strategy.daily : [];
+  const strategies = allPerformanceStrategies(data);
+
+  const title = document.getElementById("performanceTitle");
+  const intro = document.getElementById("performanceIntro");
+  if (title) title.textContent = strategy.name || "자동매매 백테스트";
+  if (intro) {
+    intro.textContent = strategy.description || `${asset.label || asset.market || "선택 재화"} 백테스트의 일별 실현손익을 표시합니다.`;
+  }
 
   const target = document.getElementById("performanceSummary");
   if (target) {
@@ -320,18 +478,33 @@ async function initPerformance() {
       metricCard("일평균 손익", krw(summary.daily_avg_pnl_krw)),
       metricCard("승률", pct(summary.win_rate_pct)),
       metricCard("거래 수", `${fmt.format(Number(summary.trade_count) || 0)}건`),
-      metricCard("공개 전략 수", `${fmt.format(Number(summary.strategy_count) || 0)}개`),
+      metricCard("선택 재화 전략 수", `${fmt.format(Number(asset.strategies?.length) || 0)}개`, `전체 ${fmt.format(strategies.length)}개`),
       metricCard("최근 갱신", summary.updated_at || "-"),
     ].join("");
   }
   const updated = document.getElementById("performanceUpdated");
   if (updated) updated.textContent = summary.updated_at || "-";
-  renderStrategyOverview(strategyOverview, summary);
+  renderStrategyOverview(strategy, summary);
   renderReturnSummary(returnMetrics);
   renderGaps(rows, kind);
-  renderStrategyRows(strategies);
+  renderDailyPnlRows(rows);
   window.MediaMakCharts?.renderPerformanceChart(document.getElementById("performanceChart"), rows);
-  window.addEventListener("resize", () => window.MediaMakCharts?.renderPerformanceChart(document.getElementById("performanceChart"), rows));
+  if (performanceState.resizeHandler) {
+    window.removeEventListener("resize", performanceState.resizeHandler);
+  }
+  performanceState.resizeHandler = () => window.MediaMakCharts?.renderPerformanceChart(document.getElementById("performanceChart"), selectedPerformanceStrategy().daily);
+  window.addEventListener("resize", performanceState.resizeHandler);
+}
+
+async function initPerformance() {
+  const source = document.body.dataset.source;
+  const data = await readJson(source);
+  performanceState.data = data;
+  populatePerformanceSelectors(data);
+  bindPerformanceSelectors();
+  bindDailyPagination();
+  updatePerformanceUrl();
+  renderSelectedPerformance();
 }
 
 async function initStrategies() {

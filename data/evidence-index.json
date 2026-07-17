@@ -10,7 +10,7 @@
       "link_label": "문서 보기"
     },
     {
-      "title": "백테스트 시뮬레이션 요약",
+      "title": "백테스트 요약",
       "type": "backtest",
       "summary": "전략별 공개 가능한 백테스트 결과를 정적 JSON으로 보여주는 증거 페이지입니다.",
       "scope": "simulation",
