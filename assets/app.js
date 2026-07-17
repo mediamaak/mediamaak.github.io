@@ -12,6 +12,7 @@ function escapeHtml(value) {
 }
 
 function krw(value) {
+  if (value === null || value === undefined || value === "") return "-";
   const number = Number(value);
   if (!Number.isFinite(number)) return "-";
   return `${number > 0 ? "+" : ""}${fmt.format(Math.round(number))} KRW`;
@@ -33,43 +34,107 @@ function metricCard(label, value, hint = "") {
   return `<article class="metric-card"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong>${hint ? `<small>${escapeHtml(hint)}</small>` : ""}</article>`;
 }
 
+function statusText(value, fallback = "export 대기") {
+  const text = String(value ?? "").trim();
+  return text || fallback;
+}
+
 function strategyCard(strategy) {
+  const href = strategy.href || "strategies.html";
+  const totalPnl = Number(strategy.total_pnl_krw);
+  const pnlClass = totalPnl < 0 ? "negative" : totalPnl > 0 ? "positive" : "neutral";
   return `
     <article class="card">
+      <div class="card-kicker">${escapeHtml(strategy.rank ? `#${strategy.rank}` : strategy.market || "REPORT")}</div>
       <h2>${escapeHtml(strategy.name)}</h2>
       <p>${escapeHtml(strategy.description)}</p>
       <dl>
         <dt>코드</dt><dd>${escapeHtml(strategy.code)}</dd>
         <dt>마켓</dt><dd>${escapeHtml(strategy.market)}</dd>
-        <dt>상태</dt><dd>${escapeHtml(strategy.status)}</dd>
+        <dt>누적 손익</dt><dd class="${pnlClass}">${escapeHtml(krw(strategy.total_pnl_krw))}</dd>
+        <dt>상태</dt><dd>${escapeHtml(statusText(strategy.status))}</dd>
       </dl>
+      <a href="${escapeHtml(href)}">자세히 보기</a>
     </article>
   `;
 }
 
+function renderProfitSummary(summary) {
+  const target = document.getElementById("homeProfitSummary");
+  if (!target) return;
+  const metrics = summary.metrics || {};
+  const simulation = metrics.simulation || {};
+  const actual = metrics.actual || {};
+  target.innerHTML = [
+    `<a class="profit-card" href="simulation.html"><span>백테스트 시뮬레이션 종합 손익</span><strong>${escapeHtml(krw(simulation.total_profit_krw))}</strong><small>${escapeHtml(statusText(simulation.meta, "공개 export 대기"))}</small></a>`,
+    `<a class="profit-card" href="actual.html"><span>실제 매매 손익</span><strong>${escapeHtml(krw(actual.total_profit_krw))}</strong><small>${escapeHtml(statusText(actual.meta, "공개 export 대기"))}</small></a>`,
+  ].join("");
+}
+
+function renderSteps(summary) {
+  const target = document.getElementById("rankingSteps");
+  if (!target) return;
+  const steps = Array.isArray(summary.ranking_steps) ? summary.ranking_steps : [];
+  target.innerHTML = steps.map((step, index) => `
+    <article>
+      <b>${escapeHtml(String(index + 1).padStart(2, "0"))}</b>
+      <strong>${escapeHtml(step.title)}</strong>
+      <span>${escapeHtml(step.text)}</span>
+    </article>
+  `).join("");
+}
+
+function renderAssetGroups(summary) {
+  const target = document.getElementById("assetGroups");
+  if (!target) return;
+  const groups = Array.isArray(summary.asset_groups) ? summary.asset_groups : [];
+  target.innerHTML = [
+    `<div class="asset-head"><span>자산군</span><span>마켓</span><span>종목 예시</span><span>제공 데이터</span></div>`,
+    ...groups.map((group) => `
+      <div>
+        <span>${escapeHtml(group.asset)}</span>
+        <span>${escapeHtml(group.market)}</span>
+        <span>${escapeHtml(group.examples)}</span>
+        <span>${escapeHtml(group.data)}</span>
+      </div>
+    `),
+  ].join("");
+}
+
+function renderRiskNotes(summary) {
+  const target = document.getElementById("riskNotes");
+  if (!target) return;
+  const notes = Array.isArray(summary.risk_notes) ? summary.risk_notes : [];
+  target.innerHTML = notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("");
+}
+
 async function initHome() {
-  const [summary, strategies] = await Promise.all([
+  const [summary, topStrategies] = await Promise.all([
     readJson("data/site-summary.json"),
-    readJson("data/strategies.json"),
+    readJson("data/public/top-strategies.json"),
   ]);
-  const intro = document.getElementById("projectIntro");
-  if (intro) {
-    intro.innerHTML = summary.project.cards.map((card) => `
-      <article class="card"><h2>${escapeHtml(card.title)}</h2><p>${escapeHtml(card.text)}</p></article>
-    `).join("");
-  }
+  renderProfitSummary(summary);
+  renderSteps(summary);
+  renderAssetGroups(summary);
+  renderRiskNotes(summary);
   const cards = document.getElementById("homeSummaryCards");
   if (cards) {
+    const metrics = summary.metrics || {};
+    const simulation = metrics.simulation || {};
+    const actual = metrics.actual || {};
     cards.innerHTML = [
-      metricCard("시뮬레이션 누적 손익", krw(summary.metrics.simulation_total_pnl_krw), summary.metrics.simulation_updated),
-      metricCard("실제 기록 누적 손익", krw(summary.metrics.actual_total_pnl_krw), summary.metrics.actual_updated),
-      metricCard("공개 전략 수", `${fmt.format(summary.metrics.strategy_count)}개`),
-      metricCard("데이터 방식", "정적 JSON", "github_pages_site/data"),
+      metricCard("시뮬레이션 누적 손익", krw(simulation.total_profit_krw), statusText(simulation.updated_at, "export 대기")),
+      metricCard("실제 기록 누적 손익", krw(actual.total_profit_krw), statusText(actual.updated_at, "export 대기")),
+      metricCard("공개 전략 수", `${fmt.format(Number(metrics.strategy_count) || 0)}개`, statusText(topStrategies.updated_at)),
+      metricCard("데이터 방식", "정적 JSON", "서버 API 호출 없음"),
     ].join("");
   }
   const strategyTarget = document.getElementById("homeStrategyCards");
   if (strategyTarget) {
-    strategyTarget.innerHTML = strategies.strategies.slice(0, 3).map(strategyCard).join("");
+    const strategies = Array.isArray(topStrategies.strategies) ? topStrategies.strategies : [];
+    strategyTarget.innerHTML = strategies.length
+      ? strategies.slice(0, 3).map(strategyCard).join("")
+      : '<article class="card"><h2>공개 전략 export 대기</h2><p>실제 공개 전략 데이터가 생성되면 이 영역에 전략 카드가 표시됩니다.</p></article>';
   }
 }
 

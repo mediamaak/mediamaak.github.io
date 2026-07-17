@@ -16,6 +16,14 @@
 3. 변경 파일을 GitHub Pages 저장소에 반영한다.
 4. 배포 후 페이지와 JSON URL을 확인한다.
 
+## 1차 홈 이전 상태
+
+- `index.html`은 기존 Flask 홈의 공개 설명, 백테스트/실제 기록 요약, 선정 기준, 지원 자산, 리스크 안내를 정적 HTML로 옮긴다.
+- 홈 JS는 `/api/*`, `/auth/*`, `/admin`, `/console`을 호출하지 않는다.
+- `data/site-summary.json`과 `data/public/top-strategies.json`을 읽는다.
+- 실제 공개 수익 데이터 export가 연결되기 전까지 손익 수치는 `-`로 표시한다.
+- 로그인, 관리자 콘솔, 게시판 작성, 서버 API 기능은 포함하지 않는다.
+
 ## 로컬 미리보기
 
 PowerShell에서 이 폴더로 이동한 뒤 간단한 정적 서버를 실행한다.

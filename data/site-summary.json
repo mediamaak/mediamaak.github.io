@@ -1,31 +1,58 @@
 {
   "site": {
-    "name": "MediaMak Static Report",
+    "name": "MediaMak",
     "url": "https://mediamaak.github.io",
     "deployment": "GitHub Pages",
     "data_mode": "static_json"
   },
-  "project": {
-    "cards": [
-      {
-        "title": "정적 리포트 전환",
-        "text": "공개 화면은 HTML, CSS, JS, JSON 파일만으로 표시합니다. 서버 route와 세션 처리는 포함하지 않습니다."
-      },
-      {
-        "title": "공개 집계 중심",
-        "text": "백테스트 시뮬레이션과 내부 실제 매매 기록의 요약 지표를 같은 형식으로 비교합니다."
-      },
-      {
-        "title": "데이터 갱신",
-        "text": "배치 export가 data 폴더의 JSON 파일을 갱신하면 GitHub Pages 배포 후 화면에 반영됩니다."
-      }
-    ]
-  },
   "metrics": {
-    "simulation_total_pnl_krw": 1425000,
-    "simulation_updated": "2026-07-08 09:00 KST",
-    "actual_total_pnl_krw": 318000,
-    "actual_updated": "2026-07-08 09:00 KST",
-    "strategy_count": 3
-  }
+    "simulation": {
+      "total_profit_krw": null,
+      "updated_at": "",
+      "meta": "공개 JSON export 연결 전"
+    },
+    "actual": {
+      "total_profit_krw": null,
+      "updated_at": "",
+      "meta": "공개 JSON export 연결 전"
+    },
+    "strategy_count": 2
+  },
+  "ranking_steps": [
+    {
+      "title": "백테스트 거래 수집",
+      "text": "전략별 완료 거래를 공개 가능한 집계 단위로 정리합니다."
+    },
+    {
+      "title": "보유 시간 집계",
+      "text": "포지션별 보유 시간을 합산해 전략 효율 비교 기준을 맞춥니다."
+    },
+    {
+      "title": "시간당 손익 계산",
+      "text": "손익을 보유 시간으로 나눈 KRW/h 지표를 산출합니다."
+    },
+    {
+      "title": "정적 JSON 반영",
+      "text": "공개 가능한 값만 data 폴더에 저장해 GitHub Pages에서 표시합니다."
+    }
+  ],
+  "asset_groups": [
+    {
+      "asset": "코인",
+      "market": "UPBIT / COINBASE",
+      "examples": "BTC/KRW",
+      "data": "백테스트 및 공개 가능한 실제 매매 집계"
+    },
+    {
+      "asset": "주식",
+      "market": "KRX / KOSPI200",
+      "examples": "005930 등 KOSPI200 종목",
+      "data": "시뮬레이션 집계와 전략 설명"
+    }
+  ],
+  "risk_notes": [
+    "표시되는 성과는 과거 기록 기준이며 이후 결과를 보장하지 않습니다.",
+    "거래 횟수가 적은 전략은 지표 변동성이 클 수 있습니다.",
+    "GitHub Pages 공개 데이터에는 개인 식별 정보, 계정 정보, 주문 상세, 관리자 로그를 포함하지 않습니다."
+  ]
 }

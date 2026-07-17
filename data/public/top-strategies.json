@@ -1,0 +1,29 @@
+{
+  "updated_at": "export pending",
+  "strategies": [
+    {
+      "rank": 1,
+      "code": "live_strategy1_btc",
+      "name": "BTC CCI 갭",
+      "market": "KRW-BTC",
+      "status": "공개 export 대기",
+      "description": "KRW-BTC 백테스트 성과를 공개 가능한 실제 매매 집계와 대조하기 위한 전략 항목입니다.",
+      "total_pnl_krw": null,
+      "profit_krw_per_hour": null,
+      "trade_count": null,
+      "href": "simulation.html"
+    },
+    {
+      "rank": 2,
+      "code": "kospi-strategy1",
+      "name": "코스피 CCI 반등",
+      "market": "KOSPI200",
+      "status": "공개 export 대기",
+      "description": "KOSPI200 종목의 CCI 반등과 시장 조건을 함께 확인하는 시뮬레이션 전략 항목입니다.",
+      "total_pnl_krw": null,
+      "profit_krw_per_hour": null,
+      "trade_count": null,
+      "href": "strategies.html"
+    }
+  ]
+}

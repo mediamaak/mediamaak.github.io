@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MediaMak 정적 리포트</title>
-  <meta name="description" content="MediaMak 공개 성과 기록과 프로젝트 문서를 정적 JSON 기반으로 제공하는 GitHub Pages 초안">
+  <title>MediaMak 백테스트 전략 검증</title>
+  <meta name="description" content="백테스트에서 성과가 좋게 나온 전략을 공개 가능한 정적 JSON 기록으로 확인하는 MediaMak GitHub Pages 홈">
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/charts.js" defer></script>
   <script src="assets/app.js" defer></script>
@@ -23,27 +23,20 @@
   </header>
 
   <main>
-    <section class="hero">
-      <p class="eyebrow">STATIC REPORT SITE</p>
-      <h1>MediaMak 공개 기록을 GitHub Pages 정적 사이트로 제공합니다.</h1>
-      <p class="lead">최종 주소는 <a href="https://mediamaak.github.io">https://mediamaak.github.io</a>입니다. 이 초안은 서버 API 없이 로컬 JSON 파일만 읽어 홈, 성과 요약, 전략 설명, 문서를 표시합니다.</p>
+    <section class="hero exchange-hero">
+      <p class="eyebrow">BACKTEST TO PUBLIC REPORT</p>
+      <h1>백테스트에서 성과가 좋았던 전략을 정적 공개 기록으로 확인합니다.</h1>
+      <p class="lead">MediaMak 공개 화면은 <a href="https://mediamaak.github.io">https://mediamaak.github.io</a>로 이전합니다. 홈은 서버 API, 로그인, 관리자 기능 없이 공개 가능한 JSON 스냅샷만 읽어 렌더링합니다.</p>
       <div class="hero-actions">
-        <a class="button primary" href="simulation.html">시뮬레이션 보기</a>
+        <a class="button primary" href="simulation.html">백테스트 보기</a>
         <a class="button" href="actual.html">실제 기록 보기</a>
       </div>
+      <div id="homeProfitSummary" class="profit-summary" aria-label="종합 손익 구분"></div>
     </section>
 
     <section class="notice-band">
-      <strong>정적 전환 안내</strong>
-      <span>로그인, 관리자 콘솔, 게시판 작성, 서버 API 기능은 이 초안에 포함하지 않습니다. 공개 리포트 데이터는 `data/*.json` 파일로 갱신합니다.</span>
-    </section>
-
-    <section class="section">
-      <div class="section-heading">
-        <p class="eyebrow">PROJECT</p>
-        <h2>프로젝트 소개</h2>
-      </div>
-      <div id="projectIntro" class="two-column"></div>
+      <strong>GitHub Pages 이전 안내</strong>
+      <span>로그인, 관리자 콘솔, 게시판 작성, 실시간 서버 API는 1차 이전 범위에서 제외합니다. 공개 데이터는 `data/*.json` 파일로 갱신합니다.</span>
     </section>
 
     <section class="section">
@@ -54,29 +47,41 @@
       <div id="homeSummaryCards" class="metric-grid"></div>
     </section>
 
-    <section class="section">
+    <section class="section" id="ranking-method">
+      <div class="section-heading">
+        <p class="eyebrow">RANKING METHOD</p>
+        <h2>보유 시간당 손익으로 백테스트 전략 효율을 비교합니다.</h2>
+      </div>
+      <div id="rankingSteps" class="step-row"></div>
+    </section>
+
+    <section class="section" id="asset-groups">
+      <div class="section-heading">
+        <p class="eyebrow">ASSET GROUPS</p>
+        <h2>전략과 마켓 단위로 기록을 분리해 집계합니다.</h2>
+      </div>
+      <div id="assetGroups" class="asset-table"></div>
+    </section>
+
+    <section class="section" id="strategies">
       <div class="section-heading">
         <p class="eyebrow">STRATEGIES</p>
-        <h2>전략별 설명</h2>
+        <h2>공개 전략 스냅샷</h2>
       </div>
       <div id="homeStrategyCards" class="card-grid"></div>
     </section>
 
-    <section class="section">
+    <section class="section" id="security">
       <div class="section-heading">
-        <p class="eyebrow">TRANSITION</p>
-        <h2>동적 기능 종료 및 정적 리포트 전환</h2>
+        <p class="eyebrow">SECURITY & RISK</p>
+        <h2>성과 순위는 과거 기록 기준이며 이후 결과를 약속하지 않습니다.</h2>
       </div>
-      <div class="status-list">
-        <article><strong>운영 주소</strong><span>https://mediamaak.github.io</span></article>
-        <article><strong>데이터 방식</strong><span>정적 JSON 파일을 브라우저에서 읽어 렌더링</span></article>
-        <article><strong>제외 기능</strong><span>로그인, 관리자 화면, 글 작성, 서버 API 직접 호출</span></article>
-      </div>
+      <ul id="riskNotes" class="risk-list"></ul>
     </section>
   </main>
 
   <footer class="site-footer">
-    <span>MediaMak static draft</span>
+    <span>MediaMak GitHub Pages migration</span>
     <span>GitHub Pages: https://mediamaak.github.io</span>
   </footer>
 </body>

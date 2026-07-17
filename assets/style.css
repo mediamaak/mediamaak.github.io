@@ -64,7 +64,7 @@ nav a {
 nav a:hover { background: #eef4ff; color: var(--accent); }
 main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 64px; }
 .hero, .page-title {
-  padding: 52px 0 32px;
+  padding: 48px 0 30px;
 }
 .hero h1, .page-title h1 {
   max-width: 880px;
@@ -100,6 +100,34 @@ main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 6
   font-weight: 700;
 }
 .button.primary { background: var(--accent); color: white; border-color: var(--accent); }
+.profit-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 14px;
+  max-width: 820px;
+  margin-top: 28px;
+}
+.profit-card {
+  display: block;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+}
+.profit-card span,
+.profit-card small {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+}
+.profit-card strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 26px;
+}
+.profit-card small { margin-top: 8px; }
 .notice-band {
   display: flex;
   gap: 14px;
@@ -148,12 +176,102 @@ main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 6
 }
 .card h2, .doc-grid h2 { margin-top: 0; font-size: 20px; }
 .card p, .doc-grid p { color: var(--muted); }
+.card-kicker {
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+}
+.card dl {
+  display: grid;
+  grid-template-columns: minmax(78px, auto) 1fr;
+  gap: 6px 12px;
+  margin: 14px 0 0;
+}
+.card dt {
+  color: var(--muted);
+  font-size: 13px;
+}
+.card dd {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
 .card a {
   display: inline-flex;
   margin-top: 8px;
   color: var(--accent);
   font-weight: 700;
   text-decoration: none;
+}
+.neutral { color: var(--muted); }
+.step-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+.step-row article {
+  min-height: 140px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+.step-row b {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 28px;
+  margin-bottom: 14px;
+  border-radius: 7px;
+  background: var(--text);
+  color: var(--surface);
+  font-size: 12px;
+}
+.step-row strong,
+.step-row span {
+  display: block;
+}
+.step-row span {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.asset-table {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.asset-table > div {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr 1fr 1.4fr;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+}
+.asset-table > div:last-child { border-bottom: 0; }
+.asset-head {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  background: #f2f5f9;
+}
+.risk-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.risk-list li {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--muted);
 }
 .chart-shell {
   width: 100%;
@@ -201,4 +319,6 @@ td small { display: block; color: var(--muted); }
   .site-header, .site-footer { flex-direction: column; align-items: flex-start; }
   nav { justify-content: flex-start; }
   .notice-band, .section-heading { display: block; }
+  .profit-summary, .step-row { grid-template-columns: 1fr; }
+  .asset-table > div { grid-template-columns: 1fr; }
 }
