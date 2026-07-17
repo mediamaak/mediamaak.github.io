@@ -171,35 +171,6 @@ function renderDisclosure(home) {
   target.innerHTML = notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("");
 }
 
-function initSidebarNav() {
-  const links = Array.from(document.querySelectorAll("[data-section-link]"));
-  if (!links.length) return;
-  const sections = links
-    .map((link) => document.querySelector(link.getAttribute("href")))
-    .filter(Boolean);
-
-  const setActive = (id) => {
-    links.forEach((link) => {
-      link.classList.toggle("is-active", link.getAttribute("href") === `#${id}`);
-    });
-  };
-
-  if (!("IntersectionObserver" in window)) {
-    setActive(sections[0]?.id);
-    return;
-  }
-
-  const observer = new IntersectionObserver((entries) => {
-    const visible = entries
-      .filter((entry) => entry.isIntersecting)
-      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-    if (visible?.target?.id) setActive(visible.target.id);
-  }, { rootMargin: "-22% 0px -58% 0px", threshold: [0.1, 0.3, 0.6] });
-
-  sections.forEach((section) => observer.observe(section));
-  setActive(sections[0]?.id);
-}
-
 async function initHome() {
   const [home, toc, evidence, posts] = await Promise.all([
     readJson("data/home.json"),
@@ -213,7 +184,6 @@ async function initHome() {
   renderPosts(posts);
   renderSystemFlow(home);
   renderDisclosure(home);
-  initSidebarNav();
 }
 
 async function initBookPage() {

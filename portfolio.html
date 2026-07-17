@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ko">
 <head>
   <meta charset="utf-8">
@@ -7,15 +7,29 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header bank-style-header">
     <a class="brand" href="index.html"><span>M</span><strong>MediaMak</strong></a>
-    <nav aria-label="주요 메뉴">
-      <a href="index.html">홈</a>
-      <a href="simulation.html">시뮬레이션</a>
-      <a href="actual.html">실제 기록</a>
-      <a href="strategies.html">전략</a>
-      <a href="wiki.html">위키</a>
-      <a href="portfolio.html">포트폴리오</a>
+    <nav class="global-menu" aria-label="주요 메뉴">
+      <div class="menu-item has-panel">
+        <a class="menu-link" href="index.html">미디어막 소개</a>
+        <div class="menu-panel">
+          <a href="index.html">최신 트렌드</a>
+          <a href="portfolio.html">포트폴리오</a>
+          <a href="architecture.html">시스템 흐름</a>
+          <a href="disclosure.html">공개 원칙</a>
+        </div>
+      </div>
+      <div class="menu-item has-panel">
+        <a class="menu-link" href="posts.html">뉴스/자료</a>
+        <div class="menu-panel">
+          <a href="posts.html">개발 기록</a>
+          <a href="evidence.html">증거 아카이브</a>
+          <a href="book.html">책 목차</a>
+          <a href="wiki.html">위키와 문서</a>
+        </div>
+      </div>
+      <a class="menu-link" href="simulation.html">백테스트</a>
+      <a class="menu-link" href="actual.html">실거래 현황</a>
     </nav>
   </header>
   <main>
@@ -50,3 +64,4 @@
   <footer class="site-footer"><span>MediaMak static draft</span><span>https://mediamaak.github.io</span></footer>
 </body>
 </html>
+
