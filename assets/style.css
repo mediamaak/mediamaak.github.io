@@ -48,21 +48,72 @@ a { color: inherit; }
   color: white;
   font-weight: 800;
 }
-nav {
+.site-header nav {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
-nav a {
+.site-header nav a {
   padding: 8px 10px;
   border-radius: 6px;
   color: var(--muted);
   text-decoration: none;
   font-size: 14px;
 }
-nav a:hover { background: #eef4ff; color: var(--accent); }
+.site-header nav a:hover { background: #eef4ff; color: var(--accent); }
 main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 64px; }
+.home-layout {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 34px;
+  align-items: start;
+}
+.home-content {
+  min-width: 0;
+}
+.page-sidebar {
+  position: sticky;
+  top: 82px;
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow);
+}
+.page-sidebar > strong {
+  font-size: 13px;
+  color: var(--text);
+}
+.sidebar-nav {
+  display: grid;
+  gap: 4px;
+}
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 9px;
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 13px;
+  text-decoration: none;
+}
+.sidebar-nav a:hover,
+.sidebar-nav a.is-active,
+.sidebar-nav a[aria-current="page"] {
+  background: #eef4ff;
+  color: var(--accent);
+}
+.secondary-links {
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.secondary-links a {
+  font-weight: 700;
+}
 .hero, .page-title {
   padding: 48px 0 30px;
 }
@@ -425,7 +476,27 @@ td small { display: block; color: var(--muted); }
 }
 @media (max-width: 760px) {
   .site-header, .site-footer { flex-direction: column; align-items: flex-start; }
-  nav { justify-content: flex-start; }
+  .site-header nav { justify-content: flex-start; }
+  .home-layout {
+    display: block;
+  }
+  .page-sidebar {
+    position: static;
+    margin-bottom: 18px;
+  }
+  .sidebar-nav {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+  .sidebar-nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+  .secondary-links {
+    padding-top: 10px;
+  }
   .notice-band, .section-heading { display: block; }
   .profit-summary, .step-row { grid-template-columns: 1fr; }
   .asset-table > div { grid-template-columns: 1fr; }

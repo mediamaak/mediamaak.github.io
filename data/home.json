@@ -5,15 +5,15 @@
   "primary_links": [
     {
       "label": "책 목차 보기",
-      "href": "#book"
+      "href": "book.html"
     },
     {
       "label": "자동매매 증거 보기",
-      "href": "#evidence"
+      "href": "evidence.html"
     },
     {
       "label": "개발 기록 보기",
-      "href": "#posts"
+      "href": "posts.html"
     }
   ],
   "metrics": [
