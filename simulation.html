@@ -43,11 +43,22 @@
   <main>
     <section class="page-title">
       <p class="eyebrow">BACKTEST SUMMARY</p>
-      <h1>백테스트 시뮬레이션 요약</h1>
-      <p>정적 JSON 파일 `data/simulation-performance.json`을 읽어 요약 카드, 일별 손익 그래프, 전략별 표를 표시합니다.</p>
+      <h1>BTC 10분봉 CCI 반등 시뮬레이션</h1>
+      <p>업비트 웹소켓 체결 데이터를 10분봉으로 재구성해 CCI 반등 진입, 변동성 규칙 기반 목표수익, -10% 손절 조건을 검증한 공개 요약입니다.</p>
     </section>
     <section class="section">
       <div id="performanceSummary" class="metric-grid"></div>
+    </section>
+    <section class="section">
+      <div class="section-heading">
+        <h2>전략 설명</h2>
+        <span id="strategyUpdated">-</span>
+      </div>
+      <div id="strategyOverview" class="strategy-overview"></div>
+    </section>
+    <section class="section">
+      <div class="section-heading"><h2>수익률 요약</h2></div>
+      <div id="returnSummary" class="return-summary"></div>
     </section>
     <section class="section">
       <div class="section-heading">
@@ -63,8 +74,8 @@
       <div class="section-heading"><h2>전략별 표</h2></div>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>전략</th><th>마켓</th><th>누적 손익</th><th>승률</th><th>거래 수</th><th>최근 갱신</th></tr></thead>
-          <tbody id="performanceStrategyBody"><tr><td colspan="6">데이터를 불러오는 중입니다.</td></tr></tbody>
+          <thead><tr><th>전략</th><th>마켓</th><th>누적 손익</th><th>수익률</th><th>승률</th><th>거래 수</th><th>최근 갱신</th></tr></thead>
+          <tbody id="performanceStrategyBody"><tr><td colspan="7">데이터를 불러오는 중입니다.</td></tr></tbody>
         </table>
       </div>
     </section>

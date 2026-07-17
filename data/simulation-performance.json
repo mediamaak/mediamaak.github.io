@@ -1,31 +1,76 @@
 {
   "summary": {
-    "period": "2026-06-24 ~ 2026-07-08",
-    "total_pnl_krw": 1425000,
-    "daily_avg_pnl_krw": 95000,
-    "win_rate_pct": 61.54,
-    "trade_count": 52,
-    "strategy_count": 3,
-    "updated_at": "2026-07-08 09:00 KST"
+    "period": "2026-06-08 23:30 ~ 2026-07-18 01:50 KST",
+    "total_pnl_krw": 77.91919328569202,
+    "daily_avg_pnl_krw": 1.978,
+    "win_rate_pct": 85.71428571428571,
+    "trade_count": 7,
+    "strategy_count": 1,
+    "updated_at": "2026-07-18 01:53 KST"
+  },
+  "strategy_overview": {
+    "code": "upbit-ws-btc-cci-rebound-volatility-target-10m-sim",
+    "name": "BTC CCI 반등 · 변동성 목표수익 10분봉",
+    "market": "KRW-BTC",
+    "bar_interval": "10분봉",
+    "description": "업비트 웹소켓 체결 데이터를 10분봉으로 변환한 뒤 CCI가 -100 아래에서 회복하는 구간에 진입하고, 최근 변동성이 높을수록 목표수익률을 단계적으로 높이는 규칙 기반 백테스트입니다.",
+    "data_sources": [
+      "coin.upbit_ws_trade_raw",
+      "upbit.websocket_krw_btc"
+    ],
+    "rules": [
+      {
+        "label": "진입",
+        "value": "CCI -100 상향 돌파",
+        "note": "이전 CCI < -100, 현재 CCI >= -100"
+      },
+      {
+        "label": "목표수익",
+        "value": "1.5% ~ 4.0%",
+        "note": "36개 10분봉 변동성 z-score가 높을수록 0.25%p 단위 상향"
+      },
+      {
+        "label": "손절",
+        "value": "-10.0%",
+        "note": "보유 기간 제한 없이 손절 조건만 유지"
+      },
+      {
+        "label": "수수료",
+        "value": "0.05%",
+        "note": "매수/매도 체결 비용을 반영"
+      }
+    ]
+  },
+  "return_metrics": {
+    "realized_return_pct": 0.7791919328569202,
+    "avg_trade_return_pct": 0.11131313326527434,
+    "open_unrealized_return_pct": -2.758410936463333,
+    "win_rate_pct": 85.71428571428571,
+    "win_count": 6,
+    "loss_count": 1,
+    "avg_target_profit_pct": 1.8571428571428572,
+    "min_target_profit_pct": 1.5,
+    "max_target_profit_pct": 4.0,
+    "profit_factor": 1.073
   },
   "daily": [
-    {"date": "2026-06-24", "pnl_krw": 120000, "cumulative_pnl_krw": 120000},
-    {"date": "2026-06-25", "pnl_krw": -45000, "cumulative_pnl_krw": 75000},
-    {"date": "2026-06-26", "pnl_krw": 210000, "cumulative_pnl_krw": 285000},
-    {"type": "gap", "label": "2026-06-27 ~ 2026-06-28"},
-    {"date": "2026-06-29", "pnl_krw": 180000, "cumulative_pnl_krw": 465000},
-    {"date": "2026-06-30", "pnl_krw": 96000, "cumulative_pnl_krw": 561000},
-    {"date": "2026-07-01", "pnl_krw": -38000, "cumulative_pnl_krw": 523000},
-    {"date": "2026-07-02", "pnl_krw": 244000, "cumulative_pnl_krw": 767000},
-    {"date": "2026-07-03", "pnl_krw": 135000, "cumulative_pnl_krw": 902000},
-    {"type": "gap", "label": "2026-07-04 ~ 2026-07-05"},
-    {"date": "2026-07-06", "pnl_krw": 221000, "cumulative_pnl_krw": 1123000},
-    {"date": "2026-07-07", "pnl_krw": 178000, "cumulative_pnl_krw": 1301000},
-    {"date": "2026-07-08", "pnl_krw": 124000, "cumulative_pnl_krw": 1425000}
+    {"date": "2026-06-12", "pnl_krw": 147.18, "cumulative_pnl_krw": 147.18},
+    {"date": "2026-06-15", "pnl_krw": 319.90, "cumulative_pnl_krw": 467.08},
+    {"date": "2026-06-25", "pnl_krw": -1068.51, "cumulative_pnl_krw": -601.43},
+    {"date": "2026-07-04", "pnl_krw": 390.20, "cumulative_pnl_krw": -211.23},
+    {"date": "2026-07-05", "pnl_krw": 144.73, "cumulative_pnl_krw": -66.49},
+    {"date": "2026-07-07", "pnl_krw": 144.41, "cumulative_pnl_krw": 77.92}
   ],
   "strategies": [
-    {"code": "strategy_alpha", "name": "BTC CCI Gap", "market": "KRW-BTC", "total_pnl_krw": 715000, "win_rate_pct": 64.29, "trade_count": 21, "updated_at": "2026-07-08"},
-    {"code": "strategy_beta", "name": "ETH Trend Filter", "market": "KRW-ETH", "total_pnl_krw": 488000, "win_rate_pct": 58.82, "trade_count": 17, "updated_at": "2026-07-08"},
-    {"code": "strategy_gamma", "name": "KOSPI CCI Rebound", "market": "KOSPI200", "total_pnl_krw": 222000, "win_rate_pct": 57.14, "trade_count": 14, "updated_at": "2026-07-08"}
+    {
+      "code": "upbit-ws-btc-cci-rebound-volatility-target-10m-sim",
+      "name": "BTC CCI 반등 · 변동성 목표수익 10분봉",
+      "market": "KRW-BTC",
+      "total_pnl_krw": 77.91919328569202,
+      "return_pct": 0.7791919328569202,
+      "win_rate_pct": 85.71428571428571,
+      "trade_count": 7,
+      "updated_at": "2026-07-18 01:53 KST"
+    }
   ]
 }

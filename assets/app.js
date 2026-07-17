@@ -24,6 +24,12 @@ function pct(value) {
   return `${number.toFixed(2)}%`;
 }
 
+function multiple(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return "-";
+  return `${number.toFixed(2)}x`;
+}
+
 async function readJson(path) {
   const response = await fetch(path, { headers: { Accept: "application/json" }, cache: "no-store" });
   if (!response.ok) throw new Error(`${path} ${response.status}`);
@@ -232,12 +238,69 @@ function renderStrategyRows(strategies) {
         <td><strong>${escapeHtml(row.name)}</strong><small>${escapeHtml(row.code)}</small></td>
         <td>${escapeHtml(row.market)}</td>
         <td class="${pnlClass}">${krw(row.total_pnl_krw)}</td>
+        <td class="${pnlClass}">${pct(row.return_pct)}</td>
         <td>${pct(row.win_rate_pct)}</td>
         <td>${fmt.format(Number(row.trade_count) || 0)}</td>
         <td>${escapeHtml(row.updated_at || "-")}</td>
       </tr>
     `;
-  }).join("") : '<tr><td colspan="6">표시할 데이터가 없습니다.</td></tr>';
+  }).join("") : '<tr><td colspan="7">표시할 데이터가 없습니다.</td></tr>';
+}
+
+function renderStrategyOverview(strategy, summary) {
+  const target = document.getElementById("strategyOverview");
+  if (!target) return;
+  const updated = document.getElementById("strategyUpdated");
+  if (updated) updated.textContent = summary.updated_at || strategy.updated_at || "-";
+  if (!strategy || !Object.keys(strategy).length) {
+    target.innerHTML = '<article class="card"><p>전략 설명 데이터가 없습니다.</p></article>';
+    return;
+  }
+  const rules = Array.isArray(strategy.rules) ? strategy.rules : [];
+  const dataSources = Array.isArray(strategy.data_sources) ? strategy.data_sources : [];
+  target.innerHTML = `
+    <article class="strategy-explain">
+      <div>
+        <div class="card-kicker">${escapeHtml(strategy.market || "KRW-BTC")}</div>
+        <h3>${escapeHtml(strategy.name || "전략")}</h3>
+        <p>${escapeHtml(strategy.description || "")}</p>
+      </div>
+      <dl>
+        <dt>전략 코드</dt><dd>${escapeHtml(strategy.code || "-")}</dd>
+        <dt>봉 간격</dt><dd>${escapeHtml(strategy.bar_interval || "-")}</dd>
+        <dt>검증 기간</dt><dd>${escapeHtml(summary.period || "-")}</dd>
+        <dt>데이터</dt><dd>${escapeHtml(dataSources.join(", ") || "-")}</dd>
+      </dl>
+    </article>
+    ${rules.length ? `
+      <div class="rule-grid">
+        ${rules.map((rule) => `
+          <article>
+            <span>${escapeHtml(rule.label)}</span>
+            <strong>${escapeHtml(rule.value)}</strong>
+            <p>${escapeHtml(rule.note || "")}</p>
+          </article>
+        `).join("")}
+      </div>
+    ` : ""}
+  `;
+}
+
+function renderReturnSummary(metrics) {
+  const target = document.getElementById("returnSummary");
+  if (!target) return;
+  if (!metrics || !Object.keys(metrics).length) {
+    target.innerHTML = '<article class="metric-card"><span>수익률</span><strong>-</strong></article>';
+    return;
+  }
+  target.innerHTML = [
+    metricCard("실현 수익률", pct(metrics.realized_return_pct), "실현손익 / 1회 주문금액 기준"),
+    metricCard("평균 거래 수익률", pct(metrics.avg_trade_return_pct), "체결 수수료 반영 평균"),
+    metricCard("현재 미실현 수익률", pct(metrics.open_unrealized_return_pct), "오픈 포지션 기준"),
+    metricCard("승률", pct(metrics.win_rate_pct), `${fmt.format(Number(metrics.win_count) || 0)}승 / ${fmt.format(Number(metrics.loss_count) || 0)}패`),
+    metricCard("목표수익률 범위", `${pct(metrics.min_target_profit_pct)} ~ ${pct(metrics.max_target_profit_pct)}`, `평균 ${pct(metrics.avg_target_profit_pct)}`),
+    metricCard("손익비", multiple(metrics.profit_factor), "실현 이익 / 실현 손실"),
+  ].join("");
 }
 
 async function initPerformance() {
@@ -245,6 +308,8 @@ async function initPerformance() {
   const kind = document.body.dataset.kind || "simulation";
   const data = await readJson(source);
   const summary = data.summary || {};
+  const strategyOverview = data.strategy_overview || {};
+  const returnMetrics = data.return_metrics || {};
   const rows = Array.isArray(data.daily) ? data.daily : [];
   const strategies = Array.isArray(data.strategies) ? data.strategies : [];
 
@@ -261,6 +326,8 @@ async function initPerformance() {
   }
   const updated = document.getElementById("performanceUpdated");
   if (updated) updated.textContent = summary.updated_at || "-";
+  renderStrategyOverview(strategyOverview, summary);
+  renderReturnSummary(returnMetrics);
   renderGaps(rows, kind);
   renderStrategyRows(strategies);
   window.MediaMakCharts?.renderPerformanceChart(document.getElementById("performanceChart"), rows);

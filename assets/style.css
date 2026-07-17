@@ -222,6 +222,71 @@ main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 6
 .metric-card span, .status-list span { color: var(--muted); font-size: 13px; }
 .metric-card strong { display: block; margin-top: 8px; font-size: 24px; }
 .metric-card small { display: block; margin-top: 8px; color: var(--muted); }
+.strategy-overview {
+  display: grid;
+  gap: 14px;
+}
+.strategy-explain {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.8fr);
+  gap: 18px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.strategy-explain h3 {
+  margin: 4px 0 10px;
+  font-size: 24px;
+}
+.strategy-explain p {
+  margin: 0;
+  color: var(--muted);
+}
+.strategy-explain dl,
+.card dl {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 8px 12px;
+  margin: 0;
+}
+.strategy-explain dt,
+.card dt {
+  color: var(--muted);
+  font-size: 13px;
+}
+.strategy-explain dd,
+.card dd {
+  margin: 0;
+  font-weight: 700;
+}
+.rule-grid,
+.return-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+}
+.rule-grid article {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcff;
+}
+.rule-grid span {
+  color: var(--muted);
+  font-size: 13px;
+}
+.rule-grid strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 18px;
+}
+.rule-grid p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
 .positive { color: #b91c1c; }
 .negative { color: #1d4ed8; }
 .two-column {
@@ -505,6 +570,11 @@ td small { display: block; color: var(--muted); }
   .menu-panel { display: none !important; }
   .notice-band, .section-heading { display: block; }
   .profit-summary, .step-row { grid-template-columns: 1fr; }
+  .strategy-explain { grid-template-columns: 1fr; }
+  .strategy-explain dl,
+  .card dl {
+    grid-template-columns: 1fr;
+  }
   .asset-table > div { grid-template-columns: 1fr; }
   .toc-list article,
   .post-item {
