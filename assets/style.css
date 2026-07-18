@@ -296,6 +296,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 6
   grid-template-columns: 110px 1fr;
   gap: 8px 12px;
   margin: 0;
+  min-width: 0;
 }
 .strategy-explain dt,
 .card dt {
@@ -306,6 +307,9 @@ main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 6
 .card dd {
   margin: 0;
   font-weight: 700;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 .rule-grid,
 .return-summary {
