@@ -52,26 +52,60 @@
 </figure>
       <h2>핵심 요약</h2>
 <ul>
-<li>결론: - 이번 자료들은 “수익률 예측”보다 “데이터 기준선, 불확실성 가정, 자산 보유 구조”를 먼저 점검하라는 메시지로 묶입니다.</li>
-<li>원칙: - 수치가 원문 메타데이터에 없으면 사실로 단정하지 말고, 백테스트·포트폴리오 해석 전 검증 항목으로 분리해야 합니다.</li>
+<li>결론: 세 자료 모두 “숫자 자체”보다 자산 배분 구조, 기준선 설정, 불확실성 가정이 해석의 핵심이라는 점을 보여줍니다.</li>
+<li>원칙: 본문 수치는 원문 메타데이터만 기준으로 다루고, 미제공 수치나 성과 주장은 사실로 단정하지 않고 확인 항목으로 남겨야 합니다.</li>
 </ul>
 <h2>주목할 자료</h2>
 <div class="table-wrap"><table>
 <thead><tr><th>번호</th><th>자료</th><th>출처</th><th>원문</th><th>핵심 내용</th><th>데이터 포인트</th><th>리스크/한계</th></tr></thead>
 <tbody>
-<tr><td>1</td><td>What US assets are held overseas?</td><td>FRED Blog</td><td><a href="https://fredblog.stlouisfed.org/2026/07/what-us-assets-are-held-overseas" target="_blank" rel="noopener noreferrer">원문 보기</a></td><td>해외 보유 미국 자산의 구성 점검</td><td>Treasury 비중이 전체 해외자산 포트폴리오에서 어떻게 보이는지 확인</td><td>메타데이터에 구체 비중·기간 없음</td></tr>
-<tr><td>2</td><td>When Directional Accuracy Lies: A Base-Rate-Honest Benchmark for LoRA-Adapted TimesFM on Equity Forecasting</td><td>arXiv q-fin Statistical Finance</td><td><a href="https://arxiv.org/abs/2607.12248" target="_blank" rel="noopener noreferrer">원문 보기</a></td><td>방향성 정확도는 단독 성과지표로 부적절</td><td>베이스레이트, 방향성 정확도, LoRA 적응 모델 비교</td><td>80% 주장 수치는 맥락·기준선 확인 필요</td></tr>
-<tr><td>3</td><td>FEDS Paper: Demand Shocks and Endogenous Uncertainty</td><td>Federal Reserve Working Papers</td><td><a href="https://www.federalreserve.gov/econres/feds/demand-shocks-and-endogenous-uncertainty.htm" target="_blank" rel="noopener noreferrer">원문 보기</a></td><td>수요충격과 내생적 불확실성의 거시·미시 연계</td><td>불확실성, 신용여건, 이질적 위험회피 기업의 일반균형 모형</td><td>모형 가정이 강해 실증 일반화 범위 점검 필요</td></tr>
+<tr><td>1</td><td>What US assets are held overseas?</td><td>FRED Blog</td><td><a href="https://fredblog.stlouisfed.org/2026/07/what-us-assets-are-held-overseas" target="_blank" rel="noopener noreferrer">원문 보기</a></td><td>해외 보유 미국 자산에서 국채가 차지하는 위치를 포트폴리오 관점으로 설명</td><td>해외 투자자 자산배분, 국채 비중, 포트폴리오 구성</td><td>메타데이터에 수치가 없어 비중 변화와 기간은 원문 그래프 확인 필요</td></tr>
+<tr><td>2</td><td>When Directional Accuracy Lies: A Base-Rate-Honest Benchmark for LoRA-Adapted TimesFM on Equity Forecasting</td><td>arXiv q-fin Statistical Finance</td><td><a href="https://arxiv.org/abs/2607.12248" target="_blank" rel="noopener noreferrer">원문 보기</a></td><td>방향 정확도만으로는 주가 예측 성능을 판단하기 어렵고, 기준선과 베이스레이트를 함께 봐야 함</td><td>방향 정확도, 베이스레이트, LoRA 적응형 시계열 모델, 백테스트 해석</td><td>80% 정확도 같은 수치는 맥락·샘플·비교군 확인 없이는 의미 축소 가능</td></tr>
+<tr><td>3</td><td>FEDS Paper: Demand Shocks and Endogenous Uncertainty</td><td>Federal Reserve Working Papers</td><td><a href="https://www.federalreserve.gov/econres/feds/demand-shocks-and-endogenous-uncertainty.htm" target="_blank" rel="noopener noreferrer">원문 보기</a></td><td>수요 충격이 기업 불확실성과 거시 활동에 어떻게 연결되는지 일반균형 모형으로 분석</td><td>기업 수준 불확실성, 수요 충격, 위험회피 기업, 신용조건 충격</td><td>모형 기반 결과라 가정·식별·파라미터 민감도 확인이 필요</td></tr>
 </tbody></table></div>
+<h2>자료별 상세</h2>
+<h3>1. What US assets are held overseas?</h3>
+<figure class="article-visual article-source-visual">
+  <img src="../assets/generated/2026-07-18-market-economy-roundup/source-1.svg" alt="자료 1 핵심 이미지" loading="lazy">
+</figure>
+<ul>
+<li>핵심: 해외가 보유한 미국 자산을 넓은 포트폴리오 안에서 읽어야 하며, 국채는 그중 한 조각으로 봐야 합니다.</li>
+<li>데이터 포인트: 해외 투자자의 미국 자산 배분에서 국채가 어떤 비중과 역할을 갖는지 확인하는 접근이 핵심입니다.</li>
+<li>리스크: 메타데이터만으로는 자산군별 비중, 시계열 변화, 지역별 차이를 확정할 수 없습니다.</li>
+<li>투자전략 반영 예시: 자산배분 점검표에 “해외 보유분 내 안전자산·달러자산 집중도”를 넣는 방식으로 활용할 수 있습니다.</li>
+<li>실행 예시: 해외보유 미국자산을 국채, 주식, 기타로 나눠 기간별 비중 변화를 재현하고, 특정 구간의 쏠림이 리밸런싱 규칙에 어떻게 반영되는지 점검합니다.</li>
+</ul>
+<h3>2. When Directional Accuracy Lies: A Base-Rate-Honest Benchmark for LoRA-Adapted TimesFM on Equity Forecasting</h3>
+<figure class="article-visual article-source-visual">
+  <img src="../assets/generated/2026-07-18-market-economy-roundup/source-2.svg" alt="자료 2 핵심 이미지" loading="lazy">
+</figure>
+<ul>
+<li>핵심: 방향 정확도는 시장 예측의 충분조건이 아니며, 클래스 불균형과 베이스레이트를 함께 봐야 합니다.</li>
+<li>데이터 포인트: LoRA 적응형 TimesFM의 성과를 평가할 때, 정확도보다 기준선 대비 개선 여부와 백테스트 설계가 중요합니다.</li>
+<li>리스크: 초반 80% 수준의 정확도 주장도 표본 편향, 구간 선택, 거래비용 미반영 여부를 반드시 확인해야 합니다.</li>
+<li>투자전략 반영 예시: 모델 성능표에 정확도 외에 베이스레이트, 혼동행렬, 롱·숏별 오류율을 함께 넣는 방식이 유용합니다.</li>
+<li>실행 예시: 랜덤 기준선과 단순 추세 기준선을 함께 둔 뒤, 구간별 방향 정확도와 수익률이 함께 개선되는지 비교 검증합니다.</li>
+</ul>
+<h3>3. FEDS Paper: Demand Shocks and Endogenous Uncertainty</h3>
+<figure class="article-visual article-source-visual">
+  <img src="../assets/generated/2026-07-18-market-economy-roundup/source-3.svg" alt="자료 3 핵심 이미지" loading="lazy">
+</figure>
+<ul>
+<li>핵심: 수요 충격은 단순한 실적 변동이 아니라 기업의 내생적 불확실성과 거시 경기 경로를 바꾸는 요인으로 해석됩니다.</li>
+<li>데이터 포인트: 위험회피 기업, 비대칭 충격, 신용조건 변화가 결합된 일반균형 모형이라는 점이 포인트입니다.</li>
+<li>리스크: 모형 결과는 식별 가정과 파라미터 설정에 민감할 수 있어, 실증 자료와의 정합성을 별도로 확인해야 합니다.</li>
+<li>투자전략 반영 예시: 거시 포트폴리오 점검 시 수요 둔화 구간에서 불확실성 확대가 어떤 업종 민감도로 전이되는지 체크리스트에 넣을 수 있습니다.</li>
+<li>실행 예시: 신용조건 악화와 수요 충격이 동시에 발생한 구간을 가정해, 업종별 변동성·이익추정치·리스크예산 변화를 사전 시뮬레이션합니다.</li>
+</ul>
 <h2>팩터·리스크·포트폴리오 관점</h2>
 <ul>
-<li>핵심: - 팩터 관점에서는 “방향성 적중률”보다 기준선 초과 여부, 신용·수요 충격에 대한 노출, 해외자산 구성에서 금리자산 비중 같은 구조적 노출을 함께 봐야 합니다.</li>
-<li>검수: - 백테스트는 클래스 불균형, 거래비용, 리밸런싱 가정, 표본 구간 선택의 영향을 받으므로 원문 수치와 비교 기준을 반드시 별도 확인해야 합니다.</li>
+<li>핵심: 세 자료의 공통점은 팩터 노출을 숫자 하나로 단순화하지 말고, 기준선·구조·제약조건까지 함께 봐야 한다는 점입니다.</li>
+<li>검수: 메타데이터에 없는 비중, 정확도, 효과 크기는 사실로 단정하지 말고 원문 그래프와 표에서 재확인해야 합니다.</li>
 </ul>
 <h2>정리</h2>
 <ul>
-<li>결론: - 이번 묶음의 핵심은 예측 성과 자체보다 가정·기준선·자산구조를 먼저 검증하라는 점입니다.</li>
-<li>다음 확인: - 각 자료의 본문에서 표본기간, 성과지표 정의, 자산 분해 기준, 모형 가정을 확인해야 합니다.</li>
+<li>결론: 해외 자산 배분, 예측 모델 평가, 거시 불확실성은 모두 “해석 기준”이 성과 못지않게 중요합니다.</li>
+<li>다음 확인: 원문에서 자산 비중 그래프, 성능 비교 기준선, 모형 가정과 식별 전략을 각각 확인해야 합니다.</li>
 </ul>
     </section>
   </main>

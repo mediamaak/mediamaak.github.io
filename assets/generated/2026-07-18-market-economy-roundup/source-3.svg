@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-labelledby="title desc">
+<title id="title">자료 3 핵심 이미지</title>
+<desc id="desc">FEDS Paper: Demand Shocks and Endogenous Uncertainty 핵심 내용을 시각적으로 요약</desc>
+<rect width="960" height="260" fill="#F7F8F5"/>
+<rect x="0" y="0" width="960" height="12" fill="#8A5A44"/>
+<circle cx="70" cy="72" r="34" fill="#8A5A44"/>
+<text x="70" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">3</text>
+<text x="124" y="55" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1D2528">FEDS Paper: Demand Shocks and Endogenous Uncertainty</text>
+<text x="124" y="84" font-family="Arial, sans-serif" font-size="15" fill="#5F686B">출처: Federal Reserve Working Papers</text>
+<text x="56" y="140" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1D2528">핵심 포인트</text>
+<text x="56" y="170" font-family="Arial, sans-serif" font-size="15" fill="#445055">Diego Vilán This study examines how fluctuations in </text>
+<text x="56" y="195" font-family="Arial, sans-serif" font-size="15" fill="#445055">firm-level uncertainty ar…</text>
+<g transform="translate(610 122)">
+<text x="0" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#1D2528">분석 축</text>
+<text x="0" y="34" font-family="Arial, sans-serif" font-size="12" fill="#5F686B">Factor</text>
+<rect x="90" y="24" width="190" height="9" rx="4" fill="#E1E6E2"/>
+<rect x="90" y="24" width="142" height="9" rx="4" fill="#8A5A44"/>
+<text x="0" y="72" font-family="Arial, sans-serif" font-size="12" fill="#5F686B">Risk</text>
+<rect x="90" y="62" width="190" height="9" rx="4" fill="#E1E6E2"/>
+<rect x="90" y="62" width="118" height="9" rx="4" fill="#8A5A44"/>
+<text x="0" y="110" font-family="Arial, sans-serif" font-size="12" fill="#5F686B">Portfolio</text>
+<rect x="90" y="100" width="190" height="9" rx="4" fill="#E1E6E2"/>
+<rect x="90" y="100" width="132" height="9" rx="4" fill="#8A5A44"/>
+</g>
+</svg>

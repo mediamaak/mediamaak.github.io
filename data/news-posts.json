@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-07-18T00:04:48Z",
+  "updated_at": "2026-07-18T00:30:41Z",
   "posts": [
     {
       "id": "2026-07-18-market-economy-roundup",
       "title": "오늘의 퀀트·경제 데이터 분석 요약 - 2026-07-18",
       "date": "2026-07-18",
       "category": "Market Economy",
-      "summary": "결론: - 이번 자료들은 “수익률 예측”보다 “데이터 기준선, 불확실성 가정, 자산 보유 구조”를 먼저 점검하라는 메시지로 묶입니다.",
+      "summary": "결론: 세 자료 모두 “숫자 자체”보다 자산 배분 구조, 기준선 설정, 불확실성 가정이 해석의 핵심이라는 점을 보여줍니다.",
       "href": "posts/2026-07-18-market-economy-roundup.html",
       "source_count": 3,
       "status": "published",
@@ -23,7 +23,7 @@
         "research",
         "risk"
       ],
-      "quality_score": 95
+      "quality_score": 100
     },
     {
       "id": "2026-07-18-data-analysis-roundup",
