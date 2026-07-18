@@ -280,7 +280,12 @@ function selectedPerformanceAsset() {
 
 function selectedPerformanceStrategy() {
   const asset = selectedPerformanceAsset();
-  return asset.strategies.find((strategy) => strategy.code === performanceState.strategyCode) || asset.strategies[0] || {};
+  return asset.strategies.find((strategy) => {
+    const previousCodes = Array.isArray(strategy.previous_strategy_codes) ? strategy.previous_strategy_codes : [];
+    return strategy.code === performanceState.strategyCode
+      || strategy.source_strategy_code === performanceState.strategyCode
+      || previousCodes.includes(performanceState.strategyCode);
+  }) || asset.strategies[0] || {};
 }
 
 function updatePerformanceUrl() {
@@ -305,7 +310,12 @@ function populatePerformanceSelectors(data) {
     performanceState.assetCode = defaultAsset?.code || "";
   }
   const asset = selectedPerformanceAsset();
-  const defaultStrategy = asset.strategies.find((strategy) => strategy.code === requestedStrategy) || asset.strategies[0];
+  const defaultStrategy = asset.strategies.find((strategy) => {
+    const previousCodes = Array.isArray(strategy.previous_strategy_codes) ? strategy.previous_strategy_codes : [];
+    return strategy.code === requestedStrategy
+      || strategy.source_strategy_code === requestedStrategy
+      || previousCodes.includes(requestedStrategy);
+  }) || asset.strategies[0];
   performanceState.strategyCode = performanceState.strategyCode || defaultStrategy?.code || "";
   if (!asset.strategies.some((strategy) => strategy.code === performanceState.strategyCode)) {
     performanceState.strategyCode = defaultStrategy?.code || "";

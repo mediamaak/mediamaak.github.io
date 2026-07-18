@@ -10,11 +10,11 @@
     "updated_at": "2026-07-18 01:53 KST"
   },
   "strategy_overview": {
-    "code": "upbit-ws-btc-cci-rebound-volatility-target-10m-sim",
-    "name": "BTC CCI 반등 · 변동성 목표수익 10분봉",
+    "code": "upbit_krw_btc_cci_rebound_volatility_target_10m",
+    "name": "비트코인 과매도 반등 전략",
     "market": "KRW-BTC",
     "bar_interval": "10분봉",
-    "description": "업비트 웹소켓 체결 데이터를 10분봉으로 변환한 뒤 CCI가 -100 아래에서 회복하는 구간에 진입하고, 최근 변동성이 높을수록 목표수익률을 단계적으로 높이는 규칙 기반 백테스트입니다.",
+    "description": "업비트 비트코인 체결 데이터를 10분봉으로 묶고, CCI가 과매도 구간에서 회복될 때 진입하는 백테스트입니다. 변동성이 높을수록 목표수익률을 높여 청산 기준을 조정합니다.",
     "data_sources": [
       "coin.upbit_ws_trade_raw",
       "upbit.websocket_krw_btc"
@@ -40,7 +40,97 @@
         "value": "0.05%",
         "note": "매수/매도 체결 비용을 반영"
       }
-    ]
+    ],
+    "summary": {
+      "period": "2026-06-08 23:30 ~ 2026-07-18 01:50 KST",
+      "total_pnl_krw": 77.91919328569202,
+      "daily_avg_pnl_krw": 1.978,
+      "win_rate_pct": 85.71428571428571,
+      "trade_count": 7,
+      "strategy_count": 1,
+      "updated_at": "2026-07-18 01:53 KST"
+    },
+    "return_metrics": {
+      "realized_return_pct": 0.7791919328569202,
+      "avg_trade_return_pct": 0.11131313326527434,
+      "open_unrealized_return_pct": -2.758410936463333,
+      "win_rate_pct": 85.71428571428571,
+      "win_count": 6,
+      "loss_count": 1,
+      "avg_target_profit_pct": 1.8571428571428572,
+      "min_target_profit_pct": 1.5,
+      "max_target_profit_pct": 4.0,
+      "profit_factor": 1.073
+    },
+    "daily": [
+      {
+        "date": "2026-06-12",
+        "pnl_krw": 147.18,
+        "cumulative_pnl_krw": 147.18,
+        "trade_count": null,
+        "win_count": null,
+        "loss_count": null
+      },
+      {
+        "date": "2026-06-15",
+        "pnl_krw": 319.9,
+        "cumulative_pnl_krw": 467.08,
+        "trade_count": null,
+        "win_count": null,
+        "loss_count": null
+      },
+      {
+        "date": "2026-06-25",
+        "pnl_krw": -1068.51,
+        "cumulative_pnl_krw": -601.43,
+        "trade_count": null,
+        "win_count": null,
+        "loss_count": null
+      },
+      {
+        "date": "2026-07-04",
+        "pnl_krw": 390.2,
+        "cumulative_pnl_krw": -211.23,
+        "trade_count": null,
+        "win_count": null,
+        "loss_count": null
+      },
+      {
+        "date": "2026-07-05",
+        "pnl_krw": 144.73,
+        "cumulative_pnl_krw": -66.49,
+        "trade_count": null,
+        "win_count": null,
+        "loss_count": null
+      },
+      {
+        "date": "2026-07-07",
+        "pnl_krw": 144.41,
+        "cumulative_pnl_krw": 77.92,
+        "trade_count": null,
+        "win_count": null,
+        "loss_count": null
+      }
+    ],
+    "source_strategy_code": "upbit-ws-btc-cci-rebound-volatility-target-10m-sim",
+    "previous_strategy_codes": [
+      "upbit-ws-btc-cci-rebound-volatility-target-10m-sim"
+    ],
+    "strategy_code_scheme": "{provider}_{asset}_{entry_rule}_{return_rule}_{data_interval}",
+    "code_components": {
+      "provider": "upbit",
+      "asset": "krw_btc",
+      "entry_rule": "cci_rebound",
+      "return_rule": "volatility_target",
+      "data_interval": "10m"
+    },
+    "parameter_summary": {
+      "entry": "CCI -100 상향 돌파",
+      "target_profit": "1.5% ~ 4.0%, 변동성 z-score 기반",
+      "stop_loss": "-10.0%",
+      "fee_rate": "0.05%",
+      "max_holding": "없음"
+    }
   },
   "return_metrics": {
     "realized_return_pct": 0.7791919328569202,
@@ -93,11 +183,11 @@
       "market": "KRW-BTC",
       "strategies": [
         {
-          "code": "upbit-ws-btc-cci-rebound-volatility-target-10m-sim",
-          "name": "BTC CCI 반등 · 변동성 목표수익 10분봉",
+          "code": "upbit_krw_btc_cci_rebound_volatility_target_10m",
+          "name": "비트코인 과매도 반등 전략",
           "market": "KRW-BTC",
           "bar_interval": "10분봉",
-          "description": "업비트 웹소켓 체결 데이터를 10분봉으로 변환한 뒤 CCI가 -100 아래에서 회복하는 구간에 진입하고, 최근 변동성이 높을수록 목표수익률을 단계적으로 높이는 규칙 기반 백테스트입니다.",
+          "description": "업비트 비트코인 체결 데이터를 10분봉으로 묶고, CCI가 과매도 구간에서 회복될 때 진입하는 백테스트입니다. 변동성이 높을수록 목표수익률을 높여 청산 기준을 조정합니다.",
           "data_sources": [
             "coin.upbit_ws_trade_raw",
             "upbit.websocket_krw_btc"
@@ -194,11 +284,30 @@
               "win_count": null,
               "loss_count": null
             }
-          ]
+          ],
+          "source_strategy_code": "upbit-ws-btc-cci-rebound-volatility-target-10m-sim",
+          "previous_strategy_codes": [
+            "upbit-ws-btc-cci-rebound-volatility-target-10m-sim"
+          ],
+          "strategy_code_scheme": "{provider}_{asset}_{entry_rule}_{return_rule}_{data_interval}",
+          "code_components": {
+            "provider": "upbit",
+            "asset": "krw_btc",
+            "entry_rule": "cci_rebound",
+            "return_rule": "volatility_target",
+            "data_interval": "10m"
+          },
+          "parameter_summary": {
+            "entry": "CCI -100 상향 돌파",
+            "target_profit": "1.5% ~ 4.0%, 변동성 z-score 기반",
+            "stop_loss": "-10.0%",
+            "fee_rate": "0.05%",
+            "max_holding": "없음"
+          }
         },
         {
-          "code": "simulation1",
-          "name": "BTC Strategy1 백테스트",
+          "code": "upbit_krw_btc_cci_gap_fixed_target_10m",
+          "name": "비트코인 기본 반등 전략",
           "market": "KRW-BTC",
           "bar_interval": "10분봉",
           "description": "레거시 BTC Strategy1 신호를 기준으로 구성한 KRW-BTC 백테스트입니다. CCI와 가격 조건을 이용해 진입하고 목표수익/손절 조건으로 청산한 결과를 일별 실현손익으로 집계합니다.",
@@ -584,11 +693,29 @@
               "win_count": 0,
               "loss_count": 4
             }
-          ]
+          ],
+          "source_strategy_code": "simulation1",
+          "previous_strategy_codes": [
+            "simulation1"
+          ],
+          "strategy_code_scheme": "{provider}_{asset}_{entry_rule}_{return_rule}_{data_interval}",
+          "code_components": {
+            "provider": "upbit",
+            "asset": "krw_btc",
+            "entry_rule": "cci_gap",
+            "return_rule": "fixed_target",
+            "data_interval": "10m"
+          },
+          "parameter_summary": {
+            "entry": "CCI와 가격갭 조건",
+            "target_profit": "저장된 백테스트 이벤트의 target_profit_pct",
+            "stop_loss": "저장된 백테스트 이벤트 기준",
+            "data_source": "trade_strategy_simulation_events"
+          }
         },
         {
-          "code": "strategy3",
-          "name": "BTC Strategy3 백테스트",
+          "code": "upbit_krw_btc_trade_flow_fixed_target_tick",
+          "name": "비트코인 체결 흐름 전략",
           "market": "KRW-BTC",
           "bar_interval": "웹소켓 체결 기반",
           "description": "업비트 체결 원천 데이터를 이용한 BTC Strategy3 백테스트입니다. 저장된 청산 이벤트를 기준으로 일별 실현손익을 표시합니다.",
@@ -766,11 +893,28 @@
               "win_count": 2,
               "loss_count": 5
             }
-          ]
+          ],
+          "source_strategy_code": "strategy3",
+          "previous_strategy_codes": [
+            "strategy3"
+          ],
+          "strategy_code_scheme": "{provider}_{asset}_{entry_rule}_{return_rule}_{data_interval}",
+          "code_components": {
+            "provider": "upbit",
+            "asset": "krw_btc",
+            "entry_rule": "trade_flow",
+            "return_rule": "fixed_target",
+            "data_interval": "tick"
+          },
+          "parameter_summary": {
+            "entry": "체결 흐름 기반 신호",
+            "target_profit": "저장된 백테스트 이벤트 기준",
+            "data_source": "trade_strategy_simulation_events"
+          }
         },
         {
-          "code": "simulation2_full_b",
-          "name": "BTC Strategy2B 백테스트",
+          "code": "upbit_krw_btc_cci_gap_strict_target_10m",
+          "name": "비트코인 엄격 선별 전략",
           "market": "KRW-BTC",
           "bar_interval": "10분봉",
           "description": "CCI<=0, GAP<=-0.25 조건을 적용한 BTC 백테스트입니다.",
@@ -926,11 +1070,30 @@
               "win_count": 1,
               "loss_count": 0
             }
-          ]
+          ],
+          "source_strategy_code": "simulation2_full_b",
+          "previous_strategy_codes": [
+            "simulation2_full_b"
+          ],
+          "strategy_code_scheme": "{provider}_{asset}_{entry_rule}_{return_rule}_{data_interval}",
+          "code_components": {
+            "provider": "upbit",
+            "asset": "krw_btc",
+            "entry_rule": "cci_gap",
+            "return_rule": "strict_target",
+            "data_interval": "10m"
+          },
+          "parameter_summary": {
+            "entry": "cci_gap",
+            "target_profit": "strict_target",
+            "data_interval": "10m",
+            "data_source": "trade_strategy_simulation_events",
+            "source_strategy_code": "simulation2_full_b"
+          }
         },
         {
-          "code": "simulation2_full",
-          "name": "BTC Strategy2 전체 백테스트",
+          "code": "upbit_krw_btc_cci_gap_full_target_10m",
+          "name": "비트코인 전체 구간 검증 전략",
           "market": "KRW-BTC",
           "bar_interval": "10분봉",
           "description": "Temp Strategy2 조건을 전체 구간에 재적용한 BTC 백테스트입니다.",
@@ -1126,11 +1289,30 @@
               "win_count": 4,
               "loss_count": 0
             }
-          ]
+          ],
+          "source_strategy_code": "simulation2_full",
+          "previous_strategy_codes": [
+            "simulation2_full"
+          ],
+          "strategy_code_scheme": "{provider}_{asset}_{entry_rule}_{return_rule}_{data_interval}",
+          "code_components": {
+            "provider": "upbit",
+            "asset": "krw_btc",
+            "entry_rule": "cci_gap",
+            "return_rule": "full_target",
+            "data_interval": "10m"
+          },
+          "parameter_summary": {
+            "entry": "cci_gap",
+            "target_profit": "full_target",
+            "data_interval": "10m",
+            "data_source": "trade_strategy_simulation_events",
+            "source_strategy_code": "simulation2_full"
+          }
         },
         {
-          "code": "simulation2_full_a",
-          "name": "BTC Strategy2A 백테스트",
+          "code": "upbit_krw_btc_cci_gap_basic_target_10m",
+          "name": "비트코인 기본 필터 전략",
           "market": "KRW-BTC",
           "bar_interval": "10분봉",
           "description": "CCI<=0, GAP<=0 조건을 적용한 BTC 백테스트입니다.",
@@ -1326,11 +1508,30 @@
               "win_count": 4,
               "loss_count": 0
             }
-          ]
+          ],
+          "source_strategy_code": "simulation2_full_a",
+          "previous_strategy_codes": [
+            "simulation2_full_a"
+          ],
+          "strategy_code_scheme": "{provider}_{asset}_{entry_rule}_{return_rule}_{data_interval}",
+          "code_components": {
+            "provider": "upbit",
+            "asset": "krw_btc",
+            "entry_rule": "cci_gap",
+            "return_rule": "basic_target",
+            "data_interval": "10m"
+          },
+          "parameter_summary": {
+            "entry": "cci_gap",
+            "target_profit": "basic_target",
+            "data_interval": "10m",
+            "data_source": "trade_strategy_simulation_events",
+            "source_strategy_code": "simulation2_full_a"
+          }
         },
         {
-          "code": "simulation2_full_c",
-          "name": "BTC Strategy2C 백테스트",
+          "code": "upbit_krw_btc_cci_gap_deep_discount_target_10m",
+          "name": "비트코인 강한 할인 진입 전략",
           "market": "KRW-BTC",
           "bar_interval": "10분봉",
           "description": "CCI<=0, GAP<=-0.5 조건을 적용한 BTC 백테스트입니다.",
@@ -1454,11 +1655,30 @@
               "win_count": 2,
               "loss_count": 0
             }
-          ]
+          ],
+          "source_strategy_code": "simulation2_full_c",
+          "previous_strategy_codes": [
+            "simulation2_full_c"
+          ],
+          "strategy_code_scheme": "{provider}_{asset}_{entry_rule}_{return_rule}_{data_interval}",
+          "code_components": {
+            "provider": "upbit",
+            "asset": "krw_btc",
+            "entry_rule": "cci_gap",
+            "return_rule": "deep_discount_target",
+            "data_interval": "10m"
+          },
+          "parameter_summary": {
+            "entry": "cci_gap",
+            "target_profit": "deep_discount_target",
+            "data_interval": "10m",
+            "data_source": "trade_strategy_simulation_events",
+            "source_strategy_code": "simulation2_full_c"
+          }
         },
         {
-          "code": "simulation2_full_d",
-          "name": "BTC Strategy2D 백테스트",
+          "code": "upbit_krw_btc_cci_recovery_gap_target_10m",
+          "name": "비트코인 회복 초입 전략",
           "market": "KRW-BTC",
           "bar_interval": "10분봉",
           "description": "-100<=CCI<=0, GAP<=0 조건을 적용한 BTC 백테스트입니다.",
@@ -1654,11 +1874,30 @@
               "win_count": 4,
               "loss_count": 0
             }
-          ]
+          ],
+          "source_strategy_code": "simulation2_full_d",
+          "previous_strategy_codes": [
+            "simulation2_full_d"
+          ],
+          "strategy_code_scheme": "{provider}_{asset}_{entry_rule}_{return_rule}_{data_interval}",
+          "code_components": {
+            "provider": "upbit",
+            "asset": "krw_btc",
+            "entry_rule": "cci_recovery_gap",
+            "return_rule": "target",
+            "data_interval": "10m"
+          },
+          "parameter_summary": {
+            "entry": "cci_recovery_gap",
+            "target_profit": "target",
+            "data_interval": "10m",
+            "data_source": "trade_strategy_simulation_events",
+            "source_strategy_code": "simulation2_full_d"
+          }
         },
         {
-          "code": "simulation2",
-          "name": "BTC Strategy2 백테스트",
+          "code": "upbit_krw_btc_cci_gap_candidate_target_10m",
+          "name": "비트코인 후보 전략 검증",
           "market": "KRW-BTC",
           "bar_interval": "10분봉",
           "description": "Temp Strategy2 검증 조건을 저장한 BTC 백테스트입니다.",
@@ -1854,7 +2093,26 @@
               "win_count": 3,
               "loss_count": 0
             }
-          ]
+          ],
+          "source_strategy_code": "simulation2",
+          "previous_strategy_codes": [
+            "simulation2"
+          ],
+          "strategy_code_scheme": "{provider}_{asset}_{entry_rule}_{return_rule}_{data_interval}",
+          "code_components": {
+            "provider": "upbit",
+            "asset": "krw_btc",
+            "entry_rule": "cci_gap",
+            "return_rule": "candidate_target",
+            "data_interval": "10m"
+          },
+          "parameter_summary": {
+            "entry": "cci_gap",
+            "target_profit": "candidate_target",
+            "data_interval": "10m",
+            "data_source": "trade_strategy_simulation_events",
+            "source_strategy_code": "simulation2"
+          }
         }
       ]
     },
@@ -7249,15 +7507,30 @@
               "win_count": 12,
               "loss_count": 152
             }
-          ]
+          ],
+          "source_strategy_code": "kospi-strategy1",
+          "previous_strategy_codes": [],
+          "strategy_code_scheme": "{provider}_{asset}_{entry_rule}_{return_rule}_{data_interval}",
+          "code_components": {},
+          "parameter_summary": {
+            "entry": "저장된 백테스트 진입 조건",
+            "target_profit": "저장된 백테스트 청산 조건",
+            "data_interval": "일봉",
+            "data_source": "stock_korea.kospi200, stock_korea.daily_<symbol>, trade_strategy_simulation_events",
+            "source_strategy_code": "kospi-strategy1"
+          }
         }
       ]
     }
   ],
   "strategies": [
     {
-      "code": "upbit-ws-btc-cci-rebound-volatility-target-10m-sim",
-      "name": "BTC CCI 반등 · 변동성 목표수익 10분봉",
+      "code": "upbit_krw_btc_cci_rebound_volatility_target_10m",
+      "source_strategy_code": "upbit-ws-btc-cci-rebound-volatility-target-10m-sim",
+      "previous_strategy_codes": [
+        "upbit-ws-btc-cci-rebound-volatility-target-10m-sim"
+      ],
+      "name": "비트코인 과매도 반등 전략",
       "market": "KRW-BTC",
       "total_pnl_krw": 77.91919328569202,
       "return_pct": 0.7791919328569202,
@@ -7266,8 +7539,12 @@
       "updated_at": "2026-07-18 01:53 KST"
     },
     {
-      "code": "simulation1",
-      "name": "BTC Strategy1 백테스트",
+      "code": "upbit_krw_btc_cci_gap_fixed_target_10m",
+      "source_strategy_code": "simulation1",
+      "previous_strategy_codes": [
+        "simulation1"
+      ],
+      "name": "비트코인 기본 반등 전략",
       "market": "KRW-BTC",
       "total_pnl_krw": -32919.440570287996,
       "return_pct": -0.20015370175477185,
@@ -7276,8 +7553,12 @@
       "updated_at": "2026-07-18 01:44:06 KST"
     },
     {
-      "code": "strategy3",
-      "name": "BTC Strategy3 백테스트",
+      "code": "upbit_krw_btc_trade_flow_fixed_target_tick",
+      "source_strategy_code": "strategy3",
+      "previous_strategy_codes": [
+        "strategy3"
+      ],
+      "name": "비트코인 체결 흐름 전략",
       "market": "KRW-BTC",
       "total_pnl_krw": -8463.933315098737,
       "return_pct": -0.08936178097731909,
@@ -7286,8 +7567,12 @@
       "updated_at": "2026-07-01 05:03:23 KST"
     },
     {
-      "code": "simulation2_full_b",
-      "name": "BTC Strategy2B 백테스트",
+      "code": "upbit_krw_btc_cci_gap_strict_target_10m",
+      "source_strategy_code": "simulation2_full_b",
+      "previous_strategy_codes": [
+        "simulation2_full_b"
+      ],
+      "name": "비트코인 엄격 선별 전략",
       "market": "KRW-BTC",
       "total_pnl_krw": 2475.362702268778,
       "return_pct": 0.37938025613977255,
@@ -7296,8 +7581,12 @@
       "updated_at": "2026-06-28 02:03:02 KST"
     },
     {
-      "code": "simulation2_full",
-      "name": "BTC Strategy2 전체 백테스트",
+      "code": "upbit_krw_btc_cci_gap_full_target_10m",
+      "source_strategy_code": "simulation2_full",
+      "previous_strategy_codes": [
+        "simulation2_full"
+      ],
+      "name": "비트코인 전체 구간 검증 전략",
       "market": "KRW-BTC",
       "total_pnl_krw": 3872.706050090839,
       "return_pct": 0.2460622155275871,
@@ -7306,8 +7595,12 @@
       "updated_at": "2026-06-28 01:55:17 KST"
     },
     {
-      "code": "simulation2_full_a",
-      "name": "BTC Strategy2A 백테스트",
+      "code": "upbit_krw_btc_cci_gap_basic_target_10m",
+      "source_strategy_code": "simulation2_full_a",
+      "previous_strategy_codes": [
+        "simulation2_full_a"
+      ],
+      "name": "비트코인 기본 필터 전략",
       "market": "KRW-BTC",
       "total_pnl_krw": 3872.706050090839,
       "return_pct": 0.2460622155275871,
@@ -7316,8 +7609,12 @@
       "updated_at": "2026-06-28 02:01:15 KST"
     },
     {
-      "code": "simulation2_full_c",
-      "name": "BTC Strategy2C 백테스트",
+      "code": "upbit_krw_btc_cci_gap_deep_discount_target_10m",
+      "source_strategy_code": "simulation2_full_c",
+      "previous_strategy_codes": [
+        "simulation2_full_c"
+      ],
+      "name": "비트코인 강한 할인 진입 전략",
       "market": "KRW-BTC",
       "total_pnl_krw": 812.0926375283871,
       "return_pct": 0.2891943256078485,
@@ -7326,8 +7623,12 @@
       "updated_at": "2026-06-28 02:04:42 KST"
     },
     {
-      "code": "simulation2_full_d",
-      "name": "BTC Strategy2D 백테스트",
+      "code": "upbit_krw_btc_cci_recovery_gap_target_10m",
+      "source_strategy_code": "simulation2_full_d",
+      "previous_strategy_codes": [
+        "simulation2_full_d"
+      ],
+      "name": "비트코인 회복 초입 전략",
       "market": "KRW-BTC",
       "total_pnl_krw": 3872.706050090839,
       "return_pct": 0.2460622155275871,
@@ -7336,8 +7637,12 @@
       "updated_at": "2026-06-28 02:06:34 KST"
     },
     {
-      "code": "simulation2",
-      "name": "BTC Strategy2 백테스트",
+      "code": "upbit_krw_btc_cci_gap_candidate_target_10m",
+      "source_strategy_code": "simulation2",
+      "previous_strategy_codes": [
+        "simulation2"
+      ],
+      "name": "비트코인 후보 전략 검증",
       "market": "KRW-BTC",
       "total_pnl_krw": 3045.151774740514,
       "return_pct": 0.28917580310857444,
@@ -7347,6 +7652,8 @@
     },
     {
       "code": "kospi-strategy1",
+      "source_strategy_code": "kospi-strategy1",
+      "previous_strategy_codes": [],
       "name": "KOSPI200 Strategy1 CCI 반등 백테스트",
       "market": "KOSPI200",
       "total_pnl_krw": 3899487.6214468204,
