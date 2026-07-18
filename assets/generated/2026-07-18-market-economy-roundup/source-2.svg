@@ -1,25 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-labelledby="title desc">
-<title id="title">자료 2 핵심 이미지</title>
-<desc id="desc">When Directional Accuracy Lies: A Base-Rate-Honest Benchmark fo… 핵심 내용을 시각적으로 요약</desc>
-<rect width="960" height="260" fill="#F7F8F5"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
+<title id="title">자료 2 분석 순서도</title>
+<desc id="desc">When Directional Accuracy Lies: A Base-Rate-Honest Benchmark… 자료를 읽고 전략 점검 항목으로 전환하는 순서도</desc>
+<rect width="960" height="300" fill="#F7F8F5"/>
 <rect x="0" y="0" width="960" height="12" fill="#4F6F52"/>
 <circle cx="70" cy="72" r="34" fill="#4F6F52"/>
 <text x="70" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">2</text>
-<text x="124" y="55" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1D2528">When Directional Accuracy Lies: A Base-Rate-Honest Benchmark fo…</text>
+<text x="124" y="55" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1D2528">When Directional Accuracy Lies: A Base-Rate-Honest Benchmark…</text>
 <text x="124" y="84" font-family="Arial, sans-serif" font-size="15" fill="#5F686B">출처: arXiv q-fin Statistical Finance</text>
-<text x="56" y="140" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1D2528">핵심 포인트</text>
-<text x="56" y="170" font-family="Arial, sans-serif" font-size="15" fill="#445055">arXiv:2607.12248v2 Announce Type: replace Abstract: </text>
-<text x="56" y="195" font-family="Arial, sans-serif" font-size="15" fill="#445055">Large pretrained time-ser…</text>
-<g transform="translate(610 122)">
-<text x="0" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#1D2528">분석 축</text>
-<text x="0" y="34" font-family="Arial, sans-serif" font-size="12" fill="#5F686B">Factor</text>
-<rect x="90" y="24" width="190" height="9" rx="4" fill="#E1E6E2"/>
-<rect x="90" y="24" width="142" height="9" rx="4" fill="#4F6F52"/>
-<text x="0" y="72" font-family="Arial, sans-serif" font-size="12" fill="#5F686B">Risk</text>
-<rect x="90" y="62" width="190" height="9" rx="4" fill="#E1E6E2"/>
-<rect x="90" y="62" width="118" height="9" rx="4" fill="#4F6F52"/>
-<text x="0" y="110" font-family="Arial, sans-serif" font-size="12" fill="#5F686B">Portfolio</text>
-<rect x="90" y="100" width="190" height="9" rx="4" fill="#E1E6E2"/>
-<rect x="90" y="100" width="132" height="9" rx="4" fill="#4F6F52"/>
-</g>
+<rect x="52" y="132" width="188" height="86" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="52" y="132" width="188" height="9" rx="4" fill="#4F6F52"/>
+<circle cx="76" cy="170" r="14" fill="#4F6F52"/>
+<text x="76" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">1</text>
+<text x="98" y="168" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">원문 확인</text>
+<text x="70" y="198" font-family="Arial, sans-serif" font-size="12" fill="#445055">arXiv q-fin Statistical Fi…</text>
+<line x1="252" y1="175" x2="272" y2="175" stroke="#6A7376" stroke-width="2"/>
+<path d="M 272 175 l -7 -6 v 12 z" fill="#6A7376"/>
+<rect x="284" y="132" width="188" height="86" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="284" y="132" width="188" height="9" rx="4" fill="#4F6F52"/>
+<circle cx="308" cy="170" r="14" fill="#4F6F52"/>
+<text x="308" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">2</text>
+<text x="330" y="168" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">핵심 변수</text>
+<text x="302" y="198" font-family="Arial, sans-serif" font-size="12" fill="#445055">arXiv:2607.12248v2 Announc…</text>
+<line x1="484" y1="175" x2="504" y2="175" stroke="#6A7376" stroke-width="2"/>
+<path d="M 504 175 l -7 -6 v 12 z" fill="#6A7376"/>
+<rect x="516" y="132" width="188" height="86" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="516" y="132" width="188" height="9" rx="4" fill="#4F6F52"/>
+<circle cx="540" cy="170" r="14" fill="#4F6F52"/>
+<text x="540" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">3</text>
+<text x="562" y="168" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">검증 항목</text>
+<text x="534" y="198" font-family="Arial, sans-serif" font-size="12" fill="#445055">기간·표본·가정 확인</text>
+<line x1="716" y1="175" x2="736" y2="175" stroke="#6A7376" stroke-width="2"/>
+<path d="M 736 175 l -7 -6 v 12 z" fill="#6A7376"/>
+<rect x="748" y="132" width="188" height="86" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="748" y="132" width="188" height="9" rx="4" fill="#4F6F52"/>
+<circle cx="772" cy="170" r="14" fill="#4F6F52"/>
+<text x="772" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">4</text>
+<text x="794" y="168" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">전략 반영</text>
+<text x="766" y="198" font-family="Arial, sans-serif" font-size="12" fill="#445055">체크리스트·백테스트 조건화</text>
+<text x="52" y="256" font-family="Arial, sans-serif" font-size="13" fill="#5F686B">자료를 바로 매매 신호로 쓰지 않고, 검증 가능한 전략 점검 항목으로 변환하는 흐름입니다.</text>
 </svg>
