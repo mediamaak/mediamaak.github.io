@@ -52,38 +52,27 @@
 </figure>
       <h2>핵심 요약</h2>
 <ul>
-<li>이번 자료들은 해외 자산 보유 구조, 주가 예측용 시계열 모델의 평가 방법, 그리고 경기변동과 불확실성의 상호작용을 다룹니다.</li>
-<li>공통적으로 “숫자”보다 해석이 중요하며, 팩터 노출·기준선 설정·모형 가정이 결과를 크게 바꿀 수 있음을 보여줍니다.</li>
+<li>결론: - 이번 자료들은 “수익률 예측”보다 “데이터 기준선, 불확실성 가정, 자산 보유 구조”를 먼저 점검하라는 메시지로 묶입니다.</li>
+<li>원칙: - 수치가 원문 메타데이터에 없으면 사실로 단정하지 말고, 백테스트·포트폴리오 해석 전 검증 항목으로 분리해야 합니다.</li>
 </ul>
 <h2>주목할 자료</h2>
-<h3>1. What US assets are held overseas?</h3>
-<ul>
-<li>출처: FRED Blog</li>
-<li>원문: https://fredblog.stlouisfed.org/2026/07/what-us-assets-are-held-overseas</li>
-<li>요약: 이 글은 해외가 보유한 미국 자산 가운데 국채가 어떤 위치를 차지하는지, 그리고 이를 전체 해외 보유 미국 금융자산 포트폴리오의 맥락에서 어떻게 봐야 하는지 설명합니다. 단순히 “국채 보유 규모”만 보는 대신, 자산군별 구성과 비중을 함께 읽는 관점이 핵심입니다.</li>
-<li>퀀트/경제 데이터 포인트: 해외 보유 미국 자산의 구성비, 미국 국채의 상대적 비중, 자산군별 포트폴리오 내 위치를 확인하는 것이 핵심입니다. 구체 수치는 원문 그래프와 데이터 정의를 함께 검증해야 합니다.</li>
-<li>리스크와 한계: 자산 분류 기준, 거주지·보유주체 정의, 시점별 집계 방식에 따라 해석이 달라질 수 있습니다. 비중 비교만으로 자금 유출입이나 수요 강도를 단정하기 어렵습니다.</li>
-</ul>
-<h3>2. When Directional Accuracy Lies: A Base-Rate-Honest Benchmark for LoRA-Adapted TimesFM on Equity Forecasting</h3>
-<ul>
-<li>출처: arXiv q-fin Statistical Finance</li>
-<li>원문: https://arxiv.org/abs/2607.12248</li>
-<li>요약: 대형 사전학습 시계열 모델을 주가 예측에 적용할 때, 방향성 정확도만으로 성능을 평가하면 착시가 생길 수 있다는 점을 다룹니다. 초기에 높은 방향 적중률처럼 보이는 결과도, 실제로는 기준선(base rate)과 표본 특성을 반영한 비교가 없으면 과대평가될 수 있다는 문제의식을 제시합니다.</li>
-<li>퀀트/경제 데이터 포인트: 방향성 정확도, 클래스 불균형, 기준선 대비 성과, LoRA 적응(adaptation) 전후의 비교가 핵심 포인트입니다. 특히 상승·하락 비율이 비대칭인 데이터에서는 정확도 자체보다 베이스레이트 보정 해석이 중요합니다.</li>
-<li>리스크와 한계: 백테스트는 샘플 구간, 거래비용, 슬리피지, 리밸런싱 규칙에 민감합니다. 또한 “방향을 맞췄다”는 결과가 수익성이나 리스크 조정 성과를 보장하지 않으며, 과최적화와 데이터 누수 가능성을 함께 점검해야 합니다.</li>
-</ul>
-<h3>3. FEDS Paper: Demand Shocks and Endogenous Uncertainty</h3>
-<ul>
-<li>출처: Federal Reserve Working Papers</li>
-<li>원문: https://www.federalreserve.gov/econres/feds/demand-shocks-and-endogenous-uncertainty.htm</li>
-<li>요약: 기업 수준의 불확실성이 경기 사이클에 따라 어떻게 변하고, 그것이 거시경제 활동에 어떤 영향을 주는지 분석합니다. 서로 다른 기업들이 수요 불확실성과 신용 여건 충격에 노출되는 일반균형 모형을 통해, 불확실성이 외생적 충격이 아니라 경제 환경 속에서 내생적으로 움직일 수 있음을 보여줍니다.</li>
-<li>퀀트/경제 데이터 포인트: 기업별 불확실성, 수요 충격, 소비자 신용 조건, 경기 국면별 변화가 핵심 변수입니다. 거시지표로는 신용여건, 경기순환, 기업 투자·생산 반응의 동학을 함께 살펴볼 필요가 있습니다.</li>
-<li>리스크와 한계: 모형은 위험회피 성향, 이질적 기업 구조, 충격 전이 경로에 대한 가정을 포함합니다. 따라서 실증 결과를 해석할 때는 모형 구조가 관측 가능한 데이터 패턴을 얼마나 잘 설명하는지 점검해야 합니다.</li>
-</ul>
+<div class="table-wrap"><table>
+<thead><tr><th>번호</th><th>자료</th><th>출처</th><th>원문</th><th>핵심 내용</th><th>데이터 포인트</th><th>리스크/한계</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>What US assets are held overseas?</td><td>FRED Blog</td><td><a href="https://fredblog.stlouisfed.org/2026/07/what-us-assets-are-held-overseas" target="_blank" rel="noopener noreferrer">원문 보기</a></td><td>해외 보유 미국 자산의 구성 점검</td><td>Treasury 비중이 전체 해외자산 포트폴리오에서 어떻게 보이는지 확인</td><td>메타데이터에 구체 비중·기간 없음</td></tr>
+<tr><td>2</td><td>When Directional Accuracy Lies: A Base-Rate-Honest Benchmark for LoRA-Adapted TimesFM on Equity Forecasting</td><td>arXiv q-fin Statistical Finance</td><td><a href="https://arxiv.org/abs/2607.12248" target="_blank" rel="noopener noreferrer">원문 보기</a></td><td>방향성 정확도는 단독 성과지표로 부적절</td><td>베이스레이트, 방향성 정확도, LoRA 적응 모델 비교</td><td>80% 주장 수치는 맥락·기준선 확인 필요</td></tr>
+<tr><td>3</td><td>FEDS Paper: Demand Shocks and Endogenous Uncertainty</td><td>Federal Reserve Working Papers</td><td><a href="https://www.federalreserve.gov/econres/feds/demand-shocks-and-endogenous-uncertainty.htm" target="_blank" rel="noopener noreferrer">원문 보기</a></td><td>수요충격과 내생적 불확실성의 거시·미시 연계</td><td>불확실성, 신용여건, 이질적 위험회피 기업의 일반균형 모형</td><td>모형 가정이 강해 실증 일반화 범위 점검 필요</td></tr>
+</tbody></table></div>
 <h2>팩터·리스크·포트폴리오 관점</h2>
-<p>이 세 자료는 모두 포트폴리오를 “무엇을 샀는가”보다 “어떤 노출을 갖고 있는가”로 읽어야 한다는 점을 강조합니다. 해외 자산 보유는 자산군 구성과 비중의 문제이고, 시계열 예측은 방향성 같은 단일 지표보다 기준선 대비의 팩터적 의미를 봐야 하며, 거시 모형은 불확실성과 신용여건이 투자·생산에 미치는 리스크 전이를 추적해야 합니다. 백테스트나 모형 평가는 수익 결과보다 가정, 표본, 비용, 불균형 분포를 먼저 확인하는 방식이 더 적절합니다.</p>
+<ul>
+<li>핵심: - 팩터 관점에서는 “방향성 적중률”보다 기준선 초과 여부, 신용·수요 충격에 대한 노출, 해외자산 구성에서 금리자산 비중 같은 구조적 노출을 함께 봐야 합니다.</li>
+<li>검수: - 백테스트는 클래스 불균형, 거래비용, 리밸런싱 가정, 표본 구간 선택의 영향을 받으므로 원문 수치와 비교 기준을 반드시 별도 확인해야 합니다.</li>
+</ul>
 <h2>정리</h2>
-<p>이번 자료들은 해외 자산 구성, 예측모형 평가, 거시 불확실성 분석을 통해 데이터 해석의 우선순위를 다시 보여줍니다. 한국 독자 입장에서는 숫자 자체보다 정의·가정·비교 기준을 먼저 확인하는 것이 핵심입니다.</p>
+<ul>
+<li>결론: - 이번 묶음의 핵심은 예측 성과 자체보다 가정·기준선·자산구조를 먼저 검증하라는 점입니다.</li>
+<li>다음 확인: - 각 자료의 본문에서 표본기간, 성과지표 정의, 자산 분해 기준, 모형 가정을 확인해야 합니다.</li>
+</ul>
     </section>
   </main>
   <footer class="site-footer"><span>MediaMak technical publishing archive</span><span>GitHub Pages: https://mediamaak.github.io</span></footer>
