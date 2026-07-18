@@ -258,6 +258,9 @@ main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 6
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 12px;
 }
+.strategy-summary-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
 .metric-card, .card, .doc-grid article, .status-list article {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -653,6 +656,7 @@ td small { display: block; color: var(--muted); }
   .menu-panel { display: none !important; }
   .notice-band, .section-heading { display: block; }
   .filter-panel { grid-template-columns: 1fr; }
+  .strategy-summary-grid { grid-template-columns: 1fr; }
   .profit-summary, .step-row { grid-template-columns: 1fr; }
   .strategy-explain { grid-template-columns: 1fr; }
   .strategy-explain dl,

@@ -430,18 +430,22 @@ function renderStrategyOverview(strategy, summary) {
   `;
 }
 
-function renderReturnSummary(metrics) {
-  const target = document.getElementById("returnSummary");
+function renderStrategySummary(summary, metrics, asset, totalStrategyCount) {
+  const target = document.getElementById("performanceSummary");
   if (!target) return;
-  if (!metrics || !Object.keys(metrics).length) {
-    target.innerHTML = '<article class="metric-card"><span>수익률</span><strong>-</strong></article>';
+  if ((!summary || !Object.keys(summary).length) && (!metrics || !Object.keys(metrics).length)) {
+    target.innerHTML = '<article class="metric-card"><span>전략 요약</span><strong>-</strong></article>';
     return;
   }
   target.innerHTML = [
+    metricCard("누적 손익", krw(summary.total_pnl_krw), summary.period),
+    metricCard("일평균 손익", krw(summary.daily_avg_pnl_krw)),
+    metricCard("승률", pct(summary.win_rate_pct)),
+    metricCard("거래 수", `${fmt.format(Number(summary.trade_count) || 0)}건`),
+    metricCard("선택 투자 소재 전략 수", `${fmt.format(Number(asset?.strategies?.length) || 0)}개`, `전체 ${fmt.format(Number(totalStrategyCount) || 0)}개`),
     metricCard("실현 수익률", pct(metrics.realized_return_pct), "실현손익 / 1회 주문금액 기준"),
     metricCard("평균 거래 수익률", pct(metrics.avg_trade_return_pct), "체결 수수료 반영 평균"),
     metricCard("현재 미실현 수익률", pct(metrics.open_unrealized_return_pct), "오픈 포지션 기준"),
-    metricCard("승률", pct(metrics.win_rate_pct), `${fmt.format(Number(metrics.win_count) || 0)}승 / ${fmt.format(Number(metrics.loss_count) || 0)}패`),
     metricCard("목표수익률 범위", `${pct(metrics.min_target_profit_pct)} ~ ${pct(metrics.max_target_profit_pct)}`, `평균 ${pct(metrics.avg_target_profit_pct)}`),
     metricCard("손익비", multiple(metrics.profit_factor), "실현 이익 / 실현 손실"),
   ].join("");
@@ -481,21 +485,10 @@ function renderSelectedPerformance() {
     intro.textContent = strategy.description || `${asset.label || asset.market || "선택 투자 소재"} 백테스트의 일별 실현손익을 표시합니다.`;
   }
 
-  const target = document.getElementById("performanceSummary");
-  if (target) {
-    target.innerHTML = [
-      metricCard("누적 손익", krw(summary.total_pnl_krw), summary.period),
-      metricCard("일평균 손익", krw(summary.daily_avg_pnl_krw)),
-      metricCard("승률", pct(summary.win_rate_pct)),
-      metricCard("거래 수", `${fmt.format(Number(summary.trade_count) || 0)}건`),
-      metricCard("선택 투자 소재 전략 수", `${fmt.format(Number(asset.strategies?.length) || 0)}개`, `전체 ${fmt.format(strategies.length)}개`),
-      metricCard("최근 갱신", summary.updated_at || "-"),
-    ].join("");
-  }
   const updated = document.getElementById("performanceUpdated");
   if (updated) updated.textContent = summary.updated_at || "-";
+  renderStrategySummary(summary, returnMetrics, asset, strategies.length);
   renderStrategyOverview(strategy, summary);
-  renderReturnSummary(returnMetrics);
   renderGaps(rows, kind);
   renderDailyPnlRows(rows);
   window.MediaMakCharts?.renderPerformanceChart(document.getElementById("performanceChart"), rows);
