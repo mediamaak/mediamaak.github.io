@@ -124,6 +124,10 @@
       "return_rule": "volatility_target",
       "data_interval": "10m"
     },
+    "actual_available": true,
+    "actual_status": "connected",
+    "actual_strategy_code": "live_btc_cci_rebound_volatility_target_10m",
+    "actual_href": "actual.html?asset=bitcoin_krw&strategy=upbit_krw_btc_cci_rebound_volatility_target_10m&from=backtest",
     "parameter_summary": {
       "entry": "CCI -100 상향 돌파",
       "target_profit": "1.5% ~ 4.0%, 변동성 z-score 기반",
@@ -297,6 +301,10 @@
             "return_rule": "volatility_target",
             "data_interval": "10m"
           },
+          "actual_available": true,
+          "actual_status": "connected",
+          "actual_strategy_code": "live_btc_cci_rebound_volatility_target_10m",
+          "actual_href": "actual.html?asset=bitcoin_krw&strategy=upbit_krw_btc_cci_rebound_volatility_target_10m&from=backtest",
           "parameter_summary": {
             "entry": "CCI -100 상향 돌파",
             "target_profit": "1.5% ~ 4.0%, 변동성 z-score 기반",
@@ -706,6 +714,8 @@
             "return_rule": "fixed_target",
             "data_interval": "10m"
           },
+          "actual_available": false,
+          "actual_status": "not_connected",
           "parameter_summary": {
             "entry": "CCI와 가격갭 조건",
             "target_profit": "저장된 백테스트 이벤트의 target_profit_pct",
@@ -906,6 +916,8 @@
             "return_rule": "fixed_target",
             "data_interval": "tick"
           },
+          "actual_available": false,
+          "actual_status": "not_connected",
           "parameter_summary": {
             "entry": "체결 흐름 기반 신호",
             "target_profit": "저장된 백테스트 이벤트 기준",
@@ -1083,6 +1095,8 @@
             "return_rule": "strict_target",
             "data_interval": "10m"
           },
+          "actual_available": false,
+          "actual_status": "not_connected",
           "parameter_summary": {
             "entry": "cci_gap",
             "target_profit": "strict_target",
@@ -1302,6 +1316,8 @@
             "return_rule": "full_target",
             "data_interval": "10m"
           },
+          "actual_available": false,
+          "actual_status": "not_connected",
           "parameter_summary": {
             "entry": "cci_gap",
             "target_profit": "full_target",
@@ -1521,6 +1537,8 @@
             "return_rule": "basic_target",
             "data_interval": "10m"
           },
+          "actual_available": false,
+          "actual_status": "not_connected",
           "parameter_summary": {
             "entry": "cci_gap",
             "target_profit": "basic_target",
@@ -1668,6 +1686,8 @@
             "return_rule": "deep_discount_target",
             "data_interval": "10m"
           },
+          "actual_available": false,
+          "actual_status": "not_connected",
           "parameter_summary": {
             "entry": "cci_gap",
             "target_profit": "deep_discount_target",
@@ -1887,6 +1907,8 @@
             "return_rule": "target",
             "data_interval": "10m"
           },
+          "actual_available": false,
+          "actual_status": "not_connected",
           "parameter_summary": {
             "entry": "cci_recovery_gap",
             "target_profit": "target",
@@ -2106,6 +2128,8 @@
             "return_rule": "candidate_target",
             "data_interval": "10m"
           },
+          "actual_available": false,
+          "actual_status": "not_connected",
           "parameter_summary": {
             "entry": "cci_gap",
             "target_profit": "candidate_target",
@@ -7512,6 +7536,8 @@
           "previous_strategy_codes": [],
           "strategy_code_scheme": "{provider}_{asset}_{entry_rule}_{return_rule}_{data_interval}",
           "code_components": {},
+          "actual_available": false,
+          "actual_status": "not_connected",
           "parameter_summary": {
             "entry": "저장된 백테스트 진입 조건",
             "target_profit": "저장된 백테스트 청산 조건",
