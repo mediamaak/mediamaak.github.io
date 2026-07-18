@@ -49,12 +49,32 @@ function linkButton(link, isPrimary = false) {
   return `<a class="button${isPrimary ? " primary" : ""}" href="${escapeHtml(link.href)}">${escapeHtml(link.label)}</a>`;
 }
 
+function postDate(post) {
+  return String(post.date || "").trim();
+}
+
+function postHref(post) {
+  return String(post.href || "").trim();
+}
+
+function postTags(post) {
+  const tags = Array.isArray(post.tags) ? post.tags : [];
+  return tags.length
+    ? `<div class="tag-list">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>`
+    : "";
+}
+
+function sortedPosts(posts) {
+  const items = Array.isArray(posts.posts) ? posts.posts.slice() : [];
+  return items.sort((a, b) => postDate(b).localeCompare(postDate(a)) || String(b.featured).localeCompare(String(a.featured)));
+}
+
 function statusBadge(status) {
   const normalized = String(status || "planned").toLowerCase();
   const labelMap = {
     draft: "작성 중",
     planned: "예정",
-    evidence: "증거",
+    evidence: "검증",
     published: "공개",
     operating: "운영",
   };
@@ -77,12 +97,19 @@ function evidenceCard(item) {
 }
 
 function postItem(post) {
+  const href = postHref(post);
+  const title = href
+    ? `<a href="${escapeHtml(href)}">${escapeHtml(post.title)}</a>`
+    : escapeHtml(post.title);
+  const meta = [postDate(post), post.author, post.series].filter(Boolean).join(" · ");
   return `
     <article class="post-item">
       <div>
         <span>${escapeHtml(post.category || "Log")}</span>
-        <h3>${escapeHtml(post.title)}</h3>
+        <h3>${title}</h3>
+        ${meta ? `<div class="post-meta">${escapeHtml(meta)}</div>` : ""}
         <p>${escapeHtml(post.summary)}</p>
+        ${postTags(post)}
       </div>
       ${statusBadge(post.status)}
     </article>
@@ -127,6 +154,68 @@ function renderHomeIntro(home) {
   }
 }
 
+function renderFeaturedPost(posts) {
+  const target = document.getElementById("featuredPost");
+  if (!target) return;
+  const items = sortedPosts(posts);
+  const post = items.find((item) => item.featured) || items[0];
+  if (!post) {
+    target.innerHTML = "";
+    return;
+  }
+  const href = postHref(post) || "posts.html";
+  target.innerHTML = `
+    <article>
+      <div class="card-kicker">FEATURED</div>
+      <h2><a href="${escapeHtml(href)}">${escapeHtml(post.title)}</a></h2>
+      <div class="post-meta">${escapeHtml([post.category, postDate(post)].filter(Boolean).join(" · "))}</div>
+      <p>${escapeHtml(post.summary)}</p>
+      ${postTags(post)}
+    </article>
+  `;
+}
+
+function renderLatestPosts(posts) {
+  const target = document.getElementById("latestPosts");
+  if (!target) return;
+  const items = sortedPosts(posts).filter((post) => !post.featured).slice(0, 3);
+  target.innerHTML = items.map((post) => {
+    const href = postHref(post) || "posts.html";
+    return `
+      <a href="${escapeHtml(href)}">
+        <span>${escapeHtml([post.category, postDate(post)].filter(Boolean).join(" · "))}</span>
+        <strong>${escapeHtml(post.title)}</strong>
+      </a>
+    `;
+  }).join("");
+}
+
+function renderTopicLanes(home) {
+  const target = document.getElementById("topicLanes");
+  if (!target) return;
+  const lanes = Array.isArray(home.topic_lanes) ? home.topic_lanes : [];
+  target.innerHTML = lanes.map((lane) => `
+    <a class="topic-card" href="${escapeHtml(lane.href || "#")}">
+      <span>${escapeHtml(lane.tag || "Topic")}</span>
+      <strong>${escapeHtml(lane.title)}</strong>
+      <p>${escapeHtml(lane.summary)}</p>
+    </a>
+  `).join("");
+}
+
+function renderSeries(home) {
+  const target = document.getElementById("seriesGrid");
+  if (!target) return;
+  const series = Array.isArray(home.series) ? home.series : [];
+  target.innerHTML = series.map((item) => `
+    <a class="series-card" href="${escapeHtml(item.href || "#")}">
+      <span>${escapeHtml(item.count || "series")}</span>
+      <strong>${escapeHtml(item.title)}</strong>
+      <p>${escapeHtml(item.summary)}</p>
+    </a>
+  `).join("");
+}
+
 function renderBookToc(toc) {
   const target = document.getElementById("bookToc");
   if (!target) return;
@@ -153,7 +242,7 @@ function renderEvidence(evidence) {
 function renderPosts(posts) {
   const target = document.getElementById("postList");
   if (!target) return;
-  const items = Array.isArray(posts.posts) ? posts.posts : [];
+  const items = sortedPosts(posts);
   target.innerHTML = items.map(postItem).join("");
 }
 
@@ -185,6 +274,10 @@ async function initHome() {
     readJson("data/posts.json"),
   ]);
   renderHomeIntro(home);
+  renderFeaturedPost(posts);
+  renderLatestPosts(posts);
+  renderTopicLanes(home);
+  renderSeries(home);
   renderBookToc(toc);
   renderEvidence(evidence);
   renderPosts(posts);
@@ -402,6 +495,7 @@ function renderStrategyOverview(strategy, summary) {
   }
   const rules = Array.isArray(strategy.rules) ? strategy.rules : [];
   const dataSources = Array.isArray(strategy.data_sources) ? strategy.data_sources : [];
+  const periodLabel = document.body.dataset.kind === "actual" ? "운영 기간" : "검증 기간";
   target.innerHTML = `
     <article class="strategy-explain">
       <div>
@@ -412,7 +506,7 @@ function renderStrategyOverview(strategy, summary) {
       <dl>
         <dt>전략 코드</dt><dd>${escapeHtml(strategy.code || "-")}</dd>
         <dt>봉 간격</dt><dd>${escapeHtml(strategy.bar_interval || "-")}</dd>
-        <dt>검증 기간</dt><dd>${escapeHtml(summary.period || "-")}</dd>
+        <dt>${escapeHtml(periodLabel)}</dt><dd>${escapeHtml(summary.period || "-")}</dd>
         <dt>데이터</dt><dd>${escapeHtml(dataSources.join(", ") || "-")}</dd>
       </dl>
     </article>
@@ -449,6 +543,35 @@ function renderStrategySummary(summary, metrics, asset, totalStrategyCount) {
     metricCard("목표수익률 범위", `${pct(metrics.min_target_profit_pct)} ~ ${pct(metrics.max_target_profit_pct)}`, `평균 ${pct(metrics.avg_target_profit_pct)}`),
     metricCard("손익비", multiple(metrics.profit_factor), "실현 이익 / 실현 손실"),
   ].join("");
+}
+
+function renderActualLinkPanel(strategy) {
+  const target = document.getElementById("actualLinkPanel");
+  if (!target) return;
+  const available = Boolean(strategy.actual_available);
+  const href = strategy.actual_href || "";
+  if (!available || !href) {
+    target.innerHTML = `
+      <div class="actual-link-panel is-disabled">
+        <div>
+          <span>ACTUAL TRADING LOG</span>
+          <strong>실제 매매 데이터 연결 준비 중</strong>
+          <p>선택한 백테스트 전략과 같은 실제 매매 러너가 아직 공개 집계에 연결되지 않았습니다.</p>
+        </div>
+      </div>
+    `;
+    return;
+  }
+  target.innerHTML = `
+    <div class="actual-link-panel">
+      <div>
+        <span>ACTUAL TRADING LOG</span>
+        <strong>실제 매매 데이터 확인</strong>
+        <p>이 백테스트와 동일한 전략 코드 기준으로 실제 매매 실현손익 집계 화면으로 이동합니다.</p>
+      </div>
+      <a class="button primary" href="${escapeHtml(href)}">실제 매매 데이터 확인</a>
+    </div>
+  `;
 }
 
 function bindDailyPagination() {
@@ -488,6 +611,7 @@ function renderSelectedPerformance() {
   const updated = document.getElementById("performanceUpdated");
   if (updated) updated.textContent = summary.updated_at || "-";
   renderStrategySummary(summary, returnMetrics, asset, strategies.length);
+  renderActualLinkPanel(strategy);
   renderStrategyOverview(strategy, summary);
   renderGaps(rows, kind);
   renderDailyPnlRows(rows);

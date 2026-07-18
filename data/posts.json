@@ -1,28 +1,71 @@
 {
   "posts": [
     {
+      "category": "Market Economy",
+      "title": "오늘의 퀀트·경제 데이터 분석 요약 - 2026-07-18",
+      "summary": "수익률 예측보다 데이터 기준선, 불확실성 가정, 자산 보유 구조를 먼저 점검하라는 메시지를 정리합니다.",
+      "status": "published",
+      "date": "2026-07-18",
+      "author": "MediaMak",
+      "tags": ["Quant", "Economy", "Data"],
+      "series": "최신 데이터 인사이트",
+      "featured": true,
+      "href": "posts/2026-07-18-market-economy-roundup.html"
+    },
+    {
+      "category": "Data Analysis",
+      "title": "오늘의 데이터 분석 해외 자료 요약 - 2026-07-18",
+      "summary": "AI 연구 자료를 의사결정 기반, 설명 가능성, 비디오/생성 모델의 효율적 이해 관점에서 짧게 정리합니다.",
+      "status": "published",
+      "date": "2026-07-18",
+      "author": "MediaMak",
+      "tags": ["AI", "Data Analysis", "Research"],
+      "series": "최신 데이터 인사이트",
+      "href": "posts/2026-07-18-data-analysis-roundup.html"
+    },
+    {
       "category": "Architecture",
       "title": "자동매매 시스템의 전체 흐름",
-      "summary": "거래소 API에서 수집한 데이터가 MySQL과 전략 러너를 거쳐 정적 증거 사이트로 이어지는 구조를 설명합니다.",
-      "status": "draft"
+      "summary": "거래소 API에서 수집한 데이터가 MySQL과 전략 러너를 거쳐 정적 검증 기록으로 이어지는 구조를 설명합니다.",
+      "status": "draft",
+      "date": "2026-07-18",
+      "author": "MediaMak",
+      "tags": ["Architecture", "MySQL", "GitHub Pages"],
+      "series": "자동매매 시스템 구축기",
+      "href": "architecture.html"
     },
     {
       "category": "Data Collection",
       "title": "BTC 가격과 KOSPI200 데이터를 같은 저장소에 쌓는 방법",
       "summary": "코인과 국내주식 데이터 수집기를 분리하면서도 공통 로그와 DB 계층을 공유하는 리팩토링 기록입니다.",
-      "status": "planned"
+      "status": "planned",
+      "date": "2026-07-18",
+      "author": "MediaMak",
+      "tags": ["Data Collection", "Upbit", "KOSPI200"],
+      "series": "자동매매 시스템 구축기",
+      "href": "posts.html"
     },
     {
       "category": "Backtest",
       "title": "백테스트 결과를 출판 가능한 증거로 바꾸는 기준",
       "summary": "전략 홍보가 아니라 재현 가능한 검증 기록으로 백테스트 결과를 다루는 원칙을 정리합니다.",
-      "status": "planned"
+      "status": "planned",
+      "date": "2026-07-18",
+      "author": "MediaMak",
+      "tags": ["Backtest", "Validation", "Publishing"],
+      "series": "백테스트 검증 노트",
+      "href": "simulation.html"
     },
     {
       "category": "Operations",
       "title": "실거래 운영 기록에서 공개하지 말아야 할 것들",
-      "summary": "계정, 주문 상세, API 키, 관리자 로그를 제외하고도 증거로 남길 수 있는 집계 범위를 정합니다.",
-      "status": "draft"
+      "summary": "계정, 주문 상세, API 키, 관리자 로그를 제외하고도 검증 자료로 남길 수 있는 집계 범위를 정합니다.",
+      "status": "draft",
+      "date": "2026-07-18",
+      "author": "MediaMak",
+      "tags": ["Operations", "Disclosure", "Actual"],
+      "series": "운영 기록과 공개 원칙",
+      "href": "actual.html"
     }
   ]
 }

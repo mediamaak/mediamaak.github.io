@@ -3,7 +3,7 @@
     {
       "title": "API와 DB 적재 흐름도",
       "type": "architecture",
-      "summary": "외부 API, 수집기, MySQL, 전략 러너, Flask API, GitHub Pages 증거 사이트가 어떻게 연결되는지 정리한 기준 자료입니다.",
+      "summary": "외부 API, 수집기, MySQL, 전략 러너, Flask API, GitHub Pages 검증 기록이 어떻게 연결되는지 정리한 기준 자료입니다.",
       "scope": "system flow",
       "status": "evidence",
       "href": "wiki.html",
@@ -12,7 +12,7 @@
     {
       "title": "백테스트 요약",
       "type": "backtest",
-      "summary": "전략별 공개 가능한 백테스트 결과를 정적 JSON으로 보여주는 증거 페이지입니다.",
+      "summary": "전략별 공개 가능한 백테스트 결과를 정적 JSON으로 보여주는 검증 기록입니다.",
       "scope": "simulation",
       "status": "operating",
       "href": "simulation.html",
@@ -21,7 +21,7 @@
     {
       "title": "실거래 기록 요약",
       "type": "operation",
-      "summary": "개인정보와 주문 상세를 제외한 실제 운영 집계 자료를 출판 근거로 보관합니다.",
+      "summary": "개인정보와 주문 상세를 제외한 실제 운영 집계 자료를 출판 근거와 검증 기록으로 보관합니다.",
       "scope": "actual record",
       "status": "operating",
       "href": "actual.html",

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>내부 실제 매매 기록 요약 | MediaMak</title>
+  <title>실제 매매 데이터 | MediaMak</title>
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/charts.js" defer></script>
   <script src="assets/app.js" defer></script>
@@ -13,10 +13,10 @@
     <a class="brand" href="index.html"><span>M</span><strong>MediaMak</strong></a>
     <nav class="global-menu" aria-label="주요 메뉴">
       <div class="menu-item has-panel">
-        <a class="menu-link" href="index.html">미디어막 소개</a>
+        <a class="menu-link" href="about.html">미디어막 소개</a>
         <div class="menu-panel">
-          <a href="index.html">최신 트렌드</a>
-          <a href="portfolio.html">포트폴리오</a>
+          <a href="about.html">이름 소개</a>
+          <a href="index.html">기술블로그 홈</a>
           <a href="architecture.html">시스템 흐름</a>
           <a href="disclosure.html">공개 원칙</a>
         </div>
@@ -24,9 +24,9 @@
       <div class="menu-item has-panel">
         <a class="menu-link" href="posts.html">뉴스/자료</a>
         <div class="menu-panel">
-          <a href="latest.html">최신</a>
+          <a href="latest.html">최신 트랜드</a>
           <a href="posts.html">개발 기록</a>
-          <a href="evidence.html">증거 아카이브</a>
+          <a href="evidence.html">검증 기록</a>
           <a href="book.html">책 목차</a>
           <a href="wiki.html">위키와 문서</a>
         </div>
@@ -43,12 +43,32 @@
   </header>
   <main>
     <section class="page-title">
-      <p class="eyebrow">INTERNAL RUN LOG</p>
-      <h1>내부 실제 매매 기록 요약</h1>
-      <p>정적 JSON 파일 `data/actual-performance.json`을 읽어 공개 가능한 집계만 표시합니다. 주문 상세, 계정 정보, 개인 식별 정보는 포함하지 않습니다.</p>
+      <p class="eyebrow">ACTUAL TRADING LOG</p>
+      <h1 id="performanceTitle">실제 매매 데이터</h1>
+      <p id="performanceIntro">투자 소재와 전략을 선택하면 공개 가능한 실제 매매 실현손익을 확인할 수 있습니다. 주문 상세, 계정 정보, 개인 식별 정보는 포함하지 않습니다.</p>
     </section>
     <section class="section">
-      <div id="performanceSummary" class="metric-grid"></div>
+      <div class="filter-panel" aria-label="실제 매매 데이터 선택">
+        <label for="assetSelect">
+          <span>투자 소재</span>
+          <select id="assetSelect"></select>
+        </label>
+        <label for="strategySelect">
+          <span>전략</span>
+          <select id="strategySelect"></select>
+        </label>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-heading"><h2>전략 요약</h2></div>
+      <div id="performanceSummary" class="metric-grid strategy-summary-grid"></div>
+    </section>
+    <section class="section">
+      <div class="section-heading">
+        <h2>전략 설명</h2>
+        <span id="strategyUpdated">-</span>
+      </div>
+      <div id="strategyOverview" class="strategy-overview"></div>
     </section>
     <section class="section">
       <div class="section-heading">
@@ -61,17 +81,22 @@
       <div id="gapMarkers" class="gap-list"></div>
     </section>
     <section class="section">
-      <div class="section-heading"><h2>전략별 표</h2></div>
+      <div class="section-heading">
+        <h2>일별 실현손익 표</h2>
+        <span id="dailyPnlPageInfo">-</span>
+      </div>
       <div class="table-wrap">
         <table>
-          <thead><tr><th>전략</th><th>마켓</th><th>누적 손익</th><th>승률</th><th>거래 수</th><th>최근 갱신</th></tr></thead>
-          <tbody id="performanceStrategyBody"><tr><td colspan="6">데이터를 불러오는 중입니다.</td></tr></tbody>
+          <thead><tr><th>일자</th><th>일별 실현손익</th><th>누적 실현손익</th><th>거래 수</th><th>승</th><th>패</th></tr></thead>
+          <tbody id="dailyPnlBody"><tr><td colspan="6">데이터를 불러오는 중입니다.</td></tr></tbody>
         </table>
+      </div>
+      <div class="pagination-controls">
+        <button type="button" id="dailyPnlPrev">이전</button>
+        <button type="button" id="dailyPnlNext">다음</button>
       </div>
     </section>
   </main>
   <footer class="site-footer"><span>MediaMak static draft</span><span>https://mediamaak.github.io</span></footer>
 </body>
 </html>
-
-

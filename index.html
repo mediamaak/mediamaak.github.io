@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MediaMak 자동매매 기술블로그</title>
-  <meta name="description" content="자동매매 시스템 개발, 데이터 수집, 백테스트, 실거래 운영, 장애 대응을 기록하는 기술블로그와 출판용 증거 아카이브">
+  <meta name="description" content="자동매매 시스템 개발, 데이터 수집, 백테스트, 실거래 운영, 장애 대응을 기록하는 MediaMak 기술블로그">
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/charts.js" defer></script>
   <script src="assets/app.js" defer></script>
@@ -14,20 +14,20 @@
     <a class="brand" href="index.html"><span>M</span><strong>MediaMak</strong></a>
     <nav class="global-menu" aria-label="주요 메뉴">
       <div class="menu-item has-panel">
-        <a class="menu-link" href="index.html">미디어막 소개</a>
+        <a class="menu-link" href="about.html">미디어막 소개</a>
         <div class="menu-panel">
-          <a href="index.html">최신 트렌드</a>
-          <a href="portfolio.html">포트폴리오</a>
+          <a href="about.html">이름 소개</a>
+          <a href="index.html">기술블로그 홈</a>
           <a href="architecture.html">시스템 흐름</a>
           <a href="disclosure.html">공개 원칙</a>
         </div>
       </div>
       <div class="menu-item has-panel">
-        <a class="menu-link" href="posts.html">뉴스/자료</a>
+        <a class="menu-link" href="latest.html">뉴스/자료</a>
         <div class="menu-panel">
-          <a href="latest.html">최신</a>
+          <a href="latest.html">최신 트랜드</a>
           <a href="posts.html">개발 기록</a>
-          <a href="evidence.html">증거 아카이브</a>
+          <a href="evidence.html">검증 기록</a>
           <a href="book.html">책 목차</a>
           <a href="wiki.html">위키와 문서</a>
         </div>
@@ -45,16 +45,51 @@
 
   <main>
     <section class="hero blog-hero" id="overview">
-      <p class="eyebrow">AUTOMATED TRADING ENGINEERING LOG</p>
-      <h1 id="homeTitle">자동매매 시스템 개발 기록</h1>
-      <p id="homeDescription" class="lead">데이터 수집부터 전략 검증, 실거래 운영, 장애 대응까지 기록하는 기술블로그입니다.</p>
-      <div id="homePrimaryLinks" class="hero-actions"></div>
+      <div class="home-hero-grid">
+        <div class="home-copy">
+          <p class="eyebrow">AUTOMATED TRADING ENGINEERING LOG</p>
+          <h1 id="homeTitle">자동매매 시스템 개발 기록</h1>
+          <p id="homeDescription" class="lead">데이터 수집부터 전략 검증, 실거래 운영, 장애 대응까지 기록하는 기술블로그입니다.</p>
+          <div id="homePrimaryLinks" class="hero-actions"></div>
+        </div>
+        <div class="home-feature-stack">
+          <div id="featuredPost" class="home-feature"></div>
+          <div id="latestPosts" class="latest-list compact-latest"></div>
+        </div>
+      </div>
       <div id="homeStats" class="metric-grid compact-metrics"></div>
     </section>
 
     <section class="notice-band">
       <strong>사이트 성격</strong>
-      <span>이 홈은 투자 권유 페이지가 아니라 출판 원고, 개발 기록, 자동매매 검증 증거를 정리하는 기술 아카이브입니다.</span>
+      <span>이 홈은 투자 권유 페이지가 아니라 개발 기록, 자동매매 검증, 출판 원고 준비 자료를 정리하는 기술 아카이브입니다.</span>
+    </section>
+
+    <section class="section" id="topics">
+      <div class="section-heading">
+        <p class="eyebrow">TOPICS</p>
+        <h2>주제별로 읽기</h2>
+        <span>시스템, 데이터, 검증, 운영 기록</span>
+      </div>
+      <div id="topicLanes" class="topic-lanes"></div>
+    </section>
+
+    <section class="section" id="posts">
+      <div class="section-heading">
+        <p class="eyebrow">LATEST POSTS</p>
+        <h2>최신 기술 기록</h2>
+        <span>공개 글과 작성 예정 주제</span>
+      </div>
+      <div id="postList" class="post-list"></div>
+    </section>
+
+    <section class="section" id="series">
+      <div class="section-heading">
+        <p class="eyebrow">SERIES</p>
+        <h2>연재와 원고 흐름</h2>
+        <span>책 목차와 기술글을 연결하는 읽기 경로</span>
+      </div>
+      <div id="seriesGrid" class="series-grid"></div>
     </section>
 
     <section class="section" id="book">
@@ -68,20 +103,11 @@
 
     <section class="section" id="evidence">
       <div class="section-heading">
-        <p class="eyebrow">EVIDENCE ARCHIVE</p>
-        <h2>자동매매 증거 아카이브</h2>
+        <p class="eyebrow">VALIDATION RECORDS</p>
+        <h2>자동매매 검증 기록</h2>
         <span>성과 홍보가 아니라 재현 가능한 개발/운영 기록</span>
       </div>
       <div id="evidenceGrid" class="card-grid"></div>
-    </section>
-
-    <section class="section" id="posts">
-      <div class="section-heading">
-        <p class="eyebrow">ENGINEERING POSTS</p>
-        <h2>기술블로그 개발 기록</h2>
-        <span>최신 글과 작성 예정 주제</span>
-      </div>
-      <div id="postList" class="post-list"></div>
     </section>
 
     <section class="section" id="architecture">
@@ -107,5 +133,3 @@
   </footer>
 </body>
 </html>
-
-
