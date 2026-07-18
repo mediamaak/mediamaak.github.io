@@ -354,7 +354,10 @@
             "avg_target_profit_pct": 0.8859235629534329,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 2.544518547924163,
-            "profit_factor": 0.6931967894806768
+            "profit_factor": 0.6931967894806768,
+            "max_input_budget_krw": 10203.325277108124,
+            "daily_avg_input_budget_krw": 382490.2455681328,
+            "cumulative_return_pct": -0.20015370175477185
           },
           "daily": [
             {
@@ -764,7 +767,10 @@
             "avg_target_profit_pct": 0.550000000000007,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 0.55,
-            "profit_factor": 0.1851053461207219
+            "profit_factor": 0.1851053461207219,
+            "max_input_budget_krw": 10061.68232247294,
+            "daily_avg_input_budget_krw": 557149.180393229,
+            "cumulative_return_pct": -0.08936178097731909
           },
           "daily": [
             {
@@ -959,7 +965,10 @@
             "avg_target_profit_pct": 0.5500000000000002,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 0.55,
-            "profit_factor": 7.656050042947603
+            "profit_factor": 7.656050042947603,
+            "max_input_budget_krw": 10063.483288249887,
+            "daily_avg_input_budget_krw": 43498.35751348459,
+            "cumulative_return_pct": 0.37938025613977255
           },
           "daily": [
             {
@@ -1140,7 +1149,10 @@
             "avg_target_profit_pct": 0.5499999999999984,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 0.55,
-            "profit_factor": 2.4272317115227633
+            "profit_factor": 2.4272317115227633,
+            "max_input_budget_krw": 10063.483288249887,
+            "daily_avg_input_budget_krw": 78693.63530250448,
+            "cumulative_return_pct": 0.2460622155275871
           },
           "daily": [
             {
@@ -1361,7 +1373,10 @@
             "avg_target_profit_pct": 0.5499999999999984,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 0.55,
-            "profit_factor": 2.4272317115227633
+            "profit_factor": 2.4272317115227633,
+            "max_input_budget_krw": 10063.483288249887,
+            "daily_avg_input_budget_krw": 78693.63530250448,
+            "cumulative_return_pct": 0.2460622155275871
           },
           "daily": [
             {
@@ -1582,7 +1597,10 @@
             "avg_target_profit_pct": 0.5500000000000003,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 0.55,
-            "profit_factor": 3.5111346201017786
+            "profit_factor": 3.5111346201017786,
+            "max_input_budget_krw": 10058.034745022629,
+            "daily_avg_input_budget_krw": 25528.372057957124,
+            "cumulative_return_pct": 0.2891943256078485
           },
           "daily": [
             {
@@ -1731,7 +1749,10 @@
             "avg_target_profit_pct": 0.5499999999999984,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 0.55,
-            "profit_factor": 2.4272317115227633
+            "profit_factor": 2.4272317115227633,
+            "max_input_budget_krw": 10063.483288249887,
+            "daily_avg_input_budget_krw": 78693.63530250448,
+            "cumulative_return_pct": 0.2460622155275871
           },
           "daily": [
             {
@@ -1952,7 +1973,10 @@
             "avg_target_profit_pct": 0.8395238095238076,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 1.5,
-            "profit_factor": 2.7173547922401466
+            "profit_factor": 2.7173547922401466,
+            "max_input_budget_krw": 10147.61623527595,
+            "daily_avg_input_budget_krw": 52652.25758873705,
+            "cumulative_return_pct": 0.28917580310857444
           },
           "daily": [
             {
@@ -2192,7 +2216,10 @@
             "avg_target_profit_pct": 1.5,
             "min_target_profit_pct": 1.5,
             "max_target_profit_pct": 1.5,
-            "profit_factor": 1.518962667867087
+            "profit_factor": 1.518962667867087,
+            "max_input_budget_krw": 129575.7229974645,
+            "daily_avg_input_budget_krw": 676461.0009317038,
+            "cumulative_return_pct": 0.8642491244844822
           },
           "daily": [
             {
