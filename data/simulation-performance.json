@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-20 01:47 KST",
+  "updated_at": "2026-07-20 01:53 KST",
   "summary": {
     "period": "2026-06-08 23:30 ~ 2026-07-18 01:50 KST",
     "total_pnl_krw": 77.91919328569202,
@@ -7688,8 +7688,10 @@
             "return_rule": "fixed_target",
             "data_interval": "1d"
           },
-          "actual_available": false,
-          "actual_status": "not_connected",
+          "actual_available": true,
+          "actual_status": "connected",
+          "actual_strategy_code": "kospi-strategy1",
+          "actual_href": "actual.html?asset=kospi200&strategy=kis_kospi200_cci_rebound_fixed_target_1d&from=backtest",
           "parameter_summary": {
             "entry": "CCI -100 상향 돌파",
             "target_profit": "1.5%",
