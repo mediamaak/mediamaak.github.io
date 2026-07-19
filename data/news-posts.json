@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-07-18T23:30:19Z",
+  "updated_at": "2026-07-19T23:30:21Z",
   "posts": [
+    {
+      "id": "2026-07-20-market-economy-roundup",
+      "title": "2026년 7월 20일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-20",
+      "category": "Market Economy",
+      "summary": "결론: 해외자산 구성, 기업 불확실성, 지정학 리스크가 각각 포트폴리오·리스크 프레임에 어떤 신호를 주는지 분리해서 읽는 것이 핵심입니다.",
+      "href": "posts/2026-07-20-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "banking",
+        "economic-data",
+        "macro",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant-analysis",
+        "research",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-07-19-market-economy-roundup",
       "title": "2026년 7월 19일 퀀트·경제 데이터 분석 요약",
