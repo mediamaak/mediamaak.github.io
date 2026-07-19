@@ -491,6 +491,35 @@ function renderDailyPnlRows(rows) {
   if (next) next.disabled = performanceState.dailyPage >= totalPages;
 }
 
+function performanceChartRows(strategy, kind) {
+  const rows = Array.isArray(strategy.daily) ? strategy.daily : [];
+  const visibleRows = rows.filter((row) => row.type !== "gap");
+  if (visibleRows.length || kind !== "actual") return rows;
+  const positions = Array.isArray(strategy.open_positions) ? strategy.open_positions : [];
+  let cumulative = 0;
+  return positions.map((position) => {
+    const pnl = Number(position.unrealized_pnl_krw) || 0;
+    cumulative += pnl;
+    return {
+      type: "open_position",
+      date: position.symbol || position.label || "-",
+      label: position.symbol || position.label || "-",
+      pnl_krw: pnl,
+      cumulative_pnl_krw: cumulative,
+    };
+  });
+}
+
+function updatePerformanceChartTitle(strategy, kind) {
+  const heading = document.querySelector("#performanceChart")?.closest("section")?.querySelector(".section-heading h2");
+  if (!heading) return;
+  const rows = Array.isArray(strategy.daily) ? strategy.daily.filter((row) => row.type !== "gap") : [];
+  const positions = Array.isArray(strategy.open_positions) ? strategy.open_positions : [];
+  heading.textContent = kind === "actual" && !rows.length && positions.length
+    ? "오픈 포지션 평가손익 그래프"
+    : "일별 손익 그래프";
+}
+
 function renderStrategyOverview(strategy, summary) {
   const target = document.getElementById("strategyOverview");
   if (!target) return;
@@ -622,6 +651,7 @@ function renderSelectedPerformance() {
   const summary = strategy.summary || {};
   const returnMetrics = strategy.return_metrics || {};
   const rows = Array.isArray(strategy.daily) ? strategy.daily : [];
+  const chartRows = performanceChartRows(strategy, kind);
   const strategies = allPerformanceStrategies(data);
 
   const title = document.getElementById("performanceTitle");
@@ -636,13 +666,17 @@ function renderSelectedPerformance() {
   renderStrategySummary(summary, returnMetrics, asset, strategies.length);
   renderActualLinkPanel(strategy);
   renderStrategyOverview(strategy, summary);
+  updatePerformanceChartTitle(strategy, kind);
   renderGaps(rows, kind);
   renderDailyPnlRows(rows);
-  window.MediaMakCharts?.renderPerformanceChart(document.getElementById("performanceChart"), rows);
+  window.MediaMakCharts?.renderPerformanceChart(document.getElementById("performanceChart"), chartRows);
   if (performanceState.resizeHandler) {
     window.removeEventListener("resize", performanceState.resizeHandler);
   }
-  performanceState.resizeHandler = () => window.MediaMakCharts?.renderPerformanceChart(document.getElementById("performanceChart"), selectedPerformanceStrategy().daily);
+  performanceState.resizeHandler = () => {
+    const selected = selectedPerformanceStrategy();
+    window.MediaMakCharts?.renderPerformanceChart(document.getElementById("performanceChart"), performanceChartRows(selected, document.body.dataset.kind || "backtest"));
+  };
   window.addEventListener("resize", performanceState.resizeHandler);
 }
 

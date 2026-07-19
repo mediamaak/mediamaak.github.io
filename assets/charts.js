@@ -37,6 +37,7 @@
       ctx.fillText("표시할 데이터가 없습니다.", 18, 32);
       return;
     }
+    const isOpenPositionChart = data.every((row) => row.type === "open_position");
 
     const pad = { left: 76, right: 22, top: 24, bottom: 58 };
     const plotW = Math.max(1, width - pad.left - pad.right);
@@ -99,7 +100,7 @@
       ctx.fillText(String(data[index].date || data[index].label || "").slice(5), x, pad.top + plotH + 12);
     }
     ctx.textAlign = "left";
-    ctx.fillText("막대: 일별 손익 / 선: 누적 손익", pad.left, height - 18);
+    ctx.fillText(isOpenPositionChart ? "막대: 포지션 평가손익 / 선: 누적 평가손익" : "막대: 일별 손익 / 선: 누적 손익", pad.left, height - 18);
   }
 
   window.MediaMakCharts = { renderPerformanceChart };
