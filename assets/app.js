@@ -538,6 +538,22 @@ function renderStrategySummary(summary, metrics, asset, totalStrategyCount) {
     target.innerHTML = '<article class="metric-card"><span>전략 요약</span><strong>-</strong></article>';
     return;
   }
+  const isActual = document.body.dataset.kind === "actual";
+  if (isActual) {
+    target.innerHTML = [
+      metricCard("누적 실현손익", krw(summary.total_pnl_krw), summary.period),
+      metricCard("일평균 실현손익", krw(summary.daily_avg_pnl_krw)),
+      metricCard("승률", pct(summary.win_rate_pct), `${fmt.format(Number(metrics.win_count) || 0)}승 / ${fmt.format(Number(metrics.loss_count) || 0)}패`),
+      metricCard("실현 거래 수", `${fmt.format(Number(summary.trade_count) || 0)}건`),
+      metricCard("오픈 포지션", `${fmt.format(Number(summary.open_position_count) || 0)}개`, `현재 투입 ${krwAmount(summary.open_budget_krw)}`),
+      metricCard("최대 투입 예산", krwAmount(metrics.max_input_budget_krw), "단일 포지션 기준"),
+      metricCard("현재 미실현 손익", krw(metrics.open_unrealized_pnl_krw), pct(metrics.open_unrealized_return_pct)),
+      metricCard("누적 실현수익률", pct(metrics.cumulative_return_pct), "실현손익 / 투입 예산 기준"),
+      metricCard("목표수익률 범위", `${pct(metrics.min_target_profit_pct)} ~ ${pct(metrics.max_target_profit_pct)}`, `평균 ${pct(metrics.avg_target_profit_pct)}`),
+      metricCard("손익비", multiple(metrics.profit_factor), "실현 이익 / 실현 손실"),
+    ].join("");
+    return;
+  }
   target.innerHTML = [
     metricCard("누적 손익", krw(summary.total_pnl_krw), summary.period),
     metricCard("일평균 손익", krw(summary.daily_avg_pnl_krw)),
