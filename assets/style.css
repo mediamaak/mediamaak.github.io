@@ -122,19 +122,20 @@ main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 6
   scroll-margin-top: 90px;
 }
 .hero, .page-title {
-  padding: 48px 0 30px;
+  padding: 42px 0 24px;
 }
 .blog-hero {
   max-width: none;
 }
 .home-hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.75fr);
-  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.78fr);
+  gap: clamp(24px, 4vw, 52px);
   align-items: start;
 }
 .home-copy {
   min-width: 0;
+  align-self: stretch;
 }
 .home-feature-stack {
   display: grid;
@@ -307,6 +308,9 @@ main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 6
   border-radius: 8px;
   background: #eef4ff;
   color: #1e3a8a;
+}
+.home-hero-notice {
+  margin-top: 18px;
 }
 .live-status-grid {
   display: grid;
@@ -631,6 +635,18 @@ main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 6
   max-width: 920px;
   margin-top: 30px;
 }
+.home-hero-metrics {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: none;
+  margin-top: 34px;
+}
+.home-hero-metrics .metric-card {
+  min-height: 126px;
+}
+.home-hero-metrics .metric-card strong {
+  font-size: 26px;
+  line-height: 1.25;
+}
 .toc-list,
 .post-list {
   display: grid;
@@ -953,5 +969,21 @@ td small { display: block; color: var(--muted); }
   }
   .flow-strip {
     grid-template-columns: 1fr;
+  }
+  .home-hero-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .home-hero-metrics .metric-card {
+    min-height: 108px;
+    padding: 14px;
+  }
+  .home-hero-metrics .metric-card strong {
+    font-size: 18px;
+    line-height: 1.25;
+    word-break: keep-all;
+  }
+  .home-hero-metrics .metric-card small {
+    font-size: 12px;
   }
 }
