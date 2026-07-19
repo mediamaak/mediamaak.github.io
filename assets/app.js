@@ -273,16 +273,80 @@ function renderDisclosure(home) {
   target.innerHTML = notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("");
 }
 
+function homeAssetTrail(asset) {
+  const market = String(asset.market || asset.code || "").toUpperCase();
+  if (market.includes("KOSPI")) return ["KOSPI", "KOSPI200"];
+  return ["코인", "비트코인"];
+}
+
+function renderPositionItems(strategy, asset) {
+  const positions = Array.isArray(strategy.open_positions) ? strategy.open_positions : [];
+  if (!positions.length) {
+    const trail = homeAssetTrail(asset);
+    const label = trail[1] || asset.label || strategy.market || "투자 소재";
+    return `
+      <li>
+        <strong>${escapeHtml(label)}</strong>
+        <span>오픈 포지션 ${fmt.format(Number(strategy.summary?.open_position_count) || 0)}개 · 실현손익 ${krw(strategy.summary?.total_pnl_krw)}</span>
+      </li>
+    `;
+  }
+  return positions.slice(0, 12).map((position) => {
+    const pnl = Number(position.unrealized_pnl_krw);
+    const pnlClass = pnl < 0 ? "negative" : pnl > 0 ? "positive" : "neutral";
+    return `
+      <li>
+        <strong>${escapeHtml(position.symbol || "-")}</strong>
+        <span class="${pnlClass}">${krw(position.unrealized_pnl_krw)} · ${pct(position.unrealized_return_pct)}</span>
+      </li>
+    `;
+  }).join("");
+}
+
+function renderHomeLiveStatus(actual) {
+  const target = document.getElementById("homeLiveStatus");
+  if (!target) return;
+  const assets = getPerformanceAssets(actual || {});
+  target.innerHTML = assets.map((asset) => {
+    const strategy = asset.strategies[0] || {};
+    const summary = strategy.summary || {};
+    const trail = homeAssetTrail(asset);
+    const href = `actual.html?asset=${encodeURIComponent(asset.code || "")}&strategy=${encodeURIComponent(strategy.code || "")}`;
+    const openPnl = Number(summary.open_unrealized_pnl_krw);
+    const openPnlClass = openPnl < 0 ? "negative" : openPnl > 0 ? "positive" : "neutral";
+    return `
+      <article class="live-status-card">
+        <div class="live-trail">${trail.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}</div>
+        <div class="live-status-head">
+          <div>
+            <h3>${escapeHtml(strategy.name || asset.label || "실거래 전략")}</h3>
+            <p>${escapeHtml(strategy.market || asset.market || "-")} · ${escapeHtml(strategy.bar_interval || "-")}</p>
+          </div>
+          <a href="${escapeHtml(href)}">상세</a>
+        </div>
+        <div class="live-status-metrics">
+          <div><span>실현손익</span><strong>${krw(summary.total_pnl_krw)}</strong></div>
+          <div><span>오픈 포지션</span><strong>${fmt.format(Number(summary.open_position_count) || 0)}개</strong></div>
+          <div><span>미실현 손익</span><strong class="${openPnlClass}">${krw(summary.open_unrealized_pnl_krw)}</strong></div>
+        </div>
+        <ul class="live-position-list">${renderPositionItems(strategy, asset)}</ul>
+      </article>
+    `;
+  }).join("");
+}
+
 async function initHome() {
-  const [home, toc, evidence, posts] = await Promise.all([
+  const [home, toc, evidence, posts, actual] = await Promise.all([
     readJson("data/home.json"),
     readJson("data/book-toc.json"),
     readJson("data/evidence-index.json"),
     readJson("data/posts.json"),
+    readJson("data/actual-performance.json"),
   ]);
   renderHomeIntro(home);
   renderFeaturedPost(posts);
   renderLatestPosts(posts);
+  renderHomeLiveStatus(actual);
   renderTopicLanes(home);
   renderSeries(home);
   renderBookToc(toc);
