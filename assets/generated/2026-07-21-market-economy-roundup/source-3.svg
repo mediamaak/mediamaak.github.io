@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+<title id="title">자료 3 분석 결론 도달 순서도</title>
+<desc id="desc">Unemployment and marriage status 자료의 고유한 분석 논리 구조를 예/아니오 분기 순서도로 표현</desc>
+<rect width="960" height="420" fill="#F7F8F5"/>
+<rect x="0" y="0" width="960" height="12" fill="#8A5A44"/>
+<circle cx="70" cy="72" r="34" fill="#8A5A44"/>
+<text x="70" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">3</text>
+<text x="124" y="55" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1D2528">Unemployment and marriage status</text>
+<text x="124" y="84" font-family="Arial, sans-serif" font-size="15" fill="#5F686B">출처: FRED Blog</text>
+<rect x="52" y="138" width="170" height="76" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="52" y="138" width="170" height="8" rx="4" fill="#8A5A44"/>
+<text x="137" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">질문 설정</text>
+<text x="137" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">해외 보유 미국자산은 무엇인가</text>
+<line x1="222" y1="176" x2="270" y2="176" stroke="#6A7376" stroke-width="2"/>
+<path d="M 270 176 l -7 -6 v 12 z" fill="#6A7376"/>
+<polygon points="360,121 450,176 360,231 270,176" fill="#FFFFFF" stroke="#8A5A44" stroke-width="2"/>
+<text x="360" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1D2528">자산군 분해?</text>
+<text x="360" y="192" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#445055">국채·주식·기타 구분</text>
+<line x1="450" y1="176" x2="500" y2="176" stroke="#6A7376" stroke-width="2"/>
+<path d="M 500 176 l -7 -6 v 12 z" fill="#6A7376"/>
+<text x="475" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#5F686B">예</text>
+<rect x="500" y="138" width="170" height="76" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="500" y="138" width="170" height="8" rx="4" fill="#8A5A44"/>
+<text x="585" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">국채 위치</text>
+<text x="585" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">전체 포트폴리오 내 역할</text>
+<line x1="670" y1="176" x2="720" y2="176" stroke="#6A7376" stroke-width="2"/>
+<path d="M 720 176 l -7 -6 v 12 z" fill="#6A7376"/>
+<polygon points="810,121 900,176 810,231 720,176" fill="#FFFFFF" stroke="#8A5A44" stroke-width="2"/>
+<text x="810" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1D2528">비중 해석 가능?</text>
+<text x="810" y="192" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#445055">기간·축·단위 확인</text>
+<line x1="360" y1="231" x2="360" y2="286" stroke="#6A7376" stroke-width="2"/>
+<path d="M 360 286 l -7 -6 v 12 z" fill="#6A7376"/>
+<text x="360" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#5F686B">아니오</text>
+<rect x="276" y="286" width="168" height="68" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="276" y="286" width="168" height="8" rx="4" fill="#8A5A44"/>
+<text x="360" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">분류 재확인</text>
+<text x="360" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">원문 그래프 정의 확인</text>
+<line x1="810" y1="231" x2="810" y2="286" stroke="#6A7376" stroke-width="2"/>
+<path d="M 810 286 l -7 -6 v 12 z" fill="#6A7376"/>
+<text x="810" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#5F686B">아니오</text>
+<rect x="726" y="286" width="168" height="68" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="726" y="286" width="168" height="8" rx="4" fill="#8A5A44"/>
+<text x="810" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">기간 재검증</text>
+<text x="810" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">시계열 기준 확인</text>
+<line x1="810" y1="121" x2="810" y2="96" stroke="#6A7376" stroke-width="2"/>
+<path d="M 810 96 l -7 -6 v 12 z" fill="#6A7376"/>
+<text x="810" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#5F686B">예</text>
+<line x1="810" y1="96" x2="585" y2="96" stroke="#6A7376" stroke-width="2"/>
+<path d="M 585 96 l 7 -6 v 12 z" fill="#6A7376"/>
+<line x1="585" y1="96" x2="585" y2="122" stroke="#6A7376" stroke-width="2"/>
+<path d="M 585 122 l -7 -6 v 12 z" fill="#6A7376"/>
+<rect x="500" y="122" width="170" height="68" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="500" y="122" width="170" height="8" rx="4" fill="#4F6F52"/>
+<text x="585" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">자금흐름 해석</text>
+<text x="585" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">안전자산 선호 여부 점검</text>
+<line x1="585" y1="190" x2="585" y2="250" stroke="#6A7376" stroke-width="2"/>
+<path d="M 585 250 l -7 -6 v 12 z" fill="#6A7376"/>
+<rect x="500" y="250" width="170" height="68" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="500" y="250" width="170" height="8" rx="4" fill="#5A5878"/>
+<text x="585" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">배분 점검</text>
+<text x="585" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">자산군 노출표에 반영</text>
+<text x="52" y="388" font-family="Arial, sans-serif" font-size="13" fill="#5F686B">논리: 보유자산을 자산군으로 분해하고, 국채 비중의 위치와 변화 기준을 통과할 때만 자금흐름 해석으로 연결합니다.</text>
+</svg>

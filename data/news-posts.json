@@ -1,6 +1,28 @@
 {
-  "updated_at": "2026-07-20T04:26:23Z",
+  "updated_at": "2026-07-20T23:30:23Z",
   "posts": [
+    {
+      "id": "2026-07-21-market-economy-roundup",
+      "title": "2026년 7월 21일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-21",
+      "category": "Market Economy",
+      "summary": "결론: 이번 자료들은 UK 퇴직자산 설계, 장기 위험서열, 실업률 해석처럼 포트폴리오·리스크·거시지표를 읽는 틀을 제공하므로, 한국 투자자는 KOSPI/KOSDAQ 업종 비중과 금리·환율·변동성 민감도를 함께 점검하는 관점이 유효합니다.",
+      "href": "posts/2026-07-21-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "economic-data",
+        "macro",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-07-20-market-economy-roundup",
       "title": "2026년 7월 20일 퀀트·경제 데이터 분석 요약",
