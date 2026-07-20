@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
 <title id="title">자료 1 분석 결론 도달 순서도</title>
-<desc id="desc">What US assets are held overseas? 자료의 고유한 분석 논리 구조를 예/아니오 분기 순서도로 표현</desc>
+<desc id="desc">Real GDP growth by state: First quarter 2026 자료의 고유한 분석 논리 구조를 예/아니오 분기 순서도로 표현</desc>
 <rect width="960" height="420" fill="#F7F8F5"/>
 <rect x="0" y="0" width="960" height="12" fill="#215A6D"/>
 <circle cx="70" cy="72" r="34" fill="#215A6D"/>
 <text x="70" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">1</text>
-<text x="124" y="55" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1D2528">What US assets are held overseas?</text>
+<text x="124" y="55" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1D2528">Real GDP growth by state: First quarter 2026</text>
 <text x="124" y="84" font-family="Arial, sans-serif" font-size="15" fill="#5F686B">출처: FRED Blog</text>
 <rect x="52" y="138" width="170" height="76" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
 <rect x="52" y="138" width="170" height="8" rx="4" fill="#215A6D"/>
