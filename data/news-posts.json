@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-07-20T23:30:23Z",
+  "updated_at": "2026-07-21T23:30:56Z",
   "posts": [
+    {
+      "id": "2026-07-22-market-economy-roundup",
+      "title": "2026년 7월 22일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-22",
+      "category": "Market Economy",
+      "summary": "결론: 세 자료 모두 시장중립·꼬리위험·레짐전환을 다루므로, 한국 투자자는 섹터 비중보다 팩터 노출과 변동성·금리·환율 민감도 점검을 우선해야 합니다.",
+      "href": "posts/2026-07-22-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "factor",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-07-21-market-economy-roundup",
       "title": "2026년 7월 21일 퀀트·경제 데이터 분석 요약",

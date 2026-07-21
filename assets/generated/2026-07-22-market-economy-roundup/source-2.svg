@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+<title id="title">자료 2 분석 결론 도달 순서도</title>
+<desc id="desc">The conditional higher moment risk measure: second-order asym… 자료의 고유한 분석 논리 구조를 예/아니오 분기 순서도로 표현</desc>
+<rect width="960" height="420" fill="#F7F8F5"/>
+<rect x="0" y="0" width="960" height="12" fill="#4F6F52"/>
+<circle cx="70" cy="72" r="34" fill="#4F6F52"/>
+<text x="70" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">2</text>
+<text x="124" y="55" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1D2528">The conditional higher moment risk measure: second-order asym…</text>
+<text x="124" y="84" font-family="Arial, sans-serif" font-size="15" fill="#5F686B">출처: arXiv q-fin Risk Management</text>
+<rect x="52" y="138" width="170" height="76" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="52" y="138" width="170" height="8" rx="4" fill="#4F6F52"/>
+<text x="137" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">문제 제기</text>
+<text x="137" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">저자의 질문 확인</text>
+<line x1="222" y1="176" x2="270" y2="176" stroke="#6A7376" stroke-width="2"/>
+<path d="M 270 176 l -7 -6 v 12 z" fill="#6A7376"/>
+<polygon points="360,121 450,176 360,231 270,176" fill="#FFFFFF" stroke="#4F6F52" stroke-width="2"/>
+<text x="360" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1D2528">데이터 근거?</text>
+<text x="360" y="192" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#445055">수치·그래프·표</text>
+<line x1="450" y1="176" x2="500" y2="176" stroke="#6A7376" stroke-width="2"/>
+<path d="M 500 176 l -7 -6 v 12 z" fill="#6A7376"/>
+<text x="475" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#5F686B">예</text>
+<rect x="500" y="138" width="170" height="76" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="500" y="138" width="170" height="8" rx="4" fill="#4F6F52"/>
+<text x="585" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">핵심 변수</text>
+<text x="585" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">arXiv:2607.16601v1 Announce…</text>
+<line x1="670" y1="176" x2="720" y2="176" stroke="#6A7376" stroke-width="2"/>
+<path d="M 720 176 l -7 -6 v 12 z" fill="#6A7376"/>
+<polygon points="810,121 900,176 810,231 720,176" fill="#FFFFFF" stroke="#4F6F52" stroke-width="2"/>
+<text x="810" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1D2528">기준선 적절?</text>
+<text x="810" y="192" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#445055">비교군·가정</text>
+<line x1="360" y1="231" x2="360" y2="286" stroke="#6A7376" stroke-width="2"/>
+<path d="M 360 286 l -7 -6 v 12 z" fill="#6A7376"/>
+<text x="360" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#5F686B">아니오</text>
+<rect x="276" y="286" width="168" height="68" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="276" y="286" width="168" height="8" rx="4" fill="#8A5A44"/>
+<text x="360" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">보류</text>
+<text x="360" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">원문 정의 재확인</text>
+<line x1="810" y1="231" x2="810" y2="286" stroke="#6A7376" stroke-width="2"/>
+<path d="M 810 286 l -7 -6 v 12 z" fill="#6A7376"/>
+<text x="810" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#5F686B">아니오</text>
+<rect x="726" y="286" width="168" height="68" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="726" y="286" width="168" height="8" rx="4" fill="#8A5A44"/>
+<text x="810" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">재검증</text>
+<text x="810" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">표본·기간 점검</text>
+<line x1="810" y1="121" x2="810" y2="96" stroke="#6A7376" stroke-width="2"/>
+<path d="M 810 96 l -7 -6 v 12 z" fill="#6A7376"/>
+<text x="810" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#5F686B">예</text>
+<line x1="810" y1="96" x2="585" y2="96" stroke="#6A7376" stroke-width="2"/>
+<path d="M 585 96 l 7 -6 v 12 z" fill="#6A7376"/>
+<line x1="585" y1="96" x2="585" y2="122" stroke="#6A7376" stroke-width="2"/>
+<path d="M 585 122 l -7 -6 v 12 z" fill="#6A7376"/>
+<rect x="500" y="122" width="170" height="68" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="500" y="122" width="170" height="8" rx="4" fill="#4F6F52"/>
+<text x="585" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">결론 도출</text>
+<text x="585" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">전략 점검 항목화</text>
+<line x1="585" y1="190" x2="585" y2="250" stroke="#6A7376" stroke-width="2"/>
+<path d="M 585 250 l -7 -6 v 12 z" fill="#6A7376"/>
+<rect x="500" y="250" width="170" height="68" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
+<rect x="500" y="250" width="170" height="8" rx="4" fill="#5A5878"/>
+<text x="585" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">전략 반영</text>
+<text x="585" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">체크리스트·백테스트</text>
+<text x="52" y="388" font-family="Arial, sans-serif" font-size="13" fill="#5F686B">논리: 질문을 확인하고, 근거와 기준선을 통과한 경우에만 결론과 전략 점검 항목으로 전환합니다.</text>
+</svg>
