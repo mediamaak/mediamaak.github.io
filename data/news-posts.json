@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-07-21T23:30:56Z",
+  "updated_at": "2026-07-22T23:30:29Z",
   "posts": [
+    {
+      "id": "2026-07-23-market-economy-roundup",
+      "title": "2026년 7월 23일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-23",
+      "category": "Market Economy",
+      "summary": "결론: 3개 자료 모두 “관측 가능한 신호를 어떻게 위험·국면·분산에 연결할지”를 다루며, 한국 투자자는 KOSPI/KOSDAQ 업종 노출과 환율·금리·변동성 점검표에 붙여 해석하는 것이 핵심입니다.",
+      "href": "posts/2026-07-23-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "factor",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-07-22-market-economy-roundup",
       "title": "2026년 7월 22일 퀀트·경제 데이터 분석 요약",
