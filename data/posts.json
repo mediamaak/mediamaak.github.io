@@ -2,14 +2,82 @@
   "posts": [
     {
       "category": "Market Economy",
+      "title": "2026년 7월 22일 퀀트·경제 데이터 분석 요약",
+      "summary": "시장중립·꼬리위험·레짐전환 자료를 바탕으로 팩터 노출과 변동성·금리·환율 민감도 점검 기준을 정리합니다.",
+      "status": "published",
+      "date": "2026-07-22",
+      "author": "MediaMak",
+      "tags": [
+        "Quant",
+        "Economy",
+        "Risk"
+      ],
+      "series": "최신 데이터 인사이트",
+      "featured": true,
+      "href": "posts/2026-07-22-market-economy-roundup.html"
+    },
+    {
+      "category": "Market Economy",
+      "title": "2026년 7월 21일 퀀트·경제 데이터 분석 요약",
+      "summary": "UK 퇴직자산 설계, 장기 위험서열, 실업률 해석을 포트폴리오·리스크·거시지표 관점에서 정리합니다.",
+      "status": "published",
+      "date": "2026-07-21",
+      "author": "MediaMak",
+      "tags": [
+        "Quant",
+        "Economy",
+        "Macro"
+      ],
+      "series": "최신 데이터 인사이트",
+      "featured": false,
+      "href": "posts/2026-07-21-market-economy-roundup.html"
+    },
+    {
+      "category": "Market Economy",
+      "title": "2026년 7월 20일 퀀트·경제 데이터 분석 요약",
+      "summary": "관세 물가, 민간신용 AI 노출, 은행 검사 규제를 함께 보며 인플레·크레딧·규제 리스크를 분리 점검합니다.",
+      "status": "published",
+      "date": "2026-07-20",
+      "author": "MediaMak",
+      "tags": [
+        "Quant",
+        "Economy",
+        "Credit"
+      ],
+      "series": "최신 데이터 인사이트",
+      "featured": false,
+      "href": "posts/2026-07-20-market-economy-roundup.html"
+    },
+    {
+      "category": "Market Economy",
+      "title": "2026년 7월 19일 퀀트·경제 데이터 분석 요약",
+      "summary": "지역 GDP, 내재변동성 예측, AI 투자 붐을 함께 보며 경기 확산·리스크 모델·테마 과열을 분리 점검합니다.",
+      "status": "published",
+      "date": "2026-07-19",
+      "author": "MediaMak",
+      "tags": [
+        "Quant",
+        "Economy",
+        "Risk"
+      ],
+      "series": "최신 데이터 인사이트",
+      "featured": false,
+      "href": "posts/2026-07-19-market-economy-roundup.html"
+    },
+    {
+      "category": "Market Economy",
       "title": "2026년 7월 18일 퀀트·경제 데이터 분석 요약",
-      "summary": "수익률 예측보다 데이터 기준선, 불확실성 가정, 자산 보유 구조를 먼저 점검하라는 메시지를 정리합니다.",
+      "summary": "해외 보유자산, 방향성 정확도, 내생적 불확실성을 기준선과 리스크 가정 관점에서 정리합니다.",
       "status": "published",
       "date": "2026-07-18",
       "author": "MediaMak",
-      "tags": ["Quant", "Economy", "Data"],
+      "tags": [
+        "Quant",
+        "Economy",
+        "Data"
+      ],
       "series": "최신 데이터 인사이트",
-      "featured": true,
+      "featured": false,
       "href": "posts/2026-07-18-market-economy-roundup.html"
     },
     {
@@ -19,7 +87,11 @@
       "status": "published",
       "date": "2026-07-18",
       "author": "MediaMak",
-      "tags": ["AI", "Data Analysis", "Research"],
+      "tags": [
+        "AI",
+        "Data Analysis",
+        "Research"
+      ],
       "series": "최신 데이터 인사이트",
       "href": "posts/2026-07-18-data-analysis-roundup.html"
     },
@@ -30,7 +102,11 @@
       "status": "draft",
       "date": "2026-07-18",
       "author": "MediaMak",
-      "tags": ["Architecture", "MySQL", "GitHub Pages"],
+      "tags": [
+        "Architecture",
+        "MySQL",
+        "GitHub Pages"
+      ],
       "series": "자동매매 시스템 구축기",
       "href": "architecture.html"
     },
@@ -41,7 +117,11 @@
       "status": "planned",
       "date": "2026-07-18",
       "author": "MediaMak",
-      "tags": ["Data Collection", "Upbit", "KOSPI200"],
+      "tags": [
+        "Data Collection",
+        "Upbit",
+        "KOSPI200"
+      ],
       "series": "자동매매 시스템 구축기",
       "href": "posts.html"
     },
@@ -52,7 +132,11 @@
       "status": "planned",
       "date": "2026-07-18",
       "author": "MediaMak",
-      "tags": ["Backtest", "Validation", "Publishing"],
+      "tags": [
+        "Backtest",
+        "Validation",
+        "Publishing"
+      ],
       "series": "백테스트 검증 노트",
       "href": "simulation.html"
     },
@@ -63,7 +147,11 @@
       "status": "draft",
       "date": "2026-07-18",
       "author": "MediaMak",
-      "tags": ["Operations", "Disclosure", "Actual"],
+      "tags": [
+        "Operations",
+        "Disclosure",
+        "Actual"
+      ],
       "series": "운영 기록과 공개 원칙",
       "href": "actual.html"
     }

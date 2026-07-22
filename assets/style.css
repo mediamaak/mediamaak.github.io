@@ -186,8 +186,43 @@ main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 6
   display: grid;
   gap: 10px;
 }
+.home-latest-panel {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.home-panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.home-panel-heading span {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+}
+.home-panel-heading a {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
 .latest-list a {
   padding: 14px 16px;
+}
+.home-latest-panel .latest-list a {
+  box-shadow: none;
+}
+.inline-empty {
+  padding: 14px 16px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 14px;
 }
 .latest-list span,
 .topic-card span,

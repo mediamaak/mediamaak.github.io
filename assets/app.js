@@ -43,6 +43,15 @@ async function readJson(path) {
   return response.json();
 }
 
+async function readOptionalJson(path) {
+  try {
+    return await readJson(path);
+  } catch (error) {
+    console.warn(`Optional data load failed: ${path}`, error);
+    return null;
+  }
+}
+
 function metricCard(label, value, hint = "") {
   return `<article class="metric-card"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong>${hint ? `<small>${escapeHtml(hint)}</small>` : ""}</article>`;
 }
@@ -185,8 +194,8 @@ function renderFeaturedPost(posts) {
 function renderLatestPosts(posts) {
   const target = document.getElementById("latestPosts");
   if (!target) return;
-  const items = sortedPosts(posts).filter((post) => !post.featured).slice(0, 3);
-  target.innerHTML = items.map((post) => {
+  const items = sortedPosts(posts).slice(0, 3);
+  target.innerHTML = items.length ? items.map((post) => {
     const href = postHref(post) || "posts.html";
     return `
       <a href="${escapeHtml(href)}">
@@ -194,7 +203,7 @@ function renderLatestPosts(posts) {
         <strong>${escapeHtml(post.title)}</strong>
       </a>
     `;
-  }).join("");
+  }).join("") : '<div class="inline-empty">표시할 최신 글이 없습니다.</div>';
 }
 
 function renderTopicLanes(home) {
@@ -250,7 +259,26 @@ function renderPosts(posts) {
   const target = document.getElementById("postList");
   if (!target) return;
   const items = sortedPosts(posts);
-  target.innerHTML = items.map(postItem).join("");
+  target.innerHTML = items.length
+    ? items.map(postItem).join("")
+    : '<article class="post-item"><div><h3>표시할 글이 없습니다.</h3><p>글 데이터가 추가되면 이 영역에 표시됩니다.</p></div></article>';
+}
+
+function renderPostLoadError(message) {
+  const latest = document.getElementById("latestPosts");
+  const postList = document.getElementById("postList");
+  const text = message || "글 데이터를 불러오지 못했습니다.";
+  if (latest) latest.innerHTML = `<div class="inline-empty">${escapeHtml(text)}</div>`;
+  if (postList) {
+    postList.innerHTML = `
+      <article class="post-item">
+        <div>
+          <h3>최신 글을 불러오지 못했습니다.</h3>
+          <p>${escapeHtml(text)}</p>
+        </div>
+      </article>
+    `;
+  }
 }
 
 function renderSystemFlow(home) {
@@ -336,24 +364,35 @@ function renderHomeLiveStatus(actual) {
 }
 
 async function initHome() {
-  const [home, toc, evidence, posts, actual] = await Promise.all([
-    readJson("data/home.json"),
-    readJson("data/book-toc.json"),
-    readJson("data/evidence-index.json"),
-    readJson("data/posts.json"),
-    readJson("data/actual-performance.json"),
+  const [home, posts] = await Promise.all([
+    readOptionalJson("data/home.json"),
+    readOptionalJson("data/posts.json"),
   ]);
-  renderHomeIntro(home);
-  renderFeaturedPost(posts);
-  renderLatestPosts(posts);
-  renderHomeLiveStatus(actual);
-  renderTopicLanes(home);
-  renderSeries(home);
-  renderBookToc(toc);
-  renderEvidence(evidence);
-  renderPosts(posts);
-  renderSystemFlow(home);
-  renderDisclosure(home);
+
+  if (home) {
+    renderHomeIntro(home);
+    renderTopicLanes(home);
+    renderSeries(home);
+    renderSystemFlow(home);
+    renderDisclosure(home);
+  }
+
+  if (posts) {
+    renderFeaturedPost(posts);
+    renderLatestPosts(posts);
+    renderPosts(posts);
+  } else {
+    renderPostLoadError("data/posts.json을 불러오지 못했습니다.");
+  }
+
+  const [toc, evidence, actual] = await Promise.all([
+    readOptionalJson("data/book-toc.json"),
+    readOptionalJson("data/evidence-index.json"),
+    readOptionalJson("data/actual-performance.json"),
+  ]);
+  if (actual) renderHomeLiveStatus(actual);
+  if (toc) renderBookToc(toc);
+  if (evidence) renderEvidence(evidence);
 }
 
 async function initBookPage() {
