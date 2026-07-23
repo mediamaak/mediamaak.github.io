@@ -52,6 +52,20 @@ async function readOptionalJson(path) {
   }
 }
 
+async function readPostsData() {
+  const generatedPosts = await readOptionalJson("data/news-posts.json");
+  return generatedPosts || readJson("data/posts.json");
+}
+
+async function readOptionalPostsData() {
+  try {
+    return await readPostsData();
+  } catch (error) {
+    console.warn("Optional posts data load failed", error);
+    return null;
+  }
+}
+
 function metricCard(label, value, hint = "") {
   return `<article class="metric-card"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong>${hint ? `<small>${escapeHtml(hint)}</small>` : ""}</article>`;
 }
@@ -366,7 +380,7 @@ function renderHomeLiveStatus(actual) {
 async function initHome() {
   const [home, posts] = await Promise.all([
     readOptionalJson("data/home.json"),
-    readOptionalJson("data/posts.json"),
+    readOptionalPostsData(),
   ]);
 
   if (home) {
@@ -382,7 +396,7 @@ async function initHome() {
     renderLatestPosts(posts);
     renderPosts(posts);
   } else {
-    renderPostLoadError("data/posts.json을 불러오지 못했습니다.");
+    renderPostLoadError("글 목록 데이터를 불러오지 못했습니다.");
   }
 
   const [toc, evidence, actual] = await Promise.all([
@@ -406,7 +420,7 @@ async function initEvidencePage() {
 }
 
 async function initPostsPage() {
-  const posts = await readJson("data/posts.json");
+  const posts = await readPostsData();
   renderPosts(posts);
 }
 
