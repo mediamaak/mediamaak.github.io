@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-07-22T23:30:29Z",
+  "updated_at": "2026-07-23T23:31:20Z",
   "posts": [
+    {
+      "id": "2026-07-24-market-economy-roundup",
+      "title": "2026년 7월 24일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-24",
+      "category": "Market Economy",
+      "summary": "결론: 세 자료 모두 “변수 간 관계”를 다루지만, 한국 투자자 관점에서는 섹터 노출·환율·금리·에너지 비용·모형오차를 함께 점검하는 해석 프레임이 핵심입니다.",
+      "href": "posts/2026-07-24-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "economic-data",
+        "factor",
+        "macro",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-07-23-market-economy-roundup",
       "title": "2026년 7월 23일 퀀트·경제 데이터 분석 요약",
