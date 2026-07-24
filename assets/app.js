@@ -70,6 +70,12 @@ function metricCard(label, value, hint = "") {
   return `<article class="metric-card"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong>${hint ? `<small>${escapeHtml(hint)}</small>` : ""}</article>`;
 }
 
+function countValue(value, suffix = "") {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return "-";
+  return `${fmt.format(Math.max(0, Math.round(number)))}${suffix}`;
+}
+
 function statusText(value, fallback = "export 대기") {
   const text = String(value ?? "").trim();
   return text || fallback;
@@ -345,6 +351,20 @@ function renderPositionItems(strategy, asset) {
   }).join("");
 }
 
+function renderVisitorSummary(visitor) {
+  const target = document.getElementById("visitorSummary");
+  if (!target) return;
+  const home = visitor?.home || {};
+  const updated = visitor?.updated_at ? `업데이트 ${visitor.updated_at}` : "export 대기";
+  const cards = [
+    ["오늘 방문 집계", countValue(home.today_visitors), updated],
+    ["최근 7일 방문 집계", countValue(home.last_7d_visitors), "GA4 home path 기준"],
+    ["최근 30일 방문 집계", countValue(home.last_30d_visitors), "정기 export 집계"],
+    ["누적 페이지 조회", countValue(home.total_pageviews), "개인정보 미포함 공개 집계"],
+  ];
+  target.innerHTML = cards.map(([label, value, hint]) => metricCard(label, value, hint)).join("");
+}
+
 function renderHomeLiveStatus(actual) {
   const target = document.getElementById("homeLiveStatus");
   if (!target) return;
@@ -399,11 +419,13 @@ async function initHome() {
     renderPostLoadError("글 목록 데이터를 불러오지 못했습니다.");
   }
 
-  const [toc, evidence, actual] = await Promise.all([
+  const [toc, evidence, actual, visitor] = await Promise.all([
     readOptionalJson("data/book-toc.json"),
     readOptionalJson("data/evidence-index.json"),
     readOptionalJson("data/actual-performance.json"),
+    readOptionalJson("data/visitor-summary.json"),
   ]);
+  if (visitor) renderVisitorSummary(visitor);
   if (actual) renderHomeLiveStatus(actual);
   if (toc) renderBookToc(toc);
   if (evidence) renderEvidence(evidence);

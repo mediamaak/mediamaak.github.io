@@ -1,0 +1,11 @@
+{
+    "updated_at":  "2026-07-24 00:00 KST",
+    "source":  "ga4",
+    "status":  "sample",
+    "home":  {
+                 "today_visitors":  0,
+                 "last_7d_visitors":  0,
+                 "last_30d_visitors":  0,
+                 "total_pageviews":  0
+             }
+}
