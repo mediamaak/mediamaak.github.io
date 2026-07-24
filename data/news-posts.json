@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-07-23T23:31:20Z",
+  "updated_at": "2026-07-24T23:30:30Z",
   "posts": [
+    {
+      "id": "2026-07-25-market-economy-roundup",
+      "title": "2026년 7월 25일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-25",
+      "category": "Market Economy",
+      "summary": "결론: 이번 자료들은 “예측 신호”보다 “가정 검증”에 초점을 두고, 팩터 노출·리밸런싱·매크로 분산을 함께 점검하라는 메시지를 줍니다.",
+      "href": "posts/2026-07-25-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "economic-data",
+        "factor",
+        "macro",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-07-24-market-economy-roundup",
       "title": "2026년 7월 24일 퀀트·경제 데이터 분석 요약",
