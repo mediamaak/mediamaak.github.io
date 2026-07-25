@@ -20,9 +20,9 @@
   <meta property="og:url" content="https://mediamaak.github.io/">
   <meta property="og:site_name" content="MediaMak">
   <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="assets/style.css?v=20260725-mobile-menu">
+  <link rel="stylesheet" href="assets/style.css?v=20260725-mobile-board">
   <script src="assets/charts.js" defer></script>
-  <script src="assets/app.js?v=20260725-mobile-menu" defer></script>
+  <script src="assets/app.js?v=20260725-mobile-board" defer></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7291931531693352"
      crossorigin="anonymous"></script>
 </head>
@@ -62,6 +62,52 @@
   </header>
 
   <main>
+    <section class="mobile-board-home" aria-label="모바일 홈 요약">
+      <article class="mobile-board mobile-board-popular">
+        <div class="mobile-board-heading">
+          <div>
+            <span>POPULAR</span>
+            <h2>조회수 인기글</h2>
+          </div>
+          <a href="latest.html">전체</a>
+        </div>
+        <div id="popularPosts" class="mobile-board-list"></div>
+      </article>
+
+      <article class="mobile-board">
+        <div class="mobile-board-heading">
+          <div>
+            <span>TREND</span>
+            <h2>최신 트렌드 게시판</h2>
+          </div>
+          <a href="latest.html">더보기</a>
+        </div>
+        <div id="mobileTrendBoard" class="mobile-board-list"></div>
+      </article>
+
+      <article class="mobile-board">
+        <div class="mobile-board-heading">
+          <div>
+            <span>SIMULATION</span>
+            <h2>시뮬레이션 전략별 일별 결과</h2>
+          </div>
+          <a href="simulation.html">상세</a>
+        </div>
+        <div id="simulationDailyBoard" class="mobile-board-list"></div>
+      </article>
+
+      <article class="mobile-board">
+        <div class="mobile-board-heading">
+          <div>
+            <span>ACTUAL</span>
+            <h2>자동매매 전략별 일별 결과</h2>
+          </div>
+          <a href="actual.html">상세</a>
+        </div>
+        <div id="actualDailyBoard" class="mobile-board-list"></div>
+      </article>
+    </section>
+
     <section class="hero blog-hero" id="overview">
       <div class="home-hero-grid">
         <div class="home-copy">

@@ -226,6 +226,116 @@ function renderLatestPosts(posts) {
   }).join("") : '<div class="inline-empty">표시할 최신 글이 없습니다.</div>';
 }
 
+function normalizedPostHref(value) {
+  return String(value || "").replace(/^\/+/, "").trim();
+}
+
+function postMetricsLookup(metrics) {
+  const items = Array.isArray(metrics?.posts) ? metrics.posts : [];
+  const byKey = new Map();
+  items.forEach((item) => {
+    const keys = [item.post_id, item.id, normalizedPostHref(item.href)].filter(Boolean);
+    keys.forEach((key) => byKey.set(String(key), item));
+  });
+  return byKey;
+}
+
+function postsWithMetrics(posts, metrics) {
+  const lookup = postMetricsLookup(metrics);
+  return sortedPosts(posts).map((post) => {
+    const metric = lookup.get(String(post.id || "")) || lookup.get(normalizedPostHref(post.href)) || {};
+    return {
+      ...post,
+      view_count: Number(metric.view_count) || 0,
+      unique_count: Number(metric.unique_count) || 0,
+      last_viewed_at: metric.last_viewed_at || "",
+    };
+  });
+}
+
+function mobilePostRow(post, index, options = {}) {
+  const href = postHref(post) || "posts.html";
+  const views = Number(post.view_count) || 0;
+  const meta = [post.category, postDate(post), `조회 ${fmt.format(views)}`].filter(Boolean).join(" · ");
+  const rank = options.rank ? `<b>${escapeHtml(index + 1)}</b>` : "";
+  return `
+    <a class="mobile-board-row mobile-post-row" href="${escapeHtml(href)}">
+      ${rank}
+      <span>
+        <strong>${escapeHtml(post.title)}</strong>
+        <small>${escapeHtml(meta)}</small>
+      </span>
+    </a>
+  `;
+}
+
+function renderPopularPosts(posts, metrics) {
+  const target = document.getElementById("popularPosts");
+  if (!target) return;
+  const items = postsWithMetrics(posts, metrics);
+  const hasViews = items.some((post) => Number(post.view_count) > 0);
+  const sorted = items.sort((a, b) => {
+    if (hasViews) return (Number(b.view_count) || 0) - (Number(a.view_count) || 0) || postDate(b).localeCompare(postDate(a));
+    return postDate(b).localeCompare(postDate(a));
+  }).slice(0, 3);
+  target.innerHTML = sorted.length
+    ? sorted.map((post, index) => mobilePostRow(post, index, { rank: true })).join("")
+    : '<div class="inline-empty">표시할 인기 글이 없습니다.</div>';
+}
+
+function renderMobileTrendBoard(posts, metrics) {
+  const target = document.getElementById("mobileTrendBoard");
+  if (!target) return;
+  const items = postsWithMetrics(posts, metrics).slice(0, 6);
+  target.innerHTML = items.length
+    ? items.map((post, index) => mobilePostRow(post, index)).join("")
+    : '<div class="inline-empty">표시할 최신 글이 없습니다.</div>';
+}
+
+function latestDailyRow(strategy, kind) {
+  const rows = Array.isArray(strategy.daily) ? strategy.daily.filter((row) => row.type !== "gap") : [];
+  const daily = rows.slice().sort((a, b) => String(b.date || b.label || "").localeCompare(String(a.date || a.label || "")))[0];
+  if (daily) return { ...daily, source: "daily" };
+  if (kind !== "actual") return null;
+  const positions = Array.isArray(strategy.open_positions) ? strategy.open_positions : [];
+  if (!positions.length) return null;
+  const openPnl = positions.reduce((sum, position) => sum + (Number(position.unrealized_pnl_krw) || 0), 0);
+  return {
+    date: strategy.summary?.updated_at || "오픈 포지션",
+    pnl_krw: openPnl,
+    cumulative_pnl_krw: strategy.summary?.total_pnl_krw,
+    trade_count: strategy.summary?.open_position_count,
+    source: "open",
+  };
+}
+
+function renderMobileDailyBoard(data, targetId, kind) {
+  const target = document.getElementById(targetId);
+  if (!target) return;
+  const page = kind === "actual" ? "actual.html" : "simulation.html";
+  const rows = allPerformanceStrategies(data || {}).map(({ asset, ...strategy }) => {
+    const daily = latestDailyRow(strategy, kind);
+    if (!daily) return null;
+    const pnl = Number(daily.pnl_krw) || 0;
+    const pnlClass = pnl < 0 ? "negative" : pnl > 0 ? "positive" : "neutral";
+    const date = String(daily.date || "-").split(" ")[0];
+    const source = daily.source === "open" ? "오픈" : "일별";
+    const href = `${page}?asset=${encodeURIComponent(asset.code || "")}&strategy=${encodeURIComponent(strategy.code || "")}`;
+    const meta = [asset.label || asset.market, date, `${source} ${fmt.format(Number(daily.trade_count) || 0)}건`].filter(Boolean).join(" · ");
+    return { date, html: `
+      <a class="mobile-board-row mobile-result-row" href="${escapeHtml(href)}">
+        <span>
+          <strong>${escapeHtml(strategy.name || strategy.code || "전략")}</strong>
+          <small>${escapeHtml(meta)}</small>
+        </span>
+        <em class="${pnlClass}">${escapeHtml(krw(daily.pnl_krw))}</em>
+      </a>
+    ` };
+  }).filter(Boolean).sort((a, b) => String(b.date).localeCompare(String(a.date))).slice(0, 5);
+  target.innerHTML = rows.length
+    ? rows.map((row) => row.html).join("")
+    : '<div class="inline-empty">표시할 전략 결과가 없습니다.</div>';
+}
 function renderTopicLanes(home) {
   const target = document.getElementById("topicLanes");
   if (!target) return;
@@ -398,9 +508,10 @@ function renderHomeLiveStatus(actual) {
 }
 
 async function initHome() {
-  const [home, posts] = await Promise.all([
+  const [home, posts, postMetrics] = await Promise.all([
     readOptionalJson("data/home.json"),
     readOptionalPostsData(),
+    readOptionalJson("data/post-metrics.json"),
   ]);
 
   if (home) {
@@ -415,22 +526,28 @@ async function initHome() {
     renderFeaturedPost(posts);
     renderLatestPosts(posts);
     renderPosts(posts);
+    renderPopularPosts(posts, postMetrics);
+    renderMobileTrendBoard(posts, postMetrics);
   } else {
     renderPostLoadError("글 목록 데이터를 불러오지 못했습니다.");
   }
 
-  const [toc, evidence, actual, visitor] = await Promise.all([
+  const [toc, evidence, actual, visitor, simulation] = await Promise.all([
     readOptionalJson("data/book-toc.json"),
     readOptionalJson("data/evidence-index.json"),
     readOptionalJson("data/actual-performance.json"),
     readOptionalJson("data/visitor-summary.json"),
+    readOptionalJson("data/simulation-performance.json"),
   ]);
   if (visitor) renderVisitorSummary(visitor);
-  if (actual) renderHomeLiveStatus(actual);
+  if (actual) {
+    renderHomeLiveStatus(actual);
+    renderMobileDailyBoard(actual, "actualDailyBoard", "actual");
+  }
+  if (simulation) renderMobileDailyBoard(simulation, "simulationDailyBoard", "simulation");
   if (toc) renderBookToc(toc);
   if (evidence) renderEvidence(evidence);
 }
-
 async function initBookPage() {
   const toc = await readJson("data/book-toc.json");
   renderBookToc(toc);
