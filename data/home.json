@@ -1,125 +1,131 @@
 {
-  "site_title": "MediaMak 기술블로그",
-  "tagline": "MediaMak 기술블로그",
-  "description": "자동매매 시스템을 만들며 남긴 데이터 수집, 전략 검증, 운영 기록을 기술글과 출판 자료로 정리합니다.",
-  "primary_links": [
-    {
-      "label": "최신 글 보기",
-      "href": "latest.html"
-    },
-    {
-      "label": "검증 기록 보기",
-      "href": "evidence.html"
-    },
-    {
-      "label": "미디어막 소개",
-      "href": "about.html"
-    }
-  ],
-  "metrics": [
-    {
-      "label": "핵심 주제",
-      "value": "자동매매 시스템",
-      "hint": "수집, 저장, 전략, 운영"
-    },
-    {
-      "label": "출판 상태",
-      "value": "목차 설계 중",
-      "hint": "원고와 기술글 연결 단계"
-    },
-    {
-      "label": "검증 방식",
-      "value": "정적 기록",
-      "hint": "GitHub Pages와 JSON"
-    },
-    {
-      "label": "공개 원칙",
-      "value": "민감정보 제외",
-      "hint": "계정, 주문 상세, 개인정보 비공개"
-    }
-  ],
-  "topic_lanes": [
-    {
-      "title": "자동매매 시스템",
-      "summary": "수집기, DB, 전략 러너, 정적 공개 페이지까지 이어지는 전체 구조",
-      "href": "architecture.html",
-      "tag": "Architecture"
-    },
-    {
-      "title": "데이터 수집과 저장",
-      "summary": "Upbit, KIS, 환율, 가격 비교 데이터를 정규화하고 MySQL에 적재하는 기록",
-      "href": "posts.html",
-      "tag": "Data"
-    },
-    {
-      "title": "백테스트와 검증",
-      "summary": "성과 홍보가 아니라 재현 가능한 검증 자료로 결과를 정리하는 기준",
-      "href": "simulation.html",
-      "tag": "Validation"
-    },
-    {
-      "title": "실거래 운영",
-      "summary": "민감정보를 제외하고 운영 집계, 중단 기간, 장애 대응을 기록하는 방식",
-      "href": "actual.html",
-      "tag": "Operations"
-    }
-  ],
-  "series": [
-    {
-      "title": "자동매매 시스템 구축기",
-      "summary": "외부 API, 수집기, DB, 전략 러너를 하나의 운영 흐름으로 묶는 과정",
-      "href": "architecture.html",
-      "count": "진행 중"
-    },
-    {
-      "title": "백테스트 검증 노트",
-      "summary": "전략 결과를 재현 가능한 정적 자료로 바꾸는 기준과 한계",
-      "href": "simulation.html",
-      "count": "정리 중"
-    },
-    {
-      "title": "운영 기록과 공개 원칙",
-      "summary": "실거래 운영에서 무엇을 공개하고 무엇을 제외할지 정한 기록",
-      "href": "disclosure.html",
-      "count": "원칙 수립"
-    },
-    {
-      "title": "출판 원고",
-      "summary": "기술블로그 기록을 책 목차와 원고 흐름으로 재구성하는 작업",
-      "href": "book.html",
-      "count": "목차 설계"
-    }
-  ],
-  "system_flow": [
-    {
-      "title": "외부 API",
-      "text": "Upbit, KIS, 환율, 보조 가격 API에서 원천 데이터를 가져옵니다."
-    },
-    {
-      "title": "수집기",
-      "text": "Python collector가 가격, 체결, 종목 기준정보를 정규화합니다."
-    },
-    {
-      "title": "MySQL",
-      "text": "원천 데이터, 신호, 포지션, 이벤트, 손익 시계열을 저장합니다."
-    },
-    {
-      "title": "전략 러너",
-      "text": "백테스트와 실거래 운영 기준을 분리해 신호와 주문 기록을 남깁니다."
-    },
-    {
-      "title": "검증 문서",
-      "text": "장애 대응, 리팩토링, API/DB 흐름도를 문서화합니다."
-    },
-    {
-      "title": "출판 아카이브",
-      "text": "공개 가능한 자료만 GitHub Pages에서 책 목차와 함께 제공합니다."
-    }
-  ],
-  "disclosure": [
-    "이 사이트는 투자 권유, 자문, 수익 보장을 목적으로 하지 않습니다.",
-    "표시되는 자동매매 기록은 개발 과정과 출판 원고의 검증 자료입니다.",
-    "과거 백테스트와 실거래 기록은 미래 결과를 보장하지 않습니다.",
-    "개인정보, 계정 정보, 주문 상세, API 키, 관리자 로그는 공개하지 않습니다."
-  ]
+    "site_title":  "미디어막",
+    "tagline":  "기술과 데이터를 읽기 쉬운 콘텐츠로 만듭니다.",
+    "description":  "미디어막은 기술·데이터·경제 분야의 도서, 전자책, 실습 자료와 디지털 콘텐츠를 기획하고 제작하는 출판 브랜드입니다.",
+    "primary_links":  [
+                          {
+                              "label":  "출판 콘텐츠 보기",
+                              "href":  "#publishing"
+                          },
+                          {
+                              "label":  "미디어막 소개",
+                              "href":  "#about-publisher"
+                          }
+                      ],
+    "metrics":  [
+                    {
+                        "label":  "콘텐츠 분야",
+                        "value":  "기술·데이터·경제",
+                        "hint":  "도서, 전자책, 리포트"
+                    },
+                    {
+                        "label":  "제작 형식",
+                        "value":  "실습 자료와 코드",
+                        "hint":  "템플릿, 예제, 실행 설명서"
+                    },
+                    {
+                        "label":  "운영 방식",
+                        "value":  "연구 기반 출판",
+                        "hint":  "개발 기록을 편집 가능한 자료로 정리"
+                    },
+                    {
+                        "label":  "공개 원칙",
+                        "value":  "상태 명확 표시",
+                        "hint":  "출간·판매 여부를 과장하지 않음"
+                    }
+                ],
+    "business_areas":  [
+                           {
+                               "title":  "출판",
+                               "summary":  "기술과 데이터 분야의 실용적인 콘텐츠를 기획하고 출판합니다.",
+                               "tag":  "Publishing"
+                           },
+                           {
+                               "title":  "디지털 콘텐츠",
+                               "summary":  "전자책, 리포트, 실습 자료와 코드 패키지를 제작합니다.",
+                               "tag":  "Digital"
+                           },
+                           {
+                               "title":  "연구와 기록",
+                               "summary":  "직접 개발하고 검증한 내용을 연구 노트로 공개합니다.",
+                               "tag":  "Research"
+                           }
+                       ],
+    "publications":  [
+                         {
+                             "title":  "Codex 데이터 자동화 실습서",
+                             "status":  "planning",
+                             "summary":  "AI 코딩 도구를 활용해 데이터 정리, 리포트 생성, 반복 업무 자동화를 실습하는 콘텐츠로 기획 중입니다."
+                         },
+                         {
+                             "title":  "Python 업무 자동화 코드북",
+                             "status":  "planning",
+                             "summary":  "CSV, Excel, 파일 정리, 보고서 초안 생성을 다루는 실무형 코드 예제를 준비 중입니다."
+                         },
+                         {
+                             "title":  "자동매매 시스템 개발 기록",
+                             "status":  "writing",
+                             "summary":  "데이터 수집, 전략 검증, 운영 기록을 출판 가능한 연구 노트 형식으로 집필 중입니다."
+                         }
+                     ],
+    "digital_products":  [
+                             {
+                                 "title":  "Python 데이터 리포트 스타터",
+                                 "status":  "preparing",
+                                 "summary":  "CSV와 Excel 데이터를 자동으로 정리하고 분석 보고서를 생성하는 코드, 샘플 데이터, 실행 설명서 패키지입니다.",
+                                 "actions":  [
+                                                 "준비 중",
+                                                 "출시 알림",
+                                                 "상세 보기"
+                                             ]
+                             }
+                         ],
+    "contact":  {
+                    "status":  "문의 가능",
+                    "summary":  "출판 및 콘텐츠 문의, 디지털 자료 문의, 협업 문의는 이메일로 연락할 수 있습니다.",
+                    "items":  [
+                                  "출판 및 콘텐츠 문의",
+                                  "디지털 자료 문의",
+                                  "협업 문의"
+                              ],
+                    "email":  "mediamaak534@gmail.com",
+                    "href":  ""
+                },
+    "topic_lanes":  [
+                        {
+                            "title":  "데이터 자동화",
+                            "summary":  "파일, 표, 리포트 작업을 자동화하는 코드와 템플릿 연구 노트입니다.",
+                            "href":  "posts.html?category=data-automation",
+                            "tag":  "Automation"
+                        },
+                        {
+                            "title":  "AI·Codex",
+                            "summary":  "AI 코딩 도구를 실무 콘텐츠 제작과 데이터 작업에 적용하는 기록입니다.",
+                            "href":  "latest.html?category=ai-codex",
+                            "tag":  "AI"
+                        },
+                        {
+                            "title":  "자동매매",
+                            "summary":  "자동매매 시스템 개발 기록은 연구 노트 하위 콘텐츠로 유지합니다.",
+                            "href":  "simulation.html",
+                            "tag":  "Trading Research"
+                        },
+                        {
+                            "title":  "경제·기술 자료",
+                            "summary":  "경제, 퀀트, 기술 자료를 콘텐츠 기획 관점에서 요약합니다.",
+                            "href":  "latest.html",
+                            "tag":  "Insight"
+                        }
+                    ],
+    "series":  [
+
+               ],
+    "system_flow":  [
+
+                    ],
+    "disclosure":  [
+                       "미디어막은 출간·판매가 확정되지 않은 항목을 실제 판매 상품처럼 표시하지 않습니다.",
+                       "자동매매와 기술 개발 기록은 연구 노트이며 투자 권유나 수익 보장을 목적으로 하지 않습니다.",
+                       "개인정보, 계정 정보, 주문 상세, API 키, 관리자 로그는 공개하지 않습니다."
+                   ]
 }

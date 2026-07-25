@@ -11,18 +11,18 @@
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MediaMak 자동매매 기술블로그</title>
-  <meta name="description" content="자동매매 시스템 개발, 데이터 수집, 백테스트, 실거래 운영, 장애 대응을 기록하는 MediaMak 기술블로그">
+  <title>미디어막 | 기술·데이터 콘텐츠 출판</title>
+  <meta name="description" content="미디어막은 기술, 데이터, 경제 분야의 도서, 전자책, 실습 자료와 디지털 콘텐츠를 기획하고 제작하는 출판 브랜드입니다.">
   <link rel="canonical" href="https://mediamaak.github.io/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="MediaMak 자동매매 기술블로그">
-  <meta property="og:description" content="자동매매 시스템 개발, 데이터 수집, 백테스트, 실거래 운영, 장애 대응을 기록하는 MediaMak 기술블로그">
+  <meta property="og:title" content="미디어막 | 기술·데이터 콘텐츠 출판">
+  <meta property="og:description" content="미디어막은 기술, 데이터, 경제 분야의 도서, 전자책, 실습 자료와 디지털 콘텐츠를 기획하고 제작하는 출판 브랜드입니다.">
   <meta property="og:url" content="https://mediamaak.github.io/">
   <meta property="og:site_name" content="MediaMak">
   <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="assets/style.css?v=20260725-mobile-board">
+  <link rel="stylesheet" href="assets/style.css?v=20260725-publisher-home">
   <script src="assets/charts.js" defer></script>
-  <script src="assets/app.js?v=20260725-mobile-board" defer></script>
+  <script src="assets/app.js?v=20260725-publisher-home" defer></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7291931531693352"
      crossorigin="anonymous"></script>
 </head>
@@ -30,195 +30,95 @@
   <header class="site-header bank-style-header">
     <a class="brand" href="index.html"><span>M</span><strong>MediaMak</strong></a>
     <nav class="global-menu" aria-label="주요 메뉴">
+      <a class="menu-link" href="about.html">미디어막 소개</a>
+      <a class="menu-link" href="index.html#publishing">출판</a>
+      <a class="menu-link" href="index.html#publishing">도서·콘텐츠</a>
+      <a class="menu-link" href="index.html#digital-products">데이터 도구</a>
       <div class="menu-item has-panel">
-        <a class="menu-link" href="about.html">미디어막 소개</a>
+        <a class="menu-link" href="latest.html">연구 노트</a>
         <div class="menu-panel">
-          <a href="about.html">이름 소개</a>
-          <a href="index.html">기술블로그 홈</a>
-          <a href="architecture.html">시스템 흐름</a>
-          <a href="disclosure.html">공개 원칙</a>
+          <a href="posts.html?category=data-automation">데이터 자동화</a>
+          <a href="latest.html?category=ai-codex">AI·Codex</a>
+          <a href="simulation.html">자동매매</a>
+          <a href="latest.html">경제·기술 자료</a>
         </div>
       </div>
-      <div class="menu-item has-panel">
-        <a class="menu-link" href="latest.html">뉴스/자료</a>
-        <div class="menu-panel">
-          <a href="latest.html">최신 트랜드</a>
-          <a href="latest.html">최신</a>
-          <a href="posts.html">개발 기록</a>
-          <a href="evidence.html">검증 기록</a>
-          <a href="book.html">책 목차</a>
-          <a href="wiki.html">위키와 문서</a>
-        </div>
-      </div>
-      <div class="menu-item has-panel">
-        <a class="menu-link" href="simulation.html">자동 매매</a>
-        <div class="menu-panel">
-          <a href="simulation.html">백테스트</a>
-          <a href="actual.html">실제 자동 매매</a>
-        </div>
-      </div>
-      <a class="menu-link" href="actual.html">실거래 현황</a>
+      <a class="menu-link" href="index.html#contact">문의</a>
     </nav>
   </header>
 
   <main>
-    <section class="mobile-board-home" aria-label="모바일 홈 요약">
-      <article class="mobile-board mobile-board-popular">
-        <div class="mobile-board-heading">
-          <div>
-            <span>POPULAR</span>
-            <h2>조회수 인기글</h2>
-          </div>
-          <a href="latest.html">전체</a>
-        </div>
-        <div id="popularPosts" class="mobile-board-list"></div>
-      </article>
-
-      <article class="mobile-board">
-        <div class="mobile-board-heading">
-          <div>
-            <span>TREND</span>
-            <h2>최신 트렌드 게시판</h2>
-          </div>
-          <a href="latest.html">더보기</a>
-        </div>
-        <div id="mobileTrendBoard" class="mobile-board-list"></div>
-      </article>
-
-      <article class="mobile-board">
-        <div class="mobile-board-heading">
-          <div>
-            <span>SIMULATION</span>
-            <h2>시뮬레이션 전략별 일별 결과</h2>
-          </div>
-          <a href="simulation.html">상세</a>
-        </div>
-        <div id="simulationDailyBoard" class="mobile-board-list"></div>
-      </article>
-
-      <article class="mobile-board">
-        <div class="mobile-board-heading">
-          <div>
-            <span>ACTUAL</span>
-            <h2>자동매매 전략별 일별 결과</h2>
-          </div>
-          <a href="actual.html">상세</a>
-        </div>
-        <div id="actualDailyBoard" class="mobile-board-list"></div>
-      </article>
-    </section>
-
-    <section class="hero blog-hero" id="overview">
-      <div class="home-hero-grid">
-        <div class="home-copy">
-          <p class="eyebrow">AUTOMATED TRADING ENGINEERING LOG</p>
-          <h1 id="homeTitle">자동매매 시스템 개발 기록</h1>
-          <p id="homeDescription" class="lead">데이터 수집부터 전략 검증, 실거래 운영, 장애 대응까지 기록하는 기술블로그입니다.</p>
+    <section class="hero publisher-hero" id="overview">
+      <div class="publisher-hero-grid">
+        <div class="publisher-copy">
+          <p class="eyebrow">PUBLISHING BRAND</p>
+          <h1 id="homeTitle">미디어막</h1>
+          <p class="publisher-tagline">기술과 데이터를 읽기 쉬운 콘텐츠로 만듭니다.</p>
+          <p id="homeDescription" class="lead">미디어막은 기술·데이터·경제 분야의 도서, 전자책, 실습 자료와 디지털 콘텐츠를 기획하고 제작하는 출판 브랜드입니다.</p>
           <div id="homePrimaryLinks" class="hero-actions"></div>
-          <div id="homeStats" class="metric-grid compact-metrics home-hero-metrics"></div>
-          <div class="notice-band home-hero-notice">
-            <strong>사이트 성격</strong>
-            <span>이 홈은 투자 권유 페이지가 아니라 개발 기록, 자동매매 검증, 출판 원고 준비 자료를 정리하는 기술 아카이브입니다.</span>
-          </div>
+          <div id="homeStats" class="metric-grid compact-metrics home-hero-metrics publisher-metrics"></div>
         </div>
-        <div class="home-feature-stack">
-          <div class="home-latest-panel">
-            <div class="home-panel-heading">
-              <span>LATEST POSTS</span>
-              <a href="latest.html">전체 보기</a>
-            </div>
-            <div id="latestPosts" class="latest-list compact-latest"></div>
-          </div>
-          <figure class="home-visual">
-            <img src="assets/images/home-trading-system.png" alt="자동매매 데이터 수집과 실거래 현황을 보여주는 모니터 화면">
-          </figure>
-          <div id="featuredPost" class="home-feature"></div>
-        </div>
+        <figure class="publisher-visual home-visual">
+          <img src="assets/images/home-trading-system.png" alt="데이터 수집과 리포트 작업 화면이 열린 모니터">
+          <figcaption>연구 기록과 실습 자료를 출판 가능한 콘텐츠로 정리합니다.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="section visitor-summary-section" id="visitor-summary">
+    <section class="section" id="about-publisher">
       <div class="section-heading">
-        <p class="eyebrow">VISIT SUMMARY</p>
-        <h2>홈 방문 집계</h2>
-        <span>GA4 기준 정기 갱신 집계</span>
+        <p class="eyebrow">ABOUT MEDIAMAK</p>
+        <h2>미디어막 소개</h2>
+        <span>기술과 데이터 콘텐츠를 기획하고 제작합니다</span>
       </div>
-      <div id="visitorSummary" class="metric-grid visitor-summary-grid"></div>
+      <div id="publisherBusinessAreas" class="card-grid publisher-area-grid"></div>
     </section>
 
-    <section class="section home-live-section" id="live">
+    <section class="section" id="publishing">
       <div class="section-heading">
-        <p class="eyebrow">ACTUAL TRADING STATUS</p>
-        <h2>실거래 현황</h2>
-        <span>공개 가능한 집계만 표시합니다</span>
+        <p class="eyebrow">PUBLICATION PIPELINE</p>
+        <h2>출간 및 제작 콘텐츠</h2>
+        <span>출간 완료가 아닌 현재 준비 상태를 표시합니다</span>
       </div>
-      <div id="homeLiveStatus" class="live-status-grid"></div>
+      <div id="publicationList" class="publication-list"></div>
     </section>
 
-    <section class="section" id="topics">
+    <section class="section" id="digital-products">
       <div class="section-heading">
-        <p class="eyebrow">TOPICS</p>
-        <h2>주제별로 읽기</h2>
-        <span>시스템, 데이터, 검증, 운영 기록</span>
+        <p class="eyebrow">DIGITAL PRODUCTS</p>
+        <h2>디지털 상품</h2>
+        <span>코드, 샘플 데이터, 실행 설명서를 함께 준비합니다</span>
       </div>
-      <div id="topicLanes" class="topic-lanes"></div>
+      <div id="digitalProductList" class="card-grid digital-product-grid"></div>
     </section>
 
-    <section class="section" id="posts">
+    <section class="section" id="research-notes">
       <div class="section-heading">
-        <p class="eyebrow">LATEST POSTS</p>
-        <h2>최신 기술 기록</h2>
-        <span>공개 글과 작성 예정 주제</span>
+        <p class="eyebrow">RESEARCH NOTES</p>
+        <h2>최신 연구 노트</h2>
+        <span>기존 자동매매와 기술 기록은 연구 노트로 보관합니다</span>
       </div>
-      <div id="postList" class="post-list"></div>
+      <div id="researchNotes" class="post-list research-note-list"></div>
+      <div class="research-archive-links" aria-label="연구 노트 하위 경로">
+        <a href="posts.html?category=data-automation">데이터 자동화</a>
+        <a href="latest.html?category=ai-codex">AI·Codex</a>
+        <a href="simulation.html">자동매매</a>
+        <a href="latest.html">경제·기술 자료</a>
+      </div>
     </section>
 
-    <section class="section" id="series">
+    <section class="section" id="contact">
       <div class="section-heading">
-        <p class="eyebrow">SERIES</p>
-        <h2>연재와 원고 흐름</h2>
-        <span>책 목차와 기술글을 연결하는 읽기 경로</span>
+        <p class="eyebrow">CONTACT</p>
+        <h2>문의</h2>
+        <span>출판, 디지털 자료, 협업 문의</span>
       </div>
-      <div id="seriesGrid" class="series-grid"></div>
-    </section>
-
-    <section class="section" id="book">
-      <div class="section-heading">
-        <p class="eyebrow">BOOK OUTLINE</p>
-        <h2>출판용 책 목차</h2>
-        <span>초안 목차와 원고 진행 상태</span>
-      </div>
-      <div id="bookToc" class="toc-list"></div>
-    </section>
-
-    <section class="section" id="evidence">
-      <div class="section-heading">
-        <p class="eyebrow">VALIDATION RECORDS</p>
-        <h2>자동매매 검증 기록</h2>
-        <span>성과 홍보가 아니라 재현 가능한 개발/운영 기록</span>
-      </div>
-      <div id="evidenceGrid" class="card-grid"></div>
-    </section>
-
-    <section class="section" id="architecture">
-      <div class="section-heading">
-        <p class="eyebrow">SYSTEM FLOW</p>
-        <h2>자동매매 시스템 흐름</h2>
-      </div>
-      <div id="systemFlow" class="flow-strip"></div>
-    </section>
-
-    <section class="section" id="disclosure">
-      <div class="section-heading">
-        <p class="eyebrow">DISCLOSURE</p>
-        <h2>공개 원칙과 리스크 고지</h2>
-      </div>
-      <ul id="disclosureNotes" class="risk-list"></ul>
+      <div id="contactPanel" class="contact-panel"></div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <span>MediaMak technical publishing archive</span>
+    <span>MediaMak publishing brand</span>
     <span>GitHub Pages: https://mediamaak.github.io</span>
   </footer>
 </body>

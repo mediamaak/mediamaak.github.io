@@ -110,6 +110,10 @@ function statusBadge(status) {
   const labelMap = {
     draft: "작성 중",
     planned: "예정",
+    planning: "기획 중",
+    writing: "집필 중",
+    preparing: "출간 준비 중",
+    ready: "준비 중",
     evidence: "검증",
     published: "공개",
     operating: "운영",
@@ -190,6 +194,125 @@ function renderHomeIntro(home) {
   }
 }
 
+function renderPublisherBusinessAreas(home) {
+  const target = document.getElementById("publisherBusinessAreas");
+  if (!target) return;
+  const areas = Array.isArray(home.business_areas) ? home.business_areas : [];
+  target.innerHTML = areas.map((area) => `
+    <article class="card publisher-area-card">
+      <div class="card-kicker">${escapeHtml(area.tag || "AREA")}</div>
+      <h2>${escapeHtml(area.title)}</h2>
+      <p>${escapeHtml(area.summary)}</p>
+    </article>
+  `).join("");
+}
+
+function renderPublicationList(home) {
+  const target = document.getElementById("publicationList");
+  if (!target) return;
+  const items = Array.isArray(home.publications) ? home.publications : [];
+  target.innerHTML = items.length ? items.map((item) => `
+    <article class="publication-item">
+      <div>
+        <h3>${escapeHtml(item.title)}</h3>
+        <p>${escapeHtml(item.summary)}</p>
+      </div>
+      ${statusBadge(item.status)}
+    </article>
+  `).join("") : '<div class="inline-empty">표시할 출판 콘텐츠가 없습니다.</div>';
+}
+
+function renderDigitalProducts(home) {
+  const target = document.getElementById("digitalProductList");
+  if (!target) return;
+  const products = Array.isArray(home.digital_products) ? home.digital_products : [];
+  target.innerHTML = products.length ? products.map((product) => {
+    const actions = Array.isArray(product.actions) ? product.actions : [];
+    return `
+      <article class="card digital-product-card">
+        <div class="card-kicker">DIGITAL PRODUCT</div>
+        <div class="product-title-row">
+          <h2>${escapeHtml(product.title)}</h2>
+          ${statusBadge(product.status)}
+        </div>
+        <p>${escapeHtml(product.summary)}</p>
+        <div class="product-action-row">
+          ${actions.map((action) => `<span>${escapeHtml(action)}</span>`).join("")}
+        </div>
+      </article>
+    `;
+  }).join("") : '<div class="inline-empty">표시할 디지털 상품이 없습니다.</div>';
+}
+
+function researchCategoryLabel(post) {
+  const category = String(post.category || "").toLowerCase();
+  const tags = Array.isArray(post.tags) ? post.tags.map((tag) => String(tag).toLowerCase()) : [];
+  if (category.includes("market") || category.includes("economy")) return "경제·기술 자료";
+  if (tags.some((tag) => tag.includes("codex") || tag === "ai" || tag.includes("machine-learning"))) return "AI·Codex";
+  if (tags.some((tag) => tag.includes("automation") || tag.includes("data") || tag.includes("excel") || tag.includes("python"))) return "데이터 자동화";
+  if (tags.some((tag) => tag.includes("backtest") || tag.includes("trading") || tag.includes("upbit") || tag.includes("kospi"))) return "자동매매";
+  if (category.includes("data")) return "데이터 자동화";
+  return post.category || "연구 노트";
+}
+
+function selectResearchNotes(posts) {
+  const items = sortedPosts(posts);
+  const selected = [];
+  const seen = new Set();
+  items.forEach((post) => {
+    const label = researchCategoryLabel(post);
+    if (selected.length >= 3 || seen.has(label)) return;
+    selected.push({ ...post, research_label: label });
+    seen.add(label);
+  });
+  items.forEach((post) => {
+    if (selected.length >= 3) return;
+    if (selected.some((item) => postHref(item) === postHref(post))) return;
+    selected.push({ ...post, research_label: researchCategoryLabel(post) });
+  });
+  return selected.slice(0, 3);
+}
+
+function renderResearchNotes(posts) {
+  const target = document.getElementById("researchNotes");
+  if (!target) return;
+  const items = selectResearchNotes(posts);
+  target.innerHTML = items.length ? items.map((post) => {
+    const href = postHref(post) || "posts.html";
+    const meta = [post.research_label, postDate(post)].filter(Boolean).join(" · ");
+    return `
+      <article class="post-item research-note-item">
+        <div>
+          <span>${escapeHtml(meta)}</span>
+          <h3><a href="${escapeHtml(href)}">${escapeHtml(post.title)}</a></h3>
+          <p>${escapeHtml(post.summary)}</p>
+        </div>
+        ${statusBadge(post.status)}
+      </article>
+    `;
+  }).join("") : '<article class="post-item"><div><h3>표시할 연구 노트가 없습니다.</h3><p>게시글 데이터가 추가되면 이 영역에 표시됩니다.</p></div></article>';
+}
+
+function renderContact(home) {
+  const target = document.getElementById("contactPanel");
+  if (!target) return;
+  const contact = home.contact || {};
+  const items = Array.isArray(contact.items) ? contact.items : [];
+  const email = String(contact.email || "").trim();
+  const href = String(contact.href || "").trim();
+  const contactLink = href || (email ? `mailto:${email}` : "");
+  target.innerHTML = `
+    <article class="contact-card">
+      <div>
+        <div class="card-kicker">CONTACT STATUS</div>
+        <h3>${escapeHtml(contact.status || "문의 채널 준비 중")}</h3>
+        <p>${escapeHtml(contact.summary || "문의 채널을 준비 중입니다.")}</p>
+        <ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+      </div>
+      ${contactLink ? `<a class="button primary" href="${escapeHtml(contactLink)}">문의하기</a>` : '<span class="button is-disabled" aria-disabled="true">문의 채널 준비 중</span>'}
+    </article>
+  `;
+}
 function renderFeaturedPost(posts) {
   const target = document.getElementById("featuredPost");
   if (!target) return;
@@ -508,45 +631,25 @@ function renderHomeLiveStatus(actual) {
 }
 
 async function initHome() {
-  const [home, posts, postMetrics] = await Promise.all([
+  const [home, posts] = await Promise.all([
     readOptionalJson("data/home.json"),
     readOptionalPostsData(),
-    readOptionalJson("data/post-metrics.json"),
   ]);
 
   if (home) {
     renderHomeIntro(home);
-    renderTopicLanes(home);
-    renderSeries(home);
-    renderSystemFlow(home);
-    renderDisclosure(home);
+    renderPublisherBusinessAreas(home);
+    renderPublicationList(home);
+    renderDigitalProducts(home);
+    renderContact(home);
   }
 
   if (posts) {
-    renderFeaturedPost(posts);
     renderLatestPosts(posts);
-    renderPosts(posts);
-    renderPopularPosts(posts, postMetrics);
-    renderMobileTrendBoard(posts, postMetrics);
+    renderResearchNotes(posts);
   } else {
-    renderPostLoadError("글 목록 데이터를 불러오지 못했습니다.");
+    renderPostLoadError("연구 노트 데이터를 불러오지 못했습니다.");
   }
-
-  const [toc, evidence, actual, visitor, simulation] = await Promise.all([
-    readOptionalJson("data/book-toc.json"),
-    readOptionalJson("data/evidence-index.json"),
-    readOptionalJson("data/actual-performance.json"),
-    readOptionalJson("data/visitor-summary.json"),
-    readOptionalJson("data/simulation-performance.json"),
-  ]);
-  if (visitor) renderVisitorSummary(visitor);
-  if (actual) {
-    renderHomeLiveStatus(actual);
-    renderMobileDailyBoard(actual, "actualDailyBoard", "actual");
-  }
-  if (simulation) renderMobileDailyBoard(simulation, "simulationDailyBoard", "simulation");
-  if (toc) renderBookToc(toc);
-  if (evidence) renderEvidence(evidence);
 }
 async function initBookPage() {
   const toc = await readJson("data/book-toc.json");
