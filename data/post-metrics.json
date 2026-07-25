@@ -1,0 +1,110 @@
+{
+  "updated_at": "2026-07-25 16:11 KST",
+  "source": "ga4",
+  "status": "exported",
+  "metric_window": "total",
+  "note": "GA4 started on post pages after the tracking tag was added; older untracked views may be absent.",
+  "matched_post_count": 0,
+  "post_count": 9,
+  "posts": [
+    {
+      "post_id": "2026-07-25-market-economy-roundup",
+      "href": "posts/2026-07-25-market-economy-roundup.html",
+      "title": "2026년 7월 25일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-25",
+      "category": "Market Economy",
+      "view_count": 0,
+      "unique_count": 0,
+      "source_click_count": 0,
+      "last_viewed_at": ""
+    },
+    {
+      "post_id": "2026-07-24-market-economy-roundup",
+      "href": "posts/2026-07-24-market-economy-roundup.html",
+      "title": "2026년 7월 24일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-24",
+      "category": "Market Economy",
+      "view_count": 0,
+      "unique_count": 0,
+      "source_click_count": 0,
+      "last_viewed_at": ""
+    },
+    {
+      "post_id": "2026-07-23-market-economy-roundup",
+      "href": "posts/2026-07-23-market-economy-roundup.html",
+      "title": "2026년 7월 23일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-23",
+      "category": "Market Economy",
+      "view_count": 0,
+      "unique_count": 0,
+      "source_click_count": 0,
+      "last_viewed_at": ""
+    },
+    {
+      "post_id": "2026-07-22-market-economy-roundup",
+      "href": "posts/2026-07-22-market-economy-roundup.html",
+      "title": "2026년 7월 22일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-22",
+      "category": "Market Economy",
+      "view_count": 0,
+      "unique_count": 0,
+      "source_click_count": 0,
+      "last_viewed_at": ""
+    },
+    {
+      "post_id": "2026-07-21-market-economy-roundup",
+      "href": "posts/2026-07-21-market-economy-roundup.html",
+      "title": "2026년 7월 21일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-21",
+      "category": "Market Economy",
+      "view_count": 0,
+      "unique_count": 0,
+      "source_click_count": 0,
+      "last_viewed_at": ""
+    },
+    {
+      "post_id": "2026-07-20-market-economy-roundup",
+      "href": "posts/2026-07-20-market-economy-roundup.html",
+      "title": "2026년 7월 20일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-20",
+      "category": "Market Economy",
+      "view_count": 0,
+      "unique_count": 0,
+      "source_click_count": 0,
+      "last_viewed_at": ""
+    },
+    {
+      "post_id": "2026-07-19-market-economy-roundup",
+      "href": "posts/2026-07-19-market-economy-roundup.html",
+      "title": "2026년 7월 19일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-19",
+      "category": "Market Economy",
+      "view_count": 0,
+      "unique_count": 0,
+      "source_click_count": 0,
+      "last_viewed_at": ""
+    },
+    {
+      "post_id": "2026-07-18-market-economy-roundup",
+      "href": "posts/2026-07-18-market-economy-roundup.html",
+      "title": "2026년 7월 18일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-18",
+      "category": "Market Economy",
+      "view_count": 0,
+      "unique_count": 0,
+      "source_click_count": 0,
+      "last_viewed_at": ""
+    },
+    {
+      "post_id": "2026-07-18-data-analysis-roundup",
+      "href": "posts/2026-07-18-data-analysis-roundup.html",
+      "title": "2026년 7월 18일 데이터 분석 해외 자료 요약",
+      "date": "2026-07-18",
+      "category": "Data Analysis",
+      "view_count": 0,
+      "unique_count": 0,
+      "source_click_count": 0,
+      "last_viewed_at": ""
+    }
+  ]
+}
