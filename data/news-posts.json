@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-07-24T23:30:30Z",
+  "updated_at": "2026-07-25T23:30:23Z",
   "posts": [
+    {
+      "id": "2026-07-26-market-economy-roundup",
+      "title": "2026년 7월 26일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-26",
+      "category": "Market Economy",
+      "summary": "결론: 이번 자료들은 미국 재정, 달러화/스테이블코인, 은행 규제 리스크를 통해 한국 투자자가 환율·금리·유동성·규제 노출을 점검하는 데 유용합니다.",
+      "href": "posts/2026-07-26-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "banking",
+        "economic-data",
+        "fed",
+        "macro",
+        "market-economy",
+        "monetary-policy",
+        "portfolio",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-07-25-market-economy-roundup",
       "title": "2026년 7월 25일 퀀트·경제 데이터 분석 요약",
