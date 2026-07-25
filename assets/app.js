@@ -298,9 +298,8 @@ function renderContact(home) {
   if (!target) return;
   const contact = home.contact || {};
   const items = Array.isArray(contact.items) ? contact.items : [];
-  const email = String(contact.email || "").trim();
   const href = String(contact.href || "").trim();
-  const contactLink = href || (email ? `mailto:${email}` : "");
+  const contactLink = href;
   target.innerHTML = `
     <article class="contact-card">
       <div>
