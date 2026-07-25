@@ -782,6 +782,50 @@ function bindDailyPagination() {
   }
 }
 
+function bindGlobalMenu() {
+  const menuItems = Array.from(document.querySelectorAll(".menu-item.has-panel"));
+  if (!menuItems.length) return;
+
+  const mobileQuery = window.matchMedia("(max-width: 760px)");
+  const closePanels = (except = null) => {
+    menuItems.forEach((item) => {
+      if (item === except) return;
+      item.classList.remove("is-open");
+      const link = Array.from(item.children).find((child) => child.classList?.contains("menu-link"));
+      if (link) link.setAttribute("aria-expanded", "false");
+    });
+  };
+
+  menuItems.forEach((item) => {
+    const link = Array.from(item.children).find((child) => child.classList?.contains("menu-link"));
+    const panel = Array.from(item.children).find((child) => child.classList?.contains("menu-panel"));
+    if (!link || !panel) return;
+
+    link.setAttribute("aria-haspopup", "true");
+    link.setAttribute("aria-expanded", "false");
+
+    link.addEventListener("click", (event) => {
+      if (!mobileQuery.matches || item.classList.contains("is-open")) return;
+      event.preventDefault();
+      closePanels(item);
+      item.classList.add("is-open");
+      link.setAttribute("aria-expanded", "true");
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    if (event.target.closest(".global-menu")) return;
+    closePanels();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    closePanels();
+    document.activeElement?.blur?.();
+  });
+
+  mobileQuery.addEventListener?.("change", () => closePanels());
+}
 function renderSelectedPerformance() {
   const kind = document.body.dataset.kind || "backtest";
   const data = performanceState.data || {};
@@ -837,6 +881,7 @@ async function initStrategies() {
 }
 
 async function init() {
+  bindGlobalMenu();
   const page = document.body.dataset.page;
   try {
     if (page === "home") await initHome();
