@@ -937,6 +937,98 @@ td small { display: block; color: var(--muted); }
   color: var(--muted);
   border-top: 1px solid var(--line);
 }
+.about-visual-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(360px, 1.05fr);
+  gap: clamp(22px, 4vw, 54px);
+  align-items: center;
+  padding-top: 34px;
+}
+.about-hero-copy {
+  min-width: 0;
+}
+.about-hero-copy h1 {
+  margin-bottom: 12px;
+}
+.about-hero-line {
+  margin: 0 0 12px;
+  color: var(--text);
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 800;
+  line-height: 1.25;
+  word-break: keep-all;
+}
+.about-hero-image,
+.about-side-image,
+.about-image-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.about-hero-image,
+.about-side-image {
+  margin: 0;
+}
+.about-hero-image img,
+.about-side-image img,
+.about-image-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-hero-image {
+  aspect-ratio: 16 / 10;
+}
+.about-image-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: 14px;
+  align-items: stretch;
+}
+.about-image-card {
+  display: grid;
+  grid-template-rows: minmax(260px, 1fr) auto;
+  min-width: 0;
+}
+.about-image-card:first-child {
+  grid-template-rows: minmax(420px, 1fr) auto;
+}
+.about-image-card > div {
+  padding: 18px;
+}
+.about-image-card h2 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.3;
+}
+.about-image-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+.about-philosophy-band,
+.about-closing-band {
+  align-items: center;
+}
+.about-philosophy-band strong,
+.about-closing-band strong {
+  font-size: 22px;
+  line-height: 1.3;
+}
+.about-publishing-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.48fr);
+  gap: 18px;
+  align-items: stretch;
+}
+.about-side-image {
+  min-height: 100%;
+}
+.about-side-image img {
+  aspect-ratio: 3 / 4;
+}
 .publisher-hero {
   padding-top: 54px;
 }
@@ -1200,6 +1292,30 @@ td small { display: block; color: var(--muted); }
   }
 }
 @media (max-width: 760px) {
+  .about-visual-hero,
+  .about-image-pair,
+  .about-publishing-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-visual-hero {
+    gap: 16px;
+    padding-top: 20px;
+  }
+  .about-hero-line {
+    font-size: 23px;
+  }
+  .about-image-card,
+  .about-image-card:first-child {
+    grid-template-rows: minmax(240px, auto) auto;
+  }
+  .about-philosophy-band strong,
+  .about-closing-band strong {
+    font-size: 19px;
+  }
+  .about-side-image {
+    max-height: 420px;
+  }
+
   main {
     padding-top: 14px;
   }
