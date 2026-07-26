@@ -937,6 +937,101 @@ td small { display: block; color: var(--muted); }
   color: var(--muted);
   border-top: 1px solid var(--line);
 }
+.about-cover {
+  min-height: clamp(520px, 68vh, 720px);
+}
+.about-cover .about-hero-image {
+  min-height: 360px;
+}
+.about-mission-panel {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(22px, 5vw, 72px);
+  align-items: start;
+  padding-block: clamp(34px, 6vw, 76px);
+  border-block: 1px solid var(--line);
+  background: #fbfcff;
+}
+.about-mission-panel h2 {
+  margin: 0;
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1.12;
+  letter-spacing: 0;
+  word-break: keep-all;
+}
+.about-mission-panel > p {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 700;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+.about-worlds {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+.about-world-card {
+  display: grid;
+  grid-column: span 6;
+  grid-template-rows: minmax(250px, 1fr) auto;
+  overflow: hidden;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.about-world-card-featured {
+  grid-row: span 2;
+  grid-template-rows: minmax(560px, 1fr) auto;
+}
+.about-world-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-world-card > div {
+  padding: 20px;
+}
+.about-world-card h2 {
+  margin: 0;
+  font-size: 23px;
+  line-height: 1.3;
+  word-break: keep-all;
+}
+.about-world-card p:last-child {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+.about-scope-section .section-heading,
+.about-question-grid .section-heading {
+  max-width: 820px;
+}
+.about-origin-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+.about-origin-copy {
+  padding: clamp(22px, 4vw, 38px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.about-origin-copy h2 {
+  margin: 0 0 14px;
+  font-size: clamp(25px, 3vw, 34px);
+  line-height: 1.22;
+}
+.about-origin-copy p:not(.eyebrow) {
+  color: var(--muted);
+}
 .about-visual-hero {
   display: grid;
   grid-template-columns: minmax(0, 0.78fr) minmax(360px, 1.05fr);
@@ -1292,10 +1387,43 @@ td small { display: block; color: var(--muted); }
   }
 }
 @media (max-width: 760px) {
+  .about-mission-panel,
+  .about-origin-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-mission-panel {
+    gap: 14px;
+    padding-block: 30px;
+  }
+  .about-mission-panel h2 {
+    font-size: 28px;
+  }
+  .about-mission-panel > p {
+    font-size: 17px;
+  }
+  .about-worlds {
+    grid-template-columns: 1fr;
+  }
+  .about-world-card,
+  .about-world-card-featured {
+    grid-column: auto;
+    grid-row: auto;
+    grid-template-rows: minmax(230px, auto) auto;
+  }
+  .about-world-card-featured {
+    grid-template-rows: minmax(360px, auto) auto;
+  }
+
   .about-visual-hero,
   .about-image-pair,
   .about-publishing-grid {
     grid-template-columns: 1fr;
+  }
+  .about-cover {
+    min-height: auto;
+  }
+  .about-cover .about-hero-image {
+    min-height: 260px;
   }
   .about-visual-hero {
     gap: 16px;
