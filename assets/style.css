@@ -969,24 +969,19 @@ td small { display: block; color: var(--muted); }
 }
 .about-worlds {
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
   align-items: stretch;
 }
 .about-world-card {
   display: grid;
-  grid-column: span 6;
-  grid-template-rows: minmax(250px, 1fr) auto;
+  grid-template-rows: 320px auto;
   overflow: hidden;
   min-width: 0;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
   box-shadow: var(--shadow);
-}
-.about-world-card-featured {
-  grid-row: span 2;
-  grid-template-rows: minmax(560px, 1fr) auto;
 }
 .about-world-card img {
   display: block;
@@ -1404,14 +1399,8 @@ td small { display: block; color: var(--muted); }
   .about-worlds {
     grid-template-columns: 1fr;
   }
-  .about-world-card,
-  .about-world-card-featured {
-    grid-column: auto;
-    grid-row: auto;
-    grid-template-rows: minmax(230px, auto) auto;
-  }
-  .about-world-card-featured {
-    grid-template-rows: minmax(360px, auto) auto;
+  .about-world-card {
+    grid-template-rows: 260px auto;
   }
 
   .about-visual-hero,
