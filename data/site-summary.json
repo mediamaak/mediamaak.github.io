@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "mediamaak",
+    "name": "MediaMaak",
     "url": "https://mediamaak.github.io",
     "deployment": "GitHub Pages",
     "data_mode": "static_json"

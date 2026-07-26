@@ -1,4 +1,4 @@
-# mediamaak GitHub Pages technical blog
+# MediaMaak GitHub Pages technical blog
 
 배포 주소: https://mediamaak.github.io
 

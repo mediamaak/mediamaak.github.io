@@ -103,5 +103,5 @@
     ctx.fillText(isOpenPositionChart ? "막대: 포지션 평가손익 / 선: 누적 평가손익" : "막대: 일별 손익 / 선: 누적 손익", pad.left, height - 18);
   }
 
-  window.MediaMakCharts = { renderPerformanceChart };
+  window.MediaMaakCharts = { renderPerformanceChart };
 })();

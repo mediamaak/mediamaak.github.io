@@ -182,7 +182,7 @@ function renderHomeIntro(home) {
   const links = document.getElementById("homePrimaryLinks");
   const stats = document.getElementById("homeStats");
 
-  if (title) title.textContent = home.site_title || "mediamaak";
+  if (title) title.textContent = home.site_title || "MediaMaak";
   if (description) description.textContent = home.description || "";
   if (links) {
     const primaryLinks = Array.isArray(home.primary_links) ? home.primary_links : [];
@@ -1071,13 +1071,13 @@ function renderSelectedPerformance() {
   updatePerformanceChartTitle(strategy, kind);
   renderGaps(rows, kind);
   renderDailyPnlRows(rows);
-  window.MediaMakCharts?.renderPerformanceChart(document.getElementById("performanceChart"), chartRows);
+  window.MediaMaakCharts?.renderPerformanceChart(document.getElementById("performanceChart"), chartRows);
   if (performanceState.resizeHandler) {
     window.removeEventListener("resize", performanceState.resizeHandler);
   }
   performanceState.resizeHandler = () => {
     const selected = selectedPerformanceStrategy();
-    window.MediaMakCharts?.renderPerformanceChart(document.getElementById("performanceChart"), performanceChartRows(selected, document.body.dataset.kind || "backtest"));
+    window.MediaMaakCharts?.renderPerformanceChart(document.getElementById("performanceChart"), performanceChartRows(selected, document.body.dataset.kind || "backtest"));
   };
   window.addEventListener("resize", performanceState.resizeHandler);
 }
