@@ -182,7 +182,7 @@ function renderHomeIntro(home) {
   const links = document.getElementById("homePrimaryLinks");
   const stats = document.getElementById("homeStats");
 
-  if (title) title.textContent = home.site_title || "MediaMak";
+  if (title) title.textContent = home.site_title || "mediamaak";
   if (description) description.textContent = home.description || "";
   if (links) {
     const primaryLinks = Array.isArray(home.primary_links) ? home.primary_links : [];
