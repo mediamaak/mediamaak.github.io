@@ -42,6 +42,29 @@
       </div>
     </section>
 
+    <section class="section auto-writing-overview" aria-labelledby="autoWritingOverviewTitle">
+      <div class="section-heading">
+        <p class="eyebrow">AUTO WRITING AGENT</p>
+        <h2 id="autoWritingOverviewTitle">글 자동 작성 에이전트</h2>
+      </div>
+      <div class="auto-writing-panel">
+        <div class="auto-writing-copy">
+          <h3>자료 조사, 초안 작성, 품질 평가, 정적 페이지 반영까지 하나의 흐름으로 구성합니다.</h3>
+          <p>MediaMaak의 자동 작성 글은 RSS/API/공식 블로그에서 후보 자료를 모으고, 중복 URL을 제외한 뒤 Codex로 한국어 요약 초안을 만듭니다. 이후 출처성, 최신성, 저작권 위험, 과장 표현을 점검한 글만 GitHub Pages용 HTML과 JSON 데이터로 반영합니다.</p>
+          <p>Codex에서는 수집기, 작성기, 평가기, 발행기를 각각 독립 모듈로 구현하고 테스트할 수 있습니다. 운영 단계에서는 스케줄러가 매일 실행하고, 사용자는 일별 목록에서 에이전트가 작성한 글을 날짜순으로 확인합니다.</p>
+          <div class="auto-writing-actions">
+            <a class="button primary" href="posts.html#dailyAutoPosts">일별 자동 작성 글 보기</a>
+            <a class="button" href="posts.html">블로그 메뉴로 돌아가기</a>
+          </div>
+        </div>
+        <ol class="auto-writing-steps" aria-label="자동 작성 에이전트 구성 단계">
+          <li><span>01</span><strong>자료 수집</strong><p>RSS, API, 공식 블로그 자료를 모으고 이미 사용한 URL을 제외합니다.</p></li>
+          <li><span>02</span><strong>Codex 작성</strong><p>선별 자료를 바탕으로 짧고 실무적인 한국어 요약 초안을 작성합니다.</p></li>
+          <li><span>03</span><strong>품질 평가</strong><p>출처, 중복, 저작권, 환각 가능성, 표현 위험을 발행 전 점검합니다.</p></li>
+          <li><span>04</span><strong>Pages 반영</strong><p>승인된 글을 정적 HTML과 게시글 데이터로 변환해 블로그에 노출합니다.</p></li>
+        </ol>
+      </div>
+    </section>
     <section class="section">
       <div class="section-heading">
         <p class="eyebrow">ARCHITECTURE</p>
