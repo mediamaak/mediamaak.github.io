@@ -1209,6 +1209,14 @@ td small { display: block; color: var(--muted); }
   gap: 18px;
   align-items: stretch;
 }
+.about-publishing-grid > div {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.about-publishing-grid .card {
+  flex: 1;
+}
 .about-side-image {
   height: 100%;
   min-height: 0;
