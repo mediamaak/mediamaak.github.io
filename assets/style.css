@@ -1113,10 +1113,13 @@ td small { display: block; color: var(--muted); }
   align-items: stretch;
 }
 .about-side-image {
-  min-height: 100%;
+  height: 100%;
+  min-height: 0;
 }
 .about-side-image img {
-  aspect-ratio: 3 / 4;
+  height: 100%;
+  min-height: 0;
+  aspect-ratio: auto;
 }
 .publisher-hero {
   padding-top: 54px;
