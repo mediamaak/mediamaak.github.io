@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-17TNYG3KJW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-17TNYG3KJW');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>자동 매매 위키 | MediaMaak</title>
+  <meta name="description" content="MediaMaak 자동매매 시스템의 데이터 수집, 전략 실행, 시뮬레이션, 실제 매매 이력 공개 구조를 설명합니다.">
+  <link rel="canonical" href="https://mediamaak.github.io/auto-trading-wiki.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="자동 매매 위키 | MediaMaak">
+  <meta property="og:description" content="자동매매 데이터 수집, 전략 실행, 백테스트, 실거래 기록 공개 구조를 정리합니다.">
+  <meta property="og:url" content="https://mediamaak.github.io/auto-trading-wiki.html">
+  <meta property="og:site_name" content="MediaMaak">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="assets/style.css?v=20260728-blog-menu">
+</head>
+<body>
+  <header class="site-header bank-style-header">
+    <a class="brand" href="index.html"><span>M</span><strong>MediaMaak</strong></a>
+    <nav class="global-menu" aria-label="주요 메뉴">
+      <a class="menu-link" href="about.html">소개</a>
+      <a class="menu-link" href="posts.html">블로그</a>
+      <a class="menu-link" href="contact.html">문의</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">AUTO TRADING WIKI</p>
+      <h1>자동 매매 위키</h1>
+      <p>거래소와 시장 데이터 수집부터 전략 실행, 시뮬레이션, 실제 매매 집계 공개까지 이어지는 자동매매 시스템 설명입니다.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="records.html">시뮬레이션·자동매매 이력 보기</a>
+        <a class="button" href="posts.html">블로그 메뉴로 돌아가기</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">SYSTEM FLOW</p>
+        <h2>운영 흐름</h2>
+      </div>
+      <div class="flow-strip">
+        <article><b>01</b><strong>시장 데이터 수집</strong><span>Upbit, KIS, 공개 가격 API에서 코인과 KOSPI200 관련 데이터를 수집합니다.</span></article>
+        <article><b>02</b><strong>저장소 적재</strong><span>수집 데이터를 MySQL 테이블과 로그 파일에 저장하고 실패 이력을 분리합니다.</span></article>
+        <article><b>03</b><strong>전략 계산</strong><span>전략별 진입·청산 조건, 투입 예산, 목표수익률, 리스크 조건을 계산합니다.</span></article>
+        <article><b>04</b><strong>시뮬레이션</strong><span>과거 데이터로 일별 실현손익, 승패, 누적 손익, 손익비를 검증합니다.</span></article>
+        <article><b>05</b><strong>실거래 집계</strong><span>공개 가능한 범위에서 실현손익과 오픈 포지션 평가손익만 정리합니다.</span></article>
+        <article><b>06</b><strong>정적 공개</strong><span>주문 상세와 민감정보를 제외한 집계만 GitHub Pages에 게시합니다.</span></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">PUBLIC RECORDS</p>
+        <h2>공개 메뉴 구성</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card"><div class="card-kicker">SIMULATION</div><h2>시뮬레이션 게시판</h2><p>투자 소재와 전략을 선택해 백테스트 요약, 전략 설명, 일별 손익 그래프와 표를 확인합니다.</p><a href="simulation.html">시뮬레이션 보기</a></article>
+        <article class="card"><div class="card-kicker">ACTUAL</div><h2>실제 매매 게시판</h2><p>실제 자동매매의 공개 가능한 실현손익, 오픈 포지션, 일별 집계만 확인합니다.</p><a href="actual.html">실제 매매 보기</a></article>
+        <article class="card"><div class="card-kicker">RECORD HUB</div><h2>자동매매 이력 허브</h2><p>코인 자동 매매와 코스피 자동 매매의 시뮬레이션·실거래 기록으로 이동하는 메뉴입니다.</p><a href="records.html">이력 허브 보기</a></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">DISCLOSURE</p>
+        <h2>공개 제외 기준</h2>
+      </div>
+      <ul class="risk-list">
+        <li>API 키, 계정 정보, 주문 원장, 체결 상세, 관리자 로그는 공개하지 않습니다.</li>
+        <li>전략 설명은 검증 가능한 조건과 집계 지표 중심으로 공개합니다.</li>
+        <li>백테스트 결과와 실제 매매 결과를 같은 기준으로 비교할 수 있게 전략 코드와 투자 소재를 유지합니다.</li>
+        <li>자동매매 기록은 투자 권유가 아니라 시스템 검증과 운영 투명성을 위한 자료로 둡니다.</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer"><span>MediaMaak publishing brand</span><span>GitHub Pages: https://mediamaak.github.io</span></footer>
+</body>
+</html>

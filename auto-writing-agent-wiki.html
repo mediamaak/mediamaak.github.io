@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-17TNYG3KJW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-17TNYG3KJW');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>퀀트 투자 자료 조사 에이전트 구현 위키 | MediaMaak</title>
+  <meta name="description" content="Codex로 퀀트 투자 자료 조사 에이전트를 구성하고 자동 글 작성, 품질 평가, GitHub Pages 발행까지 구현하는 방법을 정리합니다.">
+  <link rel="canonical" href="https://mediamaak.github.io/auto-writing-agent-wiki.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="퀀트 투자 자료 조사 에이전트 구현 위키 | MediaMaak">
+  <meta property="og:description" content="Codex 기반 퀀트 투자 자료 조사 에이전트의 수집, 작성, 평가, 발행 구조를 설명합니다.">
+  <meta property="og:url" content="https://mediamaak.github.io/auto-writing-agent-wiki.html">
+  <meta property="og:site_name" content="MediaMaak">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="assets/style.css?v=20260728-blog-menu">
+</head>
+<body>
+  <header class="site-header bank-style-header">
+    <a class="brand" href="index.html"><span>M</span><strong>MediaMaak</strong></a>
+    <nav class="global-menu" aria-label="주요 메뉴">
+      <a class="menu-link" href="about.html">소개</a>
+      <a class="menu-link" href="posts.html">블로그</a>
+      <a class="menu-link" href="contact.html">문의</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">AUTO WRITING AGENT WIKI</p>
+      <h1>퀀트 투자 자료 조사 에이전트 구현 방법</h1>
+      <p>Codex를 사용해 시장·경제·퀀트 자료를 수집하고, 한국어 요약 글로 작성한 뒤, 검수 가능한 정적 블로그 글로 반영하는 구조입니다.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="posts.html#dailyAutoPosts">일별 자동 작성 글 보기</a>
+        <a class="button" href="posts.html">블로그 메뉴로 돌아가기</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">ARCHITECTURE</p>
+        <h2>전체 흐름</h2>
+      </div>
+      <div class="flow-strip">
+        <article><b>01</b><strong>자료 수집</strong><span>RSS, API, 공식 블로그, 리서치 자료에서 후보 URL과 메타데이터를 모읍니다.</span></article>
+        <article><b>02</b><strong>중복 제거</strong><span>이미 사용한 URL, 같은 제목, 낮은 신뢰도 자료를 발행 후보에서 제외합니다.</span></article>
+        <article><b>03</b><strong>주제 랭킹</strong><span>퀀트 투자 relevance, 최신성, 실무 적용성을 기준으로 하루 후보를 좁힙니다.</span></article>
+        <article><b>04</b><strong>Codex 작성</strong><span>원문 전문 번역이 아니라 핵심 요약과 투자 리서치 관점의 해석을 작성합니다.</span></article>
+        <article><b>05</b><strong>품질 평가</strong><span>출처, 과장 표현, 저작권 위험, 환각 가능성, 한국어 품질을 검사합니다.</span></article>
+        <article><b>06</b><strong>정적 발행</strong><span>승인된 글만 HTML, JSON, 사이트맵에 반영해 GitHub Pages에 공개합니다.</span></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">MODULES</p>
+        <h2>Codex 구현 단위</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card"><div class="card-kicker">COLLECTOR</div><h2>자료 수집기</h2><p>소스 설정 파일을 읽어 후보 자료의 제목, URL, 발행일, 출처, 태그를 표준 스키마로 저장합니다.</p></article>
+        <article class="card"><div class="card-kicker">RANKER</div><h2>주제 선별기</h2><p>퀀트 투자, 거시경제, 위험관리, 데이터 분석 관점에서 글감 우선순위를 계산합니다.</p></article>
+        <article class="card"><div class="card-kicker">WRITER</div><h2>작성 에이전트</h2><p>Codex가 원문 근거를 유지하면서 한국어 요약, 실무 적용 포인트, 출처 링크를 작성합니다.</p></article>
+        <article class="card"><div class="card-kicker">EVALUATOR</div><h2>품질 평가기</h2><p>중복, 출처 누락, 장문 인용, 투자 조언성 표현, 확정적 예측을 차단합니다.</p></article>
+        <article class="card"><div class="card-kicker">PUBLISHER</div><h2>발행기</h2><p>승인된 초안을 GitHub Pages용 게시글 HTML과 목록 JSON으로 변환합니다.</p></article>
+        <article class="card"><div class="card-kicker">FEEDBACK</div><h2>독자 반응 분석</h2><p>조회수와 클릭률 지표가 준비되면 다음 후보 랭킹과 작성 프롬프트에 반영합니다.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">QUALITY RULES</p>
+        <h2>발행 기준</h2>
+      </div>
+      <ul class="risk-list">
+        <li>원문 링크 없이 단독 주장하지 않습니다.</li>
+        <li>원문 전문 번역, 장문 인용, 표 구조 복제를 피합니다.</li>
+        <li>투자 수익 보장, 매수·매도 지시, 확정적 전망 표현을 사용하지 않습니다.</li>
+        <li>최근 자료를 우선하되, 시의성이 낮은 자료는 배경 설명 또는 참고 자료로만 둡니다.</li>
+        <li>품질 평가를 통과하지 못한 초안은 공개 페이지에 반영하지 않습니다.</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer"><span>MediaMaak publishing brand</span><span>GitHub Pages: https://mediamaak.github.io</span></footer>
+</body>
+</html>

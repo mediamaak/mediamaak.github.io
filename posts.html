@@ -12,11 +12,11 @@
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>블로그 | MediaMaak</title>
-  <meta name="description" content="MediaMaak 블로그는 최근 자료, 자동 매매 운영 기록, 자동 자료 조사와 글 작성 결과를 공유하는 게시판입니다.">
+  <meta name="description" content="MediaMaak 블로그는 자동 작성 에이전트, 자동 매매 운영 기록, 게시판을 공유하는 페이지입니다.">
   <link rel="canonical" href="https://mediamaak.github.io/posts.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="블로그 | MediaMaak">
-  <meta property="og:description" content="MediaMaak 블로그는 최근 자료, 자동 매매 운영 기록, 자동 자료 조사와 글 작성 결과를 공유하는 게시판입니다.">
+  <meta property="og:description" content="MediaMaak 블로그는 자동 작성 에이전트, 자동 매매 운영 기록, 게시판을 공유하는 페이지입니다.">
   <meta property="og:url" content="https://mediamaak.github.io/posts.html">
   <meta property="og:site_name" content="MediaMaak">
   <meta name="twitter:card" content="summary">
@@ -38,7 +38,7 @@
       <section class="page-title">
         <p class="eyebrow">BLOG</p>
         <h1>블로그</h1>
-        <p>최근 자료, 자동 매매 운영 기록, 자동 자료 조사와 글 작성 결과를 공유합니다.</p>
+        <p>자동 작성 에이전트, 자동 매매 운영 기록, 게시판을 공유합니다.</p>
       </section>
       <section class="section auto-writing-overview" aria-labelledby="autoWritingTitle">
         <div class="section-heading">
@@ -52,7 +52,7 @@
             <p>Codex에서는 수집기, 작성기, 평가기, 발행기를 각각 독립 모듈로 구현하고 테스트할 수 있습니다. 운영 단계에서는 스케줄러가 매일 실행하고, 사용자는 아래 일별 목록에서 에이전트가 작성한 글을 날짜순으로 확인합니다.</p>
             <div class="auto-writing-actions">
               <a class="button primary" href="#dailyAutoPosts">일별 자동 작성 글 보기</a>
-              <a class="button" href="latest.html">최근 자료 보기</a>
+              <a class="button" href="auto-writing-agent-wiki.html">구현 위키 보기</a>
             </div>
           </div>
           <ol class="auto-writing-steps" aria-label="자동 작성 에이전트 구성 단계">
@@ -63,6 +63,40 @@
           </ol>
         </div>
       </section>
+      <section class="section blog-submenu-section" aria-labelledby="blogSubmenuTitle">
+        <div class="section-heading">
+          <p class="eyebrow">BLOG MENU</p>
+          <h2 id="blogSubmenuTitle">블로그 하위 메뉴</h2>
+        </div>
+        <div class="blog-submenu-tree">
+          <article class="blog-submenu-group">
+            <div class="card-kicker">AUTO WRITING AGENT</div>
+            <h3>자동 작성 에이전트</h3>
+            <p class="blog-submenu-note">퀀트 투자 자료 조사 에이전트 구현 방법과 일별 자동 작성 글을 확인합니다.</p>
+            <div class="blog-submenu-branch">
+              <a href="auto-writing-agent-wiki.html">구현 위키</a>
+              <a href="#dailyAutoPosts">일별 자동 작성 글</a>
+            </div>
+          </article>
+          <article class="blog-submenu-group">
+            <div class="card-kicker">AUTO TRADING</div>
+            <h3>자동 매매</h3>
+            <p class="blog-submenu-note">자동매매 시스템 설명과 시뮬레이션·실거래 운영 이력을 확인합니다.</p>
+            <div class="blog-submenu-branch">
+              <a href="auto-trading-wiki.html">자동 매매 위키</a>
+              <a href="records.html">시뮬레이션·자동매매 이력</a>
+            </div>
+          </article>
+          <article class="blog-submenu-group">
+            <div class="card-kicker">BOARD</div>
+            <h3>게시판</h3>
+            <p class="blog-submenu-note">Codex, AI, 자동화 관련 최신 자료를 모은 게시판입니다.</p>
+            <div class="blog-submenu-branch">
+              <a href="codex-ai-latest.html">게시판 보기</a>
+            </div>
+          </article>
+        </div>
+      </section>
       <section id="dailyAutoPosts" class="section">
         <div class="section-heading">
           <p class="eyebrow">DAILY AUTO POSTS</p>
@@ -71,40 +105,6 @@
         </div>
         <div id="postList" class="post-list"></div>
       </section>
-      <section class="section blog-submenu-section" aria-labelledby="blogSubmenuTitle">
-        <div class="section-heading">
-          <p class="eyebrow">BLOG MENU</p>
-          <h2 id="blogSubmenuTitle">블로그 하위 메뉴</h2>
-        </div>
-        <div class="blog-submenu-tree">
-          <article class="blog-submenu-group">
-            <div class="card-kicker">RECENT MATERIALS</div>
-            <h3>최근 자료</h3>
-            <p class="blog-submenu-note">다양한 기능과 최근 자료를 공유하는 게시판</p>
-            <div class="blog-submenu-branch">
-              <a href="latest.html">최신 자료 보기</a>
-            </div>
-          </article>
-          <article class="blog-submenu-group">
-            <div class="card-kicker">AUTO TRADING</div>
-            <h3>자동 매매</h3>
-            <p class="blog-submenu-note">자동 시뮬레이션 및 거래 진행 이력 게시판</p>
-            <div class="blog-submenu-branch">
-              <a href="records.html#coin-auto-trading">코인 자동 매매</a>
-              <a href="records.html#kospi-auto-trading">코스피 자동 매매</a>
-            </div>
-          </article>
-          <article class="blog-submenu-group">
-            <div class="card-kicker">AUTO WRITING</div>
-            <h3>자동 작성 글</h3>
-            <p class="blog-submenu-note">자동 자료 조사와 글 작성 기능이 실제로 작성한 게시판</p>
-            <div class="blog-submenu-branch">
-              <a href="#dailyAutoPosts">작성 글 보기</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
   </main>
   <footer class="site-footer"><span>MediaMaak publishing brand</span><span>GitHub Pages: https://mediamaak.github.io</span></footer>
 </body>
