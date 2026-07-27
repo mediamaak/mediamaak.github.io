@@ -215,6 +215,46 @@ main { max-width: 1180px; margin: 0 auto; padding: 34px clamp(18px, 4vw, 40px) 6
   outline: 2px solid rgba(31, 111, 235, 0.4);
   outline-offset: 3px;
 }
+.home-trust-footer {
+  border-top: 1px solid var(--line);
+  background: #f7f9fd;
+  color: var(--muted);
+}
+.home-trust-inner {
+  display: grid;
+  gap: 16px;
+  width: min(1040px, calc(100vw - 36px));
+  margin: 0 auto;
+  padding: 26px 0 30px;
+}
+.home-trust-copy,
+.home-trust-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: center;
+}
+.home-trust-copy strong {
+  color: var(--text);
+}
+.home-trust-links a {
+  color: var(--text);
+  font-weight: 800;
+  text-decoration: none;
+}
+.home-trust-links a:hover,
+.home-trust-links a:focus {
+  color: var(--accent);
+  text-decoration: underline;
+}
+.home-trust-note {
+  max-width: 860px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.65;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
 .record-link-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1135,6 +1175,17 @@ td small { display: block; color: var(--muted); }
 }
 .about-hero-copy h1 {
   margin-bottom: 12px;
+}
+.about-hero-copy p:not(.eyebrow),
+.about-world-card p:last-child,
+.about-question-grid .section-heading span,
+.step-row article span,
+.about-origin-copy p:not(.eyebrow),
+.about-publishing-grid .card p,
+.about-closing-band span {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
 }
 .about-hero-line {
   margin: 0 0 12px;
