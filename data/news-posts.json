@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-07-25T23:30:23Z",
+  "updated_at": "2026-07-27T23:31:04Z",
   "posts": [
+    {
+      "id": "2026-07-28-market-economy-roundup",
+      "title": "2026년 7월 28일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-28",
+      "category": "Market Economy",
+      "summary": "결론: 세 자료 모두 “숫자 자체”보다 가정·측정오차·행동편향을 먼저 점검해야 한국 투자자의 업종·환율·금리 민감도 점검에 더 유용합니다.",
+      "href": "posts/2026-07-28-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "economic-data",
+        "factor",
+        "macro",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-07-26-market-economy-roundup",
       "title": "2026년 7월 26일 퀀트·경제 데이터 분석 요약",
