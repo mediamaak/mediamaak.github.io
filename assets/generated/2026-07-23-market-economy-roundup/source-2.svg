@@ -9,8 +9,8 @@
 <text x="124" y="84" font-family="Arial, sans-serif" font-size="15" fill="#5F686B">출처: arXiv q-fin Portfolio Management</text>
 <rect x="52" y="138" width="170" height="76" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
 <rect x="52" y="138" width="170" height="8" rx="4" fill="#4F6F52"/>
-<text x="137" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">문제 제기</text>
-<text x="137" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">저자의 질문 확인</text>
+<text x="137" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">문제 제기 자료99</text>
+<text x="137" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">주식 단면의 거리행렬 스펙트럼으로 위기 국면과 구…</text>
 <line x1="222" y1="176" x2="270" y2="176" stroke="#6A7376" stroke-width="2"/>
 <path d="M 270 176 l -7 -6 v 12 z" fill="#6A7376"/>
 <polygon points="360,121 450,176 360,231 270,176" fill="#FFFFFF" stroke="#4F6F52" stroke-width="2"/>
@@ -21,8 +21,8 @@
 <text x="475" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#5F686B">예</text>
 <rect x="500" y="138" width="170" height="76" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
 <rect x="500" y="138" width="170" height="8" rx="4" fill="#4F6F52"/>
-<text x="585" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">핵심 변수</text>
-<text x="585" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">arXiv:2607.19005v1 Announce…</text>
+<text x="585" y="174" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">핵심 변수 자료99</text>
+<text x="585" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">주식 단면의 거리행렬 스펙트럼으로 위기 국면과 구…</text>
 <line x1="670" y1="176" x2="720" y2="176" stroke="#6A7376" stroke-width="2"/>
 <path d="M 720 176 l -7 -6 v 12 z" fill="#6A7376"/>
 <polygon points="810,121 900,176 810,231 720,176" fill="#FFFFFF" stroke="#4F6F52" stroke-width="2"/>
@@ -51,13 +51,13 @@
 <path d="M 585 122 l -7 -6 v 12 z" fill="#6A7376"/>
 <rect x="500" y="122" width="170" height="68" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
 <rect x="500" y="122" width="170" height="8" rx="4" fill="#4F6F52"/>
-<text x="585" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">결론 도출</text>
-<text x="585" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">전략 점검 항목화</text>
+<text x="585" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">결론 도출 자료99</text>
+<text x="585" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">주식 단면의 거리행렬 스펙트럼으로 위기 국면과 구…</text>
 <line x1="585" y1="190" x2="585" y2="250" stroke="#6A7376" stroke-width="2"/>
 <path d="M 585 250 l -7 -6 v 12 z" fill="#6A7376"/>
 <rect x="500" y="250" width="170" height="68" rx="8" fill="#FFFFFF" stroke="#D6DED9"/>
 <rect x="500" y="250" width="170" height="8" rx="4" fill="#5A5878"/>
-<text x="585" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">전략 반영</text>
-<text x="585" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">체크리스트·백테스트</text>
+<text x="585" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1D2528">전략 반영 자료99</text>
+<text x="585" y="312" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#445055">주식 단면의 거리행렬 스펙트럼으로 위기 국면과 구…</text>
 <text x="52" y="388" font-family="Arial, sans-serif" font-size="13" fill="#5F686B">논리: 질문을 확인하고, 근거와 기준선을 통과한 경우에만 결론과 전략 점검 항목으로 전환합니다.</text>
 </svg>
