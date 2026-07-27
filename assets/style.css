@@ -1836,6 +1836,8 @@ td small { display: block; color: var(--muted); }
   gap: 14px;
 }
 .blog-submenu-group {
+  display: flex;
+  flex-direction: column;
   min-width: 0;
   padding: 22px;
   border: 1px solid var(--line);
@@ -1861,6 +1863,8 @@ td small { display: block; color: var(--muted); }
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: auto;
+  padding-top: 4px;
 }
 .blog-submenu-branch a {
   display: inline-flex;
