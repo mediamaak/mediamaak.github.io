@@ -2339,3 +2339,37 @@ td small { display: block; color: var(--muted); }
     grid-template-rows: minmax(150px, 185px) auto;
   }
 }
+@media (min-width: 761px) {
+  .home-publisher-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 0.42fr);
+  }
+  .home-book-visual {
+    width: min(100%, 340px);
+    justify-self: end;
+  }
+  .home-book-visual img {
+    max-height: 390px;
+  }
+  .about-cover {
+    min-height: clamp(420px, 56vh, 560px);
+  }
+  .about-cover .about-hero-image {
+    min-height: 280px;
+    max-height: 360px;
+  }
+  .about-visual-hero {
+    grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.72fr);
+  }
+  .about-world-card {
+    grid-template-rows: 240px auto;
+  }
+  .about-image-card {
+    grid-template-rows: minmax(220px, 260px) auto;
+  }
+  .about-image-card:first-child {
+    grid-template-rows: minmax(280px, 330px) auto;
+  }
+  .about-side-image {
+    max-height: 380px;
+  }
+}
