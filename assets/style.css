@@ -2295,3 +2295,47 @@ td small { display: block; color: var(--muted); }
     padding: 18px;
   }
 }
+@media (max-width: 760px) {
+  .home-book-visual {
+    width: min(82vw, 320px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .home-book-visual img {
+    max-height: 220px;
+    aspect-ratio: 4 / 3;
+    object-position: center;
+  }
+  .about-cover .about-hero-image {
+    min-height: 0;
+    max-height: 220px;
+    aspect-ratio: 16 / 9;
+  }
+  .about-world-card {
+    grid-template-rows: minmax(160px, 200px) auto;
+  }
+  .about-image-card,
+  .about-image-card:first-child {
+    grid-template-rows: minmax(170px, 210px) auto;
+  }
+  .about-side-image {
+    max-height: 240px;
+  }
+}
+@media (max-width: 420px) {
+  .home-book-visual {
+    width: min(78vw, 280px);
+  }
+  .home-book-visual img,
+  .about-cover .about-hero-image,
+  .about-side-image {
+    max-height: 190px;
+  }
+  .about-world-card {
+    grid-template-rows: minmax(145px, 180px) auto;
+  }
+  .about-image-card,
+  .about-image-card:first-child {
+    grid-template-rows: minmax(150px, 185px) auto;
+  }
+}
