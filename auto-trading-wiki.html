@@ -47,148 +47,297 @@
         <strong>위키 목차</strong>
         <nav>
           <a href="#wiki-disclosure">읽기 전 확인</a>
-          <a href="#chapter-1">1장 프로젝트 폴더</a>
-          <a href="#chapter-2">2장 Open API</a>
-          <a href="#chapter-3">3장 CCI 전략</a>
-          <a href="#wiki-next">다음 작성 예정</a>
+          <a href="#prologue">프롤로그</a>
+          <a href="#chapter-1">1장 작업 폴더</a>
+          <a href="#chapter-2">2장 API 설정</a>
+          <a href="#chapter-3">3장 대상과 신호</a>
+          <a href="#chapter-4">4장 폴더 구조</a>
+          <a href="#chapter-5">5장 API 조회</a>
+          <a href="#chapter-6">6장 DB 저장</a>
+          <a href="#chapter-7">7장 CCI 계산</a>
+          <a href="#chapter-8">8장 시뮬레이션</a>
+          <a href="#chapter-9">9장 페이퍼 모드</a>
+          <a href="#chapter-10">10장 실전 전환</a>
+          <a href="#chapter-11">11장 운영 기록</a>
         </nav>
       </aside>
       <div class="wiki-reading-content">
-    <section id="wiki-disclosure" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">DISCLOSURE</p>
-        <h2>읽기 전 확인할 점</h2>
-      </div>
-      <ul class="risk-list">
-        <li>이 위키는 투자 판단을 대신하지 않습니다.</li>
-        <li>자동매매는 수익을 보장하는 장치가 아니라, 정해둔 규칙을 실행하고 기록하는 도구입니다.</li>
-        <li>실전 주문은 실제 손실 가능성이 있으므로 본문에서는 조회, 기록, 시뮬레이션, 페이퍼 검증, 안전장치 확인을 우선합니다.</li>
-        <li>API 키, 계좌번호, 주문 원장, 체결 상세와 같은 민감 정보는 공개하지 않습니다.</li>
-      </ul>
-    </section>
+        <section id="wiki-disclosure" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">DISCLOSURE</p>
+            <h2>읽기 전 확인할 점</h2>
+          </div>
+          <ul class="risk-list">
+            <li>이 위키는 투자 판단을 대신하지 않습니다.</li>
+            <li>자동매매는 수익을 보장하는 장치가 아니라, 정해둔 규칙을 실행하고 기록하는 도구입니다.</li>
+            <li>실전 주문은 실제 손실 가능성이 있으므로 본문에서는 조회, 기록, 시뮬레이션, 페이퍼 검증, 안전장치 확인을 우선합니다.</li>
+            <li>API 키, 계좌번호, 주문 원장, 체결 상세와 같은 민감 정보는 공개하지 않습니다.</li>
+          </ul>
+        </section>
 
-    <section id="wiki-toc" class="section wiki-inline-toc">
-      <div class="section-heading">
-        <p class="eyebrow">WIKI TABLE OF CONTENTS</p>
-        <h2>위키 목차</h2>
-        <p>목차는 11장까지 열어두고, 현재 본문은 3장까지 입력했습니다.</p>
-      </div>
-      <div class="card-grid">
-        <article class="card"><div class="card-kicker">1장 공개</div><h2><a href="#chapter-1">Codex Desktop을 설치하고 프로젝트 폴더 지정하기</a></h2><p>Codex가 내 컴퓨터에서 어떤 폴더를 기준으로 작업하는지 이해하고, Windows 프로젝트 폴더를 직접 지정합니다.</p></article>
-        <article class="card"><div class="card-kicker">2장 공개</div><h2><a href="#chapter-2">한국투자증권 Open API를 Codex로 다루기</a></h2><p>과거에는 개발 역량이 필요했던 증권사 API 활용을 Codex와 함께 단계별 작업으로 나눕니다.</p></article>
-        <article class="card"><div class="card-kicker">3장 공개</div><h2><a href="#chapter-3">코스피200과 CCI 전략 기준 정하기</a></h2><p>거래 대상을 코스피200으로 제한하고, CCI를 신호 기준으로 삼는 이유를 정리합니다.</p></article>
-        <article class="card"><div class="card-kicker">4장 예정</div><h2>프로젝트 기본 구조 만들기</h2><p>소스 코드, 설정, 로그, 데이터, 실행 스크립트의 역할을 나눕니다.</p></article>
-        <article class="card"><div class="card-kicker">5장 예정</div><h2>한국투자증권 Open API 조회 테스트</h2><p>주문 API가 아니라 조회 API부터 토큰과 응답 구조를 확인합니다.</p></article>
-        <article class="card"><div class="card-kicker">6장 예정</div><h2>DB에 데이터 저장하기</h2><p>코스피200 종목과 가격 데이터를 MySQL에 저장하는 기준을 정합니다.</p></article>
-        <article class="card"><div class="card-kicker">7장 예정</div><h2>CCI 계산과 신호 만들기</h2><p>가격 데이터에서 CCI 값을 계산하고 매수, 매도, 대기 신호를 구분합니다.</p></article>
-        <article class="card"><div class="card-kicker">8장 예정</div><h2>시뮬레이션 실행하기</h2><p>과거 데이터로 전략 흐름을 검토하고 결과를 기록합니다.</p></article>
-        <article class="card"><div class="card-kicker">9장 예정</div><h2>페이퍼 모드로 주문 흐름 검증하기</h2><p>실제 주문 없이 가상 주문과 잔고 흐름을 확인합니다.</p></article>
-        <article class="card"><div class="card-kicker">10장 예정</div><h2>실전 주문 전환 체크리스트 확인하기</h2><p>실전 주문이 조건 없이 열리지 않도록 이중 잠금과 감사 기록을 둡니다.</p></article>
-        <article class="card"><div class="card-kicker">11장 예정</div><h2>운영 기록을 남기고 전략을 개선하는 루틴</h2><p>운영 기록, 전략 변경 로그, 중단 기준을 정해 감정적 판단을 줄입니다.</p></article>
-      </div>
-    </section>
+        <section id="book-direction" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">BOOK DIRECTION</p>
+            <h2>책의 방향</h2>
+            <p>처음부터 읽는 백과사전이 아니라, 필요한 단계만 찾아보는 사용설명서 형태로 정리합니다.</p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>항목</th><th>내용</th></tr></thead>
+              <tbody>
+                <tr><td>제목</td><td>Codex로 시작하는 자동매매 플랫폼 만들기</td></tr>
+                <tr><td>부제</td><td>초보자가 한국투자증권 Open API로 코스피200 자동매매를 구현한 실전 기록</td></tr>
+                <tr><td>대상 독자</td><td>자동매매와 API가 처음이지만 Codex로 직접 도구를 만들어보고 싶은 사람</td></tr>
+                <tr><td>핵심 도구</td><td>Codex Desktop, Python, 한국투자증권 Open API, MySQL</td></tr>
+                <tr><td>핵심 범위</td><td>프로젝트 폴더, API 설정, 코스피200, CCI, DB 저장, 시뮬레이션, 페이퍼 모드, 실전 주문 전 안전장치, 운영 기록</td></tr>
+                <tr><td>원칙</td><td>수익 보장 표현 금지, 매매 권유 금지, 실전 주문보다 조회와 검증 우선, 기록 중심</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-    <section id="chapter-1" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">CHAPTER 1</p>
-        <h2>Codex Desktop을 설치하고 프로젝트 폴더 지정하기</h2>
-      </div>
-      <p>자동매매 플랫폼을 만들기 전에 먼저 정해야 할 것은 전략이 아닙니다. 한국투자증권 API도 아닙니다. 가장 먼저 해야 할 일은 Codex Desktop을 설치하고, Codex가 작업할 프로젝트 폴더를 정확히 지정하는 것입니다.</p>
-      <p>Codex는 단순히 질문에 답하는 채팅 도구가 아닙니다. 내 컴퓨터의 로컬 폴더를 열고, 파일을 읽고, PowerShell 명령을 실행하고, 필요한 코드를 만들거나 수정할 수 있는 개발 작업 도구입니다. 그래서 처음부터 어디에서 작업할 것인지를 정하지 않으면 파일이 예상하지 못한 위치에 생기거나, 나중에 로그와 결과 파일을 찾기 어려워질 수 있습니다.</p>
-      <div class="flow-strip">
-        <article><b>01</b><strong>Codex Desktop 설치</strong><span>자동매매 프로젝트는 로컬 파일, 터미널, 실행 로그를 함께 다뤄야 하므로 데스크톱 환경이 적합합니다.</span></article>
-        <article><b>02</b><strong>전용 폴더 생성</strong><span>Windows 사용자 폴더 아래에 프로젝트 전용 폴더를 직접 만듭니다.</span></article>
-        <article><b>03</b><strong>작업 폴더 확인</strong><span>Codex가 현재 어떤 폴더를 보고 있는지 먼저 확인하고, 파일 생성은 그 다음에 진행합니다.</span></article>
-      </div>
-      <h3>권장 폴더 위치</h3>
-      <p>Windows에서 일반 사용자 폴더는 보통 <code>C:\Users\사용자명\</code> 아래에 있습니다. 예를 들어 Windows 계정 이름이 <code>minjun</code>이라면 프로젝트 폴더는 다음처럼 만들 수 있습니다.</p>
-      <pre><code>C:\Users\minjun\kospi200_auto_trading</code></pre>
-      <p>이 위치가 좋은 이유는 경로가 짧고, 권한 문제가 적으며, 프로젝트 폴더 하나만 백업하면 코드, 설정 예시, 로그, 결과 파일을 함께 보관할 수 있기 때문입니다.</p>
-      <h3>Codex에게 처음 요청할 문장</h3>
-      <pre><code>현재 Codex가 보고 있는 작업 폴더 위치를 알려줘.
+        <section id="prologue" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">PROLOGUE</p>
+            <h2>인플레이션이 흔한 사회에서 자동매매를 고민하다</h2>
+          </div>
+          <p>2016년쯤 알파고가 이세돌을 이기는 것을 봤다. 당시에는 AI가 바둑에서 이세돌을 이길 것이라고 생각한 사람이 많지 않았다. 나도 마찬가지였다. 바둑을 깊이 아는 것은 아니었지만, 그래도 바둑처럼 경우의 수가 많고 판단이 복잡한 영역에서는 아직 사람이 앞설 것이라고 생각했다.</p>
+          <p>그런데 결과가 달랐다. 그때부터 AI에 대해 “정말 어디까지 할 수 있는 걸까”라는 의문이 생겼다. 동시에 “데이터를 다루고 프로그램이 돌아가는 방식 정도는 알아야겠다”는 생각을 했다. 대단한 확신이 있었던 것은 아니다. 다만 사업계획서나 보고서처럼 실제 삶에 바로 연결되지 않는 문서를 만드는 데서 벗어나, 실제로 작동하고 생활에 도움이 되는 서비스를 만들어보고 싶다는 생각이 있었다.</p>
+          <p>2016년 당시 나는 경제학 석사까지 마친 상태였다. SPSS나 Stata로 빈도분석, 교차분석, OLS 회귀분석 같은 기본적인 분석은 할 수 있었다. 하지만 그것은 대부분 일회성 분석에 가까웠다. 데이터를 분석해서 표나 결과를 만드는 일과, 데이터를 수집하고 처리해 실제 서비스로 연결되는 프로그램을 만드는 일은 전혀 달랐다.</p>
+          <p>그래서 파이썬을 배우기 시작했다. 연구원을 그만두고 박사과정에 진학하던 시기였고, 100만 원이 넘는 학원비는 나에게 가볍지 않은 돈이었다. 사설 학원 등록은 단순한 취미가 아니라 커리어 전환을 위한 나름의 결심이었다.</p>
+          <p>하지만 대부분의 일이 계획처럼 흘러가지 않듯이, 그 학원도 기대와는 달랐다. 현업 전문가가 강사로 온다고 했지만, 실제 수업은 전문 강사의 체계적인 강의라기보다 아르바이트생이 진행하는 설명에 가까웠다. 전형적인 문과 출신이었던 나는 친절하지 않은 설명을 따라가기 어려웠다.</p>
+          <p>결국 학원은 대부분 나가지 않게 되었고, 독학으로 공부를 시작했다. 시간이 걸리긴 했지만, 그렇게 쌓은 경험을 바탕으로 작은 스타트업으로 커리어를 전환할 수 있었다.</p>
+          <p>자동매매에 관심을 갖게 된 것도 같은 흐름에 있었다. 단순히 월급이 부족해서 자동매매를 생각한 것은 아니다. 더 근본적으로는 앞으로 살아갈 사회 구조가 달라지고 있다고 느꼈다. AI와 자동화가 점점 더 많은 영역에 들어오고, 동시에 인플레이션이 흔한 사회에서 살아가야 할 가능성이 높다고 보았다.</p>
+          <p>인플레이션은 모두에게 같은 비율로 반영된다. 하지만 체감 부담은 같지 않다. 자산이 많은 사람은 자산 가격 상승이나 투자 수익으로 일부 대응할 수 있다. 반면 자산이 적은 사람은 오른 생활비를 소득 안에서 그대로 감당해야 한다. 같은 비율의 물가 상승이라도 자산이 적은 사람에게 더 무겁게 느껴지는 이유다.</p>
+          <p>부가가치세가 오르면 부담은 가격표와 영수증에 직접 나타난다. 그래서 사람들이 바로 알아차리고 저항도 커진다. 하지만 인플레이션은 다르다. 물가는 오르지만 그 원인이 한 줄로 표시되지는 않는다. 재정지출 확대, 재정적자, 확장적 통화정책 같은 선택이 반복되더라도 그 부담은 생활비 전반에 흩어져 나타난다.</p>
+          <p>앞으로 이런 구조가 쉽게 사라질 것 같지는 않았다. 그래서 질문은 “월급이 부족하니 어떻게 더 벌 것인가”가 아니라 “인플레이션이 흔한 사회에서 어떻게 살아갈 것인가”에 가까웠다. 자동매매 프로그램은 그 고민 중 하나였다.</p>
+          <p>물론 자동매매를 돈을 벌어주는 기계로 생각한 것은 아니다. 자동매매는 수익을 보장하지 않는다. 손실은 언제든 발생할 수 있다. 시장은 내가 정한 규칙대로 움직이지 않을 수 있고, 기술적 지표도 항상 맞지 않는다.</p>
+          <p>그럼에도 자동매매 프로그램을 만들고 싶었던 이유는 분명했다. 사람이 직접 모든 조건을 확인하고 판단하고 실행하는 방식에는 한계가 있다. 계속 화면을 보고, 매수와 매도 조건을 확인하고, 거래 결과를 정리하는 일은 또 다른 노동이 된다. 사회 구조의 변화에 대응하기 위한 도구를 만들겠다고 하면서 다시 내 시간을 계속 투입해야 한다면 방향이 맞지 않았다.</p>
+          <p>필요한 것은 내 시간을 계속 쓰지 않아도 정해둔 규칙을 확인하고, 조건이 맞는지 판단하고, 실행 결과를 기록하는 도구였다. 자동매매는 수익 보장 장치가 아니라 규칙 실행과 기록 도구다. 시장을 완전히 이기겠다는 것이 아니라, 변화하는 사회에서 개인이 가질 수 있는 대응 수단 하나를 만들어보고 싶었다.</p>
+          <p>이 과정에서 Codex를 개발 파트너로 삼았다. 예전에는 Open API를 이용하려면 개발 역량이 상당히 필요했다. 증권사 API 문서를 읽고, 인증 방식을 이해하고, 데이터를 수집하고, 오류를 처리하고, DB에 저장하는 구조를 직접 만들어야 했다. 하지만 이제는 Codex와 함께 작업을 작은 단위로 나누어 진행할 수 있다.</p>
+          <p>이 책은 그 과정을 정리한 기록이다. 한국투자증권 Open API를 이용해 코스피200 데이터를 다루고, CCI 기준으로 신호를 만들고, 시뮬레이션과 페이퍼 모드를 거쳐 실전 주문 전 안전장치를 검토하는 과정을 다룬다. 중심은 투자 수익이 아니라 구현 과정, 실패 경험, 오류 해결, 그리고 기록이다.</p>
+          <p>이 책은 특정 종목을 사라고 권하지 않는다. 자동매매로 누구나 돈을 벌 수 있다고 말하지도 않는다. 자동매매는 투자 판단을 대신하지 않는다. 모든 투자 판단과 책임은 사용자 본인에게 있다.</p>
+        </section>
+
+        <section id="wiki-toc" class="section wiki-inline-toc">
+          <div class="section-heading">
+            <p class="eyebrow">WIKI TABLE OF CONTENTS</p>
+            <h2>위키 목차</h2>
+            <p>노션 원고의 프롤로그와 1장부터 11장까지의 장별 내용을 블로그 위키에 입력했습니다.</p>
+          </div>
+          <div class="card-grid">
+            <article class="card"><div class="card-kicker">1장 입력</div><h2><a href="#chapter-1">Codex 작업 폴더를 정한다</a></h2><p>Codex가 내 컴퓨터에서 어느 폴더를 기준으로 작업하는지 고정합니다.</p></article>
+            <article class="card"><div class="card-kicker">2장 입력</div><h2><a href="#chapter-2">한국투자증권 Open API 설정을 준비한다</a></h2><p>API 키, 계좌번호, 실행 모드를 config/.env 기준으로 정리합니다.</p></article>
+            <article class="card"><div class="card-kicker">3장 입력</div><h2><a href="#chapter-3">거래 대상과 신호 기준을 고정한다</a></h2><p>코스피200과 CCI를 기준으로 자동매매의 범위를 좁힙니다.</p></article>
+            <article class="card"><div class="card-kicker">4장 입력</div><h2><a href="#chapter-4">프로젝트 기본 폴더를 만든다</a></h2><p>코드, 설정, 로그, 데이터, 문서를 분리합니다.</p></article>
+            <article class="card"><div class="card-kicker">5장 입력</div><h2><a href="#chapter-5">API 조회만 먼저 테스트한다</a></h2><p>주문 API가 아니라 토큰 발급과 조회 응답부터 검증합니다.</p></article>
+            <article class="card"><div class="card-kicker">6장 입력</div><h2><a href="#chapter-6">DB 저장 상태를 확인한다</a></h2><p>코스피200 종목과 가격 데이터를 MySQL에 저장합니다.</p></article>
+            <article class="card"><div class="card-kicker">7장 입력</div><h2><a href="#chapter-7">CCI 값을 계산하고 신호를 만든다</a></h2><p>저장된 가격 데이터로 매수, 매도, 대기 신호를 만듭니다.</p></article>
+            <article class="card"><div class="card-kicker">8장 입력</div><h2><a href="#chapter-8">시뮬레이션으로 먼저 검증한다</a></h2><p>과거 데이터로 실제 주문 전 전략 흐름을 검토합니다.</p></article>
+            <article class="card"><div class="card-kicker">9장 입력</div><h2><a href="#chapter-9">페이퍼 모드로 주문 흐름을 검증한다</a></h2><p>실제 주문 없이 주문 기록과 가상 잔고를 확인합니다.</p></article>
+            <article class="card"><div class="card-kicker">10장 입력</div><h2><a href="#chapter-10">실전 주문 전환을 차단 기준으로 점검한다</a></h2><p>실전 주문이 조건 없이 열리지 않도록 점검합니다.</p></article>
+            <article class="card"><div class="card-kicker">11장 입력</div><h2><a href="#chapter-11">운영 기록을 남기고 개선한다</a></h2><p>운영 기록, 오류, 전략 변경 이유를 남깁니다.</p></article>
+          </div>
+        </section>
+
+        <section id="chapter-1" class="section">
+          <div class="section-heading"><p class="eyebrow">CHAPTER 1</p><h2>Codex 작업 폴더를 정한다</h2></div>
+          <h3>목적</h3>
+          <p>Codex가 내 컴퓨터의 어느 폴더에서 작업하는지 먼저 고정한다. 자동매매 프로젝트는 코드, 설정, 로그, 결과 파일이 계속 생기므로 시작 위치가 흔들리면 이후 작업도 흔들린다.</p>
+          <h3>바로 할 일</h3>
+          <ul class="risk-list"><li>Windows 사용자 폴더 아래에 전용 프로젝트 폴더를 만든다.</li><li>예시 경로는 <code>C:\Users\minjun\kospi200_auto_trading</code>으로 둔다.</li><li>Codex Desktop에서 이 폴더를 연다.</li><li>파일을 만들기 전에 Codex가 보고 있는 현재 경로를 확인한다.</li></ul>
+          <h3>Codex 명령문</h3>
+          <pre><code>현재 Codex가 보고 있는 작업 폴더 위치를 알려줘.
 파일 생성이나 수정은 하지 말고, 현재 경로와 폴더 안의 파일 목록만 확인해줘.</code></pre>
-      <h3>이 장을 마친 뒤 확인할 것</h3>
-      <ul class="risk-list">
-        <li>Codex가 현재 작업 폴더를 정확히 표시합니다.</li>
-        <li>작업 폴더가 사용자가 의도한 위치입니다.</li>
-        <li>파일을 만들기 전에 경로와 폴더 상태를 먼저 확인했습니다.</li>
-        <li>프로젝트 전용 폴더 외부에서 작업하지 않습니다.</li>
-      </ul>
-    </section>
+          <h3>완료 기준</h3>
+          <ul class="risk-list"><li>현재 작업 폴더가 의도한 프로젝트 폴더로 표시된다.</li><li>Codex가 파일을 만들지 않고 경로와 파일 목록만 보고한다.</li><li>프로젝트 전용 폴더 외부에서 작업하지 않는다.</li></ul>
+          <h3>막히면 볼 것</h3>
+          <ul class="risk-list"><li>Codex Desktop에서 다른 폴더를 열고 있지 않은지 확인한다.</li><li>Windows 사용자명이 예시와 다르다는 점을 확인한다.</li><li><code>C:\Program Files</code> 같은 시스템 폴더를 사용하지 않는다.</li></ul>
+        </section>
 
-    <section id="chapter-2" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">CHAPTER 2</p>
-        <h2>한국투자증권 Open API를 Codex로 다루기</h2>
-      </div>
-      <p>예전에는 증권사 Open API를 활용하려면 개발 역량이 상당히 필요했습니다. 개발자센터 문서를 읽고, 인증 방식과 토큰 발급 구조를 이해하고, 요청 헤더와 응답 코드를 직접 맞춰야 했습니다. 자동매매를 처음 접하는 사람에게는 API 문서만으로도 진입 장벽이 높았습니다.</p>
-      <p>Codex를 사용하면 이 과정을 작은 작업으로 나눌 수 있습니다. API 키를 어디에 넣어야 하는가, 조회 API와 주문 API는 어떻게 구분하는가, 아직 실전 주문은 호출하지 않고 토큰과 조회만 확인하려면 어떻게 해야 하는가처럼 범위를 좁혀 요청할 수 있습니다.</p>
-      <h3>API를 바로 주문에 연결하지 않는 이유</h3>
-      <p>한국투자증권 Open API에는 시세 조회, 계좌 조회, 주문 같은 여러 기능이 있습니다. 자동매매 플랫폼을 만들 때 가장 위험한 접근은 API 연결에 성공하자마자 주문 기능까지 열어두는 것입니다. 이 책에서는 조회 API부터 확인하고, 실전 주문은 안전장치가 준비된 뒤에만 검토합니다.</p>
-      <div class="flow-strip">
-        <article><b>01</b><strong>API 신청</strong><span>한국투자증권 Open API 개발자센터에서 사용 신청과 모의투자 준비 상태를 확인합니다.</span></article>
-        <article><b>02</b><strong>설정 항목 정리</strong><span>App Key, App Secret, 계좌번호, 실행 모드를 <code>config/.env</code> 기준으로 관리합니다.</span></article>
-        <article><b>03</b><strong>조회부터 검증</strong><span>토큰 발급과 시세 조회를 먼저 확인하고, 주문 API 호출은 제외합니다.</span></article>
-      </div>
-      <h3>설정은 <code>config/.env</code> 하나로 고정</h3>
-      <p>초보 독자에게 환경변수 또는 .env 중 선택처럼 설명하면 오히려 혼란이 커집니다. 이 위키에서는 설정 위치를 <code>config/.env</code>로 고정합니다. 실제 API 키와 계좌 정보는 공개 페이지나 예시 코드에 그대로 적지 않습니다.</p>
-      <pre><code>KIS_APP_KEY=실제값은_공개하지_않음
-KIS_APP_SECRET=실제값은_공개하지_않음
-KIS_ACCOUNT_NO=실제값은_공개하지_않음
-RUN_MODE=paper</code></pre>
-      <h3>Codex에게 다시 요청할 문장</h3>
-      <pre><code>한국투자증권 Open API 설정 항목을 정리해줘.
+        <section id="chapter-2" class="section">
+          <div class="section-heading"><p class="eyebrow">CHAPTER 2</p><h2>한국투자증권 Open API 설정을 준비한다</h2></div>
+          <h3>목적</h3>
+          <p>한국투자증권 Open API를 바로 주문에 연결하지 않고, 설정 항목과 조회 API부터 준비한다.</p>
+          <h3>바로 할 일</h3>
+          <ul class="risk-list"><li>한국투자증권 Open API 개발자센터에서 API 사용 신청 상태를 확인한다.</li><li>App Key, App Secret, 계좌번호, 모의투자 여부를 구분한다.</li><li>설정 파일은 <code>config/.env</code> 하나로 고정한다.</li><li>실전 주문 API는 아직 호출하지 않는다.</li></ul>
+          <h3>Codex 명령문</h3>
+          <pre><code>한국투자증권 Open API 설정 항목을 정리해줘.
 설정은 config/.env 파일에서만 읽는 구조로 설명해줘.
 아직 파일을 만들지 말고, 필요한 설정 이름과 각 항목의 의미만 표로 정리해줘.</code></pre>
-      <h3>이 장을 마친 뒤 확인할 것</h3>
-      <ul class="risk-list">
-        <li>API 키와 계좌 정보가 어떤 용도로 쓰이는지 설명할 수 있습니다.</li>
-        <li>실전 주문 API는 아직 호출하지 않습니다.</li>
-        <li>조회 API부터 테스트해야 한다는 순서를 이해했습니다.</li>
-        <li><code>.env</code>에 넣을 항목과 공개하면 안 되는 실제 값을 구분했습니다.</li>
-      </ul>
-    </section>
+          <h3>완료 기준</h3>
+          <ul class="risk-list"><li>어떤 값이 App Key, App Secret, 계좌번호인지 구분할 수 있다.</li><li>조회 API와 주문 API가 다른 기능이라는 점을 이해한다.</li><li>실제 API 키가 원고나 코드 예시에 노출되지 않는다.</li><li><code>.env</code> 외 다른 설정 경로를 사용하지 않는다.</li></ul>
+          <h3>막히면 볼 것</h3>
+          <ul class="risk-list"><li>API 신청 상태를 확인한다.</li><li>모의투자 계좌 사용 가능 여부를 확인한다.</li><li>App Key와 App Secret을 바꿔 입력하지 않았는지 확인한다.</li><li>실전 도메인과 모의 도메인을 혼동하지 않는다.</li></ul>
+        </section>
 
-    <section id="chapter-3" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">CHAPTER 3</p>
-        <h2>코스피200과 CCI 전략 기준 정하기</h2>
-      </div>
-      <p>자동매매를 시작할 때 거래 대상을 너무 넓게 잡으면 검증 범위가 커집니다. 주식은 위험 자산이고, 특히 변동성이 높은 코스닥이나 중소형주는 초보자가 자동매매의 기본 구조를 검증하기에 부담이 클 수 있습니다. 그래서 이 책에서는 거래 대상을 코스피200으로 제한합니다.</p>
-      <p>코스피200은 유가증권시장에 상장된 대표 종목군을 바탕으로 구성되는 지수입니다. 시장 전체를 완전히 대신한다고 볼 수는 없지만, 시가총액과 유동성 측면에서 비교적 대표성이 높은 종목들이 포함됩니다. 자동매매 초반에는 거래 대상을 넓히기보다 관리 가능한 범위로 줄이는 것이 중요합니다.</p>
-      <h3>왜 코스피200인가</h3>
-      <ul class="risk-list">
-        <li>거래 대상을 코스피 시가총액 상위권 중심으로 좁혀 리스크를 줄이고자 했습니다.</li>
-        <li>중소형주나 테마주보다 데이터 확인과 대상 관리가 단순합니다.</li>
-        <li>자동매매 플랫폼의 목적이 종목 발굴이 아니라 규칙 실행과 기록 검증이라는 점에 맞습니다.</li>
-      </ul>
-      <h3>왜 CCI인가</h3>
-      <p>CCI는 가격이 최근 평균적인 움직임에서 얼마나 벗어나 있는지를 보는 기술적 지표입니다. 이 책에서는 평균에서 많이 벗어난 가격은 다시 평균적인 범위 안으로 돌아올 수 있다는 생각을 신호 발생 기준으로 삼았습니다. 다만 이것은 수익을 보장하는 원리가 아닙니다. 가격은 계속 한 방향으로 움직일 수도 있고, 지표가 예상과 다르게 작동할 수도 있습니다.</p>
-      <p>CCI를 선택한 또 다른 이유는 이동평균을 기반으로 한 널리 알려진 지표라서 초보자가 개념을 따라가기 쉽기 때문입니다. 복잡한 모델을 처음부터 쓰기보다, 가격 데이터와 계산 결과를 직접 확인할 수 있는 기초 지표로 시작합니다.</p>
-      <div class="flow-strip">
-        <article><b>01</b><strong>대상 고정</strong><span>거래 대상을 코스피200으로 제한합니다.</span></article>
-        <article><b>02</b><strong>지표 고정</strong><span>신호 기준은 CCI로 시작합니다.</span></article>
-        <article><b>03</b><strong>기록 우선</strong><span>신호가 맞았는지 틀렸는지보다, 어떤 데이터로 어떤 신호가 나왔는지를 먼저 기록합니다.</span></article>
-      </div>
-      <h3>Codex에게 다시 요청할 문장</h3>
-      <pre><code>코스피200을 거래 대상으로 고정하고, CCI를 신호 기준으로 사용하는 이유를 초보 독자가 이해할 수 있게 정리해줘.
+        <section id="chapter-3" class="section">
+          <div class="section-heading"><p class="eyebrow">CHAPTER 3</p><h2>거래 대상과 신호 기준을 고정한다</h2></div>
+          <h3>목적</h3>
+          <p>자동매매 대상을 넓히지 않고 코스피200으로 제한한다. 신호 기준은 CCI로 시작한다.</p>
+          <h3>바로 할 일</h3>
+          <ul class="risk-list"><li>거래 대상은 코스피200으로 고정한다.</li><li>코스닥, 중소형주, 테마주는 이 책의 범위에서 제외한다.</li><li>신호 기준은 CCI로 고정한다.</li><li>CCI는 수익 보장 지표가 아니라 가격 위치를 보는 보조 지표로 설명한다.</li></ul>
+          <h3>Codex 명령문</h3>
+          <pre><code>코스피200을 거래 대상으로 고정하고, CCI를 신호 기준으로 사용하는 이유를 초보 독자가 이해할 수 있게 정리해줘.
 수익 보장이나 매매 권유처럼 보이는 표현은 제외해줘.</code></pre>
-      <h3>이 장을 마친 뒤 확인할 것</h3>
-      <ul class="risk-list">
-        <li>거래 대상이 코스닥, 중소형주, 전체 종목으로 확장되지 않습니다.</li>
-        <li>코스피200과 CCI 기준이 명확히 고정되어 있습니다.</li>
-        <li>CCI 신호가 매수, 매도, 대기 중 하나로 구분된다는 흐름을 이해했습니다.</li>
-        <li>지표 설명이 투자 추천처럼 보이지 않습니다.</li>
-      </ul>
-    </section>
+          <h3>완료 기준</h3>
+          <ul class="risk-list"><li>거래 대상이 코스피200으로 제한되어 있다.</li><li>CCI 기준이 장마다 다르게 설명되지 않는다.</li><li>신호는 매수, 매도, 대기 중 하나로 구분한다.</li><li>“높은 확률” 같은 표현이 수익 보장처럼 읽히지 않는다.</li></ul>
+          <h3>막히면 볼 것</h3>
+          <ul class="risk-list"><li>거래 대상이 너무 넓어졌는지 확인한다.</li><li>CCI 기준값이 문서마다 다르게 쓰였는지 확인한다.</li><li>전략 설명이 투자 추천처럼 보이지 않는지 확인한다.</li></ul>
+        </section>
 
-    <section id="wiki-next" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">NEXT</p>
-        <h2>다음 작성 예정</h2>
-      </div>
-      <p>4장 이후 본문은 프로젝트 기본 구조, 한국투자증권 Open API 조회 테스트, DB 저장, CCI 계산, 시뮬레이션, 페이퍼 모드, 실전 주문 안전장치, 운영 기록 순서로 추가할 예정입니다.</p>
-    </section>
+        <section id="chapter-4" class="section">
+          <div class="section-heading"><p class="eyebrow">CHAPTER 4</p><h2>프로젝트 기본 폴더를 만든다</h2></div>
+          <h3>목적</h3>
+          <p>코드, 설정, 로그, 결과 파일이 섞이지 않도록 기본 구조를 만든다.</p>
+          <h3>바로 할 일</h3>
+          <ul class="risk-list"><li><code>src</code>, <code>config</code>, <code>logs</code>, <code>data</code>, <code>scripts</code>, <code>docs</code> 폴더를 기준 구조로 둔다.</li><li>설정은 <code>config</code>에 둔다.</li><li>실행 로그는 <code>logs</code>에 둔다.</li><li>원본 데이터와 결과 파일은 <code>data</code>에 둔다.</li></ul>
+          <h3>Codex 명령문</h3>
+          <pre><code>현재 프로젝트 폴더 구조를 확인해줘.
+책에서 정한 src, config, logs, data, scripts, docs 구조와 비교해서 누락된 항목만 알려줘.
+파일 생성이나 수정은 하지 마.</code></pre>
+          <h3>완료 기준</h3>
+          <ul class="risk-list"><li>필요한 기본 폴더가 모두 존재한다.</li><li>설정 파일과 로그 파일이 프로젝트 루트에 섞이지 않는다.</li><li>Codex가 폴더 생성 전 계획을 먼저 설명한다.</li></ul>
+          <h3>막히면 볼 것</h3>
+          <ul class="risk-list"><li>폴더 이름이 장마다 다르게 쓰였는지 확인한다.</li><li><code>outputs</code>와 <code>data</code>처럼 역할이 겹치는 폴더가 있는지 확인한다.</li><li>설정 파일이 여러 위치에 흩어져 있는지 확인한다.</li></ul>
+        </section>
+
+        <section id="chapter-5" class="section">
+          <div class="section-heading"><p class="eyebrow">CHAPTER 5</p><h2>API 조회만 먼저 테스트한다</h2></div>
+          <h3>목적</h3>
+          <p>주문 API가 아니라 조회 API부터 검증한다. 토큰 발급, 조회 응답, 오류 기록만 확인한다.</p>
+          <h3>바로 할 일</h3>
+          <ul class="risk-list"><li>Access Token 발급 흐름을 확인한다.</li><li>국내 주식 현재가 또는 일봉 조회부터 테스트한다.</li><li>실패 시 오류 코드와 메시지를 로그에 남긴다.</li><li>주문 API 호출은 제외한다.</li></ul>
+          <h3>Codex 명령문</h3>
+          <pre><code>한국투자증권 Open API 조회 테스트 결과를 점검해줘.
+주문 API는 호출하지 마.
+토큰 발급, 조회 응답, 오류 메시지, 로그 기록 여부만 확인해줘.</code></pre>
+          <h3>완료 기준</h3>
+          <ul class="risk-list"><li>토큰 발급 성공 또는 실패 사유가 확인된다.</li><li>조회 API 응답이 기록된다.</li><li>주문 API 호출 흔적이 없다.</li><li>실패 시 오류 메시지가 남는다.</li></ul>
+          <h3>막히면 볼 것</h3>
+          <ul class="risk-list"><li>App Key와 App Secret 입력 오류를 확인한다.</li><li>토큰 만료 여부를 확인한다.</li><li>API 호출 제한을 확인한다.</li><li>네트워크 연결 문제를 확인한다.</li></ul>
+        </section>
+
+        <section id="chapter-6" class="section">
+          <div class="section-heading"><p class="eyebrow">CHAPTER 6</p><h2>DB 저장 상태를 확인한다</h2></div>
+          <h3>목적</h3>
+          <p>수집한 데이터를 파일에만 두지 않고 DB에 저장한다. 나중에 시뮬레이션과 운영 기록을 다시 확인하기 위한 기준을 만든다.</p>
+          <h3>바로 할 일</h3>
+          <ul class="risk-list"><li>MySQL 연결 정보를 <code>config/.env</code>에 정리한다.</li><li>코스피200 종목 테이블과 가격 데이터 테이블을 준비한다.</li><li>저장 성공 건수와 실패 사유를 로그에 남긴다.</li></ul>
+          <h3>Codex 명령문</h3>
+          <pre><code>DB 저장 상태를 점검해줘.
+config/.env의 DB 설정을 기준으로 연결 가능 여부, 테이블 존재 여부, 저장된 데이터 건수만 확인해줘.
+파일 수정은 하지 마.</code></pre>
+          <h3>완료 기준</h3>
+          <ul class="risk-list"><li>DB 연결이 가능하다.</li><li>종목 정보와 가격 데이터가 저장된다.</li><li>저장 건수를 확인할 수 있다.</li><li>저장 실패 시 원인이 로그에 남는다.</li></ul>
+          <h3>막히면 볼 것</h3>
+          <ul class="risk-list"><li>DB 서버가 실행 중인지 확인한다.</li><li>DB 이름, 사용자명, 비밀번호를 확인한다.</li><li>테이블명이 문서와 일치하는지 확인한다.</li><li>날짜 형식 오류가 없는지 확인한다.</li></ul>
+        </section>
+
+        <section id="chapter-7" class="section">
+          <div class="section-heading"><p class="eyebrow">CHAPTER 7</p><h2>CCI 값을 계산하고 신호를 만든다</h2></div>
+          <h3>목적</h3>
+          <p>저장된 가격 데이터로 CCI를 계산하고, 매수, 매도, 대기 신호를 만든다.</p>
+          <h3>바로 할 일</h3>
+          <ul class="risk-list"><li>가격 데이터가 충분한지 확인한다.</li><li>CCI 값을 계산한다.</li><li>신호 결과를 저장한다.</li><li>신호 결과를 투자 추천처럼 표현하지 않는다.</li></ul>
+          <h3>Codex 명령문</h3>
+          <pre><code>CCI 계산 결과를 점검해줘.
+가격 데이터 누락 여부, 계산된 CCI 값, 생성된 신호 수를 확인해줘.
+매매 추천은 하지 말고 계산 결과만 정리해줘.</code></pre>
+          <h3>완료 기준</h3>
+          <ul class="risk-list"><li>CCI 계산 결과가 비어 있지 않다.</li><li>신호가 매수, 매도, 대기 중 하나로 저장된다.</li><li>신호 기준이 하나로 고정되어 있다.</li><li>결과가 DB 또는 결과 테이블에 남는다.</li></ul>
+          <h3>막히면 볼 것</h3>
+          <ul class="risk-list"><li>고가, 저가, 종가 값 누락을 확인한다.</li><li>계산 기간이 부족하지 않은지 확인한다.</li><li>CCI 기준값이 문서와 일치하는지 확인한다.</li><li>신호 저장 테이블 오류를 확인한다.</li></ul>
+        </section>
+
+        <section id="chapter-8" class="section">
+          <div class="section-heading"><p class="eyebrow">CHAPTER 8</p><h2>시뮬레이션으로 먼저 검증한다</h2></div>
+          <h3>목적</h3>
+          <p>실제 주문 전에 과거 데이터로 전략 흐름을 확인한다. 수익 보장이 아니라 검토용 기록을 만드는 단계다.</p>
+          <h3>바로 할 일</h3>
+          <ul class="risk-list"><li>과거 데이터로만 실행한다.</li><li>실제 주문은 하지 않는다.</li><li>거래 수, 손익, 오류 여부를 기록한다.</li><li>결과를 과장하지 않는다.</li></ul>
+          <h3>Codex 명령문</h3>
+          <pre><code>시뮬레이션 실행 결과를 점검해줘.
+실제 주문 여부는 반드시 0건이어야 해.
+거래 수, 손익 결과, 오류 여부, 저장 여부만 표로 정리해줘.</code></pre>
+          <h3>완료 기준</h3>
+          <ul class="risk-list"><li>실제 주문이 발생하지 않는다.</li><li>시뮬레이션 결과가 저장된다.</li><li>거래 내역과 손익 결과가 분리되어 있다.</li><li>결과 해석이 수익 보장처럼 보이지 않는다.</li></ul>
+          <h3>막히면 볼 것</h3>
+          <ul class="risk-list"><li>시뮬레이션 시작일과 종료일을 확인한다.</li><li>가격 데이터 범위를 확인한다.</li><li>신호 데이터 존재 여부를 확인한다.</li><li>수수료와 세금 반영 기준을 확인한다.</li></ul>
+        </section>
+
+        <section id="chapter-9" class="section">
+          <div class="section-heading"><p class="eyebrow">CHAPTER 9</p><h2>페이퍼 모드로 주문 흐름을 검증한다</h2></div>
+          <h3>목적</h3>
+          <p>실제 주문 없이 주문 흐름, 가상 잔고, 중복 주문 차단을 확인한다.</p>
+          <h3>바로 할 일</h3>
+          <ul class="risk-list"><li>실행 모드를 <code>paper</code>로 둔다.</li><li>가상 주문 기록을 남긴다.</li><li>가상 잔고를 계산한다.</li><li>실전 주문 API 호출이 없는지 확인한다.</li></ul>
+          <h3>Codex 명령문</h3>
+          <pre><code>페이퍼 모드 실행 결과를 점검해줘.
+실제 주문 API 호출은 없어야 해.
+페이퍼 주문 수, 중복 주문 차단 여부, 가상 잔고 정합성, 오류 수만 확인해줘.</code></pre>
+          <h3>완료 기준</h3>
+          <ul class="risk-list"><li>실제 주문 API 호출이 없다.</li><li>페이퍼 주문 기록이 저장된다.</li><li>가상 잔고가 업데이트된다.</li><li>중복 주문이 차단된다.</li></ul>
+          <h3>막히면 볼 것</h3>
+          <ul class="risk-list"><li>실행 모드가 <code>paper</code>인지 확인한다.</li><li>주문 API 호출 경로가 분리되어 있는지 확인한다.</li><li>가상 잔고 계산 오류를 확인한다.</li><li>중복 주문 차단 조건을 확인한다.</li></ul>
+        </section>
+
+        <section id="chapter-10" class="section">
+          <div class="section-heading"><p class="eyebrow">CHAPTER 10</p><h2>실전 주문 전환을 차단 기준으로 점검한다</h2></div>
+          <h3>목적</h3>
+          <p>실전 주문을 쉽게 열지 않는다. 조건을 통과하지 못하면 기본적으로 차단한다.</p>
+          <h3>바로 할 일</h3>
+          <ul class="risk-list"><li><code>RUN_MODE=live</code>만으로 주문이 실행되지 않게 한다.</li><li><code>LIVE_ORDER_ENABLED=true</code>를 별도 조건으로 둔다.</li><li>사용자 확인 문구를 요구한다.</li><li>페이퍼 실행 성공, 오류 0건, 중복 주문 0건을 확인한다.</li></ul>
+          <h3>Codex 명령문</h3>
+          <pre><code>실전 주문 전환 조건을 점검해줘.
+실제 주문 API는 호출하지 마.
+조건별 통과 여부와 차단 사유만 표로 정리해줘.
+precheck_status가 passed가 아니면 실전 주문은 차단되어야 해.</code></pre>
+          <h3>완료 기준</h3>
+          <ul class="risk-list"><li>실전 주문은 기본값으로 차단된다.</li><li>조건 미충족 시 <code>blocked</code>로 기록된다.</li><li>실전 주문 감사 테이블에 기록 기준이 있다.</li><li>사용자가 직접 위험을 확인하기 전에는 주문이 열리지 않는다.</li></ul>
+          <h3>막히면 볼 것</h3>
+          <ul class="risk-list"><li>실전 모드 설정값을 확인한다.</li><li>사용자 확인 문구를 확인한다.</li><li>페이퍼 실행 감사 기록을 확인한다.</li><li>중복 주문 기록을 확인한다.</li></ul>
+        </section>
+
+        <section id="chapter-11" class="section">
+          <div class="section-heading"><p class="eyebrow">CHAPTER 11</p><h2>운영 기록을 남기고 개선한다</h2></div>
+          <h3>목적</h3>
+          <p>자동매매는 만든 뒤가 더 중요하다. 실행 결과, 오류, 전략 변경 이유를 남겨야 다음 판단이 가능하다.</p>
+          <h3>바로 할 일</h3>
+          <ul class="risk-list"><li>하루 운영 점검 결과를 기록한다.</li><li>기술 오류와 전략 결과를 구분한다.</li><li>전략 변경은 별도 로그에 남긴다.</li><li>운영 중단 기준을 미리 정한다.</li></ul>
+          <h3>Codex 명령문</h3>
+          <pre><code>오늘 자동매매 운영 기록을 점검해줘.
+투자 판단이나 매매 추천은 하지 마.
+실행 로그, 운영 기록, 전략 변경 로그를 기준으로 기술 오류, 운영 차단, 전략 검토 후보를 구분해줘.
+마지막에는 유지, 중단, 수정 검토 중 하나로만 정리해줘.</code></pre>
+          <h3>완료 기준</h3>
+          <ul class="risk-list"><li>운영 기록이 남는다.</li><li>전략 변경 로그가 남는다.</li><li>손실 발생 후 즉시 전략을 바꾸지 않는다.</li><li>운영 중단 기준에 해당하면 다음 실행을 멈춘다.</li></ul>
+          <h3>막히면 볼 것</h3>
+          <ul class="risk-list"><li>운영 기록 누락 여부를 확인한다.</li><li>전략 변경 로그 누락 여부를 확인한다.</li><li>오류 분류 기준을 확인한다.</li><li>같은 오류가 반복되는지 확인한다.</li></ul>
+        </section>
+
+        <section id="references" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">REFERENCES</p>
+            <h2>레퍼런스 후보</h2>
+            <p>본문 뒤 참고문헌으로 정리할 자료 후보입니다.</p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>장</th><th>자료</th><th>반영 위치</th></tr></thead>
+              <tbody>
+                <tr><td>1장</td><td><a href="https://openai.com/codex/get-started/">OpenAI, Get started with Codex</a></td><td>Codex Desktop 설치와 프로젝트 폴더 선택</td></tr>
+                <tr><td>1장</td><td><a href="https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex">OpenAI Help Center, ChatGPT Work and Codex</a></td><td>Codex가 로컬 폴더, 저장소, 터미널과 함께 작업한다는 설명</td></tr>
+                <tr><td>2장</td><td><a href="https://apiportal.koreainvestment.com/docs">KIS Developers, 한국투자증권 오픈API 개발자센터</a></td><td>한국투자증권 Open API 개요</td></tr>
+                <tr><td>2장</td><td><a href="https://github.com/koreainvestment/open-trading-api">Korea Investment &amp; Securities, open-trading-api GitHub</a></td><td>공식 샘플 코드와 API 호출 구조</td></tr>
+                <tr><td>3장</td><td><a href="https://mofe.go.kr/sisa/dictionary/detail?idx=2566">기획재정부 시사경제용어사전, 코스피200</a></td><td>코스피200 설명</td></tr>
+                <tr><td>3장</td><td><a href="https://global.krx.co.kr/contents/GLB/02/0202/0202010101/GLB0202010101.jsp">KRX, KRX Index Business</a></td><td>코스피200 지수 성격</td></tr>
+                <tr><td>3장</td><td><a href="https://www.fidelity.com/learning-center/trading-investing/technical-analysis/technical-indicator-guide/cci">Fidelity, Commodity Channel Index</a></td><td>CCI 설명</td></tr>
+                <tr><td>3장</td><td><a href="https://download.esignal.com/products/workstation/help/charts/studies/cci.htm">eSignal, Commodity Channel Index</a></td><td>CCI 개발 배경과 계산 개념</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
       </div>
     </div>
   </main>
