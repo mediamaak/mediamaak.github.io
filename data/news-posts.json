@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-07-27T23:31:04Z",
+  "updated_at": "2026-07-28T23:30:24Z",
   "posts": [
+    {
+      "id": "2026-07-29-market-economy-roundup",
+      "title": "2026년 7월 29일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-29",
+      "category": "Market Economy",
+      "summary": "결론: 이번 자료들은 모두 “예측·최적화·근사”의 성능보다, 어떤 가정과 검증 절차로 결과를 해석해야 하는지가 더 중요하다는 점을 보여줍니다.",
+      "href": "posts/2026-07-29-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "factor",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-07-28-market-economy-roundup",
       "title": "2026년 7월 28일 퀀트·경제 데이터 분석 요약",
