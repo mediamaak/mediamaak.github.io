@@ -20,7 +20,7 @@
   <meta property="og:url" content="https://mediamaak.github.io/auto-writing-agent-wiki.html">
   <meta property="og:site_name" content="MediaMaak">
   <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="assets/style.css?v=20260728-blog-menu">
+  <link rel="stylesheet" href="assets/style.css?v=20260728-wiki-sidebar">
 </head>
 <body>
   <header class="site-header bank-style-header">
@@ -42,7 +42,18 @@
       </div>
     </section>
 
-    <section class="section auto-writing-overview" aria-labelledby="autoWritingOverviewTitle">
+    <div class="wiki-reading-layout">
+      <aside class="wiki-sidebar" aria-label="위키 목차">
+        <strong>위키 목차</strong>
+        <nav>
+          <a href="#agent-overview">글 자동 작성 에이전트</a>
+          <a href="#agent-flow">전체 흐름</a>
+          <a href="#agent-modules">Codex 구현 단위</a>
+          <a href="#agent-quality">발행 기준</a>
+        </nav>
+      </aside>
+      <div class="wiki-reading-content">
+    <section id="agent-overview" class="section auto-writing-overview" aria-labelledby="autoWritingOverviewTitle">
       <div class="section-heading">
         <p class="eyebrow">AUTO WRITING AGENT</p>
         <h2 id="autoWritingOverviewTitle">글 자동 작성 에이전트</h2>
@@ -65,7 +76,7 @@
         </ol>
       </div>
     </section>
-    <section class="section">
+    <section id="agent-flow" class="section">
       <div class="section-heading">
         <p class="eyebrow">ARCHITECTURE</p>
         <h2>전체 흐름</h2>
@@ -80,7 +91,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section id="agent-modules" class="section">
       <div class="section-heading">
         <p class="eyebrow">MODULES</p>
         <h2>Codex 구현 단위</h2>
@@ -95,7 +106,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section id="agent-quality" class="section">
       <div class="section-heading">
         <p class="eyebrow">QUALITY RULES</p>
         <h2>발행 기준</h2>
@@ -108,6 +119,8 @@
         <li>품질 평가를 통과하지 못한 초안은 공개 페이지에 반영하지 않습니다.</li>
       </ul>
     </section>
+      </div>
+    </div>
   </main>
   <footer class="site-footer"><span>MediaMaak publishing brand</span><span>GitHub Pages: https://mediamaak.github.io</span></footer>
 </body>

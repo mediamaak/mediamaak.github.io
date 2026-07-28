@@ -20,7 +20,7 @@
   <meta property="og:url" content="https://mediamaak.github.io/">
   <meta property="og:site_name" content="MediaMaak">
   <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="assets/style.css?v=20260728-home-seo">
+  <link rel="stylesheet" href="assets/style.css?v=20260728-publisher-home">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -49,33 +49,96 @@
     ]
   }
   </script>
-  <script src="assets/app.js?v=20260725-publisher-home" defer></script>
+  <script src="assets/app.js?v=20260728-publisher-home" defer></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4063361031872144"
      crossorigin="anonymous"></script>
 </head>
-<body class="home-portal-page">
+<body class="home-portal-page home-publisher-page" data-page="home">
   <main class="home-landing" aria-label="MediaMaak 홈">
-    <section class="home-philosophy-visual" aria-label="MediaMaak 철학">
-      <img src="assets/images/about-boundary-hero.jpg" alt="책과 원고 위로 반투명 종이가 겹쳐져 빛의 경계를 만드는 편집 책상" width="1600" height="823" fetchpriority="high">
-      <div class="home-philosophy-copy">
-        <span>MediaMaak</span>
-        <strong>생각과 세계 사이에 놓인 막</strong>
+    <section class="home-publisher-hero" aria-labelledby="homeTitle">
+      <div class="home-publisher-copy">
+        <p class="eyebrow">MediaMaak Publisher</p>
+        <h1 id="homeTitle">MediaMaak 출판사</h1>
+        <p class="home-publisher-line">인문·기술·데이터 콘텐츠를 기획하고 출판합니다.</p>
+        <p id="homeDescription">책, 전자책, 실습 자료, 디지털 리포트를 편집의 기준으로 만듭니다.</p>
+        <div class="hero-actions" id="homePrimaryLinks">
+          <a class="button primary" href="#publishing">출간 준비작 보기</a>
+          <a class="button" href="about.html">출판사 소개</a>
+        </div>
       </div>
+      <figure class="home-book-visual">
+        <img src="assets/images/about-humanities.jpg" alt="책과 원고가 놓인 출판 편집 작업 장면" width="1000" height="1500" fetchpriority="high">
+        <figcaption>Books · Ebooks · Digital Editorial Packs</figcaption>
+      </figure>
     </section>
-    <nav class="home-card-menu" aria-label="주요 메뉴">
+
+    <nav class="home-entry-menu" aria-label="주요 페이지">
       <a href="about.html">
-        <img src="assets/images/about-humanities.jpg" alt="인문학 책과 원고, 책갈피가 놓인 편집 작업 장면" width="1000" height="1500" loading="lazy">
         <span>소개</span>
+        <strong>출판사 철학과 편집 기준</strong>
       </a>
       <a href="posts.html">
-        <img src="assets/images/about-digital-editorial.jpg" alt="코드 템플릿 카드, 데이터 표, 실행 설명서가 놓인 디지털 출판 작업 장면" width="1600" height="900" loading="lazy">
         <span>블로그</span>
+        <strong>편집 노트와 공개 기록</strong>
       </a>
       <a href="contact.html">
-        <img src="assets/images/home-contact-inquiry.png" alt="문의와 협업 제안을 준비하는 출판 작업 책상" width="1680" height="945" loading="lazy">
         <span>문의</span>
+        <strong>출판·자료·협업 문의</strong>
       </a>
     </nav>
+
+    <section class="section home-publishing-section" id="publishing" aria-labelledby="publishingTitle">
+      <div class="section-heading">
+        <p class="eyebrow">IN PREPARATION</p>
+        <h2 id="publishingTitle">출간 준비작</h2>
+        <span>실제 출간 또는 판매가 확정되지 않은 항목은 상태를 명확히 표시합니다.</span>
+      </div>
+      <div class="publication-list" id="publicationList">
+        <article class="publication-item">
+          <div>
+            <h3>준비 중인 출판 콘텐츠를 불러오는 중입니다.</h3>
+            <p>데이터 파일이 연결되면 이 영역에 표시됩니다.</p>
+          </div>
+          <span class="status-badge">준비 중</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section home-field-section" aria-labelledby="fieldTitle">
+      <div class="section-heading">
+        <p class="eyebrow">PUBLISHING FIELDS</p>
+        <h2 id="fieldTitle">출판 분야</h2>
+        <span>책으로 읽을 사유와 실습으로 익힐 자료를 함께 기획합니다.</span>
+      </div>
+      <div class="home-field-grid">
+        <article>
+          <span>Humanities</span>
+          <strong>인문·교양</strong>
+          <p>사람, 사회, 언어, 관계, 사유를 다루는 원고를 책의 흐름으로 정리합니다.</p>
+        </article>
+        <article>
+          <span>Technology</span>
+          <strong>기술·데이터</strong>
+          <p>기술 개념과 데이터 활용법을 독자가 따라 읽고 실행할 수 있는 자료로 만듭니다.</p>
+        </article>
+        <article>
+          <span>Digital</span>
+          <strong>전자책·실습 자료</strong>
+          <p>전자책, 코드 템플릿, 샘플 데이터, 실행 설명서를 하나의 디지털 패키지로 구성합니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section home-editorial-note" aria-labelledby="editorialTitle">
+      <div>
+        <p class="eyebrow">EDITORIAL NOTE</p>
+        <h2 id="editorialTitle">편집 노트</h2>
+        <p>블로그는 출판 준비 과정에서 읽고 정리한 자료, 자동화 실험, 운영 기록을 공개하는 공간입니다.</p>
+      </div>
+      <div class="latest-list" id="latestPosts">
+        <div class="inline-empty">최신 글을 불러오는 중입니다.</div>
+      </div>
+    </section>
   </main>
   <footer class="home-trust-footer" aria-label="사이트 신뢰 정보">
     <div class="home-trust-inner">

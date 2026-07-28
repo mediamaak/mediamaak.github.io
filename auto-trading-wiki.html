@@ -20,7 +20,7 @@
   <meta property="og:url" content="https://mediamaak.github.io/auto-trading-wiki.html">
   <meta property="og:site_name" content="MediaMaak">
   <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="assets/style.css?v=20260728-blog-menu">
+  <link rel="stylesheet" href="assets/style.css?v=20260728-wiki-sidebar">
 </head>
 <body>
   <header class="site-header bank-style-header">
@@ -42,7 +42,19 @@
       </div>
     </section>
 
-    <section class="section">
+    <div class="wiki-reading-layout">
+      <aside class="wiki-sidebar" aria-label="위키 목차">
+        <strong>위키 목차</strong>
+        <nav>
+          <a href="#wiki-disclosure">읽기 전 확인</a>
+          <a href="#chapter-1">1장 프로젝트 폴더</a>
+          <a href="#chapter-2">2장 Open API</a>
+          <a href="#chapter-3">3장 CCI 전략</a>
+          <a href="#wiki-next">다음 작성 예정</a>
+        </nav>
+      </aside>
+      <div class="wiki-reading-content">
+    <section id="wiki-disclosure" class="section">
       <div class="section-heading">
         <p class="eyebrow">DISCLOSURE</p>
         <h2>읽기 전 확인할 점</h2>
@@ -55,7 +67,7 @@
       </ul>
     </section>
 
-    <section class="section">
+    <section id="wiki-toc" class="section wiki-inline-toc">
       <div class="section-heading">
         <p class="eyebrow">WIKI TABLE OF CONTENTS</p>
         <h2>위키 목차</h2>
@@ -170,13 +182,15 @@ RUN_MODE=paper</code></pre>
       </ul>
     </section>
 
-    <section class="section">
+    <section id="wiki-next" class="section">
       <div class="section-heading">
         <p class="eyebrow">NEXT</p>
         <h2>다음 작성 예정</h2>
       </div>
       <p>4장 이후 본문은 프로젝트 기본 구조, 한국투자증권 Open API 조회 테스트, DB 저장, CCI 계산, 시뮬레이션, 페이퍼 모드, 실전 주문 안전장치, 운영 기록 순서로 추가할 예정입니다.</p>
     </section>
+      </div>
+    </div>
   </main>
   <footer class="site-footer"><span>MediaMaak publishing brand</span><span>GitHub Pages: https://mediamaak.github.io</span></footer>
 </body>

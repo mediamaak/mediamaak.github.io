@@ -833,12 +833,12 @@ function renderDailyPnlRows(rows) {
     const cumulativeClass = cumulative < 0 ? "negative" : cumulative > 0 ? "positive" : "neutral";
     return `
       <tr>
-        <td>${escapeHtml(row.date || row.label || "-")}</td>
-        <td class="${pnlClass}">${krw(row.pnl_krw)}</td>
-        <td class="${cumulativeClass}">${krw(row.cumulative_pnl_krw)}</td>
-        <td>${fmt.format(Number(row.trade_count) || 0)}</td>
-        <td>${fmt.format(Number(row.win_count) || 0)}</td>
-        <td>${fmt.format(Number(row.loss_count) || 0)}</td>
+        <td data-label="일자">${escapeHtml(row.date || row.label || "-")}</td>
+        <td data-label="일별 실현손익" class="${pnlClass}">${krw(row.pnl_krw)}</td>
+        <td data-label="누적 실현손익" class="${cumulativeClass}">${krw(row.cumulative_pnl_krw)}</td>
+        <td data-label="거래 수">${fmt.format(Number(row.trade_count) || 0)}</td>
+        <td data-label="승">${fmt.format(Number(row.win_count) || 0)}</td>
+        <td data-label="패">${fmt.format(Number(row.loss_count) || 0)}</td>
       </tr>
     `;
   }).join("") : '<tr><td colspan="6">표시할 일별 손익 데이터가 없습니다.</td></tr>';
