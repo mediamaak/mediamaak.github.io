@@ -1,6 +1,30 @@
 {
-  "updated_at": "2026-07-28T23:30:24Z",
+  "updated_at": "2026-07-29T23:30:24Z",
   "posts": [
+    {
+      "id": "2026-07-30-market-economy-roundup",
+      "title": "2026년 7월 30일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-07-30",
+      "category": "Market Economy",
+      "summary": "결론: 이번 자료들은 “수익률 예측”보다 “리스크 측정·헤지 비용·변동성 상태”를 먼저 점검해야 한다는 점을 공통으로 보여줍니다.",
+      "href": "posts/2026-07-30-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "factor",
+        "fed",
+        "macro",
+        "market-economy",
+        "monetary-policy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-07-29-market-economy-roundup",
       "title": "2026년 7월 29일 퀀트·경제 데이터 분석 요약",
