@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-07-31T23:30:56Z",
+  "updated_at": "2026-08-01T23:30:21Z",
   "posts": [
+    {
+      "id": "2026-08-02-market-economy-roundup",
+      "title": "2026년 8월 2일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-02",
+      "category": "Market Economy",
+      "summary": "결론: 세 자료 모두 금리·불확실성·데이터 해석의 중요성을 강조하며, 한국 투자자는 KOSPI/KOSDAQ 업종 민감도와 FX·신용 스프레드를 함께 점검하는 프레임이 유용합니다.",
+      "href": "posts/2026-08-02-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "banking",
+        "economic-data",
+        "macro",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant-analysis",
+        "research",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-01-market-economy-roundup",
       "title": "2026년 8월 1일 퀀트·경제 데이터 분석 요약",
