@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-08-03T23:30:34Z",
+  "updated_at": "2026-08-04T23:30:25Z",
   "posts": [
+    {
+      "id": "2026-08-05-market-economy-roundup",
+      "title": "2026년 8월 5일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-05",
+      "category": "Market Economy",
+      "summary": "결론: 이번 3개 자료는 모두 “예측”보다 “가정 점검”이 핵심이며, 한국 투자자 관점에서는 KOSPI/KOSDAQ 섹터 노출과 환율·금리·변동성 민감도를 같이 확인하는 쪽이 유리합니다.",
+      "href": "posts/2026-08-05-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "factor",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-04-market-economy-roundup",
       "title": "2026년 8월 4일 퀀트·경제 데이터 분석 요약",
