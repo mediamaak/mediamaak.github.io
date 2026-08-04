@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03 15:37 KST",
+  "updated_at": "2026-08-04 15:44 KST",
   "summary": {
     "period": "2026-06-08 23:30:00 ~ 2026-07-25 08:50:00 KST",
     "total_pnl_krw": 108.13197798022702,
@@ -7,7 +7,7 @@
     "win_rate_pct": 85.71428571428571,
     "trade_count": 7,
     "strategy_count": 1,
-    "updated_at": "2026-08-03 15:20:58 KST"
+    "updated_at": "2026-08-04 15:21:00 KST"
   },
   "strategy_overview": {
     "code": "upbit_krw_btc_cci_rebound_volatility_target_10m",
@@ -48,7 +48,7 @@
       "win_rate_pct": 85.71428571428571,
       "trade_count": 7,
       "strategy_count": 1,
-      "updated_at": "2026-08-03 15:20:58 KST"
+      "updated_at": "2026-08-04 15:21:00 KST"
     },
     "return_metrics": {
       "realized_return_pct": 1.0813197798022702,
@@ -225,7 +225,7 @@
             "win_rate_pct": 85.71428571428571,
             "trade_count": 7,
             "strategy_count": 1,
-            "updated_at": "2026-08-03 15:20:58 KST"
+            "updated_at": "2026-08-04 15:21:00 KST"
           },
           "return_metrics": {
             "realized_return_pct": 1.0813197798022702,
@@ -336,28 +336,28 @@
             }
           ],
           "summary": {
-            "period": "2026-05-04 03:40:02 ~ 2026-08-03 15:10:00 KST",
-            "total_pnl_krw": -55655.65989406643,
-            "daily_avg_pnl_krw": -976.4150858608147,
-            "win_rate_pct": 58.69074492099323,
-            "trade_count": 2215,
+            "period": "2026-05-04 03:40:02 ~ 2026-08-03 23:28:45 KST",
+            "total_pnl_krw": -59229.86001580333,
+            "daily_avg_pnl_krw": -1039.1203511544443,
+            "win_rate_pct": 58.07314897413024,
+            "trade_count": 2242,
             "strategy_count": 1,
-            "updated_at": "2026-08-03 15:35:11 KST"
+            "updated_at": "2026-08-04 15:44:09 KST"
           },
           "return_metrics": {
-            "realized_return_pct": -0.25190002942535683,
-            "avg_trade_return_pct": -0.25126708755786215,
+            "realized_return_pct": -0.2648829161294946,
+            "avg_trade_return_pct": -0.26418314012401156,
             "open_unrealized_return_pct": 0.0,
-            "win_rate_pct": 58.69074492099323,
-            "win_count": 1300,
-            "loss_count": 915,
-            "avg_target_profit_pct": 0.8770819496091026,
+            "win_rate_pct": 58.07314897413024,
+            "win_count": 1302,
+            "loss_count": 940,
+            "avg_target_profit_pct": 0.88111995187922,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 2.544518547924163,
-            "profit_factor": 0.6133745079340593,
+            "profit_factor": 0.5993075262486578,
             "max_input_budget_krw": 10203.325277108124,
-            "daily_avg_input_budget_krw": 387620.0761422089,
-            "cumulative_return_pct": -0.25190002942535683
+            "daily_avg_input_budget_krw": 392294.2129821784,
+            "cumulative_return_pct": -0.2648829161294946
           },
           "daily": [
             {
@@ -810,11 +810,11 @@
             },
             {
               "date": "2026-08-03",
-              "pnl_krw": -3441.22,
-              "cumulative_pnl_krw": -55655.66,
-              "trade_count": 20,
-              "win_count": 0,
-              "loss_count": 20
+              "pnl_krw": -7015.42,
+              "cumulative_pnl_krw": -59229.86,
+              "trade_count": 47,
+              "win_count": 2,
+              "loss_count": 45
             }
           ],
           "source_strategy_code": "simulation1",
@@ -867,7 +867,7 @@
             "win_rate_pct": 17.00404858299595,
             "trade_count": 247,
             "strategy_count": 1,
-            "updated_at": "2026-08-03 15:26:57 KST"
+            "updated_at": "2026-08-04 15:28:36 KST"
           },
           "return_metrics": {
             "realized_return_pct": -0.0973847801763882,
@@ -1065,7 +1065,7 @@
             "win_rate_pct": 82.27272727272728,
             "trade_count": 220,
             "strategy_count": 1,
-            "updated_at": "2026-08-03 15:33:05 KST"
+            "updated_at": "2026-08-04 15:37:47 KST"
           },
           "return_metrics": {
             "realized_return_pct": 0.1421275045650333,
@@ -1401,7 +1401,7 @@
             "win_rate_pct": 82.46628131021194,
             "trade_count": 519,
             "strategy_count": 1,
-            "updated_at": "2026-08-03 15:29:06 KST"
+            "updated_at": "2026-08-04 15:32:34 KST"
           },
           "return_metrics": {
             "realized_return_pct": 0.16757247611867374,
@@ -1801,7 +1801,7 @@
             "win_rate_pct": 82.46628131021194,
             "trade_count": 519,
             "strategy_count": 1,
-            "updated_at": "2026-08-03 15:31:10 KST"
+            "updated_at": "2026-08-04 15:35:28 KST"
           },
           "return_metrics": {
             "realized_return_pct": 0.16757247611867374,
@@ -2201,7 +2201,7 @@
             "win_rate_pct": 78.2051282051282,
             "trade_count": 78,
             "strategy_count": 1,
-            "updated_at": "2026-08-03 15:34:47 KST"
+            "updated_at": "2026-08-04 15:41:06 KST"
           },
           "return_metrics": {
             "realized_return_pct": 0.07196868567779684,
@@ -2417,7 +2417,7 @@
             "win_rate_pct": 82.46628131021194,
             "trade_count": 519,
             "strategy_count": 1,
-            "updated_at": "2026-08-03 15:36:47 KST"
+            "updated_at": "2026-08-04 15:43:50 KST"
           },
           "return_metrics": {
             "realized_return_pct": 0.16757247611867374,
@@ -2817,7 +2817,7 @@
             "win_rate_pct": 84.73895582329317,
             "trade_count": 249,
             "strategy_count": 1,
-            "updated_at": "2026-08-03 15:27:00 KST"
+            "updated_at": "2026-08-04 15:28:39 KST"
           },
           "return_metrics": {
             "realized_return_pct": 0.2681071865123786,
@@ -3179,28 +3179,28 @@
             }
           ],
           "summary": {
-            "period": "2022-12-13 15:29:00 ~ 2026-08-03 15:29:00 KST",
-            "total_pnl_krw": 4145696.9787321654,
-            "daily_avg_pnl_krw": 6034.493418824112,
-            "win_rate_pct": 77.63798701298701,
-            "trade_count": 4928,
+            "period": "2022-12-13 15:29:00 ~ 2026-08-04 15:29:00 KST",
+            "total_pnl_krw": 4318206.2239665175,
+            "daily_avg_pnl_krw": 6276.462534835055,
+            "win_rate_pct": 78.2336297493937,
+            "trade_count": 4948,
             "strategy_count": 1,
-            "updated_at": "2026-08-03 15:37:35 KST"
+            "updated_at": "2026-08-04 15:44:30 KST"
           },
           "return_metrics": {
-            "realized_return_pct": 0.8342354112203104,
-            "avg_trade_return_pct": 0.8412534453596093,
+            "realized_return_pct": 0.8651670426201272,
+            "avg_trade_return_pct": 0.8727175068646945,
             "open_unrealized_return_pct": 0.0,
-            "win_rate_pct": 77.63798701298701,
-            "win_count": 3826,
-            "loss_count": 1102,
+            "win_rate_pct": 78.2336297493937,
+            "win_count": 3871,
+            "loss_count": 1077,
             "avg_target_profit_pct": 1.5,
             "min_target_profit_pct": 1.5,
             "max_target_profit_pct": 1.5,
-            "profit_factor": 1.4625737981362135,
+            "profit_factor": 1.4844566485294304,
             "max_input_budget_krw": 129840.55713915663,
-            "daily_avg_input_budget_krw": 723356.181919552,
-            "cumulative_return_pct": 0.8342354112203104
+            "daily_avg_input_budget_krw": 725462.5090464626,
+            "cumulative_return_pct": 0.8651670426201272
           },
           "daily": [
             {
@@ -8693,11 +8693,19 @@
             },
             {
               "date": "2026-08-03",
-              "pnl_krw": -178597.08,
-              "cumulative_pnl_krw": 4145696.98,
-              "trade_count": 99,
-              "win_count": 11,
-              "loss_count": 88
+              "pnl_krw": 75217.6,
+              "cumulative_pnl_krw": 4399511.66,
+              "trade_count": 26,
+              "win_count": 25,
+              "loss_count": 1
+            },
+            {
+              "date": "2026-08-04",
+              "pnl_krw": -81305.44,
+              "cumulative_pnl_krw": 4318206.22,
+              "trade_count": 93,
+              "win_count": 31,
+              "loss_count": 62
             }
           ],
           "source_strategy_code": "kospi-strategy1",
@@ -8742,7 +8750,7 @@
       "return_pct": 1.0813197798022702,
       "win_rate_pct": 85.71428571428571,
       "trade_count": 7,
-      "updated_at": "2026-08-03 15:20:58 KST"
+      "updated_at": "2026-08-04 15:21:00 KST"
     },
     {
       "code": "upbit_krw_btc_cci_gap_fixed_target_10m",
@@ -8752,11 +8760,11 @@
       ],
       "name": "비트코인 기본 반등 전략",
       "market": "KRW-BTC",
-      "total_pnl_krw": -55655.65989406643,
-      "return_pct": -0.25190002942535683,
-      "win_rate_pct": 58.69074492099323,
-      "trade_count": 2215,
-      "updated_at": "2026-08-03 15:35:11 KST"
+      "total_pnl_krw": -59229.86001580333,
+      "return_pct": -0.2648829161294946,
+      "win_rate_pct": 58.07314897413024,
+      "trade_count": 2242,
+      "updated_at": "2026-08-04 15:44:09 KST"
     },
     {
       "code": "upbit_krw_btc_trade_flow_fixed_target_tick",
@@ -8770,7 +8778,7 @@
       "return_pct": -0.0973847801763882,
       "win_rate_pct": 17.00404858299595,
       "trade_count": 247,
-      "updated_at": "2026-08-03 15:26:57 KST"
+      "updated_at": "2026-08-04 15:28:36 KST"
     },
     {
       "code": "upbit_krw_btc_cci_gap_strict_target_10m",
@@ -8784,7 +8792,7 @@
       "return_pct": 0.1421275045650333,
       "win_rate_pct": 82.27272727272728,
       "trade_count": 220,
-      "updated_at": "2026-08-03 15:33:05 KST"
+      "updated_at": "2026-08-04 15:37:47 KST"
     },
     {
       "code": "upbit_krw_btc_cci_gap_full_target_10m",
@@ -8798,7 +8806,7 @@
       "return_pct": 0.16757247611867374,
       "win_rate_pct": 82.46628131021194,
       "trade_count": 519,
-      "updated_at": "2026-08-03 15:29:06 KST"
+      "updated_at": "2026-08-04 15:32:34 KST"
     },
     {
       "code": "upbit_krw_btc_cci_gap_basic_target_10m",
@@ -8812,7 +8820,7 @@
       "return_pct": 0.16757247611867374,
       "win_rate_pct": 82.46628131021194,
       "trade_count": 519,
-      "updated_at": "2026-08-03 15:31:10 KST"
+      "updated_at": "2026-08-04 15:35:28 KST"
     },
     {
       "code": "upbit_krw_btc_cci_gap_deep_discount_target_10m",
@@ -8826,7 +8834,7 @@
       "return_pct": 0.07196868567779684,
       "win_rate_pct": 78.2051282051282,
       "trade_count": 78,
-      "updated_at": "2026-08-03 15:34:47 KST"
+      "updated_at": "2026-08-04 15:41:06 KST"
     },
     {
       "code": "upbit_krw_btc_cci_recovery_gap_target_10m",
@@ -8840,7 +8848,7 @@
       "return_pct": 0.16757247611867374,
       "win_rate_pct": 82.46628131021194,
       "trade_count": 519,
-      "updated_at": "2026-08-03 15:36:47 KST"
+      "updated_at": "2026-08-04 15:43:50 KST"
     },
     {
       "code": "upbit_krw_btc_cci_gap_candidate_target_10m",
@@ -8854,7 +8862,7 @@
       "return_pct": 0.2681071865123786,
       "win_rate_pct": 84.73895582329317,
       "trade_count": 249,
-      "updated_at": "2026-08-03 15:27:00 KST"
+      "updated_at": "2026-08-04 15:28:39 KST"
     },
     {
       "code": "kis_kospi200_cci_rebound_fixed_target_1d",
@@ -8864,11 +8872,11 @@
       ],
       "name": "KOSPI200 과매도 반등 전략",
       "market": "KOSPI200",
-      "total_pnl_krw": 4145696.9787321654,
-      "return_pct": 0.8342354112203104,
-      "win_rate_pct": 77.63798701298701,
-      "trade_count": 4928,
-      "updated_at": "2026-08-03 15:37:35 KST"
+      "total_pnl_krw": 4318206.2239665175,
+      "return_pct": 0.8651670426201272,
+      "win_rate_pct": 78.2336297493937,
+      "trade_count": 4948,
+      "updated_at": "2026-08-04 15:44:30 KST"
     }
   ]
 }
