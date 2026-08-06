@@ -1,6 +1,28 @@
 {
-  "updated_at": "2026-08-05T23:30:30Z",
+  "updated_at": "2026-08-06T23:30:25Z",
   "posts": [
+    {
+      "id": "2026-08-07-market-economy-roundup",
+      "title": "2026년 8월 7일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-07",
+      "category": "Market Economy",
+      "summary": "결론: 이번 자료들은 모두 “예측 결과”보다 “입력 가정, 리스크 노출, 포트폴리오 구성 변화”를 먼저 점검해야 한다는 점을 보여줍니다.",
+      "href": "posts/2026-08-07-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "economic-data",
+        "macro",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-06-market-economy-roundup",
       "title": "2026년 8월 6일 퀀트·경제 데이터 분석 요약",
