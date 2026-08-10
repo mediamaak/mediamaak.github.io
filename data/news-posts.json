@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-08-08T23:30:35Z",
+  "updated_at": "2026-08-10T23:30:23Z",
   "posts": [
+    {
+      "id": "2026-08-11-market-economy-roundup",
+      "title": "2026년 8월 11일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-11",
+      "category": "Market Economy",
+      "summary": "결론: 이번 3개 자료는 금리 국면 전환, 팩터-그래프 기반 분산, 신용 접근성 차이를 통해 “리스크를 어떻게 나눠 보고 검증할지”를 강조합니다.",
+      "href": "posts/2026-08-11-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "economic-data",
+        "factor",
+        "macro",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-09-market-economy-roundup",
       "title": "2026년 8월 9일 퀀트·경제 데이터 분석 요약",
