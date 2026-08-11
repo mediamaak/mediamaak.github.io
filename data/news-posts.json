@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-08-10T23:30:23Z",
+  "updated_at": "2026-08-11T23:30:31Z",
   "posts": [
+    {
+      "id": "2026-08-12-market-economy-roundup",
+      "title": "2026년 8월 12일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-12",
+      "category": "Market Economy",
+      "summary": "결론: 최신 자료들은 “예측 성능”보다 “상관관계·리스크 경로·검증 절차”를 함께 봐야 포트폴리오 해석이 가능하다는 점을 강조합니다.",
+      "href": "posts/2026-08-12-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "factor",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-11-market-economy-roundup",
       "title": "2026년 8월 11일 퀀트·경제 데이터 분석 요약",
