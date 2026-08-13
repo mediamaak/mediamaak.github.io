@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12 15:35 KST",
+  "updated_at": "2026-08-13 15:35 KST",
   "summary": {
     "period": "2026-07-22 01:40:53 ~ 2026-07-22 01:40:53 KST",
     "total_pnl_krw": 0.0,
@@ -10,7 +10,7 @@
     "open_budget_krw": 10004.57,
     "open_unrealized_pnl_krw": -5.0,
     "strategy_count": 1,
-    "updated_at": "2026-08-12 15:35 KST"
+    "updated_at": "2026-08-13 15:35 KST"
   },
   "strategy_overview": {
     "code": "upbit_krw_btc_cci_rebound_volatility_target_10m",
@@ -74,7 +74,7 @@
       "open_budget_krw": 10004.57,
       "open_unrealized_pnl_krw": -5.0,
       "strategy_count": 1,
-      "updated_at": "2026-08-12 15:35 KST"
+      "updated_at": "2026-08-13 15:35 KST"
     },
     "return_metrics": {
       "realized_return_pct": 0.0,
@@ -189,7 +189,7 @@
             "open_budget_krw": 10004.57,
             "open_unrealized_pnl_krw": -5.0,
             "strategy_count": 1,
-            "updated_at": "2026-08-12 15:35 KST"
+            "updated_at": "2026-08-13 15:35 KST"
           },
           "return_metrics": {
             "realized_return_pct": 0.0,
@@ -458,7 +458,7 @@
       "trade_count": 0,
       "open_position_count": 1,
       "open_unrealized_pnl_krw": -5.0,
-      "updated_at": "2026-08-12 15:35 KST"
+      "updated_at": "2026-08-13 15:35 KST"
     },
     {
       "code": "kis_kospi200_cci_rebound_fixed_target_1d",
