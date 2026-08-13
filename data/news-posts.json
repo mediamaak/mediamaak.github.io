@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-08-11T23:30:31Z",
+  "updated_at": "2026-08-13T23:30:24Z",
   "posts": [
+    {
+      "id": "2026-08-14-market-economy-roundup",
+      "title": "2026년 8월 14일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-14",
+      "category": "Market Economy",
+      "summary": "결론: 최신 3개 자료는 “예측 신호의 정교화”보다 “리스크 가정과 포트폴리오 구조의 검증”이 더 중요하다는 점을 공통으로 보여줍니다.",
+      "href": "posts/2026-08-14-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "factor",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-12-market-economy-roundup",
       "title": "2026년 8월 12일 퀀트·경제 데이터 분석 요약",
