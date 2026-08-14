@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-08-13T23:30:24Z",
+  "updated_at": "2026-08-14T23:30:22Z",
   "posts": [
+    {
+      "id": "2026-08-15-market-economy-roundup",
+      "title": "2026년 8월 15일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-15",
+      "category": "Market Economy",
+      "summary": "결론: 이번 3개 자료는 공통적으로 “정확한 자산 선택”보다 “비교 기준, 분류 불확실성, 유동성 하방”을 먼저 점검해야 한다는 점을 보여줍니다.",
+      "href": "posts/2026-08-15-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "factor",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-14-market-economy-roundup",
       "title": "2026년 8월 14일 퀀트·경제 데이터 분석 요약",
