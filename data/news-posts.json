@@ -1,6 +1,30 @@
 {
-  "updated_at": "2026-08-14T23:30:22Z",
+  "updated_at": "2026-08-15T23:30:23Z",
   "posts": [
+    {
+      "id": "2026-08-16-market-economy-roundup",
+      "title": "2026년 8월 16일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-16",
+      "category": "Market Economy",
+      "summary": "결론: 이번 자료들은 은행 건전성, 레포 시장의 유동성·취약성, 그리고 규제 집행 리스크를 함께 보며 KOSPI/KOSDAQ의 금융주·크레딧 민감도를 점검하는 관점이 핵심입니다.",
+      "href": "posts/2026-08-16-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "economic-data",
+        "fed",
+        "macro",
+        "market-economy",
+        "monetary-policy",
+        "papers",
+        "portfolio",
+        "quant-analysis",
+        "research",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-15-market-economy-roundup",
       "title": "2026년 8월 15일 퀀트·경제 데이터 분석 요약",
