@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-08-15T23:30:23Z",
+  "updated_at": "2026-08-17T23:30:37Z",
   "posts": [
+    {
+      "id": "2026-08-18-market-economy-roundup",
+      "title": "2026년 8월 18일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-18",
+      "category": "Market Economy",
+      "summary": "결론: 최신 자료들은 팩터 노출, 제약조건, 데이터 의존성, 거시 비용요인을 함께 봐야 포트폴리오 해석이 정확해진다는 점을 강조합니다.",
+      "href": "posts/2026-08-18-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "economic-data",
+        "factor",
+        "macro",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-16-market-economy-roundup",
       "title": "2026년 8월 16일 퀀트·경제 데이터 분석 요약",
