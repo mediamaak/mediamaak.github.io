@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-08-17T23:30:37Z",
+  "updated_at": "2026-08-18T23:30:32Z",
   "posts": [
+    {
+      "id": "2026-08-19-market-economy-roundup",
+      "title": "2026년 8월 19일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-19",
+      "category": "Market Economy",
+      "summary": "결론: 이번 자료들은 공통적으로 “관측 가능한 숫자”보다 “어떤 리스크와 가정이 모델에 들어갔는지”를 먼저 확인해야 해석이 가능합니다.",
+      "href": "posts/2026-08-19-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "factor",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-18-market-economy-roundup",
       "title": "2026년 8월 18일 퀀트·경제 데이터 분석 요약",
