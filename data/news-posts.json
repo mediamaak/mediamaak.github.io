@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-08-18T23:30:32Z",
+  "updated_at": "2026-08-19T23:30:24Z",
   "posts": [
+    {
+      "id": "2026-08-20-market-economy-roundup",
+      "title": "2026년 8월 20일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-20",
+      "category": "Market Economy",
+      "summary": "결론: 이번 자료들은 공통적으로 “예측 정확도”보다 “가정 점검, 노출 해석, 제약 조건, 설명 가능성”이 성과 해석의 핵심이라는 점을 보여줍니다.",
+      "href": "posts/2026-08-20-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "factor",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-19-market-economy-roundup",
       "title": "2026년 8월 19일 퀀트·경제 데이터 분석 요약",
