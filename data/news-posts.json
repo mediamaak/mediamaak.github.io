@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-08-20T23:30:23Z",
+  "updated_at": "2026-08-21T23:30:25Z",
   "posts": [
+    {
+      "id": "2026-08-22-market-economy-roundup",
+      "title": "2026년 8월 22일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-22",
+      "category": "Market Economy",
+      "summary": "결론: 이번 자료들은 예측 신호 자체보다, 팩터 결합 구조·CVaR 제약·캘리브레이션 절차가 포트폴리오 결과를 어떻게 바꾸는지 점검하는 데 초점이 있습니다.",
+      "href": "posts/2026-08-22-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "factor",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-21-market-economy-roundup",
       "title": "2026년 8월 21일 퀀트·경제 데이터 분석 요약",
