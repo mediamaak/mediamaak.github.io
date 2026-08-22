@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-22 07:30 KST",
+  "updated_at": "2026-08-23 07:30 KST",
   "source": "ga4",
   "status": "exported",
   "home": {
     "today_visitors": 0,
     "last_7d_visitors": 2,
-    "last_30d_visitors": 10,
+    "last_30d_visitors": 9,
     "total_pageviews": 23
   }
 }
