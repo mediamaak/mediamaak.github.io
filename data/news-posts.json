@@ -1,6 +1,30 @@
 {
-  "updated_at": "2026-08-22T23:30:25Z",
+  "updated_at": "2026-08-23T23:30:27Z",
   "posts": [
+    {
+      "id": "2026-08-24-market-economy-roundup",
+      "title": "2026년 8월 24일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-24",
+      "category": "Market Economy",
+      "summary": "결론: 이번 자료 묶음은 미국 금융감독 이슈, 노동시장 신호의 해석 개선, 남아공 중앙은행 발언을 통해 금리·환율·리스크 프레임을 재점검하는 데 도움이 됩니다.",
+      "href": "posts/2026-08-24-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "banking",
+        "fed",
+        "macro",
+        "market-economy",
+        "monetary-policy",
+        "papers",
+        "portfolio",
+        "quant-analysis",
+        "research",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-23-market-economy-roundup",
       "title": "2026년 8월 23일 퀀트·경제 데이터 분석 요약",
