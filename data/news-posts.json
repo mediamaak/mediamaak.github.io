@@ -1,6 +1,30 @@
 {
-  "updated_at": "2026-08-23T23:30:27Z",
+  "updated_at": "2026-08-24T23:30:26Z",
   "posts": [
+    {
+      "id": "2026-08-25-market-economy-roundup",
+      "title": "2026년 8월 25일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-25",
+      "category": "Market Economy",
+      "summary": "결론: 이번 자료들은 “정확한 수치 예측”보다 “팩터 노출, 정책 민감도, 분산·리스크 구조를 어떻게 읽을지”를 점검하는 데 유용합니다.",
+      "href": "posts/2026-08-25-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "banking",
+        "economic-data",
+        "factor",
+        "macro",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-24-market-economy-roundup",
       "title": "2026년 8월 24일 퀀트·경제 데이터 분석 요약",
