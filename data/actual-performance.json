@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-08-24 15:35 KST",
+  "updated_at": "2026-08-25 15:35 KST",
   "summary": {
-    "period": "2026-08-20 17:48:54 ~ 2026-08-21 10:18:02 KST",
-    "total_pnl_krw": 441.14017367999986,
-    "daily_avg_pnl_krw": 220.57008683999993,
+    "period": "2026-08-20 17:48:54 ~ 2026-08-25 11:19:38 KST",
+    "total_pnl_krw": 970.3504017249961,
+    "daily_avg_pnl_krw": 242.58760043124903,
     "win_rate_pct": 100.0,
-    "trade_count": 2,
-    "open_position_count": 1,
-    "open_budget_krw": 10004.63,
-    "open_unrealized_pnl_krw": -5.0,
+    "trade_count": 4,
+    "open_position_count": 0,
+    "open_budget_krw": 0.0,
+    "open_unrealized_pnl_krw": 0.0,
     "strategy_count": 1,
-    "updated_at": "2026-08-21 10:18:02 KST"
+    "updated_at": "2026-08-25 11:19:38 KST"
   },
   "strategy_overview": {
     "code": "upbit_krw_btc_cci_rebound_volatility_target_10m",
@@ -65,33 +65,33 @@
       "source_strategy_code": "live_btc_cci_rebound_volatility_target_10m"
     },
     "summary": {
-      "period": "2026-08-20 17:48:54 ~ 2026-08-21 10:18:02 KST",
-      "total_pnl_krw": 441.14017367999986,
-      "daily_avg_pnl_krw": 220.57008683999993,
+      "period": "2026-08-20 17:48:54 ~ 2026-08-25 11:19:38 KST",
+      "total_pnl_krw": 970.3504017249961,
+      "daily_avg_pnl_krw": 242.58760043124903,
       "win_rate_pct": 100.0,
-      "trade_count": 2,
-      "open_position_count": 1,
-      "open_budget_krw": 10004.63,
-      "open_unrealized_pnl_krw": -5.0,
+      "trade_count": 4,
+      "open_position_count": 0,
+      "open_budget_krw": 0.0,
+      "open_unrealized_pnl_krw": 0.0,
       "strategy_count": 1,
-      "updated_at": "2026-08-21 10:18:02 KST"
+      "updated_at": "2026-08-25 11:19:38 KST"
     },
     "return_metrics": {
-      "realized_return_pct": 1.4485081174151286,
-      "avg_trade_return_pct": 2.204711071317064,
-      "open_unrealized_return_pct": -0.049975012493760504,
-      "open_unrealized_pnl_krw": -4.99981692000074,
+      "realized_return_pct": 2.3673647635399035,
+      "avg_trade_return_pct": 2.424768777325726,
+      "open_unrealized_return_pct": 0.0,
+      "open_unrealized_pnl_krw": 0.0,
       "win_rate_pct": 100.0,
-      "win_count": 2,
+      "win_count": 4,
       "loss_count": 0,
       "avg_target_profit_pct": 0.0,
       "min_target_profit_pct": 1.5,
       "max_target_profit_pct": 4.0,
-      "profit_factor": 441.14017367999986,
-      "max_input_budget_krw": 10304.375354939999,
-      "daily_avg_input_budget_krw": 10225.080532185,
-      "open_budget_krw": 10004.633656920001,
-      "cumulative_return_pct": 1.4485081174151286
+      "profit_factor": 970.3504017249961,
+      "max_input_budget_krw": 10313.198291264998,
+      "daily_avg_input_budget_krw": 10247.15769058375,
+      "open_budget_krw": 0.0,
+      "cumulative_return_pct": 2.3673647635399035
     },
     "daily": [
       {
@@ -109,33 +109,42 @@
         "trade_count": 1,
         "win_count": 1,
         "loss_count": 0
+      },
+      {
+        "date": "2026-08-24",
+        "pnl_krw": 308.56,
+        "cumulative_pnl_krw": 749.7,
+        "trade_count": 1,
+        "win_count": 1,
+        "loss_count": 0
+      },
+      {
+        "date": "2026-08-25",
+        "pnl_krw": 220.65,
+        "cumulative_pnl_krw": 970.35,
+        "trade_count": 1,
+        "win_count": 1,
+        "loss_count": 0
       }
     ],
-    "open_positions": [
-      {
-        "symbol": "",
-        "latest_price_date": "",
-        "unrealized_pnl_krw": -5.0,
-        "unrealized_return_pct": -0.05
-      }
-    ]
+    "open_positions": []
   },
   "return_metrics": {
-    "realized_return_pct": 1.4485081174151286,
-    "avg_trade_return_pct": 2.204711071317064,
-    "open_unrealized_return_pct": -0.049975012493760504,
-    "open_unrealized_pnl_krw": -4.99981692000074,
+    "realized_return_pct": 2.3673647635399035,
+    "avg_trade_return_pct": 2.424768777325726,
+    "open_unrealized_return_pct": 0.0,
+    "open_unrealized_pnl_krw": 0.0,
     "win_rate_pct": 100.0,
-    "win_count": 2,
+    "win_count": 4,
     "loss_count": 0,
     "avg_target_profit_pct": 0.0,
     "min_target_profit_pct": 1.5,
     "max_target_profit_pct": 4.0,
-    "profit_factor": 441.14017367999986,
-    "max_input_budget_krw": 10304.375354939999,
-    "daily_avg_input_budget_krw": 10225.080532185,
-    "open_budget_krw": 10004.633656920001,
-    "cumulative_return_pct": 1.4485081174151286
+    "profit_factor": 970.3504017249961,
+    "max_input_budget_krw": 10313.198291264998,
+    "daily_avg_input_budget_krw": 10247.15769058375,
+    "open_budget_krw": 0.0,
+    "cumulative_return_pct": 2.3673647635399035
   },
   "daily": [
     {
@@ -150,6 +159,22 @@
       "date": "2026-08-21",
       "pnl_krw": 299.92,
       "cumulative_pnl_krw": 441.14,
+      "trade_count": 1,
+      "win_count": 1,
+      "loss_count": 0
+    },
+    {
+      "date": "2026-08-24",
+      "pnl_krw": 308.56,
+      "cumulative_pnl_krw": 749.7,
+      "trade_count": 1,
+      "win_count": 1,
+      "loss_count": 0
+    },
+    {
+      "date": "2026-08-25",
+      "pnl_krw": 220.65,
+      "cumulative_pnl_krw": 970.35,
       "trade_count": 1,
       "win_count": 1,
       "loss_count": 0
@@ -214,33 +239,33 @@
             "source_strategy_code": "live_btc_cci_rebound_volatility_target_10m"
           },
           "summary": {
-            "period": "2026-08-20 17:48:54 ~ 2026-08-21 10:18:02 KST",
-            "total_pnl_krw": 441.14017367999986,
-            "daily_avg_pnl_krw": 220.57008683999993,
+            "period": "2026-08-20 17:48:54 ~ 2026-08-25 11:19:38 KST",
+            "total_pnl_krw": 970.3504017249961,
+            "daily_avg_pnl_krw": 242.58760043124903,
             "win_rate_pct": 100.0,
-            "trade_count": 2,
-            "open_position_count": 1,
-            "open_budget_krw": 10004.63,
-            "open_unrealized_pnl_krw": -5.0,
+            "trade_count": 4,
+            "open_position_count": 0,
+            "open_budget_krw": 0.0,
+            "open_unrealized_pnl_krw": 0.0,
             "strategy_count": 1,
-            "updated_at": "2026-08-21 10:18:02 KST"
+            "updated_at": "2026-08-25 11:19:38 KST"
           },
           "return_metrics": {
-            "realized_return_pct": 1.4485081174151286,
-            "avg_trade_return_pct": 2.204711071317064,
-            "open_unrealized_return_pct": -0.049975012493760504,
-            "open_unrealized_pnl_krw": -4.99981692000074,
+            "realized_return_pct": 2.3673647635399035,
+            "avg_trade_return_pct": 2.424768777325726,
+            "open_unrealized_return_pct": 0.0,
+            "open_unrealized_pnl_krw": 0.0,
             "win_rate_pct": 100.0,
-            "win_count": 2,
+            "win_count": 4,
             "loss_count": 0,
             "avg_target_profit_pct": 0.0,
             "min_target_profit_pct": 1.5,
             "max_target_profit_pct": 4.0,
-            "profit_factor": 441.14017367999986,
-            "max_input_budget_krw": 10304.375354939999,
-            "daily_avg_input_budget_krw": 10225.080532185,
-            "open_budget_krw": 10004.633656920001,
-            "cumulative_return_pct": 1.4485081174151286
+            "profit_factor": 970.3504017249961,
+            "max_input_budget_krw": 10313.198291264998,
+            "daily_avg_input_budget_krw": 10247.15769058375,
+            "open_budget_krw": 0.0,
+            "cumulative_return_pct": 2.3673647635399035
           },
           "daily": [
             {
@@ -258,16 +283,25 @@
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
+            },
+            {
+              "date": "2026-08-24",
+              "pnl_krw": 308.56,
+              "cumulative_pnl_krw": 749.7,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-08-25",
+              "pnl_krw": 220.65,
+              "cumulative_pnl_krw": 970.35,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
             }
           ],
-          "open_positions": [
-            {
-              "symbol": "",
-              "latest_price_date": "",
-              "unrealized_pnl_krw": -5.0,
-              "unrealized_return_pct": -0.05
-            }
-          ]
+          "open_positions": []
         }
       ]
     },
@@ -331,33 +365,33 @@
             "source_strategy_code": "kospi-strategy1"
           },
           "summary": {
-            "period": "2026-07-07 15:21:00 ~ 2026-08-24 15:21:00 KST",
-            "total_pnl_krw": 123480.20100000003,
-            "daily_avg_pnl_krw": 6860.011166666668,
-            "win_rate_pct": 80.3921568627451,
-            "trade_count": 51,
-            "open_position_count": 12,
-            "open_budget_krw": 798170.0,
-            "open_unrealized_pnl_krw": -17410.0,
+            "period": "2026-07-07 15:21:00 ~ 2026-08-25 15:21:00 KST",
+            "total_pnl_krw": 131353.34200000003,
+            "daily_avg_pnl_krw": 6913.333789473686,
+            "win_rate_pct": 81.81818181818183,
+            "trade_count": 55,
+            "open_position_count": 11,
+            "open_budget_krw": 607370.0,
+            "open_unrealized_pnl_krw": -14580.0,
             "strategy_count": 1,
-            "updated_at": "2026-08-24 15:21:00 KST"
+            "updated_at": "2026-08-25 15:21:00 KST"
           },
           "return_metrics": {
-            "realized_return_pct": 2.540899842155724,
-            "avg_trade_return_pct": 1.853116423708567,
-            "open_unrealized_return_pct": -2.18123958555195,
-            "open_unrealized_pnl_krw": -17410.0,
-            "win_rate_pct": 80.3921568627451,
-            "win_count": 41,
+            "realized_return_pct": 2.6469648178031475,
+            "avg_trade_return_pct": 1.891405163169237,
+            "open_unrealized_return_pct": -2.400513690172383,
+            "open_unrealized_pnl_krw": -14580.0,
+            "win_rate_pct": 81.81818181818183,
+            "win_count": 45,
             "loss_count": 10,
             "avg_target_profit_pct": 1.5,
             "min_target_profit_pct": 1.5,
             "max_target_profit_pct": 1.5,
-            "profit_factor": 2.467685494052763,
+            "profit_factor": 2.5612656368185824,
             "max_input_budget_krw": 316000.0,
-            "daily_avg_input_budget_krw": 225640.75533333333,
-            "open_budget_krw": 798170.0,
-            "cumulative_return_pct": 2.540899842155724
+            "daily_avg_input_budget_krw": 229212.82084210525,
+            "open_budget_krw": 607370.0,
+            "cumulative_return_pct": 2.6469648178031475
           },
           "daily": [
             {
@@ -503,80 +537,82 @@
               "trade_count": 3,
               "win_count": 3,
               "loss_count": 0
+            },
+            {
+              "date": "2026-08-25",
+              "pnl_krw": 7873.14,
+              "cumulative_pnl_krw": 131353.34,
+              "trade_count": 4,
+              "win_count": 4,
+              "loss_count": 0
             }
           ],
           "open_positions": [
             {
               "symbol": "015760",
-              "latest_price_date": "2026-08-24",
-              "unrealized_pnl_krw": -1700.0,
-              "unrealized_return_pct": -5.1051
+              "latest_price_date": "2026-08-25",
+              "unrealized_pnl_krw": -1350.0,
+              "unrealized_return_pct": -4.0541
             },
             {
               "symbol": "023530",
-              "latest_price_date": "2026-08-24",
-              "unrealized_pnl_krw": -6000.0,
-              "unrealized_return_pct": -5.848
+              "latest_price_date": "2026-08-25",
+              "unrealized_pnl_krw": -6400.0,
+              "unrealized_return_pct": -6.2378
             },
             {
               "symbol": "024110",
-              "latest_price_date": "2026-08-24",
-              "unrealized_pnl_krw": -430.0,
-              "unrealized_return_pct": -2.1078
+              "latest_price_date": "2026-08-25",
+              "unrealized_pnl_krw": -200.0,
+              "unrealized_return_pct": -0.9804
             },
             {
               "symbol": "033780",
-              "latest_price_date": "2026-08-24",
+              "latest_price_date": "2026-08-25",
               "unrealized_pnl_krw": -3500.0,
               "unrealized_return_pct": -1.9898
             },
             {
               "symbol": "010140",
-              "latest_price_date": "2026-08-24",
-              "unrealized_pnl_krw": -550.0,
-              "unrealized_return_pct": -2.6506
+              "latest_price_date": "2026-08-25",
+              "unrealized_pnl_krw": -650.0,
+              "unrealized_return_pct": -3.1325
             },
             {
               "symbol": "011170",
-              "latest_price_date": "2026-08-24",
-              "unrealized_pnl_krw": -1500.0,
-              "unrealized_return_pct": -2.7076
-            },
-            {
-              "symbol": "003030",
-              "latest_price_date": "2026-08-24",
+              "latest_price_date": "2026-08-25",
               "unrealized_pnl_krw": -400.0,
-              "unrealized_return_pct": -0.3972
+              "unrealized_return_pct": -0.722
             },
             {
               "symbol": "005300",
-              "latest_price_date": "2026-08-24",
-              "unrealized_pnl_krw": -1200.0,
-              "unrealized_return_pct": -1.227
-            },
-            {
-              "symbol": "034230",
-              "latest_price_date": "2026-08-24",
-              "unrealized_pnl_krw": -180.0,
-              "unrealized_return_pct": -1.9048
+              "latest_price_date": "2026-08-25",
+              "unrealized_pnl_krw": -300.0,
+              "unrealized_return_pct": -0.3067
             },
             {
               "symbol": "137310",
-              "latest_price_date": "2026-08-24",
+              "latest_price_date": "2026-08-25",
+              "unrealized_pnl_krw": -180.0,
+              "unrealized_return_pct": -2.7821
+            },
+            {
+              "symbol": "005940",
+              "latest_price_date": "2026-08-25",
+              "unrealized_pnl_krw": -800.0,
+              "unrealized_return_pct": -3.0189
+            },
+            {
+              "symbol": "035720",
+              "latest_price_date": "2026-08-25",
+              "unrealized_pnl_krw": -250.0,
+              "unrealized_return_pct": -0.6964
+            },
+            {
+              "symbol": "316140",
+              "latest_price_date": "2026-08-25",
               "unrealized_pnl_krw": -550.0,
-              "unrealized_return_pct": -8.5008
-            },
-            {
-              "symbol": "138040",
-              "latest_price_date": "2026-08-24",
-              "unrealized_pnl_krw": -200.0,
-              "unrealized_return_pct": -0.1732
-            },
-            {
-              "symbol": "241560",
-              "latest_price_date": "2026-08-24",
-              "unrealized_pnl_krw": -1200.0,
-              "unrealized_return_pct": -2.0033
+              "unrealized_return_pct": -1.7002
             }
           ]
         }
@@ -592,13 +628,13 @@
       ],
       "name": "비트코인 과매도 반등 전략",
       "market": "KRW-BTC",
-      "total_pnl_krw": 441.14017367999986,
-      "return_pct": 1.4485081174151286,
+      "total_pnl_krw": 970.3504017249961,
+      "return_pct": 2.3673647635399035,
       "win_rate_pct": 100.0,
-      "trade_count": 2,
-      "open_position_count": 1,
-      "open_unrealized_pnl_krw": -5.0,
-      "updated_at": "2026-08-21 10:18:02 KST"
+      "trade_count": 4,
+      "open_position_count": 0,
+      "open_unrealized_pnl_krw": 0.0,
+      "updated_at": "2026-08-25 11:19:38 KST"
     },
     {
       "code": "kis_kospi200_cci_rebound_fixed_target_1d",
@@ -608,13 +644,13 @@
       ],
       "name": "KOSPI200 과매도 반등 전략",
       "market": "KOSPI200",
-      "total_pnl_krw": 123480.20100000003,
-      "return_pct": 2.540899842155724,
-      "win_rate_pct": 80.3921568627451,
-      "trade_count": 51,
-      "open_position_count": 12,
-      "open_unrealized_pnl_krw": -17410.0,
-      "updated_at": "2026-08-24 15:21:00 KST"
+      "total_pnl_krw": 131353.34200000003,
+      "return_pct": 2.6469648178031475,
+      "win_rate_pct": 81.81818181818183,
+      "trade_count": 55,
+      "open_position_count": 11,
+      "open_unrealized_pnl_krw": -14580.0,
+      "updated_at": "2026-08-25 15:21:00 KST"
     }
   ]
 }
