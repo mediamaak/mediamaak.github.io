@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-08-24T23:30:26Z",
+  "updated_at": "2026-08-25T23:30:32Z",
   "posts": [
+    {
+      "id": "2026-08-26-market-economy-roundup",
+      "title": "2026년 8월 26일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-26",
+      "category": "Market Economy",
+      "summary": "결론: 세 자료 모두 공통적으로 “무엇을 측정하느냐”와 “어떤 가정을 두느냐”가 포트폴리오·리스크 해석을 바꾸므로, KOSPI/KOSDAQ 투자자는 팩터 노출과 거시 민감도 검증을 먼저 점검해야 합니다.",
+      "href": "posts/2026-08-26-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "factor",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-25-market-economy-roundup",
       "title": "2026년 8월 25일 퀀트·경제 데이터 분석 요약",
