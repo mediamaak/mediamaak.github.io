@@ -1,6 +1,27 @@
 {
-  "updated_at": "2026-08-25T23:30:32Z",
+  "updated_at": "2026-08-26T23:30:36Z",
   "posts": [
+    {
+      "id": "2026-08-27-market-economy-roundup",
+      "title": "2026년 8월 27일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-27",
+      "category": "Market Economy",
+      "summary": "결론: 최신 자료 3건은 모두 “수익률 결과”보다 “가정·노출·검증 방식”을 먼저 보라는 공통 메시지를 줍니다.",
+      "href": "posts/2026-08-27-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "factor",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-26-market-economy-roundup",
       "title": "2026년 8월 26일 퀀트·경제 데이터 분석 요약",
