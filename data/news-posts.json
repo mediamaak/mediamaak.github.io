@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-08-26T23:30:36Z",
+  "updated_at": "2026-08-27T23:31:30Z",
   "posts": [
+    {
+      "id": "2026-08-28-market-economy-roundup",
+      "title": "2026년 8월 28일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-28",
+      "category": "Market Economy",
+      "summary": "결론: 세 자료 모두 한국 투자자가 바로 매매 신호로 읽기보다, FX·유동성·생산성·결제지연 같은 위험 요인을 점검하는 체크리스트로 해석하는 것이 적절합니다.",
+      "href": "posts/2026-08-28-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "banking",
+        "economic-data",
+        "macro",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-27-market-economy-roundup",
       "title": "2026년 8월 27일 퀀트·경제 데이터 분석 요약",
