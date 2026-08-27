@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26 15:35 KST",
+  "updated_at": "2026-08-27 15:35 KST",
   "summary": {
     "period": "2026-08-20 17:48:54 ~ 2026-08-25 11:19:38 KST",
     "total_pnl_krw": 970.3504017249961,
@@ -379,33 +379,33 @@
             "source_strategy_code": "kospi-strategy1"
           },
           "summary": {
-            "period": "2026-07-07 15:21:00 ~ 2026-08-26 15:21:00 KST",
-            "total_pnl_krw": 137085.377,
-            "daily_avg_pnl_krw": 6854.26885,
-            "win_rate_pct": 83.05084745762711,
-            "trade_count": 59,
-            "open_position_count": 11,
-            "open_budget_krw": 635270.0,
-            "open_unrealized_pnl_krw": -9590.0,
+            "period": "2026-07-07 15:21:00 ~ 2026-08-27 15:21:00 KST",
+            "total_pnl_krw": 138958.782,
+            "daily_avg_pnl_krw": 6617.084857142858,
+            "win_rate_pct": 83.33333333333334,
+            "trade_count": 60,
+            "open_position_count": 10,
+            "open_budget_krw": 547570.0,
+            "open_unrealized_pnl_krw": 4020.0,
             "strategy_count": 1,
-            "updated_at": "2026-08-26 15:21:00 KST"
+            "updated_at": "2026-08-27 15:21:00 KST"
           },
           "return_metrics": {
-            "realized_return_pct": 2.6262755866003404,
-            "avg_trade_return_pct": 1.95878875985624,
-            "open_unrealized_return_pct": -1.5095943457112724,
-            "open_unrealized_pnl_krw": -9590.0,
-            "win_rate_pct": 83.05084745762711,
-            "win_count": 49,
+            "realized_return_pct": 2.6611975177115568,
+            "avg_trade_return_pct": 1.961744808081365,
+            "open_unrealized_return_pct": 0.7341527110689045,
+            "open_unrealized_pnl_krw": 4020.0,
+            "win_rate_pct": 83.33333333333334,
+            "win_count": 50,
             "loss_count": 10,
             "avg_target_profit_pct": 1.5,
             "min_target_profit_pct": 1.5,
             "max_target_profit_pct": 1.5,
-            "profit_factor": 2.6293965967034203,
+            "profit_factor": 2.6516638858778676,
             "max_input_budget_krw": 316000.0,
-            "daily_avg_input_budget_krw": 229224.67979999998,
-            "open_budget_krw": 635270.0,
-            "cumulative_return_pct": 2.6262755866003404
+            "daily_avg_input_budget_krw": 222575.88552380953,
+            "open_budget_krw": 547570.0,
+            "cumulative_return_pct": 2.6611975177115568
           },
           "daily": [
             {
@@ -567,74 +567,76 @@
               "trade_count": 4,
               "win_count": 4,
               "loss_count": 0
+            },
+            {
+              "date": "2026-08-27",
+              "pnl_krw": 1873.4,
+              "cumulative_pnl_krw": 138958.78,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
             }
           ],
           "open_positions": [
             {
               "symbol": "024110",
-              "latest_price_date": "2026-08-26",
-              "unrealized_pnl_krw": -150.0,
-              "unrealized_return_pct": -0.7353
+              "latest_price_date": "2026-08-27",
+              "unrealized_pnl_krw": 150.0,
+              "unrealized_return_pct": 0.7353
             },
             {
               "symbol": "033780",
-              "latest_price_date": "2026-08-26",
-              "unrealized_pnl_krw": -1400.0,
-              "unrealized_return_pct": -0.7959
+              "latest_price_date": "2026-08-27",
+              "unrealized_pnl_krw": -100.0,
+              "unrealized_return_pct": -0.0569
             },
             {
               "symbol": "010140",
-              "latest_price_date": "2026-08-26",
-              "unrealized_pnl_krw": -350.0,
-              "unrealized_return_pct": -1.6867
+              "latest_price_date": "2026-08-27",
+              "unrealized_pnl_krw": 150.0,
+              "unrealized_return_pct": 0.7229
             },
             {
               "symbol": "005300",
-              "latest_price_date": "2026-08-26",
-              "unrealized_pnl_krw": 0.0,
-              "unrealized_return_pct": 0.0
+              "latest_price_date": "2026-08-27",
+              "unrealized_pnl_krw": 700.0,
+              "unrealized_return_pct": 0.7157
             },
             {
               "symbol": "137310",
-              "latest_price_date": "2026-08-26",
-              "unrealized_pnl_krw": -190.0,
-              "unrealized_return_pct": -2.9366
+              "latest_price_date": "2026-08-27",
+              "unrealized_pnl_krw": -130.0,
+              "unrealized_return_pct": -2.0093
             },
             {
               "symbol": "005940",
-              "latest_price_date": "2026-08-26",
-              "unrealized_pnl_krw": 100.0,
-              "unrealized_return_pct": 0.3774
+              "latest_price_date": "2026-08-27",
+              "unrealized_pnl_krw": 800.0,
+              "unrealized_return_pct": 3.0189
             },
             {
               "symbol": "035720",
-              "latest_price_date": "2026-08-26",
-              "unrealized_pnl_krw": 0.0,
-              "unrealized_return_pct": 0.0
-            },
-            {
-              "symbol": "006650",
-              "latest_price_date": "2026-08-26",
-              "unrealized_pnl_krw": -5700.0,
-              "unrealized_return_pct": -6.4994
+              "latest_price_date": "2026-08-27",
+              "unrealized_pnl_krw": 950.0,
+              "unrealized_return_pct": 2.6462
             },
             {
               "symbol": "029780",
-              "latest_price_date": "2026-08-26",
-              "unrealized_pnl_krw": -450.0,
-              "unrealized_return_pct": -0.9646
+              "latest_price_date": "2026-08-27",
+              "unrealized_pnl_krw": 500.0,
+              "unrealized_return_pct": 1.0718
             },
             {
               "symbol": "081660",
-              "latest_price_date": "2026-08-26",
-              "unrealized_pnl_krw": -350.0,
-              "unrealized_return_pct": -0.8333
+              "latest_price_date": "2026-08-27",
+              "unrealized_pnl_krw": 400.0,
+              "unrealized_return_pct": 0.9524
             },
             {
               "symbol": "139480",
-              "latest_price_date": "2026-08-26",
-              "unrealized_pnl_krw": -1100.0,
-              "unrealized_return_pct": -1.4628
+              "latest_price_date": "2026-08-27",
+              "unrealized_pnl_krw": 600.0,
+              "unrealized_return_pct": 0.7979
             }
           ]
         }
@@ -666,13 +668,13 @@
       ],
       "name": "KOSPI200 과매도 반등 전략",
       "market": "KOSPI200",
-      "total_pnl_krw": 137085.377,
-      "return_pct": 2.6262755866003404,
-      "win_rate_pct": 83.05084745762711,
-      "trade_count": 59,
-      "open_position_count": 11,
-      "open_unrealized_pnl_krw": -9590.0,
-      "updated_at": "2026-08-26 15:21:00 KST"
+      "total_pnl_krw": 138958.782,
+      "return_pct": 2.6611975177115568,
+      "win_rate_pct": 83.33333333333334,
+      "trade_count": 60,
+      "open_position_count": 10,
+      "open_unrealized_pnl_krw": 4020.0,
+      "updated_at": "2026-08-27 15:21:00 KST"
     }
   ]
 }
