@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-08-27T23:31:30Z",
+  "updated_at": "2026-08-28T23:31:10Z",
   "posts": [
+    {
+      "id": "2026-08-29-market-economy-roundup",
+      "title": "2026년 8월 29일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-08-29",
+      "category": "Market Economy",
+      "summary": "결론: 이번 자료들은 옵션 신호, 통화 프런티어, 제약 포함 포트폴리오 최적화를 통해 한국 투자자가 팩터 노출, 유동성, 금리·환율 민감도를 점검하는 데 참고할 수 있습니다.",
+      "href": "posts/2026-08-29-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "banking",
+        "factor",
+        "macro",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-28-market-economy-roundup",
       "title": "2026년 8월 28일 퀀트·경제 데이터 분석 요약",
