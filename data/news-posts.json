@@ -1,6 +1,31 @@
 {
-  "updated_at": "2026-08-30T23:30:33Z",
+  "updated_at": "2026-08-31T23:30:29Z",
   "posts": [
+    {
+      "id": "2026-09-01-market-economy-roundup",
+      "title": "2026년 9월 1일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-09-01",
+      "category": "Market Economy",
+      "summary": "결론: 이번 자료들은 미국 금리·주거비·전략검증 리스크를 함께 보게 하며, 한국 투자자는 KOSPI/KOSDAQ 업종 민감도와 FX·금리·변동성 점검표를 분리해서 확인하는 방식이 유효합니다.",
+      "href": "posts/2026-09-01-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "economic-data",
+        "factor",
+        "fed",
+        "macro",
+        "market-economy",
+        "monetary-policy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-08-31-market-economy-roundup",
       "title": "2026년 8월 31일 퀀트·경제 데이터 분석 요약",
