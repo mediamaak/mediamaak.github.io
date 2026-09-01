@@ -1,6 +1,29 @@
 {
-  "updated_at": "2026-08-31T23:30:29Z",
+  "updated_at": "2026-09-01T23:30:26Z",
   "posts": [
+    {
+      "id": "2026-09-02-market-economy-roundup",
+      "title": "2026년 9월 2일 퀀트·경제 데이터 분석 요약",
+      "date": "2026-09-02",
+      "category": "Market Economy",
+      "summary": "결론: 이번 자료들은 공통적으로 “상관·시나리오·표본 제약”을 어떻게 다루느냐가 포트폴리오 위험 해석의 핵심임을 보여줍니다.",
+      "href": "posts/2026-09-02-market-economy-roundup.html",
+      "source_count": 3,
+      "status": "published",
+      "tags": [
+        "backtest",
+        "factor",
+        "macro",
+        "market-economy",
+        "papers",
+        "portfolio",
+        "quant",
+        "quant-analysis",
+        "research",
+        "risk"
+      ],
+      "quality_score": 100
+    },
     {
       "id": "2026-09-01-market-economy-roundup",
       "title": "2026년 9월 1일 퀀트·경제 데이터 분석 요약",
