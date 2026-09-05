@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04 15:35 KST",
+  "updated_at": "2026-09-05 15:35 KST",
   "summary": {
     "period": "2026-08-20 17:48:54 ~ 2026-08-28 00:15:06 KST",
     "total_pnl_krw": 1112.188186579995,
@@ -410,15 +410,15 @@
             "trade_count": 67,
             "open_position_count": 16,
             "open_budget_krw": 914985.0,
-            "open_unrealized_pnl_krw": -4495.0,
+            "open_unrealized_pnl_krw": -7940.0,
             "strategy_count": 1,
             "updated_at": "2026-09-04 15:21:00 KST"
           },
           "return_metrics": {
             "realized_return_pct": 2.4451960029294866,
             "avg_trade_return_pct": 1.9989149313229906,
-            "open_unrealized_return_pct": -0.4912648841237834,
-            "open_unrealized_pnl_krw": -4495.0,
+            "open_unrealized_return_pct": -0.8677737886413439,
+            "open_unrealized_pnl_krw": -7940.0,
             "win_rate_pct": 85.07462686567165,
             "win_count": 57,
             "loss_count": 10,
@@ -637,98 +637,98 @@
             {
               "symbol": "033780",
               "latest_price_date": "2026-09-04",
-              "unrealized_pnl_krw": -2900.0,
-              "unrealized_return_pct": -1.6487
+              "unrealized_pnl_krw": -3400.0,
+              "unrealized_return_pct": -1.9329
             },
             {
               "symbol": "137310",
               "latest_price_date": "2026-09-04",
-              "unrealized_pnl_krw": -250.0,
-              "unrealized_return_pct": -3.864
+              "unrealized_pnl_krw": -310.0,
+              "unrealized_return_pct": -4.7913
             },
             {
               "symbol": "005940",
               "latest_price_date": "2026-09-04",
-              "unrealized_pnl_krw": -200.0,
-              "unrealized_return_pct": -0.7547
+              "unrealized_pnl_krw": 150.0,
+              "unrealized_return_pct": 0.566
             },
             {
               "symbol": "029780",
               "latest_price_date": "2026-09-04",
-              "unrealized_pnl_krw": -300.0,
-              "unrealized_return_pct": -0.6431
+              "unrealized_pnl_krw": -500.0,
+              "unrealized_return_pct": -1.0718
             },
             {
               "symbol": "081660",
               "latest_price_date": "2026-09-04",
-              "unrealized_pnl_krw": -1200.0,
-              "unrealized_return_pct": -2.8571
+              "unrealized_pnl_krw": -600.0,
+              "unrealized_return_pct": -1.4286
             },
             {
               "symbol": "139480",
               "latest_price_date": "2026-09-04",
-              "unrealized_pnl_krw": -1000.0,
-              "unrealized_return_pct": -1.3298
+              "unrealized_pnl_krw": -1700.0,
+              "unrealized_return_pct": -2.2606
             },
             {
               "symbol": "009970",
               "latest_price_date": "2026-09-04",
-              "unrealized_pnl_krw": 0.0,
-              "unrealized_return_pct": 0.0
+              "unrealized_pnl_krw": -500.0,
+              "unrealized_return_pct": -0.2917
             },
             {
               "symbol": "111770",
               "latest_price_date": "2026-09-04",
-              "unrealized_pnl_krw": 900.0,
-              "unrealized_return_pct": 1.2113
+              "unrealized_pnl_krw": 700.0,
+              "unrealized_return_pct": 0.9421
             },
             {
               "symbol": "192080",
               "latest_price_date": "2026-09-04",
-              "unrealized_pnl_krw": -900.0,
-              "unrealized_return_pct": -1.5203
+              "unrealized_pnl_krw": -2000.0,
+              "unrealized_return_pct": -3.3784
             },
             {
               "symbol": "000120",
-              "latest_price_date": "2026-09-04",
-              "unrealized_pnl_krw": 100.0,
-              "unrealized_return_pct": 0.1362
-            },
-            {
-              "symbol": "010140",
-              "latest_price_date": "2026-09-04",
-              "unrealized_pnl_krw": -350.0,
-              "unrealized_return_pct": -1.6166
-            },
-            {
-              "symbol": "011200",
               "latest_price_date": "2026-09-04",
               "unrealized_pnl_krw": 0.0,
               "unrealized_return_pct": 0.0
             },
             {
+              "symbol": "010140",
+              "latest_price_date": "2026-09-04",
+              "unrealized_pnl_krw": -250.0,
+              "unrealized_return_pct": -1.1547
+            },
+            {
+              "symbol": "011200",
+              "latest_price_date": "2026-09-04",
+              "unrealized_pnl_krw": -250.0,
+              "unrealized_return_pct": -1.1737
+            },
+            {
               "symbol": "016360",
               "latest_price_date": "2026-09-04",
-              "unrealized_pnl_krw": 1400.0,
-              "unrealized_return_pct": 1.6279
+              "unrealized_pnl_krw": 800.0,
+              "unrealized_return_pct": 0.9302
             },
             {
               "symbol": "018880",
               "latest_price_date": "2026-09-04",
-              "unrealized_pnl_krw": 35.0,
-              "unrealized_return_pct": 1.0014
+              "unrealized_pnl_krw": 30.0,
+              "unrealized_return_pct": 0.8584
             },
             {
               "symbol": "026960",
               "latest_price_date": "2026-09-04",
-              "unrealized_pnl_krw": 200.0,
-              "unrealized_return_pct": 0.7828
+              "unrealized_pnl_krw": -100.0,
+              "unrealized_return_pct": -0.3914
             },
             {
               "symbol": "028670",
               "latest_price_date": "2026-09-04",
-              "unrealized_pnl_krw": -30.0,
-              "unrealized_return_pct": -0.5025
+              "unrealized_pnl_krw": -10.0,
+              "unrealized_return_pct": -0.1675
             }
           ]
         }
@@ -765,7 +765,7 @@
       "win_rate_pct": 85.07462686567165,
       "trade_count": 67,
       "open_position_count": 16,
-      "open_unrealized_pnl_krw": -4495.0,
+      "open_unrealized_pnl_krw": -7940.0,
       "updated_at": "2026-09-04 15:21:00 KST"
     }
   ]
