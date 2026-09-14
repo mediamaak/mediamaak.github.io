@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-09-13 15:52 KST",
+  "updated_at": "2026-09-14 15:46 KST",
   "summary": {
-    "period": "2026-06-08 23:30:00 ~ 2026-09-13 15:20:00 KST",
-    "total_pnl_krw": 1198.3579708650905,
-    "daily_avg_pnl_krw": 133.15088565167673,
+    "period": "2026-06-08 23:30:00 ~ 2026-09-14 15:20:00 KST",
+    "total_pnl_krw": 1169.9675693109311,
+    "daily_avg_pnl_krw": 129.99639659010347,
     "win_rate_pct": 90.9090909090909,
     "trade_count": 11,
     "strategy_count": 1,
-    "updated_at": "2026-09-13 15:22:14 KST"
+    "updated_at": "2026-09-14 15:22:11 KST"
   },
   "strategy_overview": {
     "code": "upbit_krw_btc_cci_rebound_volatility_target_10m",
@@ -42,18 +42,18 @@
       }
     ],
     "summary": {
-      "period": "2026-06-08 23:30:00 ~ 2026-09-13 15:20:00 KST",
-      "total_pnl_krw": 1198.3579708650905,
-      "daily_avg_pnl_krw": 133.15088565167673,
+      "period": "2026-06-08 23:30:00 ~ 2026-09-14 15:20:00 KST",
+      "total_pnl_krw": 1169.9675693109311,
+      "daily_avg_pnl_krw": 129.99639659010347,
       "win_rate_pct": 90.9090909090909,
       "trade_count": 11,
       "strategy_count": 1,
-      "updated_at": "2026-09-13 15:22:14 KST"
+      "updated_at": "2026-09-14 15:22:11 KST"
     },
     "return_metrics": {
-      "realized_return_pct": 11.983579708650904,
-      "avg_trade_return_pct": 1.0894163371500822,
-      "open_unrealized_return_pct": -5.396693779525794,
+      "realized_return_pct": 11.699675693109311,
+      "avg_trade_return_pct": 1.0636068811917556,
+      "open_unrealized_return_pct": -5.17603469076812,
       "win_rate_pct": 90.9090909090909,
       "win_count": 10,
       "loss_count": 1,
@@ -73,27 +73,27 @@
       },
       {
         "date": "2026-06-15",
-        "pnl_krw": 318.86,
+        "pnl_krw": 320.32,
         "trade_count": 2,
         "win_count": 2,
         "loss_count": 0,
-        "cumulative_pnl_krw": 462.14
+        "cumulative_pnl_krw": 463.6
       },
       {
         "date": "2026-06-25",
-        "pnl_krw": -1068.31,
+        "pnl_krw": -1068.51,
         "trade_count": 1,
         "win_count": 0,
         "loss_count": 1,
-        "cumulative_pnl_krw": -606.17
+        "cumulative_pnl_krw": -604.91
       },
       {
         "date": "2026-07-04",
-        "pnl_krw": 420.06,
+        "pnl_krw": 390.2,
         "trade_count": 1,
         "win_count": 1,
         "loss_count": 0,
-        "cumulative_pnl_krw": -186.12
+        "cumulative_pnl_krw": -214.71
       },
       {
         "date": "2026-07-05",
@@ -101,15 +101,15 @@
         "trade_count": 1,
         "win_count": 1,
         "loss_count": 0,
-        "cumulative_pnl_krw": -41.38
+        "cumulative_pnl_krw": -69.98
       },
       {
         "date": "2026-07-07",
-        "pnl_krw": 141.37,
+        "pnl_krw": 144.41,
         "trade_count": 1,
         "win_count": 1,
         "loss_count": 0,
-        "cumulative_pnl_krw": 99.99
+        "cumulative_pnl_krw": 74.44
       },
       {
         "date": "2026-08-20",
@@ -117,23 +117,23 @@
         "trade_count": 1,
         "win_count": 1,
         "loss_count": 0,
-        "cumulative_pnl_krw": 301.05
+        "cumulative_pnl_krw": 275.5
       },
       {
         "date": "2026-08-21",
-        "pnl_krw": 350.16,
+        "pnl_krw": 347.14,
         "trade_count": 1,
         "win_count": 1,
         "loss_count": 0,
-        "cumulative_pnl_krw": 651.21
+        "cumulative_pnl_krw": 622.64
       },
       {
         "date": "2026-08-25",
-        "pnl_krw": 547.15,
+        "pnl_krw": 547.33,
         "trade_count": 2,
         "win_count": 2,
         "loss_count": 0,
-        "cumulative_pnl_krw": 1198.36
+        "cumulative_pnl_krw": 1169.97
       }
     ],
     "source_strategy_code": "upbit-ws-btc-cci-rebound-volatility-target-10m-sim",
@@ -161,9 +161,9 @@
     }
   },
   "return_metrics": {
-    "realized_return_pct": 11.983579708650904,
-    "avg_trade_return_pct": 1.0894163371500822,
-    "open_unrealized_return_pct": -5.396693779525794,
+    "realized_return_pct": 11.699675693109311,
+    "avg_trade_return_pct": 1.0636068811917556,
+    "open_unrealized_return_pct": -5.17603469076812,
     "win_rate_pct": 90.9090909090909,
     "win_count": 10,
     "loss_count": 1,
@@ -180,43 +180,43 @@
     },
     {
       "date": "2026-06-15",
-      "pnl_krw": 318.86,
-      "cumulative_pnl_krw": 462.14
+      "pnl_krw": 320.32,
+      "cumulative_pnl_krw": 463.6
     },
     {
       "date": "2026-06-25",
-      "pnl_krw": -1068.31,
-      "cumulative_pnl_krw": -606.17
+      "pnl_krw": -1068.51,
+      "cumulative_pnl_krw": -604.91
     },
     {
       "date": "2026-07-04",
-      "pnl_krw": 420.06,
-      "cumulative_pnl_krw": -186.12
+      "pnl_krw": 390.2,
+      "cumulative_pnl_krw": -214.71
     },
     {
       "date": "2026-07-05",
       "pnl_krw": 144.73,
-      "cumulative_pnl_krw": -41.38
+      "cumulative_pnl_krw": -69.98
     },
     {
       "date": "2026-07-07",
-      "pnl_krw": 141.37,
-      "cumulative_pnl_krw": 99.99
+      "pnl_krw": 144.41,
+      "cumulative_pnl_krw": 74.44
     },
     {
       "date": "2026-08-20",
       "pnl_krw": 201.06,
-      "cumulative_pnl_krw": 301.05
+      "cumulative_pnl_krw": 275.5
     },
     {
       "date": "2026-08-21",
-      "pnl_krw": 350.16,
-      "cumulative_pnl_krw": 651.21
+      "pnl_krw": 347.14,
+      "cumulative_pnl_krw": 622.64
     },
     {
       "date": "2026-08-25",
-      "pnl_krw": 547.15,
-      "cumulative_pnl_krw": 1198.36
+      "pnl_krw": 547.33,
+      "cumulative_pnl_krw": 1169.97
     }
   ],
   "assets": [
@@ -258,18 +258,18 @@
             }
           ],
           "summary": {
-            "period": "2026-06-08 23:30:00 ~ 2026-09-13 15:20:00 KST",
-            "total_pnl_krw": 1198.3579708650905,
-            "daily_avg_pnl_krw": 133.15088565167673,
+            "period": "2026-06-08 23:30:00 ~ 2026-09-14 15:20:00 KST",
+            "total_pnl_krw": 1169.9675693109311,
+            "daily_avg_pnl_krw": 129.99639659010347,
             "win_rate_pct": 90.9090909090909,
             "trade_count": 11,
             "strategy_count": 1,
-            "updated_at": "2026-09-13 15:22:14 KST"
+            "updated_at": "2026-09-14 15:22:11 KST"
           },
           "return_metrics": {
-            "realized_return_pct": 11.983579708650904,
-            "avg_trade_return_pct": 1.0894163371500822,
-            "open_unrealized_return_pct": -5.396693779525794,
+            "realized_return_pct": 11.699675693109311,
+            "avg_trade_return_pct": 1.0636068811917556,
+            "open_unrealized_return_pct": -5.17603469076812,
             "win_rate_pct": 90.9090909090909,
             "win_count": 10,
             "loss_count": 1,
@@ -289,27 +289,27 @@
             },
             {
               "date": "2026-06-15",
-              "pnl_krw": 318.86,
+              "pnl_krw": 320.32,
               "trade_count": 2,
               "win_count": 2,
               "loss_count": 0,
-              "cumulative_pnl_krw": 462.14
+              "cumulative_pnl_krw": 463.6
             },
             {
               "date": "2026-06-25",
-              "pnl_krw": -1068.31,
+              "pnl_krw": -1068.51,
               "trade_count": 1,
               "win_count": 0,
               "loss_count": 1,
-              "cumulative_pnl_krw": -606.17
+              "cumulative_pnl_krw": -604.91
             },
             {
               "date": "2026-07-04",
-              "pnl_krw": 420.06,
+              "pnl_krw": 390.2,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0,
-              "cumulative_pnl_krw": -186.12
+              "cumulative_pnl_krw": -214.71
             },
             {
               "date": "2026-07-05",
@@ -317,15 +317,15 @@
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0,
-              "cumulative_pnl_krw": -41.38
+              "cumulative_pnl_krw": -69.98
             },
             {
               "date": "2026-07-07",
-              "pnl_krw": 141.37,
+              "pnl_krw": 144.41,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0,
-              "cumulative_pnl_krw": 99.99
+              "cumulative_pnl_krw": 74.44
             },
             {
               "date": "2026-08-20",
@@ -333,23 +333,23 @@
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0,
-              "cumulative_pnl_krw": 301.05
+              "cumulative_pnl_krw": 275.5
             },
             {
               "date": "2026-08-21",
-              "pnl_krw": 350.16,
+              "pnl_krw": 347.14,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0,
-              "cumulative_pnl_krw": 651.21
+              "cumulative_pnl_krw": 622.64
             },
             {
               "date": "2026-08-25",
-              "pnl_krw": 547.15,
+              "pnl_krw": 547.33,
               "trade_count": 2,
               "win_count": 2,
               "loss_count": 0,
-              "cumulative_pnl_krw": 1198.36
+              "cumulative_pnl_krw": 1169.97
             }
           ],
           "source_strategy_code": "upbit-ws-btc-cci-rebound-volatility-target-10m-sim",
@@ -399,50 +399,42 @@
             }
           ],
           "summary": {
-            "period": "2026-07-13 09:14:45 ~ 2026-09-13 14:19:06 KST",
-            "total_pnl_krw": -50219.85275974745,
-            "daily_avg_pnl_krw": -865.8595303404734,
-            "win_rate_pct": 52.842022736181896,
-            "trade_count": 2551,
+            "period": "2026-07-14 19:40:26 ~ 2026-09-14 13:48:06 KST",
+            "total_pnl_krw": -38839.88387740919,
+            "daily_avg_pnl_krw": -669.6531703001585,
+            "win_rate_pct": 52.6936688950059,
+            "trade_count": 2543,
             "strategy_count": 1,
-            "updated_at": "2026-09-13 15:44:37 KST"
+            "updated_at": "2026-09-14 15:46:31 KST"
           },
           "return_metrics": {
-            "realized_return_pct": -0.19725171415194281,
-            "avg_trade_return_pct": -0.19686339772539174,
+            "realized_return_pct": -0.15296616499514354,
+            "avg_trade_return_pct": -0.15273253589228977,
             "open_unrealized_return_pct": 0.0,
-            "win_rate_pct": 52.842022736181896,
-            "win_count": 1348,
+            "win_rate_pct": 52.6936688950059,
+            "win_count": 1340,
             "loss_count": 1203,
-            "avg_target_profit_pct": 0.8913433286862219,
+            "avg_target_profit_pct": 0.8930248997309029,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 2.632805910959643,
-            "profit_factor": 0.6175580801985476,
+            "profit_factor": 0.6721704302507018,
             "max_input_budget_krw": 10219.273947749554,
-            "daily_avg_input_budget_krw": 438961.7266765562,
-            "cumulative_return_pct": -0.19725171415194281
+            "daily_avg_input_budget_krw": 437778.62269176915,
+            "cumulative_return_pct": -0.15296616499514354
           },
           "daily": [
             {
-              "date": "2026-07-13",
-              "pnl_krw": -3475.15,
-              "cumulative_pnl_krw": -3475.15,
-              "trade_count": 18,
-              "win_count": 4,
-              "loss_count": 14
-            },
-            {
               "date": "2026-07-14",
-              "pnl_krw": -7854.31,
-              "cumulative_pnl_krw": -11329.46,
-              "trade_count": 76,
-              "win_count": 40,
-              "loss_count": 36
+              "pnl_krw": -423.59,
+              "cumulative_pnl_krw": -423.59,
+              "trade_count": 45,
+              "win_count": 12,
+              "loss_count": 33
             },
             {
               "date": "2026-07-15",
               "pnl_krw": 46.88,
-              "cumulative_pnl_krw": -11282.59,
+              "cumulative_pnl_krw": -376.71,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -450,7 +442,7 @@
             {
               "date": "2026-07-16",
               "pnl_krw": -9349.77,
-              "cumulative_pnl_krw": -20632.35,
+              "cumulative_pnl_krw": -9726.48,
               "trade_count": 45,
               "win_count": 0,
               "loss_count": 45
@@ -458,7 +450,7 @@
             {
               "date": "2026-07-18",
               "pnl_krw": 100.43,
-              "cumulative_pnl_krw": -20531.92,
+              "cumulative_pnl_krw": -9626.04,
               "trade_count": 45,
               "win_count": 31,
               "loss_count": 14
@@ -466,7 +458,7 @@
             {
               "date": "2026-07-21",
               "pnl_krw": 1373.53,
-              "cumulative_pnl_krw": -19158.39,
+              "cumulative_pnl_krw": -8252.52,
               "trade_count": 26,
               "win_count": 26,
               "loss_count": 0
@@ -474,7 +466,7 @@
             {
               "date": "2026-07-22",
               "pnl_krw": 343.9,
-              "cumulative_pnl_krw": -18814.49,
+              "cumulative_pnl_krw": -7908.62,
               "trade_count": 14,
               "win_count": 12,
               "loss_count": 2
@@ -482,7 +474,7 @@
             {
               "date": "2026-07-23",
               "pnl_krw": -4717.13,
-              "cumulative_pnl_krw": -23531.62,
+              "cumulative_pnl_krw": -12625.75,
               "trade_count": 45,
               "win_count": 0,
               "loss_count": 45
@@ -490,7 +482,7 @@
             {
               "date": "2026-07-24",
               "pnl_krw": -4677.41,
-              "cumulative_pnl_krw": -28209.03,
+              "cumulative_pnl_krw": -17303.16,
               "trade_count": 43,
               "win_count": 0,
               "loss_count": 43
@@ -498,7 +490,7 @@
             {
               "date": "2026-07-25",
               "pnl_krw": -4978.62,
-              "cumulative_pnl_krw": -33187.66,
+              "cumulative_pnl_krw": -22281.79,
               "trade_count": 34,
               "win_count": 0,
               "loss_count": 34
@@ -506,7 +498,7 @@
             {
               "date": "2026-07-26",
               "pnl_krw": 1122.6,
-              "cumulative_pnl_krw": -32065.05,
+              "cumulative_pnl_krw": -21159.18,
               "trade_count": 28,
               "win_count": 28,
               "loss_count": 0
@@ -514,7 +506,7 @@
             {
               "date": "2026-07-27",
               "pnl_krw": 4678.3,
-              "cumulative_pnl_krw": -27386.75,
+              "cumulative_pnl_krw": -16480.88,
               "trade_count": 73,
               "win_count": 73,
               "loss_count": 0
@@ -522,7 +514,7 @@
             {
               "date": "2026-07-28",
               "pnl_krw": -12616.39,
-              "cumulative_pnl_krw": -40003.14,
+              "cumulative_pnl_krw": -29097.27,
               "trade_count": 43,
               "win_count": 0,
               "loss_count": 43
@@ -530,7 +522,7 @@
             {
               "date": "2026-07-29",
               "pnl_krw": 130.97,
-              "cumulative_pnl_krw": -39872.17,
+              "cumulative_pnl_krw": -28966.3,
               "trade_count": 46,
               "win_count": 19,
               "loss_count": 27
@@ -538,7 +530,7 @@
             {
               "date": "2026-07-30",
               "pnl_krw": -1744.6,
-              "cumulative_pnl_krw": -41616.77,
+              "cumulative_pnl_krw": -30710.9,
               "trade_count": 51,
               "win_count": 17,
               "loss_count": 34
@@ -546,7 +538,7 @@
             {
               "date": "2026-07-31",
               "pnl_krw": 1832.09,
-              "cumulative_pnl_krw": -39784.68,
+              "cumulative_pnl_krw": -28878.81,
               "trade_count": 37,
               "win_count": 29,
               "loss_count": 8
@@ -554,7 +546,7 @@
             {
               "date": "2026-08-01",
               "pnl_krw": -1938.7,
-              "cumulative_pnl_krw": -41723.39,
+              "cumulative_pnl_krw": -30817.51,
               "trade_count": 21,
               "win_count": 0,
               "loss_count": 21
@@ -562,7 +554,7 @@
             {
               "date": "2026-08-02",
               "pnl_krw": 992.55,
-              "cumulative_pnl_krw": -40730.83,
+              "cumulative_pnl_krw": -29824.96,
               "trade_count": 45,
               "win_count": 29,
               "loss_count": 16
@@ -570,7 +562,7 @@
             {
               "date": "2026-08-03",
               "pnl_krw": -7015.42,
-              "cumulative_pnl_krw": -47746.26,
+              "cumulative_pnl_krw": -36840.38,
               "trade_count": 47,
               "win_count": 2,
               "loss_count": 45
@@ -578,7 +570,7 @@
             {
               "date": "2026-08-05",
               "pnl_krw": 1355.37,
-              "cumulative_pnl_krw": -46390.88,
+              "cumulative_pnl_krw": -35485.01,
               "trade_count": 56,
               "win_count": 55,
               "loss_count": 1
@@ -586,7 +578,7 @@
             {
               "date": "2026-08-06",
               "pnl_krw": 810.19,
-              "cumulative_pnl_krw": -45580.7,
+              "cumulative_pnl_krw": -34674.82,
               "trade_count": 11,
               "win_count": 11,
               "loss_count": 0
@@ -594,7 +586,7 @@
             {
               "date": "2026-08-07",
               "pnl_krw": -1254.97,
-              "cumulative_pnl_krw": -46835.66,
+              "cumulative_pnl_krw": -35929.79,
               "trade_count": 53,
               "win_count": 10,
               "loss_count": 43
@@ -602,7 +594,7 @@
             {
               "date": "2026-08-08",
               "pnl_krw": -1204.84,
-              "cumulative_pnl_krw": -48040.51,
+              "cumulative_pnl_krw": -37134.63,
               "trade_count": 45,
               "win_count": 0,
               "loss_count": 45
@@ -610,7 +602,7 @@
             {
               "date": "2026-08-09",
               "pnl_krw": -314.91,
-              "cumulative_pnl_krw": -48355.42,
+              "cumulative_pnl_krw": -37449.55,
               "trade_count": 38,
               "win_count": 0,
               "loss_count": 38
@@ -618,7 +610,7 @@
             {
               "date": "2026-08-10",
               "pnl_krw": 153.1,
-              "cumulative_pnl_krw": -48202.32,
+              "cumulative_pnl_krw": -37296.45,
               "trade_count": 44,
               "win_count": 26,
               "loss_count": 18
@@ -626,7 +618,7 @@
             {
               "date": "2026-08-11",
               "pnl_krw": -4441.17,
-              "cumulative_pnl_krw": -52643.49,
+              "cumulative_pnl_krw": -41737.62,
               "trade_count": 37,
               "win_count": 0,
               "loss_count": 37
@@ -634,7 +626,7 @@
             {
               "date": "2026-08-12",
               "pnl_krw": -2030.13,
-              "cumulative_pnl_krw": -54673.62,
+              "cumulative_pnl_krw": -43767.75,
               "trade_count": 34,
               "win_count": 0,
               "loss_count": 34
@@ -642,7 +634,7 @@
             {
               "date": "2026-08-13",
               "pnl_krw": -963.79,
-              "cumulative_pnl_krw": -55637.41,
+              "cumulative_pnl_krw": -44731.54,
               "trade_count": 49,
               "win_count": 7,
               "loss_count": 42
@@ -650,7 +642,7 @@
             {
               "date": "2026-08-14",
               "pnl_krw": -2627.17,
-              "cumulative_pnl_krw": -58264.58,
+              "cumulative_pnl_krw": -47358.71,
               "trade_count": 36,
               "win_count": 1,
               "loss_count": 35
@@ -658,7 +650,7 @@
             {
               "date": "2026-08-15",
               "pnl_krw": -1636.44,
-              "cumulative_pnl_krw": -59901.02,
+              "cumulative_pnl_krw": -48995.15,
               "trade_count": 33,
               "win_count": 6,
               "loss_count": 27
@@ -666,7 +658,7 @@
             {
               "date": "2026-08-16",
               "pnl_krw": 697.06,
-              "cumulative_pnl_krw": -59203.96,
+              "cumulative_pnl_krw": -48298.09,
               "trade_count": 43,
               "win_count": 32,
               "loss_count": 11
@@ -674,7 +666,7 @@
             {
               "date": "2026-08-17",
               "pnl_krw": 891.38,
-              "cumulative_pnl_krw": -58312.58,
+              "cumulative_pnl_krw": -47406.71,
               "trade_count": 41,
               "win_count": 31,
               "loss_count": 10
@@ -682,7 +674,7 @@
             {
               "date": "2026-08-18",
               "pnl_krw": 6257.49,
-              "cumulative_pnl_krw": -52055.09,
+              "cumulative_pnl_krw": -41149.22,
               "trade_count": 57,
               "win_count": 57,
               "loss_count": 0
@@ -690,7 +682,7 @@
             {
               "date": "2026-08-19",
               "pnl_krw": 1015.67,
-              "cumulative_pnl_krw": -51039.43,
+              "cumulative_pnl_krw": -40133.55,
               "trade_count": 36,
               "win_count": 18,
               "loss_count": 18
@@ -698,7 +690,7 @@
             {
               "date": "2026-08-20",
               "pnl_krw": 6409.87,
-              "cumulative_pnl_krw": -44629.56,
+              "cumulative_pnl_krw": -33723.68,
               "trade_count": 74,
               "win_count": 74,
               "loss_count": 0
@@ -706,7 +698,7 @@
             {
               "date": "2026-08-21",
               "pnl_krw": 6930.91,
-              "cumulative_pnl_krw": -37698.65,
+              "cumulative_pnl_krw": -26792.77,
               "trade_count": 109,
               "win_count": 109,
               "loss_count": 0
@@ -714,7 +706,7 @@
             {
               "date": "2026-08-22",
               "pnl_krw": 2268.94,
-              "cumulative_pnl_krw": -35429.71,
+              "cumulative_pnl_krw": -24523.84,
               "trade_count": 39,
               "win_count": 39,
               "loss_count": 0
@@ -722,7 +714,7 @@
             {
               "date": "2026-08-23",
               "pnl_krw": 2335.7,
-              "cumulative_pnl_krw": -33094.01,
+              "cumulative_pnl_krw": -22188.13,
               "trade_count": 52,
               "win_count": 50,
               "loss_count": 2
@@ -730,7 +722,7 @@
             {
               "date": "2026-08-24",
               "pnl_krw": 4214.27,
-              "cumulative_pnl_krw": -28879.74,
+              "cumulative_pnl_krw": -17973.87,
               "trade_count": 89,
               "win_count": 72,
               "loss_count": 17
@@ -738,7 +730,7 @@
             {
               "date": "2026-08-25",
               "pnl_krw": 3119.84,
-              "cumulative_pnl_krw": -25759.9,
+              "cumulative_pnl_krw": -14854.03,
               "trade_count": 49,
               "win_count": 49,
               "loss_count": 0
@@ -746,7 +738,7 @@
             {
               "date": "2026-08-26",
               "pnl_krw": -4966.19,
-              "cumulative_pnl_krw": -30726.1,
+              "cumulative_pnl_krw": -19820.22,
               "trade_count": 43,
               "win_count": 0,
               "loss_count": 43
@@ -754,7 +746,7 @@
             {
               "date": "2026-08-27",
               "pnl_krw": 3072.1,
-              "cumulative_pnl_krw": -27653.99,
+              "cumulative_pnl_krw": -16748.12,
               "trade_count": 63,
               "win_count": 60,
               "loss_count": 3
@@ -762,7 +754,7 @@
             {
               "date": "2026-08-28",
               "pnl_krw": 556.91,
-              "cumulative_pnl_krw": -27097.08,
+              "cumulative_pnl_krw": -16191.21,
               "trade_count": 12,
               "win_count": 12,
               "loss_count": 0
@@ -770,7 +762,7 @@
             {
               "date": "2026-08-29",
               "pnl_krw": -10716.82,
-              "cumulative_pnl_krw": -37813.9,
+              "cumulative_pnl_krw": -26908.02,
               "trade_count": 69,
               "win_count": 24,
               "loss_count": 45
@@ -778,7 +770,7 @@
             {
               "date": "2026-08-30",
               "pnl_krw": 2724.59,
-              "cumulative_pnl_krw": -35089.31,
+              "cumulative_pnl_krw": -24183.43,
               "trade_count": 49,
               "win_count": 49,
               "loss_count": 0
@@ -786,7 +778,7 @@
             {
               "date": "2026-08-31",
               "pnl_krw": 416.46,
-              "cumulative_pnl_krw": -34672.85,
+              "cumulative_pnl_krw": -23766.98,
               "trade_count": 7,
               "win_count": 7,
               "loss_count": 0
@@ -794,7 +786,7 @@
             {
               "date": "2026-09-01",
               "pnl_krw": -1612.98,
-              "cumulative_pnl_krw": -36285.83,
+              "cumulative_pnl_krw": -25379.96,
               "trade_count": 61,
               "win_count": 21,
               "loss_count": 40
@@ -802,7 +794,7 @@
             {
               "date": "2026-09-02",
               "pnl_krw": -3202.89,
-              "cumulative_pnl_krw": -39488.72,
+              "cumulative_pnl_krw": -28582.85,
               "trade_count": 16,
               "win_count": 0,
               "loss_count": 16
@@ -810,7 +802,7 @@
             {
               "date": "2026-09-03",
               "pnl_krw": 490.92,
-              "cumulative_pnl_krw": -38997.8,
+              "cumulative_pnl_krw": -28091.93,
               "trade_count": 96,
               "win_count": 63,
               "loss_count": 33
@@ -818,7 +810,7 @@
             {
               "date": "2026-09-04",
               "pnl_krw": 1383.54,
-              "cumulative_pnl_krw": -37614.26,
+              "cumulative_pnl_krw": -26708.38,
               "trade_count": 26,
               "win_count": 26,
               "loss_count": 0
@@ -826,7 +818,7 @@
             {
               "date": "2026-09-05",
               "pnl_krw": -3473.01,
-              "cumulative_pnl_krw": -41087.27,
+              "cumulative_pnl_krw": -30181.39,
               "trade_count": 20,
               "win_count": 0,
               "loss_count": 20
@@ -834,7 +826,7 @@
             {
               "date": "2026-09-06",
               "pnl_krw": -772.27,
-              "cumulative_pnl_krw": -41859.54,
+              "cumulative_pnl_krw": -30953.66,
               "trade_count": 45,
               "win_count": 1,
               "loss_count": 44
@@ -842,7 +834,7 @@
             {
               "date": "2026-09-07",
               "pnl_krw": -1186.05,
-              "cumulative_pnl_krw": -43045.58,
+              "cumulative_pnl_krw": -32139.71,
               "trade_count": 47,
               "win_count": 16,
               "loss_count": 31
@@ -850,7 +842,7 @@
             {
               "date": "2026-09-08",
               "pnl_krw": -7843.66,
-              "cumulative_pnl_krw": -50889.24,
+              "cumulative_pnl_krw": -39983.37,
               "trade_count": 45,
               "win_count": 0,
               "loss_count": 45
@@ -858,7 +850,7 @@
             {
               "date": "2026-09-09",
               "pnl_krw": 3048.71,
-              "cumulative_pnl_krw": -47840.54,
+              "cumulative_pnl_krw": -36934.66,
               "trade_count": 57,
               "win_count": 56,
               "loss_count": 1
@@ -866,7 +858,7 @@
             {
               "date": "2026-09-10",
               "pnl_krw": -4136.92,
-              "cumulative_pnl_krw": -51977.46,
+              "cumulative_pnl_krw": -41071.59,
               "trade_count": 40,
               "win_count": 7,
               "loss_count": 33
@@ -874,7 +866,7 @@
             {
               "date": "2026-09-11",
               "pnl_krw": 2494.31,
-              "cumulative_pnl_krw": -49483.15,
+              "cumulative_pnl_krw": -38577.27,
               "trade_count": 54,
               "win_count": 37,
               "loss_count": 17
@@ -882,10 +874,18 @@
             {
               "date": "2026-09-13",
               "pnl_krw": -736.71,
-              "cumulative_pnl_krw": -50219.85,
+              "cumulative_pnl_krw": -39313.98,
               "trade_count": 38,
               "win_count": 11,
               "loss_count": 27
+            },
+            {
+              "date": "2026-09-14",
+              "pnl_krw": 474.09,
+              "cumulative_pnl_krw": -38839.88,
+              "trade_count": 41,
+              "win_count": 24,
+              "loss_count": 17
             }
           ],
           "source_strategy_code": "simulation1",
@@ -932,50 +932,42 @@
             }
           ],
           "summary": {
-            "period": "2026-08-30 03:14:00 ~ 2026-09-13 07:40:00 KST",
-            "total_pnl_krw": -2191.4024392341616,
-            "daily_avg_pnl_krw": -146.0934959489441,
-            "win_rate_pct": 18.88412017167382,
-            "trade_count": 233,
+            "period": "2026-08-31 02:24:00 ~ 2026-09-14 14:04:01 KST",
+            "total_pnl_krw": -2187.5731408872616,
+            "daily_avg_pnl_krw": -145.83820939248412,
+            "win_rate_pct": 19.230769230769234,
+            "trade_count": 234,
             "strategy_count": 1,
-            "updated_at": "2026-09-13 15:32:07 KST"
+            "updated_at": "2026-09-14 15:30:13 KST"
           },
           "return_metrics": {
-            "realized_return_pct": -0.09414014715515961,
-            "avg_trade_return_pct": -0.09405160683408423,
+            "realized_return_pct": -0.09357350982286891,
+            "avg_trade_return_pct": -0.0934860316618488,
             "open_unrealized_return_pct": 0.0,
-            "win_rate_pct": 18.88412017167382,
-            "win_count": 44,
+            "win_rate_pct": 19.230769230769234,
+            "win_count": 45,
             "loss_count": 189,
-            "avg_target_profit_pct": 0.549999999999998,
+            "avg_target_profit_pct": 0.5499999999999982,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 0.55,
-            "profit_factor": 0.23646977288163046,
+            "profit_factor": 0.2387544154644317,
             "max_input_budget_krw": 10049.90825668474,
-            "daily_avg_input_budget_krw": 155187.23983738435,
-            "cumulative_return_pct": -0.09414014715515961
+            "daily_avg_input_budget_krw": 155854.1617906075,
+            "cumulative_return_pct": -0.09357350982286891
           },
           "daily": [
             {
-              "date": "2026-08-30",
-              "pnl_krw": -44.57,
-              "cumulative_pnl_krw": -44.57,
-              "trade_count": 4,
-              "win_count": 0,
-              "loss_count": 4
-            },
-            {
               "date": "2026-08-31",
-              "pnl_krw": -465.78,
-              "cumulative_pnl_krw": -510.36,
-              "trade_count": 35,
+              "pnl_krw": -427.54,
+              "cumulative_pnl_krw": -427.54,
+              "trade_count": 31,
               "win_count": 5,
-              "loss_count": 30
+              "loss_count": 26
             },
             {
               "date": "2026-09-01",
               "pnl_krw": -94.07,
-              "cumulative_pnl_krw": -604.43,
+              "cumulative_pnl_krw": -521.61,
               "trade_count": 13,
               "win_count": 2,
               "loss_count": 11
@@ -983,7 +975,7 @@
             {
               "date": "2026-09-02",
               "pnl_krw": -415.12,
-              "cumulative_pnl_krw": -1019.55,
+              "cumulative_pnl_krw": -936.73,
               "trade_count": 34,
               "win_count": 4,
               "loss_count": 30
@@ -991,7 +983,7 @@
             {
               "date": "2026-09-03",
               "pnl_krw": -110.33,
-              "cumulative_pnl_krw": -1129.87,
+              "cumulative_pnl_krw": -1047.05,
               "trade_count": 14,
               "win_count": 5,
               "loss_count": 9
@@ -999,7 +991,7 @@
             {
               "date": "2026-09-04",
               "pnl_krw": -220.79,
-              "cumulative_pnl_krw": -1350.67,
+              "cumulative_pnl_krw": -1267.85,
               "trade_count": 30,
               "win_count": 8,
               "loss_count": 22
@@ -1007,7 +999,7 @@
             {
               "date": "2026-09-05",
               "pnl_krw": 7.92,
-              "cumulative_pnl_krw": -1342.75,
+              "cumulative_pnl_krw": -1259.93,
               "trade_count": 7,
               "win_count": 2,
               "loss_count": 5
@@ -1015,7 +1007,7 @@
             {
               "date": "2026-09-06",
               "pnl_krw": -56.99,
-              "cumulative_pnl_krw": -1399.74,
+              "cumulative_pnl_krw": -1316.91,
               "trade_count": 9,
               "win_count": 1,
               "loss_count": 8
@@ -1023,7 +1015,7 @@
             {
               "date": "2026-09-07",
               "pnl_krw": -65.29,
-              "cumulative_pnl_krw": -1465.03,
+              "cumulative_pnl_krw": -1382.21,
               "trade_count": 13,
               "win_count": 4,
               "loss_count": 9
@@ -1031,7 +1023,7 @@
             {
               "date": "2026-09-08",
               "pnl_krw": -132.55,
-              "cumulative_pnl_krw": -1597.57,
+              "cumulative_pnl_krw": -1514.75,
               "trade_count": 12,
               "win_count": 0,
               "loss_count": 12
@@ -1039,7 +1031,7 @@
             {
               "date": "2026-09-09",
               "pnl_krw": -55.01,
-              "cumulative_pnl_krw": -1652.59,
+              "cumulative_pnl_krw": -1569.76,
               "trade_count": 14,
               "win_count": 5,
               "loss_count": 9
@@ -1047,7 +1039,7 @@
             {
               "date": "2026-09-10",
               "pnl_krw": -221.69,
-              "cumulative_pnl_krw": -1874.28,
+              "cumulative_pnl_krw": -1791.45,
               "trade_count": 23,
               "win_count": 3,
               "loss_count": 20
@@ -1055,7 +1047,7 @@
             {
               "date": "2026-09-11",
               "pnl_krw": -97.51,
-              "cumulative_pnl_krw": -1971.78,
+              "cumulative_pnl_krw": -1888.96,
               "trade_count": 15,
               "win_count": 3,
               "loss_count": 12
@@ -1063,18 +1055,26 @@
             {
               "date": "2026-09-12",
               "pnl_krw": -209.62,
-              "cumulative_pnl_krw": -2181.4,
+              "cumulative_pnl_krw": -2098.58,
               "trade_count": 9,
               "win_count": 2,
               "loss_count": 7
             },
             {
               "date": "2026-09-13",
-              "pnl_krw": -10.0,
-              "cumulative_pnl_krw": -2191.4,
-              "trade_count": 1,
+              "pnl_krw": -21.79,
+              "cumulative_pnl_krw": -2120.37,
+              "trade_count": 4,
+              "win_count": 1,
+              "loss_count": 3
+            },
+            {
+              "date": "2026-09-14",
+              "pnl_krw": -67.2,
+              "cumulative_pnl_krw": -2187.57,
+              "trade_count": 6,
               "win_count": 0,
-              "loss_count": 1
+              "loss_count": 6
             }
           ],
           "source_strategy_code": "strategy3",
@@ -1114,42 +1114,34 @@
             }
           ],
           "summary": {
-            "period": "2026-07-14 10:18:42 ~ 2026-09-13 14:19:06 KST",
-            "total_pnl_krw": -8345.378818617248,
-            "daily_avg_pnl_krw": -208.6344704654312,
-            "win_rate_pct": 55.57692307692308,
-            "trade_count": 520,
+            "period": "2026-07-17 04:29:04 ~ 2026-09-14 02:09:21 KST",
+            "total_pnl_krw": -8176.856018515346,
+            "daily_avg_pnl_krw": -204.42140046288364,
+            "win_rate_pct": 53.21100917431193,
+            "trade_count": 545,
             "strategy_count": 1,
-            "updated_at": "2026-09-13 15:43:44 KST"
+            "updated_at": "2026-09-14 15:40:09 KST"
           },
           "return_metrics": {
-            "realized_return_pct": -0.1607460323837611,
-            "avg_trade_return_pct": -0.1604880542041778,
+            "realized_return_pct": -0.15025949580075454,
+            "avg_trade_return_pct": -0.1500340553856027,
             "open_unrealized_return_pct": 0.0,
-            "win_rate_pct": 55.57692307692308,
-            "win_count": 289,
-            "loss_count": 231,
-            "avg_target_profit_pct": 0.5500000000000054,
+            "win_rate_pct": 53.21100917431193,
+            "win_count": 290,
+            "loss_count": 255,
+            "avg_target_profit_pct": 0.5500000000000056,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 0.55,
-            "profit_factor": 0.6024689413063582,
+            "profit_factor": 0.6073941635847243,
             "max_input_budget_krw": 10060.197343500478,
-            "daily_avg_input_budget_krw": 129791.36552953448,
-            "cumulative_return_pct": -0.1607460323837611
+            "daily_avg_input_budget_krw": 136045.57859953708,
+            "cumulative_return_pct": -0.15025949580075454
           },
           "daily": [
             {
-              "date": "2026-07-14",
-              "pnl_krw": -260.56,
-              "cumulative_pnl_krw": -260.56,
-              "trade_count": 1,
-              "win_count": 0,
-              "loss_count": 1
-            },
-            {
               "date": "2026-07-17",
               "pnl_krw": -183.79,
-              "cumulative_pnl_krw": -444.35,
+              "cumulative_pnl_krw": -183.79,
               "trade_count": 2,
               "win_count": 0,
               "loss_count": 2
@@ -1157,7 +1149,7 @@
             {
               "date": "2026-07-18",
               "pnl_krw": 623.29,
-              "cumulative_pnl_krw": 178.94,
+              "cumulative_pnl_krw": 439.5,
               "trade_count": 12,
               "win_count": 12,
               "loss_count": 0
@@ -1165,7 +1157,7 @@
             {
               "date": "2026-07-22",
               "pnl_krw": 322.24,
-              "cumulative_pnl_krw": 501.17,
+              "cumulative_pnl_krw": 761.73,
               "trade_count": 7,
               "win_count": 7,
               "loss_count": 0
@@ -1173,7 +1165,7 @@
             {
               "date": "2026-07-23",
               "pnl_krw": -1295.15,
-              "cumulative_pnl_krw": -793.98,
+              "cumulative_pnl_krw": -533.42,
               "trade_count": 12,
               "win_count": 0,
               "loss_count": 12
@@ -1181,7 +1173,7 @@
             {
               "date": "2026-07-24",
               "pnl_krw": 129.64,
-              "cumulative_pnl_krw": -664.34,
+              "cumulative_pnl_krw": -403.78,
               "trade_count": 4,
               "win_count": 3,
               "loss_count": 1
@@ -1189,7 +1181,7 @@
             {
               "date": "2026-07-26",
               "pnl_krw": 370.08,
-              "cumulative_pnl_krw": -294.26,
+              "cumulative_pnl_krw": -33.7,
               "trade_count": 9,
               "win_count": 9,
               "loss_count": 0
@@ -1197,7 +1189,7 @@
             {
               "date": "2026-07-27",
               "pnl_krw": 147.53,
-              "cumulative_pnl_krw": -146.73,
+              "cumulative_pnl_krw": 113.83,
               "trade_count": 3,
               "win_count": 3,
               "loss_count": 0
@@ -1205,7 +1197,7 @@
             {
               "date": "2026-07-29",
               "pnl_krw": 93.21,
-              "cumulative_pnl_krw": -53.52,
+              "cumulative_pnl_krw": 207.04,
               "trade_count": 2,
               "win_count": 2,
               "loss_count": 0
@@ -1213,7 +1205,7 @@
             {
               "date": "2026-07-30",
               "pnl_krw": 45.51,
-              "cumulative_pnl_krw": -8.02,
+              "cumulative_pnl_krw": 252.54,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -1221,7 +1213,7 @@
             {
               "date": "2026-07-31",
               "pnl_krw": 99.63,
-              "cumulative_pnl_krw": 91.61,
+              "cumulative_pnl_krw": 352.17,
               "trade_count": 2,
               "win_count": 2,
               "loss_count": 0
@@ -1229,7 +1221,7 @@
             {
               "date": "2026-08-02",
               "pnl_krw": 46.6,
-              "cumulative_pnl_krw": 138.21,
+              "cumulative_pnl_krw": 398.77,
               "trade_count": 3,
               "win_count": 3,
               "loss_count": 0
@@ -1237,7 +1229,7 @@
             {
               "date": "2026-08-04",
               "pnl_krw": 94.44,
-              "cumulative_pnl_krw": 232.65,
+              "cumulative_pnl_krw": 493.21,
               "trade_count": 2,
               "win_count": 2,
               "loss_count": 0
@@ -1245,7 +1237,7 @@
             {
               "date": "2026-08-05",
               "pnl_krw": 46.69,
-              "cumulative_pnl_krw": 279.34,
+              "cumulative_pnl_krw": 539.9,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -1253,7 +1245,7 @@
             {
               "date": "2026-08-07",
               "pnl_krw": -528.67,
-              "cumulative_pnl_krw": -249.33,
+              "cumulative_pnl_krw": 11.23,
               "trade_count": 15,
               "win_count": 5,
               "loss_count": 10
@@ -1261,7 +1253,7 @@
             {
               "date": "2026-08-08",
               "pnl_krw": -70.01,
-              "cumulative_pnl_krw": -319.34,
+              "cumulative_pnl_krw": -58.78,
               "trade_count": 6,
               "win_count": 0,
               "loss_count": 6
@@ -1269,7 +1261,7 @@
             {
               "date": "2026-08-09",
               "pnl_krw": -261.9,
-              "cumulative_pnl_krw": -581.24,
+              "cumulative_pnl_krw": -320.68,
               "trade_count": 39,
               "win_count": 7,
               "loss_count": 32
@@ -1277,7 +1269,7 @@
             {
               "date": "2026-08-17",
               "pnl_krw": 44.47,
-              "cumulative_pnl_krw": -536.77,
+              "cumulative_pnl_krw": -276.21,
               "trade_count": 2,
               "win_count": 1,
               "loss_count": 1
@@ -1285,7 +1277,7 @@
             {
               "date": "2026-08-21",
               "pnl_krw": 615.04,
-              "cumulative_pnl_krw": 78.27,
+              "cumulative_pnl_krw": 338.83,
               "trade_count": 12,
               "win_count": 12,
               "loss_count": 0
@@ -1293,7 +1285,7 @@
             {
               "date": "2026-08-22",
               "pnl_krw": 186.99,
-              "cumulative_pnl_krw": 265.26,
+              "cumulative_pnl_krw": 525.82,
               "trade_count": 4,
               "win_count": 4,
               "loss_count": 0
@@ -1301,7 +1293,7 @@
             {
               "date": "2026-08-23",
               "pnl_krw": 365.54,
-              "cumulative_pnl_krw": 630.8,
+              "cumulative_pnl_krw": 891.36,
               "trade_count": 8,
               "win_count": 8,
               "loss_count": 0
@@ -1309,7 +1301,7 @@
             {
               "date": "2026-08-24",
               "pnl_krw": 558.85,
-              "cumulative_pnl_krw": 1189.65,
+              "cumulative_pnl_krw": 1450.21,
               "trade_count": 12,
               "win_count": 12,
               "loss_count": 0
@@ -1317,7 +1309,7 @@
             {
               "date": "2026-08-25",
               "pnl_krw": 519.91,
-              "cumulative_pnl_krw": 1709.57,
+              "cumulative_pnl_krw": 1970.13,
               "trade_count": 11,
               "win_count": 11,
               "loss_count": 0
@@ -1325,7 +1317,7 @@
             {
               "date": "2026-08-26",
               "pnl_krw": -309.52,
-              "cumulative_pnl_krw": 1400.05,
+              "cumulative_pnl_krw": 1660.61,
               "trade_count": 5,
               "win_count": 1,
               "loss_count": 4
@@ -1333,7 +1325,7 @@
             {
               "date": "2026-08-27",
               "pnl_krw": 889.44,
-              "cumulative_pnl_krw": 2289.49,
+              "cumulative_pnl_krw": 2550.05,
               "trade_count": 39,
               "win_count": 31,
               "loss_count": 8
@@ -1341,7 +1333,7 @@
             {
               "date": "2026-08-28",
               "pnl_krw": 282.16,
-              "cumulative_pnl_krw": 2571.65,
+              "cumulative_pnl_krw": 2832.21,
               "trade_count": 6,
               "win_count": 6,
               "loss_count": 0
@@ -1349,7 +1341,7 @@
             {
               "date": "2026-08-29",
               "pnl_krw": -5807.15,
-              "cumulative_pnl_krw": -3235.5,
+              "cumulative_pnl_krw": -2974.94,
               "trade_count": 33,
               "win_count": 10,
               "loss_count": 23
@@ -1357,7 +1349,7 @@
             {
               "date": "2026-08-30",
               "pnl_krw": 1959.98,
-              "cumulative_pnl_krw": -1275.52,
+              "cumulative_pnl_krw": -1014.96,
               "trade_count": 42,
               "win_count": 42,
               "loss_count": 0
@@ -1365,7 +1357,7 @@
             {
               "date": "2026-08-31",
               "pnl_krw": 586.79,
-              "cumulative_pnl_krw": -688.72,
+              "cumulative_pnl_krw": -428.16,
               "trade_count": 12,
               "win_count": 12,
               "loss_count": 0
@@ -1373,7 +1365,7 @@
             {
               "date": "2026-09-01",
               "pnl_krw": -136.82,
-              "cumulative_pnl_krw": -825.55,
+              "cumulative_pnl_krw": -564.99,
               "trade_count": 9,
               "win_count": 4,
               "loss_count": 5
@@ -1381,7 +1373,7 @@
             {
               "date": "2026-09-02",
               "pnl_krw": -1721.46,
-              "cumulative_pnl_krw": -2547.0,
+              "cumulative_pnl_krw": -2286.44,
               "trade_count": 8,
               "win_count": 0,
               "loss_count": 8
@@ -1389,7 +1381,7 @@
             {
               "date": "2026-09-03",
               "pnl_krw": -741.71,
-              "cumulative_pnl_krw": -3288.72,
+              "cumulative_pnl_krw": -3028.16,
               "trade_count": 39,
               "win_count": 17,
               "loss_count": 22
@@ -1397,7 +1389,7 @@
             {
               "date": "2026-09-04",
               "pnl_krw": 182.65,
-              "cumulative_pnl_krw": -3106.07,
+              "cumulative_pnl_krw": -2845.51,
               "trade_count": 4,
               "win_count": 4,
               "loss_count": 0
@@ -1405,7 +1397,7 @@
             {
               "date": "2026-09-05",
               "pnl_krw": -163.64,
-              "cumulative_pnl_krw": -3269.71,
+              "cumulative_pnl_krw": -3009.15,
               "trade_count": 1,
               "win_count": 0,
               "loss_count": 1
@@ -1413,7 +1405,7 @@
             {
               "date": "2026-09-06",
               "pnl_krw": -400.19,
-              "cumulative_pnl_krw": -3669.9,
+              "cumulative_pnl_krw": -3409.34,
               "trade_count": 45,
               "win_count": 10,
               "loss_count": 35
@@ -1421,7 +1413,7 @@
             {
               "date": "2026-09-07",
               "pnl_krw": 378.16,
-              "cumulative_pnl_krw": -3291.74,
+              "cumulative_pnl_krw": -3031.18,
               "trade_count": 15,
               "win_count": 11,
               "loss_count": 4
@@ -1429,7 +1421,7 @@
             {
               "date": "2026-09-08",
               "pnl_krw": -2762.43,
-              "cumulative_pnl_krw": -6054.17,
+              "cumulative_pnl_krw": -5793.61,
               "trade_count": 14,
               "win_count": 0,
               "loss_count": 14
@@ -1437,7 +1429,7 @@
             {
               "date": "2026-09-09",
               "pnl_krw": 391.34,
-              "cumulative_pnl_krw": -5662.83,
+              "cumulative_pnl_krw": -5402.27,
               "trade_count": 49,
               "win_count": 36,
               "loss_count": 13
@@ -1445,7 +1437,7 @@
             {
               "date": "2026-09-11",
               "pnl_krw": -2389.25,
-              "cumulative_pnl_krw": -8052.08,
+              "cumulative_pnl_krw": -7791.52,
               "trade_count": 22,
               "win_count": 0,
               "loss_count": 22
@@ -1453,10 +1445,18 @@
             {
               "date": "2026-09-13",
               "pnl_krw": -293.3,
-              "cumulative_pnl_krw": -8345.38,
+              "cumulative_pnl_krw": -8084.82,
               "trade_count": 7,
               "win_count": 0,
               "loss_count": 7
+            },
+            {
+              "date": "2026-09-14",
+              "pnl_krw": -92.04,
+              "cumulative_pnl_krw": -8176.86,
+              "trade_count": 26,
+              "win_count": 1,
+              "loss_count": 25
             }
           ],
           "source_strategy_code": "simulation2_full_b",
@@ -1498,50 +1498,42 @@
             }
           ],
           "summary": {
-            "period": "2026-07-13 09:11:10 ~ 2026-09-13 14:19:06 KST",
-            "total_pnl_krw": -8058.411749383855,
-            "daily_avg_pnl_krw": -175.1828641170403,
-            "win_rate_pct": 61.111111111111114,
-            "trade_count": 864,
+            "period": "2026-07-14 19:41:32 ~ 2026-09-14 12:11:02 KST",
+            "total_pnl_krw": -7643.869263876568,
+            "daily_avg_pnl_krw": -166.17107095383844,
+            "win_rate_pct": 59.46248600223964,
+            "trade_count": 893,
             "strategy_count": 1,
-            "updated_at": "2026-09-13 15:36:31 KST"
+            "updated_at": "2026-09-14 15:34:16 KST"
           },
           "return_metrics": {
-            "realized_return_pct": -0.09335572613643017,
-            "avg_trade_return_pct": -0.09326865450675766,
+            "realized_return_pct": -0.08567097246370431,
+            "avg_trade_return_pct": -0.08559764013299637,
             "open_unrealized_return_pct": 0.0,
-            "win_rate_pct": 61.111111111111114,
-            "win_count": 528,
-            "loss_count": 336,
-            "avg_target_profit_pct": 0.5500000000000077,
+            "win_rate_pct": 59.46248600223964,
+            "win_count": 531,
+            "loss_count": 362,
+            "avg_target_profit_pct": 0.5500000000000078,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 0.55,
-            "profit_factor": 0.7401032257867931,
+            "profit_factor": 0.7501143641220223,
             "max_input_budget_krw": 10062.979193079553,
-            "daily_avg_input_budget_krw": 187650.90409240444,
-            "cumulative_return_pct": -0.09335572613643017
+            "daily_avg_input_budget_krw": 193964.2637116546,
+            "cumulative_return_pct": -0.08567097246370431
           },
           "daily": [
             {
-              "date": "2026-07-13",
-              "pnl_krw": 194.54,
-              "cumulative_pnl_krw": 194.54,
-              "trade_count": 4,
-              "win_count": 4,
-              "loss_count": 0
-            },
-            {
               "date": "2026-07-14",
-              "pnl_krw": -312.37,
-              "cumulative_pnl_krw": -117.83,
-              "trade_count": 7,
+              "pnl_krw": 230.37,
+              "cumulative_pnl_krw": 230.37,
+              "trade_count": 5,
               "win_count": 5,
-              "loss_count": 2
+              "loss_count": 0
             },
             {
               "date": "2026-07-16",
               "pnl_krw": 48.32,
-              "cumulative_pnl_krw": -69.51,
+              "cumulative_pnl_krw": 278.69,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -1549,7 +1541,7 @@
             {
               "date": "2026-07-17",
               "pnl_krw": -1089.48,
-              "cumulative_pnl_krw": -1159.0,
+              "cumulative_pnl_krw": -810.8,
               "trade_count": 10,
               "win_count": 0,
               "loss_count": 10
@@ -1557,7 +1549,7 @@
             {
               "date": "2026-07-18",
               "pnl_krw": 1570.07,
-              "cumulative_pnl_krw": 411.07,
+              "cumulative_pnl_krw": 759.27,
               "trade_count": 41,
               "win_count": 39,
               "loss_count": 2
@@ -1565,7 +1557,7 @@
             {
               "date": "2026-07-21",
               "pnl_krw": 46.39,
-              "cumulative_pnl_krw": 457.46,
+              "cumulative_pnl_krw": 805.66,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -1573,7 +1565,7 @@
             {
               "date": "2026-07-22",
               "pnl_krw": 412.39,
-              "cumulative_pnl_krw": 869.85,
+              "cumulative_pnl_krw": 1218.05,
               "trade_count": 9,
               "win_count": 9,
               "loss_count": 0
@@ -1581,7 +1573,7 @@
             {
               "date": "2026-07-23",
               "pnl_krw": -2423.51,
-              "cumulative_pnl_krw": -1553.66,
+              "cumulative_pnl_krw": -1205.46,
               "trade_count": 22,
               "win_count": 0,
               "loss_count": 22
@@ -1589,7 +1581,7 @@
             {
               "date": "2026-07-24",
               "pnl_krw": -259.53,
-              "cumulative_pnl_krw": -1813.19,
+              "cumulative_pnl_krw": -1464.99,
               "trade_count": 11,
               "win_count": 5,
               "loss_count": 6
@@ -1597,7 +1589,7 @@
             {
               "date": "2026-07-26",
               "pnl_krw": 937.69,
-              "cumulative_pnl_krw": -875.5,
+              "cumulative_pnl_krw": -527.3,
               "trade_count": 25,
               "win_count": 25,
               "loss_count": 0
@@ -1605,7 +1597,7 @@
             {
               "date": "2026-07-27",
               "pnl_krw": 1072.9,
-              "cumulative_pnl_krw": 197.4,
+              "cumulative_pnl_krw": 545.6,
               "trade_count": 21,
               "win_count": 21,
               "loss_count": 0
@@ -1613,7 +1605,7 @@
             {
               "date": "2026-07-29",
               "pnl_krw": 231.11,
-              "cumulative_pnl_krw": 428.51,
+              "cumulative_pnl_krw": 776.71,
               "trade_count": 5,
               "win_count": 5,
               "loss_count": 0
@@ -1621,7 +1613,7 @@
             {
               "date": "2026-07-30",
               "pnl_krw": 335.3,
-              "cumulative_pnl_krw": 763.81,
+              "cumulative_pnl_krw": 1112.01,
               "trade_count": 13,
               "win_count": 10,
               "loss_count": 3
@@ -1629,7 +1621,7 @@
             {
               "date": "2026-07-31",
               "pnl_krw": 331.15,
-              "cumulative_pnl_krw": 1094.96,
+              "cumulative_pnl_krw": 1443.16,
               "trade_count": 7,
               "win_count": 7,
               "loss_count": 0
@@ -1637,7 +1629,7 @@
             {
               "date": "2026-08-02",
               "pnl_krw": 204.34,
-              "cumulative_pnl_krw": 1299.3,
+              "cumulative_pnl_krw": 1647.51,
               "trade_count": 11,
               "win_count": 11,
               "loss_count": 0
@@ -1645,7 +1637,7 @@
             {
               "date": "2026-08-04",
               "pnl_krw": 184.86,
-              "cumulative_pnl_krw": 1484.16,
+              "cumulative_pnl_krw": 1832.37,
               "trade_count": 4,
               "win_count": 4,
               "loss_count": 0
@@ -1653,7 +1645,7 @@
             {
               "date": "2026-08-05",
               "pnl_krw": 372.99,
-              "cumulative_pnl_krw": 1857.16,
+              "cumulative_pnl_krw": 2205.36,
               "trade_count": 8,
               "win_count": 8,
               "loss_count": 0
@@ -1661,7 +1653,7 @@
             {
               "date": "2026-08-06",
               "pnl_krw": 55.73,
-              "cumulative_pnl_krw": 1912.89,
+              "cumulative_pnl_krw": 2261.09,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -1669,7 +1661,7 @@
             {
               "date": "2026-08-07",
               "pnl_krw": -1062.18,
-              "cumulative_pnl_krw": 850.7,
+              "cumulative_pnl_krw": 1198.9,
               "trade_count": 39,
               "win_count": 11,
               "loss_count": 28
@@ -1677,7 +1669,7 @@
             {
               "date": "2026-08-08",
               "pnl_krw": -118.13,
-              "cumulative_pnl_krw": 732.58,
+              "cumulative_pnl_krw": 1080.78,
               "trade_count": 9,
               "win_count": 0,
               "loss_count": 9
@@ -1685,7 +1677,7 @@
             {
               "date": "2026-08-09",
               "pnl_krw": -60.19,
-              "cumulative_pnl_krw": 672.39,
+              "cumulative_pnl_krw": 1020.59,
               "trade_count": 36,
               "win_count": 14,
               "loss_count": 22
@@ -1693,7 +1685,7 @@
             {
               "date": "2026-08-17",
               "pnl_krw": 43.57,
-              "cumulative_pnl_krw": 715.96,
+              "cumulative_pnl_krw": 1064.16,
               "trade_count": 2,
               "win_count": 1,
               "loss_count": 1
@@ -1701,7 +1693,7 @@
             {
               "date": "2026-08-18",
               "pnl_krw": 138.96,
-              "cumulative_pnl_krw": 854.92,
+              "cumulative_pnl_krw": 1203.12,
               "trade_count": 3,
               "win_count": 3,
               "loss_count": 0
@@ -1709,7 +1701,7 @@
             {
               "date": "2026-08-21",
               "pnl_krw": 1130.56,
-              "cumulative_pnl_krw": 1985.48,
+              "cumulative_pnl_krw": 2333.68,
               "trade_count": 22,
               "win_count": 22,
               "loss_count": 0
@@ -1717,7 +1709,7 @@
             {
               "date": "2026-08-22",
               "pnl_krw": 603.49,
-              "cumulative_pnl_krw": 2588.97,
+              "cumulative_pnl_krw": 2937.17,
               "trade_count": 13,
               "win_count": 13,
               "loss_count": 0
@@ -1725,7 +1717,7 @@
             {
               "date": "2026-08-23",
               "pnl_krw": 959.3,
-              "cumulative_pnl_krw": 3548.27,
+              "cumulative_pnl_krw": 3896.47,
               "trade_count": 21,
               "win_count": 21,
               "loss_count": 0
@@ -1733,7 +1725,7 @@
             {
               "date": "2026-08-24",
               "pnl_krw": 1137.8,
-              "cumulative_pnl_krw": 4686.07,
+              "cumulative_pnl_krw": 5034.27,
               "trade_count": 24,
               "win_count": 24,
               "loss_count": 0
@@ -1741,7 +1733,7 @@
             {
               "date": "2026-08-25",
               "pnl_krw": 841.78,
-              "cumulative_pnl_krw": 5527.85,
+              "cumulative_pnl_krw": 5876.05,
               "trade_count": 18,
               "win_count": 18,
               "loss_count": 0
@@ -1749,7 +1741,7 @@
             {
               "date": "2026-08-26",
               "pnl_krw": -676.98,
-              "cumulative_pnl_krw": 4850.87,
+              "cumulative_pnl_krw": 5199.07,
               "trade_count": 12,
               "win_count": 3,
               "loss_count": 9
@@ -1757,7 +1749,7 @@
             {
               "date": "2026-08-27",
               "pnl_krw": 935.26,
-              "cumulative_pnl_krw": 5786.13,
+              "cumulative_pnl_krw": 6134.33,
               "trade_count": 58,
               "win_count": 42,
               "loss_count": 16
@@ -1765,7 +1757,7 @@
             {
               "date": "2026-08-28",
               "pnl_krw": 468.64,
-              "cumulative_pnl_krw": 6254.77,
+              "cumulative_pnl_krw": 6602.97,
               "trade_count": 10,
               "win_count": 10,
               "loss_count": 0
@@ -1773,7 +1765,7 @@
             {
               "date": "2026-08-29",
               "pnl_krw": -6367.65,
-              "cumulative_pnl_krw": -112.88,
+              "cumulative_pnl_krw": 235.32,
               "trade_count": 41,
               "win_count": 15,
               "loss_count": 26
@@ -1781,7 +1773,7 @@
             {
               "date": "2026-08-30",
               "pnl_krw": 2067.35,
-              "cumulative_pnl_krw": 1954.47,
+              "cumulative_pnl_krw": 2302.67,
               "trade_count": 45,
               "win_count": 45,
               "loss_count": 0
@@ -1789,7 +1781,7 @@
             {
               "date": "2026-08-31",
               "pnl_krw": 837.91,
-              "cumulative_pnl_krw": 2792.37,
+              "cumulative_pnl_krw": 3140.58,
               "trade_count": 17,
               "win_count": 17,
               "loss_count": 0
@@ -1797,7 +1789,7 @@
             {
               "date": "2026-09-01",
               "pnl_krw": -152.68,
-              "cumulative_pnl_krw": 2639.7,
+              "cumulative_pnl_krw": 2987.9,
               "trade_count": 17,
               "win_count": 8,
               "loss_count": 9
@@ -1805,7 +1797,7 @@
             {
               "date": "2026-09-02",
               "pnl_krw": -1930.07,
-              "cumulative_pnl_krw": 709.63,
+              "cumulative_pnl_krw": 1057.83,
               "trade_count": 9,
               "win_count": 0,
               "loss_count": 9
@@ -1813,7 +1805,7 @@
             {
               "date": "2026-09-03",
               "pnl_krw": -1061.68,
-              "cumulative_pnl_krw": -352.04,
+              "cumulative_pnl_krw": -3.84,
               "trade_count": 49,
               "win_count": 23,
               "loss_count": 26
@@ -1821,7 +1813,7 @@
             {
               "date": "2026-09-04",
               "pnl_krw": 182.65,
-              "cumulative_pnl_krw": -169.4,
+              "cumulative_pnl_krw": 178.8,
               "trade_count": 4,
               "win_count": 4,
               "loss_count": 0
@@ -1829,7 +1821,7 @@
             {
               "date": "2026-09-05",
               "pnl_krw": -306.78,
-              "cumulative_pnl_krw": -476.17,
+              "cumulative_pnl_krw": -127.97,
               "trade_count": 2,
               "win_count": 0,
               "loss_count": 2
@@ -1837,7 +1829,7 @@
             {
               "date": "2026-09-06",
               "pnl_krw": -531.15,
-              "cumulative_pnl_krw": -1007.32,
+              "cumulative_pnl_krw": -659.12,
               "trade_count": 45,
               "win_count": 4,
               "loss_count": 41
@@ -1845,7 +1837,7 @@
             {
               "date": "2026-09-07",
               "pnl_krw": 914.6,
-              "cumulative_pnl_krw": -92.72,
+              "cumulative_pnl_krw": 255.48,
               "trade_count": 25,
               "win_count": 22,
               "loss_count": 3
@@ -1853,7 +1845,7 @@
             {
               "date": "2026-09-08",
               "pnl_krw": -3328.0,
-              "cumulative_pnl_krw": -3420.72,
+              "cumulative_pnl_krw": -3072.52,
               "trade_count": 17,
               "win_count": 0,
               "loss_count": 17
@@ -1861,7 +1853,7 @@
             {
               "date": "2026-09-09",
               "pnl_krw": -192.93,
-              "cumulative_pnl_krw": -3613.65,
+              "cumulative_pnl_krw": -3265.45,
               "trade_count": 67,
               "win_count": 46,
               "loss_count": 21
@@ -1869,7 +1861,7 @@
             {
               "date": "2026-09-10",
               "pnl_krw": 45.58,
-              "cumulative_pnl_krw": -3568.06,
+              "cumulative_pnl_krw": -3219.86,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -1877,7 +1869,7 @@
             {
               "date": "2026-09-11",
               "pnl_krw": -4046.86,
-              "cumulative_pnl_krw": -7614.93,
+              "cumulative_pnl_krw": -7266.72,
               "trade_count": 37,
               "win_count": 0,
               "loss_count": 37
@@ -1885,10 +1877,18 @@
             {
               "date": "2026-09-13",
               "pnl_krw": -443.49,
-              "cumulative_pnl_krw": -8058.41,
+              "cumulative_pnl_krw": -7710.21,
               "trade_count": 20,
               "win_count": 5,
               "loss_count": 15
+            },
+            {
+              "date": "2026-09-14",
+              "pnl_krw": 66.34,
+              "cumulative_pnl_krw": -7643.87,
+              "trade_count": 35,
+              "win_count": 7,
+              "loss_count": 28
             }
           ],
           "source_strategy_code": "simulation2_full",
@@ -1930,50 +1930,42 @@
             }
           ],
           "summary": {
-            "period": "2026-07-13 09:11:10 ~ 2026-09-13 14:19:06 KST",
-            "total_pnl_krw": -8058.411749383855,
-            "daily_avg_pnl_krw": -175.1828641170403,
-            "win_rate_pct": 61.111111111111114,
-            "trade_count": 864,
+            "period": "2026-07-14 19:41:32 ~ 2026-09-14 12:11:02 KST",
+            "total_pnl_krw": -7643.869263876568,
+            "daily_avg_pnl_krw": -166.17107095383844,
+            "win_rate_pct": 59.46248600223964,
+            "trade_count": 893,
             "strategy_count": 1,
-            "updated_at": "2026-09-13 15:40:22 KST"
+            "updated_at": "2026-09-14 15:37:28 KST"
           },
           "return_metrics": {
-            "realized_return_pct": -0.09335572613643017,
-            "avg_trade_return_pct": -0.09326865450675766,
+            "realized_return_pct": -0.08567097246370431,
+            "avg_trade_return_pct": -0.08559764013299637,
             "open_unrealized_return_pct": 0.0,
-            "win_rate_pct": 61.111111111111114,
-            "win_count": 528,
-            "loss_count": 336,
-            "avg_target_profit_pct": 0.5500000000000077,
+            "win_rate_pct": 59.46248600223964,
+            "win_count": 531,
+            "loss_count": 362,
+            "avg_target_profit_pct": 0.5500000000000078,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 0.55,
-            "profit_factor": 0.7401032257867931,
+            "profit_factor": 0.7501143641220223,
             "max_input_budget_krw": 10062.979193079553,
-            "daily_avg_input_budget_krw": 187650.90409240444,
-            "cumulative_return_pct": -0.09335572613643017
+            "daily_avg_input_budget_krw": 193964.2637116546,
+            "cumulative_return_pct": -0.08567097246370431
           },
           "daily": [
             {
-              "date": "2026-07-13",
-              "pnl_krw": 194.54,
-              "cumulative_pnl_krw": 194.54,
-              "trade_count": 4,
-              "win_count": 4,
-              "loss_count": 0
-            },
-            {
               "date": "2026-07-14",
-              "pnl_krw": -312.37,
-              "cumulative_pnl_krw": -117.83,
-              "trade_count": 7,
+              "pnl_krw": 230.37,
+              "cumulative_pnl_krw": 230.37,
+              "trade_count": 5,
               "win_count": 5,
-              "loss_count": 2
+              "loss_count": 0
             },
             {
               "date": "2026-07-16",
               "pnl_krw": 48.32,
-              "cumulative_pnl_krw": -69.51,
+              "cumulative_pnl_krw": 278.69,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -1981,7 +1973,7 @@
             {
               "date": "2026-07-17",
               "pnl_krw": -1089.48,
-              "cumulative_pnl_krw": -1159.0,
+              "cumulative_pnl_krw": -810.8,
               "trade_count": 10,
               "win_count": 0,
               "loss_count": 10
@@ -1989,7 +1981,7 @@
             {
               "date": "2026-07-18",
               "pnl_krw": 1570.07,
-              "cumulative_pnl_krw": 411.07,
+              "cumulative_pnl_krw": 759.27,
               "trade_count": 41,
               "win_count": 39,
               "loss_count": 2
@@ -1997,7 +1989,7 @@
             {
               "date": "2026-07-21",
               "pnl_krw": 46.39,
-              "cumulative_pnl_krw": 457.46,
+              "cumulative_pnl_krw": 805.66,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -2005,7 +1997,7 @@
             {
               "date": "2026-07-22",
               "pnl_krw": 412.39,
-              "cumulative_pnl_krw": 869.85,
+              "cumulative_pnl_krw": 1218.05,
               "trade_count": 9,
               "win_count": 9,
               "loss_count": 0
@@ -2013,7 +2005,7 @@
             {
               "date": "2026-07-23",
               "pnl_krw": -2423.51,
-              "cumulative_pnl_krw": -1553.66,
+              "cumulative_pnl_krw": -1205.46,
               "trade_count": 22,
               "win_count": 0,
               "loss_count": 22
@@ -2021,7 +2013,7 @@
             {
               "date": "2026-07-24",
               "pnl_krw": -259.53,
-              "cumulative_pnl_krw": -1813.19,
+              "cumulative_pnl_krw": -1464.99,
               "trade_count": 11,
               "win_count": 5,
               "loss_count": 6
@@ -2029,7 +2021,7 @@
             {
               "date": "2026-07-26",
               "pnl_krw": 937.69,
-              "cumulative_pnl_krw": -875.5,
+              "cumulative_pnl_krw": -527.3,
               "trade_count": 25,
               "win_count": 25,
               "loss_count": 0
@@ -2037,7 +2029,7 @@
             {
               "date": "2026-07-27",
               "pnl_krw": 1072.9,
-              "cumulative_pnl_krw": 197.4,
+              "cumulative_pnl_krw": 545.6,
               "trade_count": 21,
               "win_count": 21,
               "loss_count": 0
@@ -2045,7 +2037,7 @@
             {
               "date": "2026-07-29",
               "pnl_krw": 231.11,
-              "cumulative_pnl_krw": 428.51,
+              "cumulative_pnl_krw": 776.71,
               "trade_count": 5,
               "win_count": 5,
               "loss_count": 0
@@ -2053,7 +2045,7 @@
             {
               "date": "2026-07-30",
               "pnl_krw": 335.3,
-              "cumulative_pnl_krw": 763.81,
+              "cumulative_pnl_krw": 1112.01,
               "trade_count": 13,
               "win_count": 10,
               "loss_count": 3
@@ -2061,7 +2053,7 @@
             {
               "date": "2026-07-31",
               "pnl_krw": 331.15,
-              "cumulative_pnl_krw": 1094.96,
+              "cumulative_pnl_krw": 1443.16,
               "trade_count": 7,
               "win_count": 7,
               "loss_count": 0
@@ -2069,7 +2061,7 @@
             {
               "date": "2026-08-02",
               "pnl_krw": 204.34,
-              "cumulative_pnl_krw": 1299.3,
+              "cumulative_pnl_krw": 1647.51,
               "trade_count": 11,
               "win_count": 11,
               "loss_count": 0
@@ -2077,7 +2069,7 @@
             {
               "date": "2026-08-04",
               "pnl_krw": 184.86,
-              "cumulative_pnl_krw": 1484.16,
+              "cumulative_pnl_krw": 1832.37,
               "trade_count": 4,
               "win_count": 4,
               "loss_count": 0
@@ -2085,7 +2077,7 @@
             {
               "date": "2026-08-05",
               "pnl_krw": 372.99,
-              "cumulative_pnl_krw": 1857.16,
+              "cumulative_pnl_krw": 2205.36,
               "trade_count": 8,
               "win_count": 8,
               "loss_count": 0
@@ -2093,7 +2085,7 @@
             {
               "date": "2026-08-06",
               "pnl_krw": 55.73,
-              "cumulative_pnl_krw": 1912.89,
+              "cumulative_pnl_krw": 2261.09,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -2101,7 +2093,7 @@
             {
               "date": "2026-08-07",
               "pnl_krw": -1062.18,
-              "cumulative_pnl_krw": 850.7,
+              "cumulative_pnl_krw": 1198.9,
               "trade_count": 39,
               "win_count": 11,
               "loss_count": 28
@@ -2109,7 +2101,7 @@
             {
               "date": "2026-08-08",
               "pnl_krw": -118.13,
-              "cumulative_pnl_krw": 732.58,
+              "cumulative_pnl_krw": 1080.78,
               "trade_count": 9,
               "win_count": 0,
               "loss_count": 9
@@ -2117,7 +2109,7 @@
             {
               "date": "2026-08-09",
               "pnl_krw": -60.19,
-              "cumulative_pnl_krw": 672.39,
+              "cumulative_pnl_krw": 1020.59,
               "trade_count": 36,
               "win_count": 14,
               "loss_count": 22
@@ -2125,7 +2117,7 @@
             {
               "date": "2026-08-17",
               "pnl_krw": 43.57,
-              "cumulative_pnl_krw": 715.96,
+              "cumulative_pnl_krw": 1064.16,
               "trade_count": 2,
               "win_count": 1,
               "loss_count": 1
@@ -2133,7 +2125,7 @@
             {
               "date": "2026-08-18",
               "pnl_krw": 138.96,
-              "cumulative_pnl_krw": 854.92,
+              "cumulative_pnl_krw": 1203.12,
               "trade_count": 3,
               "win_count": 3,
               "loss_count": 0
@@ -2141,7 +2133,7 @@
             {
               "date": "2026-08-21",
               "pnl_krw": 1130.56,
-              "cumulative_pnl_krw": 1985.48,
+              "cumulative_pnl_krw": 2333.68,
               "trade_count": 22,
               "win_count": 22,
               "loss_count": 0
@@ -2149,7 +2141,7 @@
             {
               "date": "2026-08-22",
               "pnl_krw": 603.49,
-              "cumulative_pnl_krw": 2588.97,
+              "cumulative_pnl_krw": 2937.17,
               "trade_count": 13,
               "win_count": 13,
               "loss_count": 0
@@ -2157,7 +2149,7 @@
             {
               "date": "2026-08-23",
               "pnl_krw": 959.3,
-              "cumulative_pnl_krw": 3548.27,
+              "cumulative_pnl_krw": 3896.47,
               "trade_count": 21,
               "win_count": 21,
               "loss_count": 0
@@ -2165,7 +2157,7 @@
             {
               "date": "2026-08-24",
               "pnl_krw": 1137.8,
-              "cumulative_pnl_krw": 4686.07,
+              "cumulative_pnl_krw": 5034.27,
               "trade_count": 24,
               "win_count": 24,
               "loss_count": 0
@@ -2173,7 +2165,7 @@
             {
               "date": "2026-08-25",
               "pnl_krw": 841.78,
-              "cumulative_pnl_krw": 5527.85,
+              "cumulative_pnl_krw": 5876.05,
               "trade_count": 18,
               "win_count": 18,
               "loss_count": 0
@@ -2181,7 +2173,7 @@
             {
               "date": "2026-08-26",
               "pnl_krw": -676.98,
-              "cumulative_pnl_krw": 4850.87,
+              "cumulative_pnl_krw": 5199.07,
               "trade_count": 12,
               "win_count": 3,
               "loss_count": 9
@@ -2189,7 +2181,7 @@
             {
               "date": "2026-08-27",
               "pnl_krw": 935.26,
-              "cumulative_pnl_krw": 5786.13,
+              "cumulative_pnl_krw": 6134.33,
               "trade_count": 58,
               "win_count": 42,
               "loss_count": 16
@@ -2197,7 +2189,7 @@
             {
               "date": "2026-08-28",
               "pnl_krw": 468.64,
-              "cumulative_pnl_krw": 6254.77,
+              "cumulative_pnl_krw": 6602.97,
               "trade_count": 10,
               "win_count": 10,
               "loss_count": 0
@@ -2205,7 +2197,7 @@
             {
               "date": "2026-08-29",
               "pnl_krw": -6367.65,
-              "cumulative_pnl_krw": -112.88,
+              "cumulative_pnl_krw": 235.32,
               "trade_count": 41,
               "win_count": 15,
               "loss_count": 26
@@ -2213,7 +2205,7 @@
             {
               "date": "2026-08-30",
               "pnl_krw": 2067.35,
-              "cumulative_pnl_krw": 1954.47,
+              "cumulative_pnl_krw": 2302.67,
               "trade_count": 45,
               "win_count": 45,
               "loss_count": 0
@@ -2221,7 +2213,7 @@
             {
               "date": "2026-08-31",
               "pnl_krw": 837.91,
-              "cumulative_pnl_krw": 2792.37,
+              "cumulative_pnl_krw": 3140.58,
               "trade_count": 17,
               "win_count": 17,
               "loss_count": 0
@@ -2229,7 +2221,7 @@
             {
               "date": "2026-09-01",
               "pnl_krw": -152.68,
-              "cumulative_pnl_krw": 2639.7,
+              "cumulative_pnl_krw": 2987.9,
               "trade_count": 17,
               "win_count": 8,
               "loss_count": 9
@@ -2237,7 +2229,7 @@
             {
               "date": "2026-09-02",
               "pnl_krw": -1930.07,
-              "cumulative_pnl_krw": 709.63,
+              "cumulative_pnl_krw": 1057.83,
               "trade_count": 9,
               "win_count": 0,
               "loss_count": 9
@@ -2245,7 +2237,7 @@
             {
               "date": "2026-09-03",
               "pnl_krw": -1061.68,
-              "cumulative_pnl_krw": -352.04,
+              "cumulative_pnl_krw": -3.84,
               "trade_count": 49,
               "win_count": 23,
               "loss_count": 26
@@ -2253,7 +2245,7 @@
             {
               "date": "2026-09-04",
               "pnl_krw": 182.65,
-              "cumulative_pnl_krw": -169.4,
+              "cumulative_pnl_krw": 178.8,
               "trade_count": 4,
               "win_count": 4,
               "loss_count": 0
@@ -2261,7 +2253,7 @@
             {
               "date": "2026-09-05",
               "pnl_krw": -306.78,
-              "cumulative_pnl_krw": -476.17,
+              "cumulative_pnl_krw": -127.97,
               "trade_count": 2,
               "win_count": 0,
               "loss_count": 2
@@ -2269,7 +2261,7 @@
             {
               "date": "2026-09-06",
               "pnl_krw": -531.15,
-              "cumulative_pnl_krw": -1007.32,
+              "cumulative_pnl_krw": -659.12,
               "trade_count": 45,
               "win_count": 4,
               "loss_count": 41
@@ -2277,7 +2269,7 @@
             {
               "date": "2026-09-07",
               "pnl_krw": 914.6,
-              "cumulative_pnl_krw": -92.72,
+              "cumulative_pnl_krw": 255.48,
               "trade_count": 25,
               "win_count": 22,
               "loss_count": 3
@@ -2285,7 +2277,7 @@
             {
               "date": "2026-09-08",
               "pnl_krw": -3328.0,
-              "cumulative_pnl_krw": -3420.72,
+              "cumulative_pnl_krw": -3072.52,
               "trade_count": 17,
               "win_count": 0,
               "loss_count": 17
@@ -2293,7 +2285,7 @@
             {
               "date": "2026-09-09",
               "pnl_krw": -192.93,
-              "cumulative_pnl_krw": -3613.65,
+              "cumulative_pnl_krw": -3265.45,
               "trade_count": 67,
               "win_count": 46,
               "loss_count": 21
@@ -2301,7 +2293,7 @@
             {
               "date": "2026-09-10",
               "pnl_krw": 45.58,
-              "cumulative_pnl_krw": -3568.06,
+              "cumulative_pnl_krw": -3219.86,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -2309,7 +2301,7 @@
             {
               "date": "2026-09-11",
               "pnl_krw": -4046.86,
-              "cumulative_pnl_krw": -7614.93,
+              "cumulative_pnl_krw": -7266.72,
               "trade_count": 37,
               "win_count": 0,
               "loss_count": 37
@@ -2317,10 +2309,18 @@
             {
               "date": "2026-09-13",
               "pnl_krw": -443.49,
-              "cumulative_pnl_krw": -8058.41,
+              "cumulative_pnl_krw": -7710.21,
               "trade_count": 20,
               "win_count": 5,
               "loss_count": 15
+            },
+            {
+              "date": "2026-09-14",
+              "pnl_krw": 66.34,
+              "cumulative_pnl_krw": -7643.87,
+              "trade_count": 35,
+              "win_count": 7,
+              "loss_count": 28
             }
           ],
           "source_strategy_code": "simulation2_full_a",
@@ -2362,28 +2362,28 @@
             }
           ],
           "summary": {
-            "period": "2026-07-23 01:36:16 ~ 2026-09-13 01:10:10 KST",
-            "total_pnl_krw": -5725.61171936919,
-            "daily_avg_pnl_krw": -229.0244687747676,
-            "win_rate_pct": 53.67647058823529,
-            "trade_count": 272,
+            "period": "2026-07-23 01:36:16 ~ 2026-09-14 02:06:16 KST",
+            "total_pnl_krw": -5779.937597519998,
+            "daily_avg_pnl_krw": -222.30529221230762,
+            "win_rate_pct": 51.2280701754386,
+            "trade_count": 285,
             "strategy_count": 1,
-            "updated_at": "2026-09-13 15:46:36 KST"
+            "updated_at": "2026-09-14 15:42:37 KST"
           },
           "return_metrics": {
-            "realized_return_pct": -0.21094446987712626,
-            "avg_trade_return_pct": -0.21050043085916145,
+            "realized_return_pct": -0.20321696179295465,
+            "avg_trade_return_pct": -0.2028048279831579,
             "open_unrealized_return_pct": 0.0,
-            "win_rate_pct": 53.67647058823529,
+            "win_rate_pct": 51.2280701754386,
             "win_count": 146,
-            "loss_count": 126,
-            "avg_target_profit_pct": 0.5499999999999999,
+            "loss_count": 139,
+            "avg_target_profit_pct": 0.5500000000000005,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 0.55,
-            "profit_factor": 0.5313699725472639,
+            "profit_factor": 0.5290177132782576,
             "max_input_budget_krw": 10058.080926139071,
-            "daily_avg_input_budget_krw": 108570.97553122527,
-            "cumulative_return_pct": -0.21094446987712626
+            "daily_avg_input_budget_krw": 109393.07932317231,
+            "cumulative_return_pct": -0.20321696179295465
           },
           "daily": [
             {
@@ -2585,6 +2585,14 @@
               "trade_count": 2,
               "win_count": 0,
               "loss_count": 2
+            },
+            {
+              "date": "2026-09-14",
+              "pnl_krw": -54.33,
+              "cumulative_pnl_krw": -5779.94,
+              "trade_count": 13,
+              "win_count": 0,
+              "loss_count": 13
             }
           ],
           "source_strategy_code": "simulation2_full_c",
@@ -2626,50 +2634,42 @@
             }
           ],
           "summary": {
-            "period": "2026-07-13 09:11:10 ~ 2026-09-13 14:19:06 KST",
-            "total_pnl_krw": -8058.411749383855,
-            "daily_avg_pnl_krw": -175.1828641170403,
-            "win_rate_pct": 61.111111111111114,
-            "trade_count": 864,
+            "period": "2026-07-14 19:41:32 ~ 2026-09-14 12:11:02 KST",
+            "total_pnl_krw": -7643.869263876568,
+            "daily_avg_pnl_krw": -166.17107095383844,
+            "win_rate_pct": 59.46248600223964,
+            "trade_count": 893,
             "strategy_count": 1,
-            "updated_at": "2026-09-13 15:50:42 KST"
+            "updated_at": "2026-09-14 15:45:38 KST"
           },
           "return_metrics": {
-            "realized_return_pct": -0.09335572613643017,
-            "avg_trade_return_pct": -0.09326865450675766,
+            "realized_return_pct": -0.08567097246370431,
+            "avg_trade_return_pct": -0.08559764013299637,
             "open_unrealized_return_pct": 0.0,
-            "win_rate_pct": 61.111111111111114,
-            "win_count": 528,
-            "loss_count": 336,
-            "avg_target_profit_pct": 0.5500000000000077,
+            "win_rate_pct": 59.46248600223964,
+            "win_count": 531,
+            "loss_count": 362,
+            "avg_target_profit_pct": 0.5500000000000078,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 0.55,
-            "profit_factor": 0.7401032257867931,
+            "profit_factor": 0.7501143641220223,
             "max_input_budget_krw": 10062.979193079553,
-            "daily_avg_input_budget_krw": 187650.90409240444,
-            "cumulative_return_pct": -0.09335572613643017
+            "daily_avg_input_budget_krw": 193964.2637116546,
+            "cumulative_return_pct": -0.08567097246370431
           },
           "daily": [
             {
-              "date": "2026-07-13",
-              "pnl_krw": 194.54,
-              "cumulative_pnl_krw": 194.54,
-              "trade_count": 4,
-              "win_count": 4,
-              "loss_count": 0
-            },
-            {
               "date": "2026-07-14",
-              "pnl_krw": -312.37,
-              "cumulative_pnl_krw": -117.83,
-              "trade_count": 7,
+              "pnl_krw": 230.37,
+              "cumulative_pnl_krw": 230.37,
+              "trade_count": 5,
               "win_count": 5,
-              "loss_count": 2
+              "loss_count": 0
             },
             {
               "date": "2026-07-16",
               "pnl_krw": 48.32,
-              "cumulative_pnl_krw": -69.51,
+              "cumulative_pnl_krw": 278.69,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -2677,7 +2677,7 @@
             {
               "date": "2026-07-17",
               "pnl_krw": -1089.48,
-              "cumulative_pnl_krw": -1159.0,
+              "cumulative_pnl_krw": -810.8,
               "trade_count": 10,
               "win_count": 0,
               "loss_count": 10
@@ -2685,7 +2685,7 @@
             {
               "date": "2026-07-18",
               "pnl_krw": 1570.07,
-              "cumulative_pnl_krw": 411.07,
+              "cumulative_pnl_krw": 759.27,
               "trade_count": 41,
               "win_count": 39,
               "loss_count": 2
@@ -2693,7 +2693,7 @@
             {
               "date": "2026-07-21",
               "pnl_krw": 46.39,
-              "cumulative_pnl_krw": 457.46,
+              "cumulative_pnl_krw": 805.66,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -2701,7 +2701,7 @@
             {
               "date": "2026-07-22",
               "pnl_krw": 412.39,
-              "cumulative_pnl_krw": 869.85,
+              "cumulative_pnl_krw": 1218.05,
               "trade_count": 9,
               "win_count": 9,
               "loss_count": 0
@@ -2709,7 +2709,7 @@
             {
               "date": "2026-07-23",
               "pnl_krw": -2423.51,
-              "cumulative_pnl_krw": -1553.66,
+              "cumulative_pnl_krw": -1205.46,
               "trade_count": 22,
               "win_count": 0,
               "loss_count": 22
@@ -2717,7 +2717,7 @@
             {
               "date": "2026-07-24",
               "pnl_krw": -259.53,
-              "cumulative_pnl_krw": -1813.19,
+              "cumulative_pnl_krw": -1464.99,
               "trade_count": 11,
               "win_count": 5,
               "loss_count": 6
@@ -2725,7 +2725,7 @@
             {
               "date": "2026-07-26",
               "pnl_krw": 937.69,
-              "cumulative_pnl_krw": -875.5,
+              "cumulative_pnl_krw": -527.3,
               "trade_count": 25,
               "win_count": 25,
               "loss_count": 0
@@ -2733,7 +2733,7 @@
             {
               "date": "2026-07-27",
               "pnl_krw": 1072.9,
-              "cumulative_pnl_krw": 197.4,
+              "cumulative_pnl_krw": 545.6,
               "trade_count": 21,
               "win_count": 21,
               "loss_count": 0
@@ -2741,7 +2741,7 @@
             {
               "date": "2026-07-29",
               "pnl_krw": 231.11,
-              "cumulative_pnl_krw": 428.51,
+              "cumulative_pnl_krw": 776.71,
               "trade_count": 5,
               "win_count": 5,
               "loss_count": 0
@@ -2749,7 +2749,7 @@
             {
               "date": "2026-07-30",
               "pnl_krw": 335.3,
-              "cumulative_pnl_krw": 763.81,
+              "cumulative_pnl_krw": 1112.01,
               "trade_count": 13,
               "win_count": 10,
               "loss_count": 3
@@ -2757,7 +2757,7 @@
             {
               "date": "2026-07-31",
               "pnl_krw": 331.15,
-              "cumulative_pnl_krw": 1094.96,
+              "cumulative_pnl_krw": 1443.16,
               "trade_count": 7,
               "win_count": 7,
               "loss_count": 0
@@ -2765,7 +2765,7 @@
             {
               "date": "2026-08-02",
               "pnl_krw": 204.34,
-              "cumulative_pnl_krw": 1299.3,
+              "cumulative_pnl_krw": 1647.51,
               "trade_count": 11,
               "win_count": 11,
               "loss_count": 0
@@ -2773,7 +2773,7 @@
             {
               "date": "2026-08-04",
               "pnl_krw": 184.86,
-              "cumulative_pnl_krw": 1484.16,
+              "cumulative_pnl_krw": 1832.37,
               "trade_count": 4,
               "win_count": 4,
               "loss_count": 0
@@ -2781,7 +2781,7 @@
             {
               "date": "2026-08-05",
               "pnl_krw": 372.99,
-              "cumulative_pnl_krw": 1857.16,
+              "cumulative_pnl_krw": 2205.36,
               "trade_count": 8,
               "win_count": 8,
               "loss_count": 0
@@ -2789,7 +2789,7 @@
             {
               "date": "2026-08-06",
               "pnl_krw": 55.73,
-              "cumulative_pnl_krw": 1912.89,
+              "cumulative_pnl_krw": 2261.09,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -2797,7 +2797,7 @@
             {
               "date": "2026-08-07",
               "pnl_krw": -1062.18,
-              "cumulative_pnl_krw": 850.7,
+              "cumulative_pnl_krw": 1198.9,
               "trade_count": 39,
               "win_count": 11,
               "loss_count": 28
@@ -2805,7 +2805,7 @@
             {
               "date": "2026-08-08",
               "pnl_krw": -118.13,
-              "cumulative_pnl_krw": 732.58,
+              "cumulative_pnl_krw": 1080.78,
               "trade_count": 9,
               "win_count": 0,
               "loss_count": 9
@@ -2813,7 +2813,7 @@
             {
               "date": "2026-08-09",
               "pnl_krw": -60.19,
-              "cumulative_pnl_krw": 672.39,
+              "cumulative_pnl_krw": 1020.59,
               "trade_count": 36,
               "win_count": 14,
               "loss_count": 22
@@ -2821,7 +2821,7 @@
             {
               "date": "2026-08-17",
               "pnl_krw": 43.57,
-              "cumulative_pnl_krw": 715.96,
+              "cumulative_pnl_krw": 1064.16,
               "trade_count": 2,
               "win_count": 1,
               "loss_count": 1
@@ -2829,7 +2829,7 @@
             {
               "date": "2026-08-18",
               "pnl_krw": 138.96,
-              "cumulative_pnl_krw": 854.92,
+              "cumulative_pnl_krw": 1203.12,
               "trade_count": 3,
               "win_count": 3,
               "loss_count": 0
@@ -2837,7 +2837,7 @@
             {
               "date": "2026-08-21",
               "pnl_krw": 1130.56,
-              "cumulative_pnl_krw": 1985.48,
+              "cumulative_pnl_krw": 2333.68,
               "trade_count": 22,
               "win_count": 22,
               "loss_count": 0
@@ -2845,7 +2845,7 @@
             {
               "date": "2026-08-22",
               "pnl_krw": 603.49,
-              "cumulative_pnl_krw": 2588.97,
+              "cumulative_pnl_krw": 2937.17,
               "trade_count": 13,
               "win_count": 13,
               "loss_count": 0
@@ -2853,7 +2853,7 @@
             {
               "date": "2026-08-23",
               "pnl_krw": 959.3,
-              "cumulative_pnl_krw": 3548.27,
+              "cumulative_pnl_krw": 3896.47,
               "trade_count": 21,
               "win_count": 21,
               "loss_count": 0
@@ -2861,7 +2861,7 @@
             {
               "date": "2026-08-24",
               "pnl_krw": 1137.8,
-              "cumulative_pnl_krw": 4686.07,
+              "cumulative_pnl_krw": 5034.27,
               "trade_count": 24,
               "win_count": 24,
               "loss_count": 0
@@ -2869,7 +2869,7 @@
             {
               "date": "2026-08-25",
               "pnl_krw": 841.78,
-              "cumulative_pnl_krw": 5527.85,
+              "cumulative_pnl_krw": 5876.05,
               "trade_count": 18,
               "win_count": 18,
               "loss_count": 0
@@ -2877,7 +2877,7 @@
             {
               "date": "2026-08-26",
               "pnl_krw": -676.98,
-              "cumulative_pnl_krw": 4850.87,
+              "cumulative_pnl_krw": 5199.07,
               "trade_count": 12,
               "win_count": 3,
               "loss_count": 9
@@ -2885,7 +2885,7 @@
             {
               "date": "2026-08-27",
               "pnl_krw": 935.26,
-              "cumulative_pnl_krw": 5786.13,
+              "cumulative_pnl_krw": 6134.33,
               "trade_count": 58,
               "win_count": 42,
               "loss_count": 16
@@ -2893,7 +2893,7 @@
             {
               "date": "2026-08-28",
               "pnl_krw": 468.64,
-              "cumulative_pnl_krw": 6254.77,
+              "cumulative_pnl_krw": 6602.97,
               "trade_count": 10,
               "win_count": 10,
               "loss_count": 0
@@ -2901,7 +2901,7 @@
             {
               "date": "2026-08-29",
               "pnl_krw": -6367.65,
-              "cumulative_pnl_krw": -112.88,
+              "cumulative_pnl_krw": 235.32,
               "trade_count": 41,
               "win_count": 15,
               "loss_count": 26
@@ -2909,7 +2909,7 @@
             {
               "date": "2026-08-30",
               "pnl_krw": 2067.35,
-              "cumulative_pnl_krw": 1954.47,
+              "cumulative_pnl_krw": 2302.67,
               "trade_count": 45,
               "win_count": 45,
               "loss_count": 0
@@ -2917,7 +2917,7 @@
             {
               "date": "2026-08-31",
               "pnl_krw": 837.91,
-              "cumulative_pnl_krw": 2792.37,
+              "cumulative_pnl_krw": 3140.58,
               "trade_count": 17,
               "win_count": 17,
               "loss_count": 0
@@ -2925,7 +2925,7 @@
             {
               "date": "2026-09-01",
               "pnl_krw": -152.68,
-              "cumulative_pnl_krw": 2639.7,
+              "cumulative_pnl_krw": 2987.9,
               "trade_count": 17,
               "win_count": 8,
               "loss_count": 9
@@ -2933,7 +2933,7 @@
             {
               "date": "2026-09-02",
               "pnl_krw": -1930.07,
-              "cumulative_pnl_krw": 709.63,
+              "cumulative_pnl_krw": 1057.83,
               "trade_count": 9,
               "win_count": 0,
               "loss_count": 9
@@ -2941,7 +2941,7 @@
             {
               "date": "2026-09-03",
               "pnl_krw": -1061.68,
-              "cumulative_pnl_krw": -352.04,
+              "cumulative_pnl_krw": -3.84,
               "trade_count": 49,
               "win_count": 23,
               "loss_count": 26
@@ -2949,7 +2949,7 @@
             {
               "date": "2026-09-04",
               "pnl_krw": 182.65,
-              "cumulative_pnl_krw": -169.4,
+              "cumulative_pnl_krw": 178.8,
               "trade_count": 4,
               "win_count": 4,
               "loss_count": 0
@@ -2957,7 +2957,7 @@
             {
               "date": "2026-09-05",
               "pnl_krw": -306.78,
-              "cumulative_pnl_krw": -476.17,
+              "cumulative_pnl_krw": -127.97,
               "trade_count": 2,
               "win_count": 0,
               "loss_count": 2
@@ -2965,7 +2965,7 @@
             {
               "date": "2026-09-06",
               "pnl_krw": -531.15,
-              "cumulative_pnl_krw": -1007.32,
+              "cumulative_pnl_krw": -659.12,
               "trade_count": 45,
               "win_count": 4,
               "loss_count": 41
@@ -2973,7 +2973,7 @@
             {
               "date": "2026-09-07",
               "pnl_krw": 914.6,
-              "cumulative_pnl_krw": -92.72,
+              "cumulative_pnl_krw": 255.48,
               "trade_count": 25,
               "win_count": 22,
               "loss_count": 3
@@ -2981,7 +2981,7 @@
             {
               "date": "2026-09-08",
               "pnl_krw": -3328.0,
-              "cumulative_pnl_krw": -3420.72,
+              "cumulative_pnl_krw": -3072.52,
               "trade_count": 17,
               "win_count": 0,
               "loss_count": 17
@@ -2989,7 +2989,7 @@
             {
               "date": "2026-09-09",
               "pnl_krw": -192.93,
-              "cumulative_pnl_krw": -3613.65,
+              "cumulative_pnl_krw": -3265.45,
               "trade_count": 67,
               "win_count": 46,
               "loss_count": 21
@@ -2997,7 +2997,7 @@
             {
               "date": "2026-09-10",
               "pnl_krw": 45.58,
-              "cumulative_pnl_krw": -3568.06,
+              "cumulative_pnl_krw": -3219.86,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -3005,7 +3005,7 @@
             {
               "date": "2026-09-11",
               "pnl_krw": -4046.86,
-              "cumulative_pnl_krw": -7614.93,
+              "cumulative_pnl_krw": -7266.72,
               "trade_count": 37,
               "win_count": 0,
               "loss_count": 37
@@ -3013,10 +3013,18 @@
             {
               "date": "2026-09-13",
               "pnl_krw": -443.49,
-              "cumulative_pnl_krw": -8058.41,
+              "cumulative_pnl_krw": -7710.21,
               "trade_count": 20,
               "win_count": 5,
               "loss_count": 15
+            },
+            {
+              "date": "2026-09-14",
+              "pnl_krw": 66.34,
+              "cumulative_pnl_krw": -7643.87,
+              "trade_count": 35,
+              "win_count": 7,
+              "loss_count": 28
             }
           ],
           "source_strategy_code": "simulation2_full_d",
@@ -3058,50 +3066,34 @@
             }
           ],
           "summary": {
-            "period": "2026-07-13 09:14:45 ~ 2026-09-13 14:19:06 KST",
-            "total_pnl_krw": -3822.010871643992,
-            "daily_avg_pnl_krw": -100.57923346431558,
-            "win_rate_pct": 64.15094339622641,
-            "trade_count": 424,
+            "period": "2026-07-18 02:30:00 ~ 2026-09-14 12:10:36 KST",
+            "total_pnl_krw": -3955.1037537939956,
+            "daily_avg_pnl_krw": -106.89469604848637,
+            "win_rate_pct": 61.59090909090909,
+            "trade_count": 440,
             "strategy_count": 1,
-            "updated_at": "2026-09-13 15:32:46 KST"
+            "updated_at": "2026-09-14 15:30:15 KST"
           },
           "return_metrics": {
-            "realized_return_pct": -0.09022309453126677,
-            "avg_trade_return_pct": -0.09014176584066023,
+            "realized_return_pct": -0.08996959419525648,
+            "avg_trade_return_pct": -0.08988872167713631,
             "open_unrealized_return_pct": 0.0,
-            "win_rate_pct": 64.15094339622641,
-            "win_count": 272,
-            "loss_count": 152,
-            "avg_target_profit_pct": 0.550000000000004,
+            "win_rate_pct": 61.59090909090909,
+            "win_count": 271,
+            "loss_count": 169,
+            "avg_target_profit_pct": 0.5500000000000044,
             "min_target_profit_pct": 0.55,
             "max_target_profit_pct": 0.55,
-            "profit_factor": 0.7554161703624644,
+            "profit_factor": 0.7483202577275656,
             "max_input_budget_krw": 10062.979193079553,
-            "daily_avg_input_budget_krw": 111478.3681349567,
-            "cumulative_return_pct": -0.09022309453126677
+            "daily_avg_input_budget_krw": 118812.02422287043,
+            "cumulative_return_pct": -0.08996959419525648
           },
           "daily": [
             {
-              "date": "2026-07-13",
-              "pnl_krw": 45.61,
-              "cumulative_pnl_krw": 45.61,
-              "trade_count": 1,
-              "win_count": 1,
-              "loss_count": 0
-            },
-            {
-              "date": "2026-07-14",
-              "pnl_krw": 45.13,
-              "cumulative_pnl_krw": 90.74,
-              "trade_count": 1,
-              "win_count": 1,
-              "loss_count": 0
-            },
-            {
               "date": "2026-07-18",
               "pnl_krw": 573.04,
-              "cumulative_pnl_krw": 663.78,
+              "cumulative_pnl_krw": 573.04,
               "trade_count": 19,
               "win_count": 18,
               "loss_count": 1
@@ -3109,7 +3101,7 @@
             {
               "date": "2026-07-22",
               "pnl_krw": 322.14,
-              "cumulative_pnl_krw": 985.91,
+              "cumulative_pnl_krw": 895.18,
               "trade_count": 7,
               "win_count": 7,
               "loss_count": 0
@@ -3117,7 +3109,7 @@
             {
               "date": "2026-07-23",
               "pnl_krw": -1085.27,
-              "cumulative_pnl_krw": -99.36,
+              "cumulative_pnl_krw": -190.1,
               "trade_count": 12,
               "win_count": 0,
               "loss_count": 12
@@ -3125,7 +3117,7 @@
             {
               "date": "2026-07-24",
               "pnl_krw": -205.04,
-              "cumulative_pnl_krw": -304.4,
+              "cumulative_pnl_krw": -395.14,
               "trade_count": 4,
               "win_count": 0,
               "loss_count": 4
@@ -3133,7 +3125,7 @@
             {
               "date": "2026-07-26",
               "pnl_krw": 612.63,
-              "cumulative_pnl_krw": 308.23,
+              "cumulative_pnl_krw": 217.49,
               "trade_count": 17,
               "win_count": 17,
               "loss_count": 0
@@ -3141,7 +3133,7 @@
             {
               "date": "2026-07-29",
               "pnl_krw": 136.74,
-              "cumulative_pnl_krw": 444.97,
+              "cumulative_pnl_krw": 354.23,
               "trade_count": 3,
               "win_count": 3,
               "loss_count": 0
@@ -3149,7 +3141,7 @@
             {
               "date": "2026-07-30",
               "pnl_krw": 86.95,
-              "cumulative_pnl_krw": 531.92,
+              "cumulative_pnl_krw": 441.18,
               "trade_count": 4,
               "win_count": 3,
               "loss_count": 1
@@ -3157,7 +3149,7 @@
             {
               "date": "2026-07-31",
               "pnl_krw": 49.87,
-              "cumulative_pnl_krw": 581.79,
+              "cumulative_pnl_krw": 491.05,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -3165,7 +3157,7 @@
             {
               "date": "2026-08-02",
               "pnl_krw": 204.34,
-              "cumulative_pnl_krw": 786.13,
+              "cumulative_pnl_krw": 695.39,
               "trade_count": 11,
               "win_count": 11,
               "loss_count": 0
@@ -3173,7 +3165,7 @@
             {
               "date": "2026-08-05",
               "pnl_krw": 326.3,
-              "cumulative_pnl_krw": 1112.43,
+              "cumulative_pnl_krw": 1021.7,
               "trade_count": 7,
               "win_count": 7,
               "loss_count": 0
@@ -3181,7 +3173,7 @@
             {
               "date": "2026-08-07",
               "pnl_krw": -48.31,
-              "cumulative_pnl_krw": 1064.12,
+              "cumulative_pnl_krw": 973.38,
               "trade_count": 1,
               "win_count": 0,
               "loss_count": 1
@@ -3189,7 +3181,7 @@
             {
               "date": "2026-08-08",
               "pnl_krw": -54.14,
-              "cumulative_pnl_krw": 1009.98,
+              "cumulative_pnl_krw": 919.25,
               "trade_count": 5,
               "win_count": 0,
               "loss_count": 5
@@ -3197,7 +3189,7 @@
             {
               "date": "2026-08-09",
               "pnl_krw": -226.53,
-              "cumulative_pnl_krw": 783.45,
+              "cumulative_pnl_krw": 692.72,
               "trade_count": 25,
               "win_count": 0,
               "loss_count": 25
@@ -3205,7 +3197,7 @@
             {
               "date": "2026-08-18",
               "pnl_krw": 92.64,
-              "cumulative_pnl_krw": 876.09,
+              "cumulative_pnl_krw": 785.35,
               "trade_count": 2,
               "win_count": 2,
               "loss_count": 0
@@ -3213,7 +3205,7 @@
             {
               "date": "2026-08-21",
               "pnl_krw": 779.93,
-              "cumulative_pnl_krw": 1656.03,
+              "cumulative_pnl_krw": 1565.29,
               "trade_count": 15,
               "win_count": 15,
               "loss_count": 0
@@ -3221,7 +3213,7 @@
             {
               "date": "2026-08-22",
               "pnl_krw": 421.52,
-              "cumulative_pnl_krw": 2077.54,
+              "cumulative_pnl_krw": 1986.81,
               "trade_count": 9,
               "win_count": 9,
               "loss_count": 0
@@ -3229,7 +3221,7 @@
             {
               "date": "2026-08-23",
               "pnl_krw": 546.36,
-              "cumulative_pnl_krw": 2623.9,
+              "cumulative_pnl_krw": 2533.17,
               "trade_count": 12,
               "win_count": 12,
               "loss_count": 0
@@ -3237,7 +3229,7 @@
             {
               "date": "2026-08-24",
               "pnl_krw": 565.38,
-              "cumulative_pnl_krw": 3189.28,
+              "cumulative_pnl_krw": 3098.55,
               "trade_count": 12,
               "win_count": 12,
               "loss_count": 0
@@ -3245,7 +3237,7 @@
             {
               "date": "2026-08-25",
               "pnl_krw": 558.96,
-              "cumulative_pnl_krw": 3748.24,
+              "cumulative_pnl_krw": 3657.51,
               "trade_count": 12,
               "win_count": 12,
               "loss_count": 0
@@ -3253,7 +3245,7 @@
             {
               "date": "2026-08-26",
               "pnl_krw": -375.94,
-              "cumulative_pnl_krw": 3372.31,
+              "cumulative_pnl_krw": 3281.57,
               "trade_count": 4,
               "win_count": 0,
               "loss_count": 4
@@ -3261,7 +3253,7 @@
             {
               "date": "2026-08-27",
               "pnl_krw": 1690.55,
-              "cumulative_pnl_krw": 5062.85,
+              "cumulative_pnl_krw": 4972.12,
               "trade_count": 36,
               "win_count": 36,
               "loss_count": 0
@@ -3269,7 +3261,7 @@
             {
               "date": "2026-08-28",
               "pnl_krw": 188.07,
-              "cumulative_pnl_krw": 5250.93,
+              "cumulative_pnl_krw": 5160.19,
               "trade_count": 4,
               "win_count": 4,
               "loss_count": 0
@@ -3277,7 +3269,7 @@
             {
               "date": "2026-08-29",
               "pnl_krw": -6182.18,
-              "cumulative_pnl_krw": -931.26,
+              "cumulative_pnl_krw": -1021.99,
               "trade_count": 38,
               "win_count": 13,
               "loss_count": 25
@@ -3285,7 +3277,7 @@
             {
               "date": "2026-08-30",
               "pnl_krw": 1108.98,
-              "cumulative_pnl_krw": 177.72,
+              "cumulative_pnl_krw": 86.98,
               "trade_count": 24,
               "win_count": 24,
               "loss_count": 0
@@ -3293,7 +3285,7 @@
             {
               "date": "2026-08-31",
               "pnl_krw": 198.25,
-              "cumulative_pnl_krw": 375.97,
+              "cumulative_pnl_krw": 285.23,
               "trade_count": 4,
               "win_count": 4,
               "loss_count": 0
@@ -3301,7 +3293,7 @@
             {
               "date": "2026-09-01",
               "pnl_krw": -193.11,
-              "cumulative_pnl_krw": 182.87,
+              "cumulative_pnl_krw": 92.13,
               "trade_count": 10,
               "win_count": 4,
               "loss_count": 6
@@ -3309,7 +3301,7 @@
             {
               "date": "2026-09-02",
               "pnl_krw": -1930.07,
-              "cumulative_pnl_krw": -1747.2,
+              "cumulative_pnl_krw": -1837.94,
               "trade_count": 9,
               "win_count": 0,
               "loss_count": 9
@@ -3317,7 +3309,7 @@
             {
               "date": "2026-09-03",
               "pnl_krw": -539.46,
-              "cumulative_pnl_krw": -2286.66,
+              "cumulative_pnl_krw": -2377.4,
               "trade_count": 8,
               "win_count": 3,
               "loss_count": 5
@@ -3325,7 +3317,7 @@
             {
               "date": "2026-09-04",
               "pnl_krw": 182.65,
-              "cumulative_pnl_krw": -2104.02,
+              "cumulative_pnl_krw": -2194.75,
               "trade_count": 4,
               "win_count": 4,
               "loss_count": 0
@@ -3333,7 +3325,7 @@
             {
               "date": "2026-09-05",
               "pnl_krw": -163.64,
-              "cumulative_pnl_krw": -2267.66,
+              "cumulative_pnl_krw": -2358.4,
               "trade_count": 1,
               "win_count": 0,
               "loss_count": 1
@@ -3341,7 +3333,7 @@
             {
               "date": "2026-09-06",
               "pnl_krw": -504.09,
-              "cumulative_pnl_krw": -2771.75,
+              "cumulative_pnl_krw": -2862.49,
               "trade_count": 27,
               "win_count": 0,
               "loss_count": 27
@@ -3349,7 +3341,7 @@
             {
               "date": "2026-09-07",
               "pnl_krw": 469.27,
-              "cumulative_pnl_krw": -2302.49,
+              "cumulative_pnl_krw": -2393.22,
               "trade_count": 12,
               "win_count": 11,
               "loss_count": 1
@@ -3357,7 +3349,7 @@
             {
               "date": "2026-09-08",
               "pnl_krw": -2562.88,
-              "cumulative_pnl_krw": -4865.36,
+              "cumulative_pnl_krw": -4956.1,
               "trade_count": 13,
               "win_count": 0,
               "loss_count": 13
@@ -3365,7 +3357,7 @@
             {
               "date": "2026-09-09",
               "pnl_krw": 1542.32,
-              "cumulative_pnl_krw": -3323.04,
+              "cumulative_pnl_krw": -3413.78,
               "trade_count": 33,
               "win_count": 33,
               "loss_count": 0
@@ -3373,7 +3365,7 @@
             {
               "date": "2026-09-11",
               "pnl_krw": -220.09,
-              "cumulative_pnl_krw": -3543.13,
+              "cumulative_pnl_krw": -3633.87,
               "trade_count": 2,
               "win_count": 0,
               "loss_count": 2
@@ -3381,10 +3373,18 @@
             {
               "date": "2026-09-13",
               "pnl_krw": -278.88,
-              "cumulative_pnl_krw": -3822.01,
+              "cumulative_pnl_krw": -3912.75,
               "trade_count": 15,
               "win_count": 5,
               "loss_count": 10
+            },
+            {
+              "date": "2026-09-14",
+              "pnl_krw": -42.35,
+              "cumulative_pnl_krw": -3955.1,
+              "trade_count": 18,
+              "win_count": 1,
+              "loss_count": 17
             }
           ],
           "source_strategy_code": "simulation2",
@@ -3450,28 +3450,28 @@
             }
           ],
           "summary": {
-            "period": "2023-02-08 15:29:00 ~ 2026-09-11 15:29:00 KST",
-            "total_pnl_krw": 35265756.20510001,
-            "daily_avg_pnl_krw": 52635.457022537325,
-            "win_rate_pct": 79.02875090601594,
+            "period": "2023-02-08 15:29:00 ~ 2026-09-14 15:29:00 KST",
+            "total_pnl_krw": 35070085.56010003,
+            "daily_avg_pnl_krw": 52265.403219225074,
+            "win_rate_pct": 79.05291133123943,
             "trade_count": 4139,
             "strategy_count": 1,
-            "updated_at": "2026-09-13 15:52:06 KST"
+            "updated_at": "2026-09-14 15:46:30 KST"
           },
           "return_metrics": {
-            "realized_return_pct": 0.9783118435720457,
-            "avg_trade_return_pct": 0.9505960462004365,
+            "realized_return_pct": 0.9729365314418479,
+            "avg_trade_return_pct": 0.9448791265901231,
             "open_unrealized_return_pct": 0.0,
-            "win_rate_pct": 79.02875090601594,
-            "win_count": 3271,
-            "loss_count": 868,
+            "win_rate_pct": 79.05291133123943,
+            "win_count": 3272,
+            "loss_count": 867,
             "avg_target_profit_pct": 1.5,
             "min_target_profit_pct": 1.5,
             "max_target_profit_pct": 1.5,
-            "profit_factor": 1.5431134952383374,
+            "profit_factor": 1.5384271501873599,
             "max_input_budget_krw": 2964555.25,
-            "daily_avg_input_budget_krw": 5380233.03800074,
-            "cumulative_return_pct": 0.9783118435720457
+            "daily_avg_input_budget_krw": 5371923.196446341,
+            "cumulative_return_pct": 0.9729365314418479
           },
           "daily": [
             {
@@ -8828,11 +8828,19 @@
             },
             {
               "date": "2026-09-11",
-              "pnl_krw": -390045.32,
-              "cumulative_pnl_krw": 35265756.21,
-              "trade_count": 29,
-              "win_count": 3,
-              "loss_count": 26
+              "pnl_krw": 40584.34,
+              "cumulative_pnl_krw": 35696385.86,
+              "trade_count": 2,
+              "win_count": 2,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-09-14",
+              "pnl_krw": -626300.3,
+              "cumulative_pnl_krw": 35070085.56,
+              "trade_count": 27,
+              "win_count": 2,
+              "loss_count": 25
             }
           ],
           "source_strategy_code": "kospi-strategy1",
@@ -8873,11 +8881,11 @@
       ],
       "name": "비트코인 과매도 반등 전략",
       "market": "KRW-BTC",
-      "total_pnl_krw": 1198.3579708650905,
-      "return_pct": 11.983579708650904,
+      "total_pnl_krw": 1169.9675693109311,
+      "return_pct": 11.699675693109311,
       "win_rate_pct": 90.9090909090909,
       "trade_count": 11,
-      "updated_at": "2026-09-13 15:22:14 KST"
+      "updated_at": "2026-09-14 15:22:11 KST"
     },
     {
       "code": "upbit_krw_btc_cci_gap_fixed_target_10m",
@@ -8887,11 +8895,11 @@
       ],
       "name": "비트코인 기본 반등 전략",
       "market": "KRW-BTC",
-      "total_pnl_krw": -50219.85275974745,
-      "return_pct": -0.19725171415194281,
-      "win_rate_pct": 52.842022736181896,
-      "trade_count": 2551,
-      "updated_at": "2026-09-13 15:44:37 KST"
+      "total_pnl_krw": -38839.88387740919,
+      "return_pct": -0.15296616499514354,
+      "win_rate_pct": 52.6936688950059,
+      "trade_count": 2543,
+      "updated_at": "2026-09-14 15:46:31 KST"
     },
     {
       "code": "upbit_krw_btc_trade_flow_fixed_target_tick",
@@ -8901,11 +8909,11 @@
       ],
       "name": "비트코인 체결 흐름 전략",
       "market": "KRW-BTC",
-      "total_pnl_krw": -2191.4024392341616,
-      "return_pct": -0.09414014715515961,
-      "win_rate_pct": 18.88412017167382,
-      "trade_count": 233,
-      "updated_at": "2026-09-13 15:32:07 KST"
+      "total_pnl_krw": -2187.5731408872616,
+      "return_pct": -0.09357350982286891,
+      "win_rate_pct": 19.230769230769234,
+      "trade_count": 234,
+      "updated_at": "2026-09-14 15:30:13 KST"
     },
     {
       "code": "upbit_krw_btc_cci_gap_strict_target_10m",
@@ -8915,11 +8923,11 @@
       ],
       "name": "비트코인 엄격 선별 전략",
       "market": "KRW-BTC",
-      "total_pnl_krw": -8345.378818617248,
-      "return_pct": -0.1607460323837611,
-      "win_rate_pct": 55.57692307692308,
-      "trade_count": 520,
-      "updated_at": "2026-09-13 15:43:44 KST"
+      "total_pnl_krw": -8176.856018515346,
+      "return_pct": -0.15025949580075454,
+      "win_rate_pct": 53.21100917431193,
+      "trade_count": 545,
+      "updated_at": "2026-09-14 15:40:09 KST"
     },
     {
       "code": "upbit_krw_btc_cci_gap_full_target_10m",
@@ -8929,11 +8937,11 @@
       ],
       "name": "비트코인 전체 구간 검증 전략",
       "market": "KRW-BTC",
-      "total_pnl_krw": -8058.411749383855,
-      "return_pct": -0.09335572613643017,
-      "win_rate_pct": 61.111111111111114,
-      "trade_count": 864,
-      "updated_at": "2026-09-13 15:36:31 KST"
+      "total_pnl_krw": -7643.869263876568,
+      "return_pct": -0.08567097246370431,
+      "win_rate_pct": 59.46248600223964,
+      "trade_count": 893,
+      "updated_at": "2026-09-14 15:34:16 KST"
     },
     {
       "code": "upbit_krw_btc_cci_gap_basic_target_10m",
@@ -8943,11 +8951,11 @@
       ],
       "name": "비트코인 기본 필터 전략",
       "market": "KRW-BTC",
-      "total_pnl_krw": -8058.411749383855,
-      "return_pct": -0.09335572613643017,
-      "win_rate_pct": 61.111111111111114,
-      "trade_count": 864,
-      "updated_at": "2026-09-13 15:40:22 KST"
+      "total_pnl_krw": -7643.869263876568,
+      "return_pct": -0.08567097246370431,
+      "win_rate_pct": 59.46248600223964,
+      "trade_count": 893,
+      "updated_at": "2026-09-14 15:37:28 KST"
     },
     {
       "code": "upbit_krw_btc_cci_gap_deep_discount_target_10m",
@@ -8957,11 +8965,11 @@
       ],
       "name": "비트코인 강한 할인 진입 전략",
       "market": "KRW-BTC",
-      "total_pnl_krw": -5725.61171936919,
-      "return_pct": -0.21094446987712626,
-      "win_rate_pct": 53.67647058823529,
-      "trade_count": 272,
-      "updated_at": "2026-09-13 15:46:36 KST"
+      "total_pnl_krw": -5779.937597519998,
+      "return_pct": -0.20321696179295465,
+      "win_rate_pct": 51.2280701754386,
+      "trade_count": 285,
+      "updated_at": "2026-09-14 15:42:37 KST"
     },
     {
       "code": "upbit_krw_btc_cci_recovery_gap_target_10m",
@@ -8971,11 +8979,11 @@
       ],
       "name": "비트코인 회복 초입 전략",
       "market": "KRW-BTC",
-      "total_pnl_krw": -8058.411749383855,
-      "return_pct": -0.09335572613643017,
-      "win_rate_pct": 61.111111111111114,
-      "trade_count": 864,
-      "updated_at": "2026-09-13 15:50:42 KST"
+      "total_pnl_krw": -7643.869263876568,
+      "return_pct": -0.08567097246370431,
+      "win_rate_pct": 59.46248600223964,
+      "trade_count": 893,
+      "updated_at": "2026-09-14 15:45:38 KST"
     },
     {
       "code": "upbit_krw_btc_cci_gap_candidate_target_10m",
@@ -8985,11 +8993,11 @@
       ],
       "name": "비트코인 후보 전략 검증",
       "market": "KRW-BTC",
-      "total_pnl_krw": -3822.010871643992,
-      "return_pct": -0.09022309453126677,
-      "win_rate_pct": 64.15094339622641,
-      "trade_count": 424,
-      "updated_at": "2026-09-13 15:32:46 KST"
+      "total_pnl_krw": -3955.1037537939956,
+      "return_pct": -0.08996959419525648,
+      "win_rate_pct": 61.59090909090909,
+      "trade_count": 440,
+      "updated_at": "2026-09-14 15:30:15 KST"
     },
     {
       "code": "kis_kospi200_cci_rebound_fixed_target_1d",
@@ -8999,11 +9007,11 @@
       ],
       "name": "KOSPI200 과매도 반등 전략",
       "market": "KOSPI200",
-      "total_pnl_krw": 35265756.20510001,
-      "return_pct": 0.9783118435720457,
-      "win_rate_pct": 79.02875090601594,
+      "total_pnl_krw": 35070085.56010003,
+      "return_pct": 0.9729365314418479,
+      "win_rate_pct": 79.05291133123943,
       "trade_count": 4139,
-      "updated_at": "2026-09-13 15:52:06 KST"
+      "updated_at": "2026-09-14 15:46:30 KST"
     }
   ]
 }
