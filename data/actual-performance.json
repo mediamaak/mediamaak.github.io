@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29 15:35 KST",
+  "updated_at": "2026-09-30 15:35 KST",
   "summary": {
     "period": "2026-08-20 17:48:54 ~ 2026-08-28 00:15:06 KST",
     "total_pnl_krw": 1112.188186579995,
@@ -98,6 +98,7 @@
         "date": "2026-08-20",
         "pnl_krw": 141.22,
         "cumulative_pnl_krw": 141.22,
+        "cumulative_return_pct": 1.3919,
         "trade_count": 1,
         "win_count": 1,
         "loss_count": 0
@@ -106,6 +107,7 @@
         "date": "2026-08-21",
         "pnl_krw": 299.92,
         "cumulative_pnl_krw": 441.14,
+        "cumulative_return_pct": 2.1571,
         "trade_count": 1,
         "win_count": 1,
         "loss_count": 0
@@ -114,6 +116,7 @@
         "date": "2026-08-24",
         "pnl_krw": 308.56,
         "cumulative_pnl_krw": 749.7,
+        "cumulative_return_pct": 2.437,
         "trade_count": 1,
         "win_count": 1,
         "loss_count": 0
@@ -122,6 +125,7 @@
         "date": "2026-08-25",
         "pnl_krw": 220.65,
         "cumulative_pnl_krw": 970.35,
+        "cumulative_return_pct": 2.3674,
         "trade_count": 1,
         "win_count": 1,
         "loss_count": 0
@@ -130,6 +134,7 @@
         "date": "2026-08-28",
         "pnl_krw": 141.84,
         "cumulative_pnl_krw": 1112.19,
+        "cumulative_return_pct": 2.175,
         "trade_count": 1,
         "win_count": 1,
         "loss_count": 0
@@ -166,6 +171,7 @@
       "date": "2026-08-20",
       "pnl_krw": 141.22,
       "cumulative_pnl_krw": 141.22,
+      "cumulative_return_pct": 1.3919,
       "trade_count": 1,
       "win_count": 1,
       "loss_count": 0
@@ -174,6 +180,7 @@
       "date": "2026-08-21",
       "pnl_krw": 299.92,
       "cumulative_pnl_krw": 441.14,
+      "cumulative_return_pct": 2.1571,
       "trade_count": 1,
       "win_count": 1,
       "loss_count": 0
@@ -182,6 +189,7 @@
       "date": "2026-08-24",
       "pnl_krw": 308.56,
       "cumulative_pnl_krw": 749.7,
+      "cumulative_return_pct": 2.437,
       "trade_count": 1,
       "win_count": 1,
       "loss_count": 0
@@ -190,6 +198,7 @@
       "date": "2026-08-25",
       "pnl_krw": 220.65,
       "cumulative_pnl_krw": 970.35,
+      "cumulative_return_pct": 2.3674,
       "trade_count": 1,
       "win_count": 1,
       "loss_count": 0
@@ -198,6 +207,7 @@
       "date": "2026-08-28",
       "pnl_krw": 141.84,
       "cumulative_pnl_krw": 1112.19,
+      "cumulative_return_pct": 2.175,
       "trade_count": 1,
       "win_count": 1,
       "loss_count": 0
@@ -295,6 +305,7 @@
               "date": "2026-08-20",
               "pnl_krw": 141.22,
               "cumulative_pnl_krw": 141.22,
+              "cumulative_return_pct": 1.3919,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -303,6 +314,7 @@
               "date": "2026-08-21",
               "pnl_krw": 299.92,
               "cumulative_pnl_krw": 441.14,
+              "cumulative_return_pct": 2.1571,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -311,6 +323,7 @@
               "date": "2026-08-24",
               "pnl_krw": 308.56,
               "cumulative_pnl_krw": 749.7,
+              "cumulative_return_pct": 2.437,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -319,6 +332,7 @@
               "date": "2026-08-25",
               "pnl_krw": 220.65,
               "cumulative_pnl_krw": 970.35,
+              "cumulative_return_pct": 2.3674,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -327,6 +341,7 @@
               "date": "2026-08-28",
               "pnl_krw": 141.84,
               "cumulative_pnl_krw": 1112.19,
+              "cumulative_return_pct": 2.175,
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
@@ -412,7 +427,7 @@
             "open_budget_krw": 0.0,
             "open_unrealized_pnl_krw": 0.0,
             "strategy_count": 1,
-            "updated_at": "2026-09-29 15:35 KST"
+            "updated_at": "2026-09-30 15:35 KST"
           },
           "return_metrics": {
             "realized_return_pct": 0.0,
@@ -468,7 +483,7 @@
       "trade_count": 0,
       "open_position_count": 0,
       "open_unrealized_pnl_krw": 0.0,
-      "updated_at": "2026-09-29 15:35 KST"
+      "updated_at": "2026-09-30 15:35 KST"
     }
   ]
 }
