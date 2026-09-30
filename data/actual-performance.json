@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30 17:44 KST",
+  "updated_at": "2026-09-30 17:51 KST",
   "summary": {
     "period": "2026-08-20 17:48:54 ~ 2026-08-28 00:15:06 KST",
     "total_pnl_krw": 1112.188186579995,
@@ -374,7 +374,7 @@
           "name": "관리자 계좌 끝자리 1644 · KOSPI200 과매도 반등 전략",
           "market": "KOSPI200",
           "bar_interval": "일봉",
-          "description": "백테스트와 같은 KOSPI200 CCI 과매도 반등 전략을 한국투자증권 실거래 러너에 연결한 공개 집계입니다. 주문 상세와 계정 정보는 제외하고 실현손익만 표시합니다.",
+          "description": "관리자 계좌 끝자리 1644의 KOSPI200 CCI 과매도 반등 전략 공개 집계입니다. 전체 계좌번호·주문 상세·개인 식별 정보는 제외하고 실현손익과 보유 집계만 표시합니다.",
           "data_sources": [
             "coin.trade_strategy_events",
             "coin.trade_strategy_positions",
@@ -399,7 +399,7 @@
             {
               "label": "공개 범위",
               "value": "집계만 공개",
-              "note": "주문 ID, 계정 정보, 잔고 정보 제외"
+              "note": "전체 계좌번호, 주문 ID, 예수금과 종목별 보유 상세 제외"
             }
           ],
           "code_components": {
