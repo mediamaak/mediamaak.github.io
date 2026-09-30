@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30 15:35 KST",
+  "updated_at": "2026-09-30 17:44 KST",
   "summary": {
     "period": "2026-08-20 17:48:54 ~ 2026-08-28 00:15:06 KST",
     "total_pnl_krw": 1112.188186579995,
@@ -371,7 +371,7 @@
           ],
           "strategy_code_scheme": "{provider}_{asset}_{entry_rule}_{return_rule}_{data_interval}",
           "actual_status": "connected",
-          "name": "KOSPI200 과매도 반등 전략",
+          "name": "관리자 계좌 끝자리 1644 · KOSPI200 과매도 반등 전략",
           "market": "KOSPI200",
           "bar_interval": "일봉",
           "description": "백테스트와 같은 KOSPI200 CCI 과매도 반등 전략을 한국투자증권 실거래 러너에 연결한 공개 집계입니다. 주문 상세와 계정 정보는 제외하고 실현손익만 표시합니다.",
@@ -418,35 +418,333 @@
             "source_strategy_code": "kospi-strategy1"
           },
           "summary": {
-            "period": "실제 매매 실현손익 없음",
-            "total_pnl_krw": 0.0,
-            "daily_avg_pnl_krw": 0.0,
-            "win_rate_pct": 0.0,
-            "trade_count": 0,
-            "open_position_count": 0,
-            "open_budget_krw": 0.0,
-            "open_unrealized_pnl_krw": 0.0,
+            "period": "2026-07-07 15:21:00 ~ 2026-09-30 15:21:01 KST",
+            "total_pnl_krw": 156691.16749999998,
+            "daily_avg_pnl_krw": 4748.2171969696965,
+            "win_rate_pct": 86.07594936708861,
+            "trade_count": 79,
+            "open_position_count": 25,
+            "open_budget_krw": 1074390.0,
+            "open_unrealized_pnl_krw": -22450.0,
             "strategy_count": 1,
-            "updated_at": "2026-09-30 15:35 KST"
+            "updated_at": "2026-09-30 15:21:01 KST"
           },
           "return_metrics": {
-            "realized_return_pct": 0.0,
-            "avg_trade_return_pct": 0.0,
-            "open_unrealized_return_pct": 0.0,
-            "open_unrealized_pnl_krw": 0.0,
-            "win_rate_pct": 0.0,
-            "win_count": 0,
-            "loss_count": 0,
+            "realized_return_pct": 2.333030090716974,
+            "avg_trade_return_pct": 2.056903438799971,
+            "open_unrealized_return_pct": -2.089557795586333,
+            "open_unrealized_pnl_krw": -22450.0,
+            "win_rate_pct": 86.07594936708861,
+            "win_count": 68,
+            "loss_count": 11,
             "avg_target_profit_pct": 1.5,
             "min_target_profit_pct": 1.5,
             "max_target_profit_pct": 1.5,
-            "profit_factor": 0.0,
-            "max_input_budget_krw": 0.0,
-            "daily_avg_input_budget_krw": 0.0,
-            "open_budget_krw": 0.0,
-            "cumulative_return_pct": 0.0
+            "profit_factor": 2.772633494080583,
+            "max_input_budget_krw": 316000.0,
+            "daily_avg_input_budget_krw": 170964.19987878788,
+            "open_budget_krw": 1074390.0,
+            "cumulative_return_pct": 2.333030090716974
           },
-          "daily": [],
+          "daily": [
+            {
+              "date": "2026-07-07",
+              "pnl_krw": 295.45,
+              "cumulative_pnl_krw": 295.45,
+              "cumulative_return_pct": 1.9301,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-07-09",
+              "pnl_krw": -16043.56,
+              "cumulative_pnl_krw": -15748.11,
+              "cumulative_return_pct": -10.3275,
+              "trade_count": 1,
+              "win_count": 0,
+              "loss_count": 1
+            },
+            {
+              "date": "2026-07-10",
+              "pnl_krw": 21197.76,
+              "cumulative_pnl_krw": 5449.65,
+              "cumulative_return_pct": 1.0815,
+              "trade_count": 3,
+              "win_count": 3,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-07-14",
+              "pnl_krw": -38.88,
+              "cumulative_pnl_krw": 5410.77,
+              "cumulative_return_pct": 0.8542,
+              "trade_count": 2,
+              "win_count": 1,
+              "loss_count": 1
+            },
+            {
+              "date": "2026-07-15",
+              "pnl_krw": 62428.53,
+              "cumulative_pnl_krw": 67839.3,
+              "cumulative_return_pct": 7.5133,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-07-16",
+              "pnl_krw": 128.13,
+              "cumulative_pnl_krw": 67967.43,
+              "cumulative_return_pct": 7.4753,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-07-20",
+              "pnl_krw": -42429.23,
+              "cumulative_pnl_krw": 25538.19,
+              "cumulative_return_pct": 2.1542,
+              "trade_count": 4,
+              "win_count": 0,
+              "loss_count": 4
+            },
+            {
+              "date": "2026-07-21",
+              "pnl_krw": -2304.33,
+              "cumulative_pnl_krw": 23233.87,
+              "cumulative_return_pct": 1.9382,
+              "trade_count": 1,
+              "win_count": 0,
+              "loss_count": 1
+            },
+            {
+              "date": "2026-07-22",
+              "pnl_krw": 10727.48,
+              "cumulative_pnl_krw": 33961.35,
+              "cumulative_return_pct": 2.2959,
+              "trade_count": 4,
+              "win_count": 4,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-07-23",
+              "pnl_krw": 16822.73,
+              "cumulative_pnl_krw": 50784.08,
+              "cumulative_return_pct": 2.8553,
+              "trade_count": 7,
+              "win_count": 7,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-07-24",
+              "pnl_krw": 6980.59,
+              "cumulative_pnl_krw": 57764.67,
+              "cumulative_return_pct": 3.1278,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-07-28",
+              "pnl_krw": -4156.68,
+              "cumulative_pnl_krw": 53607.99,
+              "cumulative_return_pct": 2.8714,
+              "trade_count": 1,
+              "win_count": 0,
+              "loss_count": 1
+            },
+            {
+              "date": "2026-07-31",
+              "pnl_krw": 62519.14,
+              "cumulative_pnl_krw": 116127.12,
+              "cumulative_return_pct": 3.8692,
+              "trade_count": 11,
+              "win_count": 11,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-08-03",
+              "pnl_krw": -3700.95,
+              "cumulative_pnl_krw": 112426.18,
+              "cumulative_return_pct": 3.5474,
+              "trade_count": 2,
+              "win_count": 1,
+              "loss_count": 1
+            },
+            {
+              "date": "2026-08-04",
+              "pnl_krw": 2076.75,
+              "cumulative_pnl_krw": 114502.92,
+              "cumulative_return_pct": 3.5255,
+              "trade_count": 2,
+              "win_count": 2,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-08-05",
+              "pnl_krw": 7549.91,
+              "cumulative_pnl_krw": 122052.83,
+              "cumulative_return_pct": 3.4043,
+              "trade_count": 5,
+              "win_count": 5,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-08-19",
+              "pnl_krw": -8824.42,
+              "cumulative_pnl_krw": 113228.41,
+              "cumulative_return_pct": 3.0917,
+              "trade_count": 1,
+              "win_count": 0,
+              "loss_count": 1
+            },
+            {
+              "date": "2026-08-24",
+              "pnl_krw": 10251.79,
+              "cumulative_pnl_krw": 123480.2,
+              "cumulative_return_pct": 3.0402,
+              "trade_count": 3,
+              "win_count": 3,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-08-25",
+              "pnl_krw": 7873.14,
+              "cumulative_pnl_krw": 131353.34,
+              "cumulative_return_pct": 3.0161,
+              "trade_count": 4,
+              "win_count": 4,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-08-26",
+              "pnl_krw": 5732.03,
+              "cumulative_pnl_krw": 137085.38,
+              "cumulative_return_pct": 2.9902,
+              "trade_count": 4,
+              "win_count": 4,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-08-27",
+              "pnl_krw": 1873.4,
+              "cumulative_pnl_krw": 138958.78,
+              "cumulative_return_pct": 2.973,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-08-28",
+              "pnl_krw": 3646.99,
+              "cumulative_pnl_krw": 142605.77,
+              "cumulative_return_pct": 2.9387,
+              "trade_count": 4,
+              "win_count": 4,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-08-31",
+              "pnl_krw": 3433.03,
+              "cumulative_pnl_krw": 146038.8,
+              "cumulative_return_pct": 2.8761,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-09-01",
+              "pnl_krw": 1488.56,
+              "cumulative_pnl_krw": 147527.35,
+              "cumulative_return_pct": 2.8833,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-09-04",
+              "pnl_krw": 839.28,
+              "cumulative_pnl_krw": 148366.63,
+              "cumulative_return_pct": 2.8794,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-09-07",
+              "pnl_krw": 1473.97,
+              "cumulative_pnl_krw": 149840.61,
+              "cumulative_return_pct": 2.8594,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-09-08",
+              "pnl_krw": 98.19,
+              "cumulative_pnl_krw": 149938.8,
+              "cumulative_return_pct": 2.858,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-09-10",
+              "pnl_krw": 53.94,
+              "cumulative_pnl_krw": 149992.75,
+              "cumulative_return_pct": 2.8571,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-09-14",
+              "pnl_krw": 1202.9,
+              "cumulative_pnl_krw": 151195.65,
+              "cumulative_return_pct": 2.8398,
+              "trade_count": 2,
+              "win_count": 2,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-09-21",
+              "pnl_krw": 2553.65,
+              "cumulative_pnl_krw": 153749.3,
+              "cumulative_return_pct": 2.8057,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-09-22",
+              "pnl_krw": -3371.68,
+              "cumulative_pnl_krw": 150377.62,
+              "cumulative_return_pct": 2.7093,
+              "trade_count": 2,
+              "win_count": 1,
+              "loss_count": 1
+            },
+            {
+              "date": "2026-09-28",
+              "pnl_krw": 5269.02,
+              "cumulative_pnl_krw": 155646.63,
+              "cumulative_return_pct": 2.768,
+              "trade_count": 3,
+              "win_count": 3,
+              "loss_count": 0
+            },
+            {
+              "date": "2026-09-30",
+              "pnl_krw": 1044.54,
+              "cumulative_pnl_krw": 156691.17,
+              "cumulative_return_pct": 2.7773,
+              "trade_count": 1,
+              "win_count": 1,
+              "loss_count": 0
+            }
+          ],
           "open_positions": []
         }
       ]
@@ -475,15 +773,15 @@
       "previous_strategy_codes": [
         "kospi-strategy1"
       ],
-      "name": "KOSPI200 과매도 반등 전략",
+      "name": "관리자 계좌 끝자리 1644 · KOSPI200 과매도 반등 전략",
       "market": "KOSPI200",
-      "total_pnl_krw": 0.0,
-      "return_pct": 0.0,
-      "win_rate_pct": 0.0,
-      "trade_count": 0,
-      "open_position_count": 0,
-      "open_unrealized_pnl_krw": 0.0,
-      "updated_at": "2026-09-30 15:35 KST"
+      "total_pnl_krw": 156691.16749999998,
+      "return_pct": 2.333030090716974,
+      "win_rate_pct": 86.07594936708861,
+      "trade_count": 79,
+      "open_position_count": 25,
+      "open_unrealized_pnl_krw": -22450.0,
+      "updated_at": "2026-09-30 15:21:01 KST"
     }
   ]
 }
