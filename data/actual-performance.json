@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-30 17:51 KST",
+  "updated_at": "2026-10-01 15:35 KST",
   "summary": {
     "period": "2026-08-20 17:48:54 ~ 2026-08-28 00:15:06 KST",
     "total_pnl_krw": 1112.188186579995,
@@ -418,33 +418,33 @@
             "source_strategy_code": "kospi-strategy1"
           },
           "summary": {
-            "period": "2026-07-07 15:21:00 ~ 2026-09-30 15:21:01 KST",
-            "total_pnl_krw": 156691.16749999998,
-            "daily_avg_pnl_krw": 4748.2171969696965,
-            "win_rate_pct": 86.07594936708861,
-            "trade_count": 79,
-            "open_position_count": 25,
-            "open_budget_krw": 1074390.0,
-            "open_unrealized_pnl_krw": -22450.0,
+            "period": "2026-07-07 15:21:00 ~ 2026-10-01 15:21:00 KST",
+            "total_pnl_krw": 154243.24649999998,
+            "daily_avg_pnl_krw": 4536.566073529411,
+            "win_rate_pct": 85.54216867469879,
+            "trade_count": 83,
+            "open_position_count": 23,
+            "open_budget_krw": 1020860.0,
+            "open_unrealized_pnl_krw": -33375.0,
             "strategy_count": 1,
-            "updated_at": "2026-09-30 15:21:01 KST"
+            "updated_at": "2026-10-01 15:21:00 KST"
           },
           "return_metrics": {
-            "realized_return_pct": 2.333030090716974,
-            "avg_trade_return_pct": 2.056903438799971,
-            "open_unrealized_return_pct": -2.089557795586333,
-            "open_unrealized_pnl_krw": -22450.0,
-            "win_rate_pct": 86.07594936708861,
-            "win_count": 68,
-            "loss_count": 11,
+            "realized_return_pct": 2.283549709692117,
+            "avg_trade_return_pct": 1.9882733719266221,
+            "open_unrealized_return_pct": -3.2693023529181278,
+            "open_unrealized_pnl_krw": -33375.0,
+            "win_rate_pct": 85.54216867469879,
+            "win_count": 71,
+            "loss_count": 12,
             "avg_target_profit_pct": 1.5,
             "min_target_profit_pct": 1.5,
             "max_target_profit_pct": 1.5,
-            "profit_factor": 2.772633494080583,
+            "profit_factor": 2.6530579902968583,
             "max_input_budget_krw": 316000.0,
-            "daily_avg_input_budget_krw": 170964.19987878788,
-            "open_budget_krw": 1074390.0,
-            "cumulative_return_pct": 2.333030090716974
+            "daily_avg_input_budget_krw": 168637.6057647059,
+            "open_budget_krw": 1020860.0,
+            "cumulative_return_pct": 2.283549709692117
           },
           "daily": [
             {
@@ -743,6 +743,15 @@
               "trade_count": 1,
               "win_count": 1,
               "loss_count": 0
+            },
+            {
+              "date": "2026-10-01",
+              "pnl_krw": -2447.92,
+              "cumulative_pnl_krw": 154243.25,
+              "cumulative_return_pct": 2.6901,
+              "trade_count": 4,
+              "win_count": 3,
+              "loss_count": 1
             }
           ],
           "open_positions": []
@@ -775,13 +784,13 @@
       ],
       "name": "관리자 계좌 끝자리 1644 · KOSPI200 과매도 반등 전략",
       "market": "KOSPI200",
-      "total_pnl_krw": 156691.16749999998,
-      "return_pct": 2.333030090716974,
-      "win_rate_pct": 86.07594936708861,
-      "trade_count": 79,
-      "open_position_count": 25,
-      "open_unrealized_pnl_krw": -22450.0,
-      "updated_at": "2026-09-30 15:21:01 KST"
+      "total_pnl_krw": 154243.24649999998,
+      "return_pct": 2.283549709692117,
+      "win_rate_pct": 85.54216867469879,
+      "trade_count": 83,
+      "open_position_count": 23,
+      "open_unrealized_pnl_krw": -33375.0,
+      "updated_at": "2026-10-01 15:21:00 KST"
     }
   ]
 }
